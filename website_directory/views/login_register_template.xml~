@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+	
+      <template id="liga_login_layout" name="LIGA login layout" inherit_id="auth_signup.signup">
+      <xpath expr="//t[@t-call='web.login_layout']" position="replace">
+
+
+&lt;!DOCTYPE html&gt;
+
+<html style="" class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <!-- // Title -->
+    <title>Conta LIGA WiFi</title>
+    <meta name="application-name" content="LIGA"/>
+    <meta name="apple-mobile-web-app-title" content="LIGA"/>
+
+    <!-- // Capability -->
+    <meta name="mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- // Icons -->
+    <link rel="shortcut icon" href="/website_liga/static/src/images/app-icons/favicon.ico"/>
+    <link rel="icon" sizes="120x120" href="/website_liga/static/src/images/app-icons/120x120.png"/>
+    <link rel="icon" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="icon" sizes="152x152" href="/website_liga/static/src/images/app-icons/152x152.png"/>
+    <link rel="icon" sizes="192x192" href="/website_liga/static/src/images/app-icons/192x192.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/website_liga/static/src/images/app-icons/120x120.png"/>
+    <link rel="apple-touch-icon" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/website_liga/static/src/images/app-icons/152x152.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/website_liga/static/src/images/app-icons/192x192.png"/>
+
+    <link rel="stylesheet" href="/website_liga/static/src/css/cplook.css"/>
+    <link rel="stylesheet" href="/website_liga/static/src/fonts/font-awesome.min.css"/>
+   
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</head>
+<body class="login">
+
+<div id="Wrapper" class="app-wrap wrapper">
+    <div class="app-t">
+        <div class="app-tr">
+            <div class="app-tc app-wrap-container">
+                <div class="app-content main" id="Main">
+                    <header class="app-header">
+                        <div class="app-container">
+                            <div class="row">
+                                <div class="col-xs-24">
+                                    <div class="app-logo">
+                                        <a href="#" target="_blank">
+                                            <img src="/website_liga/static/src/images/liga_logo.svg" alt="LIGA WiFi"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="Login">
+                        <section>
+                            <div class="app-container" id="Chilli">
+                                <div class="row" id="chilliPage">
+
+                                <!-- REGISTO -->          
+                                <div class="col-xs-24 wrapper" id="Registo" >
+          
+                                <form class="oe_signup_form" role="form" method="post" t-if="not message">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                                    <!--<t t-call="auth_signup.fields">
+                                        <t t-set="only_passwords" t-value="bool(token)"/>
+                                    </t>-->
+
+                                <div id="RegisterEmailFormGroup" class="form-group email field-login">
+                                    <div class="success-alert"><span class="ubnt-icon-check"></span></div>
+                                        <input id="login" name="login" class="form-control" required="required" tabindex="4" title="Por favor, forneça um endereço de e-mail válido" placeholder="Endereço de e-mail" type="email" t-att-readonly="'readonly' if only_passwords else None"/>
+                                    <label class="control-label" for="RegisterEmailInput"></label>
+                                </div>
+                                <div id="RegisterFirstNameFormGroup" class="form-group field-name">
+                                    <input id="name" name="name" class="form-control" tabindex="1" autofocus="" title="Por favor, forneça o seu nome" placeholder="Nome Próprio e Apelido" required="required" type="text" t-att-readonly="'readonly' if only_passwords else None"  t-att-autofocus="'autofocus' if login and not only_passwords else None"/>
+                                    <label class="control-label" for="RegisterFirstNameInput"></label>
+                                </div>
+                                <div class="form-group field-password has-feedback">
+                                    <div class="password-container">
+                                    <div class="password">
+                                        <div class="strength-meter" id="icon_pwd"></div>
+                                        <input tabindex="5" name="password" id="password" class="form-control password-input" required="required" t-att-autofocus="'autofocus' if only_passwords else None" title="Forneça uma senha válida" placeholder="Senha" type="password" pattern="(?=.*\d)(?=.*[a-z]).{6,}" onblur="checkpwd()" />
+                                        <label class="control-label"></label>
+                                    </div>
+                                    
+<style>
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 8px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 10px;
+    line-height: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
+
+                                     <div class="alert" id="message" style="display: none;">
+                                     <span class="closebtn"></span>  
+                                     <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                                     </div> 
+                                    </div>
+                                </div>
+                                                        
+
+<script type="text/javascript" src="/website_liga/static/src/js/signup.js"></script>
+         
+                                
+                                    <div class="form-group field-confirm_password has-feedback">
+                                        <div class="password-container">
+                                            <div class="password">
+                                                <div class="strength-meter" id="icon_pwd2"></div>
+                                                <input tabindex="5" name="confirm_password" id="confirm_password" class="form-control password-input" required="required" title="Forneça uma senha válida" placeholder="Confirma a Senha" type="password" oninput="check(this)"/>
+               
+                                                <label class="control-label"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+<!--                                    
+<script type="text/javascript">
+
+  function check(form)
+  {
+
+
+
+    if( document.getElementById("password").value == document.getElementById("confirm_password").value) {
+document.getElementById("icon_pwd2").style.backgroundColor = "green";
+    } else {
+ 
+       document.getElementById("icon_pwd2").style.backgroundColor = "red";
+           document.getElementById("RegisterCreateButton").disabled = false;
+      return false;
+    }
+
+    
+    return true;
+  }
+
+</script>
+-->
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                                    <p style="background-color: #f2dede; border-color: #ebccd1; color: #a94442; padding: 15px;" t-if="error">
+                                        <t t-esc="error"/>
+                                    </p>                                  
+                                    
+                                    <input type="hidden" name="redirect" t-att-value="redirect or '/cportal/1'"/>
+                                    <input type="hidden" name="token" t-att-value="token"/>
+
+                                    <div class="form-group">
+                                        <button id="RegisterCreateButton" type="submit" class="btn btn-primary btn-fill" tabindex="7">
+                                  	        <span class="state standby active" >Registar</span>
+                                  	        <span class="state loading"></span>
+                                        </button>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <div class="alert-container"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="legal-message register-footer__item">Ao criar a sua conta, concorda com os <a href="http://www.ligawifi.pt/legal/termsofservice/" target="_blank">Termos de serviço</a> e <a href="/legal/privacypolicy/" target="_blank">Política de Privacidade</a>.</div>
+                                    </div>
+
+                                    <div class="form-group form-group-top text-center">
+                                        <div class="item-head">Já tem uma conta?</div>
+                                        <div class="item-body" id="AccountLogin">
+                                  	        <!--<a t-attf-href="/web/login?{{ keep_query() }}" class="btn btn-default no-refresh">Back to Login</a>-->
+                                  	        <a t-attf-href="/cportal/1" class="btn btn-default no-refresh">Entrar</a>
+                                        </div>
+                                    </div>                                    
+
+                                </form>                                
+
+										    
+										    
+										    
+										    
+										     									      
+                                </div> 
+
+                                <!-- END REGISTO -->    
+                                
+                                <!-- SUCCESS PAGE -->
+                                <div class="col-xs-24 wrapper" id="successpage" style="display:none;">
+                                    <div class="form-container">
+                                        <div class="form-group-title">
+                                            <span>O Registo foi efectuado com sucesso.</span>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="alert-container"></div>
+                                        </div>
+                                        <div class="form-group form-group-top text-center">
+                                            <a href="#" class="btn btn-default no-refresh" tabindex="3">ENTRAR</a>
+                                        </div>
+                                     </div>
+                                </div>
+                                <!-- END SUCCESS PAGE -->                                                                                               
+                                
+                                </div>
+                            </div>
+                        </section>
+
+                        <footer class="app-footer">
+                            <div class="app-container">
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <div class="app-copyrights footer-copyrights text-center">© <span>2017 LIGA WiFi Networks. Todos os direitos reservados.</span></div>
+                                        <nav class="footer-menu text-center">
+                                            <ul class="list-unstyled clearfix">
+                                                <li><a class="secondary-link-color" target="_blank" href="/legal/termsofservice/" >Termos de serviço</a></li>
+                                                <li><a class="secondary-link-color" target="_blank" href="/legal/privacypolicy/" >Política de Privacidade</a></li>
+                                            </ul>
+                                        
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="BackgroundLoop">
+    <div class="app-notify-background app-notify-items">
+    <div class="item active active-pending" style="background-image: url(/website_liga/static/src/images/2.jpg)"></div>
+    </div>
+</div>
+
+</body>
+</html>
+</xpath>
+</template>
+
+
+<template id="liga_reset_password" name="LIGA reset password" inherit_id="auth_signup.reset_password">
+<xpath expr="//t[@t-call='web.login_layout']" position="replace">
+
+&lt;!DOCTYPE html&gt;
+
+<html style="" class=" js no-touch svg inlinesvg svgclippaths no-ie8compat" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <!-- // Title -->
+    <title>Conta LIGA WiFi</title>
+    <meta name="application-name" content="LIGA"/>
+    <meta name="apple-mobile-web-app-title" content="LIGA"/>
+
+    <!-- // Capability -->
+    <meta name="mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <!-- // Icons -->
+    <link rel="shortcut icon" href="/website_liga/static/src/images/app-icons/favicon.ico"/>
+    <link rel="icon" sizes="120x120" href="/website_liga/static/src/images/app-icons/120x120.png"/>
+    <link rel="icon" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="icon" sizes="152x152" href="/website_liga/static/src/images/app-icons/152x152.png"/>
+    <link rel="icon" sizes="192x192" href="/website_liga/static/src/images/app-icons/192x192.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/website_liga/static/src/images/app-icons/120x120.png"/>
+    <link rel="apple-touch-icon" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/website_liga/static/src/images/app-icons/128x128.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/website_liga/static/src/images/app-icons/152x152.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="/website_liga/static/src/images/app-icons/192x192.png"/>
+
+    <link rel="stylesheet" href="/website_liga/static/src/css/cplook.css"/>
+    <link rel="stylesheet" href="/website_liga/static/src/fonts/font-awesome.min.css"/>
+   
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+</head>
+<body class="login">
+
+<div id="Wrapper" class="app-wrap wrapper">
+    <div class="app-t">
+        <div class="app-tr">
+            <div class="app-tc app-wrap-container">
+                <div class="app-content main" id="Main">
+                    <header class="app-header">
+                        <div class="app-container">
+                            <div class="row">
+                                <div class="col-xs-24">
+                                    <div class="app-logo">
+                                        <a href="#" target="_blank">
+                                            <img src="/website_liga/static/src/images/liga_logo.svg" alt="LIGA WiFi"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div id="Login">
+                        <section>
+                            <div class="app-container" id="Chilli">
+                                <div class="row" id="chilliPage">
+
+                                <!-- RESET PASSWORD -->          
+                                <div class="col-xs-24 wrapper">
+          
+                                <div t-if="message">
+                                    <p class="alert alert-success" t-if="message">
+                                        <t t-esc="message"/>
+                                    </p>
+                                    <div class="form-group form-group-top text-center">
+                                        <a href="/cportal/1"  class="btn btn-default no-refresh" tabindex="3">LOGIN</a>
+                                    </div>                    
+                                </div>
+
+                                <form class="oe_reset_password_form" role="form" method="post" t-if="not message">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+ 
+                                        <div class="form-container">
+                                        <div class="form-group-title">
+                                            <span>Digite o seu endereço de e-mail para redefinir sua senha. <br/>Necessita ter acesso ao e-mail para confirmação.</span>
+                                        </div>
+
+                                        <t t-if="token and not invalid_token">
+                                            <t t-call="auth_signup.fields">
+                                                <t t-set="only_passwords" t-value="1"/>
+                                            </t>
+                                        </t>
+
+                                        <t t-if="not token">                                        
+                                        <div class="form-group has-icon email field-login">
+                                            <span class="icon icon-user"></span>
+                                            <input id="login" t-att-value="login" name="login" tabindex="1" class="form-control" placeholder="example@ligawifi.pt" autocorrect="off" autocapitalize="off" required="required" autofocus="autofocus" type="text"/>
+                                        </div>
+                                        </t>                                        
+                                        <p class="alert alert-danger" t-if="error">
+                                            <t t-esc="error"/>
+                                        </p>                                        
+                                        <input type="hidden" name="redirect" t-att-value="redirect"/>
+                                        <input type="hidden" name="token" t-att-value="token"/>                                        
+                                        <div class="form-group">
+                                            <button id="ResetPasswordButton" type="submit" class="btn btn-primary btn-fill" tabindex="2">
+                                                <span class="state standby active">Trocar a senha</span>
+                                                <span class="state loading"></span>
+                                            </button>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="alert-container"></div>
+                                        </div>
+                                        <div class="form-group form-group-top text-center">
+                                            <a href="/cportal/1"  class="btn btn-default no-refresh" tabindex="3">Regressar</a>
+                                        </div>
+                                        </div>
+                                    </form>
+                                </div> 
+                                <!-- RESET PASSWORD -->                                                                   
+                                </div>
+                            </div>
+                        </section>
+
+                        <footer class="app-footer">
+                            <div class="app-container">
+                                <div class="row">
+                                    <div class="col-xs-24">
+                                        <div class="app-copyrights footer-copyrights text-center">© <span>2017 LIGA WiFi Networks. Todos os direitos reservados.</span></div>
+                                        <nav class="footer-menu text-center">
+                                            <ul class="list-unstyled clearfix">
+                                                <li><a class="secondary-link-color" target="_blank" href="/legal/termsofservice/" >Termos de serviço</a></li>
+                                                <li><a class="secondary-link-color" target="_blank" href="/legal/privacypolicy/" >Política de Privacidade</a></li>
+                                            </ul>
+                                        
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="BackgroundLoop">
+    <div class="app-notify-background app-notify-items">
+    <div class="item active active-pending" style="background-image: url(/website_liga/static/src/images/2.jpg)"></div>
+    </div>
+</div>
+
+</body>
+</html>
+</xpath>
+</template>
+
+	</data>
+</odoo>
