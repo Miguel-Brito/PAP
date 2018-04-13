@@ -30,7 +30,8 @@
         'views/res_partner_interest_views.xml',
         'views/budget_views.xml',
         'views/sequence_data.xml',
-        'views/work_type_views.xml'
+        'views/work_type_views.xml',
+        'views/proposal_views.xml'
 
     ],
     # only loaded in demonstration mode

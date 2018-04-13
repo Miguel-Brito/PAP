@@ -28,10 +28,21 @@ class BudgetWebDirectory(models.Model):
     state_id = fields.Many2one('res.country.state', string="State", domain="[('country_id', '=', country_id)]")
     city = fields.Char(string="City")
     description = fields.Text(string="Description")
-    
+    min_price = fields.Float(string="Minimum Price")
+    max_price = fields.Float(string="Maximum Price")
 
 
-    
+
+class ProposalWebDirectory(models.Model):
+
+    _name = "proposal"
+    _description = "Budgets Proposals"
+
+    budget_id = fields.Many2one('budget', string="Budgets Proposals")
+    partner_id = fields.Many2one('res.partner', string="Partner Budgets")
+    description = fields.Text(string="Description")
+    status = fields.Selection((('draft','Draft'), ('rejected','Rejected'), ('accepted','Accepted'), ('confirmed','Confirmed')),'Status' )
+    exp_start_date = fields.Date(string="Expected start date")
     
 
     
