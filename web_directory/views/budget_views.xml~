@@ -4,26 +4,26 @@
        
 <!-- view lista -->
         <record id="view_budget_tree" model="ir.ui.view">
-            <field name="name">cro.processo.eve.tree</field>
+            <field name="name">budget.tree</field>
             <field name="model">budget</field>
             <field eval="8" name="priority"/>
             <field name="arch" type="xml">
-                <tree string="Processos" default_order="data desc">
-                    <field name="name" string="Processo"/>
-                    <field name="motivo" string="Motivo"/>
-                    <field name="data" string="Data"/>
+                <tree string="Budgets" default_order="create_date desc">
+                    <field name="name" string="Number"/>
+                    <field name="partner_id" string="Partner"/>
+                    <field name="work_type" string="Work Type"/>
                 </tree>
             </field>
         </record>
         
 <!-- view formulario -->
         <record id="view_budget_form" model="ir.ui.view">
-            <field name="name">cro.processo.eve.form</field>
+            <field name="name">budget.form</field>
             <field name="model">budget</field>
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
                 <form string="Processo">
-                    <header groups="base.group_user">
+                    <!--<header groups="base.group_user">
                         <button name="confirm_in_progress" states="draft" string="Confirm"
                             type="object" class="oe_highlight"/>
                         <button name="confirm_cancel" states="draft,confirm" string="Cancel"
@@ -33,31 +33,32 @@
                         <button name="confirm_to_draft" states="cancel" string="Set to Draft"
                             type="object" />
                         <field name="state" widget="statusbar" statusbar_visible="draft,confirm,cancel,done" />
-                    </header>
+                    </header>-->
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="name" default_focus="1" placeholder="Processo"/>
+                            <field name="name" default_focus="1" placeholder="Number"/>
                         </h1>
                         <div class="o_row">
-                            <field name="animal_id"
-                                placeholder="Animal"/>
+                            <field name="partner_id"
+                                placeholder="Partner"/>
                         </div>
                     </div>
 
                     <group>
                         <group>
-                            <field name="motivo" string="Tipo de Saida"/>
-                            <field name="dono_id" string="Entregador"/>
+                            <field name="country_id"/>
+                            <field name="state_id"/>
                         </group>
                         <group>
-                            <field name="data" string="Data"/>
+                            <field name="work_type"/>
+                            <field name="city"/>
                         </group>
                     </group>
 
                     <notebook colspan="4">
-                        <page name='notas_internas' string="Relatório Médico">
-                            <field name="notas" placeholder="Relatório interno..."/>
+                        <page name='description_page' string="Description">
+                            <field name="description" placeholder="Description..."/>
                         </page>
                     </notebook>
                 </sheet>
@@ -67,26 +68,26 @@
 
 <!-- view pesquisa -->
        <record id="view_res_budget_filter" model="ir.ui.view">
-            <field name="name">cro.processo.eve.select</field>
+            <field name="name">budget.select</field>
             <field name="model">budget</field>
             <field name="arch" type="xml">
                 <search string="Procurar Processo">
                    <field name="name"
                        filter_domain="[('name','ilike',self)]"/>
                    <separator/>
-                   <field name="animal_id" string="Especie" filter_domain="[('animal_id','ilike', self)]"/>
+                   <field name="partner_id" string="Partner" filter_domain="[('partner_id','ilike', self)]"/>
                    <group expand="0" name="group_by" string="Group By">
-                       <filter string="Motivo" context="{'group_by': 'motivo'}"/>
-                       <filter string="Mês de Ocorrência" context="{'group_by': 'data'}"/>
+                       <filter string="State" context="{'group_by': 'state_id'}"/>
+                       <filter string="Mês de Ocorrência" context="{'group_by': 'create_date'}"/>
                        
-                       <filter string="Mês Actual" name="current_month" domain="[('data','&lt;',(context_today()+relativedelta(months=1)).strftime('%Y-%m-01')), ('data','&gt;=',time.strftime('%Y-%m-01'))]"/>
-                       <filter string="Mês Anterior" name="prev_month" domain="[('data','&gt;=',(context_today()-relativedelta(months=1)).strftime('%%Y-%%m-01')),('data','&lt;',time.strftime('%%Y-%%m-01'))]"/>
-                       <filter string="Três Meses" name="prev_3months" domain="[('data','&gt;=',(context_today()-relativedelta(months=3)).strftime('%%Y-%%m-01')),('data','&lt;',time.strftime('%%Y-%%m-01'))]"/>
-                       <filter string="Seis Meses" name="prev_6months" domain="[('data','&gt;=',(context_today()-relativedelta(months=6)).strftime('%%Y-%%m-01')),('data','&lt;',time.strftime('%%Y-%%m-01'))]"/>
-                       <filter string="Nove Meses" name="prev_9months" domain="[('data','&gt;=',(context_today()-relativedelta(months=9)).strftime('%%Y-%%m-01')),('data','&lt;',time.strftime('%%Y-%%m-01'))]"/>
+                       <filter string="Mês Actual" name="current_month" domain="[('create_date','&lt;',(context_today()+relativedelta(months=1)).strftime('%Y-%m-01')), ('create_date','&gt;=',time.strftime('%Y-%m-01'))]"/>
+                       <filter string="Mês Anterior" name="prev_month" domain="[('create_date','&gt;=',(context_today()-relativedelta(months=1)).strftime('%%Y-%%m-01')),('create_date','&lt;',time.strftime('%%Y-%%m-01'))]"/>
+                       <filter string="Três Meses" name="prev_3months" domain="[('create_date','&gt;=',(context_today()-relativedelta(months=3)).strftime('%%Y-%%m-01')),('create_date','&lt;',time.strftime('%%Y-%%m-01'))]"/>
+                       <filter string="Seis Meses" name="prev_6months" domain="[('create_date','&gt;=',(context_today()-relativedelta(months=6)).strftime('%%Y-%%m-01')),('create_date','&lt;',time.strftime('%%Y-%%m-01'))]"/>
+                       <filter string="Nove Meses" name="prev_9months" domain="[('create_date','&gt;=',(context_today()-relativedelta(months=9)).strftime('%%Y-%%m-01')),('create_date','&lt;',time.strftime('%%Y-%%m-01'))]"/>
                        <separator/>
-                       <filter string="Ano Actual" name="current_year" domain="[('data','&lt;=', time.strftime('%Y-%m-%d')),('data','&gt;=',time.strftime('%Y-01-01'))]" help="Current Year"/>
-                       <filter string="Ano Anterior" name="last_year" domain="[('data', '&gt;=' ,(context_today()-relativedelta(years=1)).strftime('%Y-01-01')),('data','&lt;=',time.strftime('%Y-01-01'))]" help="last year"/>
+                       <filter string="Ano Actual" name="current_year" domain="[('create_date','&lt;=', time.strftime('%Y-%m-%d')),('create_date','&gt;=',time.strftime('%Y-01-01'))]" help="Current Year"/>
+                       <filter string="Ano Anterior" name="last_year" domain="[('create_date', '&gt;=' ,(context_today()-relativedelta(years=1)).strftime('%Y-01-01')),('create_date','&lt;=',time.strftime('%Y-01-01'))]" help="last year"/>
                    </group>
                </search>
             </field>
@@ -94,7 +95,7 @@
 
 
         <record id="action_budget_form" model="ir.actions.act_window">
-            <field name="name">EVE</field>
+            <field name="name">Budgets</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">budget</field>
             <field name="view_type">form</field>
@@ -102,7 +103,7 @@
             <field name="search_view_id" ref="view_res_budget_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
-                Aqui pode criar os seus Processo de Entrega Voluntária para Eutanásia.
+                Aqui pode criar os seus ....
               </p>
             </field>
         </record>
@@ -125,6 +126,6 @@
         action="action_budget_form"
         web_icon="web_directory,static/description/icon.png"/>
 
-        <menuitem id="menu_budget_eve" name="EVE" parent="menu_budget" action="action_budget_form" sequence="11"/>
+        <menuitem id="menu_budget_form" name="Budgets" parent="menu_budget" action="action_budget_form" sequence="11"/>
     </data>
 </odoo>

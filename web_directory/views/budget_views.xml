@@ -23,17 +23,17 @@
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
                 <form string="Processo">
-                    <!--<header groups="base.group_user">
+                    <header>
                         <button name="confirm_in_progress" states="draft" string="Confirm"
                             type="object" class="oe_highlight"/>
-                        <button name="confirm_cancel" states="draft,confirm" string="Cancel"
+                        <!--<button name="confirm_cancel" states="draft,confirm" string="Cancel"
                             type="object" />
                         <button name="print_process" states="confirm,done" string="Print"
+                            type="object" />-->
+                        <button name="confirm_to_draft" states="confirmed" string="Set to Draft"
                             type="object" />
-                        <button name="confirm_to_draft" states="cancel" string="Set to Draft"
-                            type="object" />
-                        <field name="state" widget="statusbar" statusbar_visible="draft,confirm,cancel,done" />
-                    </header>-->
+                        <field name="state" widget="statusbar" />
+                    </header>
                 <sheet>
                     <div class="oe_title">
                         <h1>
