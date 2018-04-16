@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import datetime
+from datetime import datetime
 from odoo import api, fields, models
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
-
+from odoo.exceptions import ValidationError, UserError
 
 class WorkTypeWebDirectory(models.Model):
 
@@ -21,6 +21,7 @@ class BudgetWebDirectory(models.Model):
     _name = "budget"
     _description = "Budgets"
     
+    accepting_date = fields.Date(string="Date until proposals can be sent")
     partner_id = fields.Many2one('res.partner', string="Partner Budgets")
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('budget.code.serial'),
@@ -92,7 +93,16 @@ class ProposalWebDirectory(models.Model):
     @api.one
     def confirm_to_draft(self):
         self.state = 'draft'
+        #sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss#
+    @api.onchange('exp_start_date')
+    @api.constrains('exp_start_date')
+    def exp_start_date_check(self):
 
+        if self.exp_start_date:
+            if self.exp_start_date <= datetime.now().strftime('%Y/%m/%d'):
+                raise ValidationError('Start date must be greater than current date')
+            elif self.exp_start_date <= budget_id.accepting_date:
+                raise ValidationError('The start date must be greater than the date until proposals are accepted')
  
  
  
