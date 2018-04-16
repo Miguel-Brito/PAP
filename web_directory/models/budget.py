@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
+import datetime
 from odoo import api, fields, models
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
+
 
 class WorkTypeWebDirectory(models.Model):
 
@@ -52,7 +54,7 @@ class ProposalWebDirectory(models.Model):
     description = fields.Text(string="Description")
     exp_start_date = fields.Date(string="Expected start date")
     exp_duration = fields.Integer(string="Expected duration")
-    time_type = fields.Selection([('hours', 'Hours'), ('days', 'Days'), ('months', 'Months')], 'State',default=lambda *a: 'days')
+    time_type = fields.Selection([('hours', 'Hours'), ('days', 'Days'), ('months', 'Months')], 'State', default='days')
     state = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('accepted', 'Accepted'), ('rejected', 'Rejected')],
                              'State', readonly=True,
                              default=lambda *a: 'draft')
@@ -90,22 +92,39 @@ class ServiceWebDirectory(models.Model):
     work_type_id = fields.Integer(string="work_type_id", compute="_get_work_type")
     review_text = fields.Text(string="Message")
     review_star = fields.Float(size=8, string="Rating")
+    exp_end_date = fields.Date(string="Expected service end date", compute ="_get_end_date")
     state = fields.Selection([('scheduled', 'Scheduled'), ('in_execution', 'In Execution'), ('done', 'Done')],
                              'State', readonly=True,
                              default=lambda *a: 'scheduled')
     
     
-    #@api.one
+    @api.one
     def get_client(self):
-        self.client_id = proposal_id.budget_id.partner_id
-        
+        self.client_id = self.proposal_id.budget_id.partner_id
+    @api.one    
     def get_pro(self):
-        self.pro_id = proposal_id.partner_id   
-        
+        self.pro_id = self.proposal_id.partner_id   
+    @api.one  
     def get_work_type(self):
-        self.work_type = proposal_id.budget_id.work_type.id              
-         	
-           
-
+        self.work_type_id = self.proposal_id.budget_id.work_type.id              
     
+    @api.one     	
+    def get_end_date(self):
+    	  if self.proposal_id.time_type == 'hours':
+            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(hours=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+    	  elif self.proposal_id.time_type == 'days':
+            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(days=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+    	  elif self.proposal_id.time_type == 'months':
+            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(months=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+    
+	
+
+	
+
+	
+
+	
+	
+	
+	
 	

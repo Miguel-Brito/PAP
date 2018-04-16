@@ -9,7 +9,7 @@
             <field eval="8" name="priority"/>
             <field name="arch" type="xml">
                 <tree string="Services" default_order="create_date desc">
-                <field name="proposal_id" default_focus="1" on_change="get_end_date" placeholder="Proposal Id"/>
+                <field name="proposal_id" default_focus="1" placeholder="Proposal Id"/>
                     <field name="id" string="service"/>
                     <field name="pro_id" string="Professional"/>
                     <field name="client_id" string="Client"/>

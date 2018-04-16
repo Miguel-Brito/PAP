@@ -31,8 +31,8 @@
         'views/budget_views.xml',
         'views/sequence_data.xml',
         'views/work_type_views.xml',
-        'views/proposal_views.xml'#,
-        #'views/service_views.xml'
+        'views/proposal_views.xml',
+        'views/service_views.xml'
 
     ],
     # only loaded in demonstration mode
