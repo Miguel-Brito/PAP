@@ -14,6 +14,8 @@
                     <field name="budget_id" string="Budget"/>
                     <field name="state" string="Status"/>
                     <field name="exp_start_date" string="Expected start Date"/>
+                    <field name="exp_duration" string="Expected duration"/>
+                    <field name="time_type" string="Duration type"/>
                 </tree>
             </field>
         </record>
@@ -43,22 +45,24 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            <field name="budget_id" default_focus="1" placeholder="Budget Id"/>
+                         <field name="name" default_focus="1" placeholder="Proposal"/>   
                         </h1>
                         <div class="o_row">
-                            <field name="partner_id"
-                                placeholder="Partner"/>
+                            <field name="partner_id" placeholder="Partner"/>
                         </div>
+  
+                            
+
                     </div>
 
                     <group>
 
-                        <group>
 
-                        </group>
                         <group>
+                            <field name="budget_id"  string="Budget Id"/>
                             <field name="exp_start_date" string="Expected start Date"/>
-                        
+                            <field name="exp_duration" string="Expected duration"/>
+                            <field name="time_type" string="Duration type"/>
                     </group>
  </group>
                     <notebook colspan="4">

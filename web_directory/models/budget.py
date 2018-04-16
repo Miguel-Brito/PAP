@@ -26,7 +26,7 @@ class BudgetWebDirectory(models.Model):
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('budget.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
     work_type = fields.Many2one('worktype', string="Budget work type")
-    country_id = fields.Many2one('res.country', string='Country', required=True)
+    country_id = fields.Many2one('res.country', string='Country', required=True, default= 185)
     state_id = fields.Many2one('res.country.state', string="State", domain="[('country_id', '=', country_id)]")
     city = fields.Char(string="City")
     description = fields.Text(string="Description")
@@ -49,7 +49,11 @@ class ProposalWebDirectory(models.Model):
     _name = "proposal"
     _description = "Budgets Proposals"
 
-    budget_id = fields.Many2one('budget', domain="[('state','=','confirmed')]", string="Budgets Proposals")
+    name = fields.Char(
+        'Number', default=lambda self: self.env['ir.sequence'].next_by_code('proposal.code.serial'),
+        required=True, readonly=True, help="Unique Process/Serial Number")
+
+    budget_id = fields.Many2one('budget', domain="[('state','=','confirmed')]", string="Budget")
     partner_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Partner Budgets")
     description = fields.Text(string="Description")
     exp_start_date = fields.Date(string="Expected start date")
@@ -68,6 +72,17 @@ class ProposalWebDirectory(models.Model):
     def accept_prop(self):
         self.state = 'accepted'
         self.budget_id.state = 'done'
+        if self.time_type == 'hours':
+            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(hours=self.exp_duration)
+        elif self.time_type == 'days':
+            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(days=self.exp_duration)   
+        elif self.time_type == 'months':
+            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(months=self.exp_duration)
+        
+        
+        
+        record = self.env['service'].create({'proposal_id': self.id, 'client_id': self.budget_id.partner_id.id, 'pro_id': self.partner_id.id, 'work_type_id': self.budget_id.work_type.id, 'budget_id': self.budget_id.id, 'exp_end_date':exp_end_date})        
+        
         
         for prop in self.env['proposal'].search([('budget_id','=',int(self.budget_id))]):
             if prop.id != self.id:
@@ -85,37 +100,47 @@ class ServiceWebDirectory(models.Model):
 
     _name = "service"
     _description = "Services"
+
+    name = fields.Char(
+        'Number', default=lambda self: self.env['ir.sequence'].next_by_code('service.code.serial'),
+        required=True, readonly=True, help="Unique Process/Serial Number")
+
     
     proposal_id = fields.Many2one('proposal',string="Proposal")
-    client_id = fields.Integer(string="client_id", compute="_get_client") 
-    pro_id = fields.Integer(string="pro_id", compute="_get_pro")
-    work_type_id = fields.Integer(string="work_type_id", compute="_get_work_type")
+    budget_id = fields.Many2one('budget', string="Budgets Proposals")
+    
+    pro_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Professional")
+    client_id = fields.Many2one('res.partner', string="Client")
+    work_type_id = fields.Many2one('worktype', string="Service work type")
+    
     review_text = fields.Text(string="Message")
     review_star = fields.Float(size=8, string="Rating")
-    exp_end_date = fields.Date(string="Expected service end date", compute ="_get_end_date")
+    exp_end_date = fields.Date(string="Expected service end date")
     state = fields.Selection([('scheduled', 'Scheduled'), ('in_execution', 'In Execution'), ('done', 'Done')],
                              'State', readonly=True,
                              default=lambda *a: 'scheduled')
     
     
-    @api.one
+    @api.onchange('proposal_id') 
     def get_client(self):
         self.client_id = self.proposal_id.budget_id.partner_id
-    @api.one    
+        
+    @api.onchange('proposal_id')    
     def get_pro(self):
-        self.pro_id = self.proposal_id.partner_id   
-    @api.one  
+        self.pro_id = self.proposal_id.partner_id  
+         
+    @api.onchange('proposal_id')   
     def get_work_type(self):
         self.work_type_id = self.proposal_id.budget_id.work_type.id              
     
-    @api.one     	
+    @api.onchange('proposal_id')     	
     def get_end_date(self):
     	  if self.proposal_id.time_type == 'hours':
-            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(hours=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+            self.exp_end_date = fields.Datetime.from_string(self.proposal_id.exp_start_date) +  relativedelta(hours=self.proposal_id.exp_duration)
     	  elif self.proposal_id.time_type == 'days':
-            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(days=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+            self.exp_end_date = fields.Datetime.from_string(self.proposal_id.exp_start_date) +  relativedelta(days=self.proposal_id.exp_duration)   
     	  elif self.proposal_id.time_type == 'months':
-            self.exp_end_date = self.proposal_id.exp_start_date +  relativedelta(months=self.proposal_id.exp_duration).strftime('%Y-%m-%d')   
+            self.exp_end_date = fields.Datetime.from_string(self.proposal_id.exp_start_date) +  relativedelta(months=self.proposal_id.exp_duration)   
     
 	
 

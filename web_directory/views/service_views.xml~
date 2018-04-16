@@ -9,7 +9,7 @@
             <field eval="8" name="priority"/>
             <field name="arch" type="xml">
                 <tree string="Services" default_order="create_date desc">
-                <field name="proposal_id" default_focus="1" placeholder="Proposal Id"/>
+                <field name="proposal_id" default_focus="1" on_change="get_end_date" placeholder="Proposal Id"/>
                     <field name="id" string="service"/>
                     <field name="pro_id" string="Professional"/>
                     <field name="client_id" string="Client"/>
@@ -42,21 +42,24 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                            
+                          <field name="name" default_focus="1" placeholder="Service Id"/>  
                         </h1>
                         <div class="o_row">
-                        <field name="proposal_id" default_focus="1" placeholder="Proposal Id"/>
+
                       </div>      
                     </div>
 
                     <group>
+                         
 
+                         
                         <group>
-
                             <field name="pro_id" string="Professional"/>
-                            <field name="client_id" string="Client"/>                         
-                        
+                            <field name="client_id" string="Client"/>
+                            <field name="proposal_id" default_focus="1" placeholder="Proposal"/>
+                            <field name="budget_id" default_focus="1" placeholder="budget"/>
                         </group>
+                        
                         <group>
                             <field name="work_type_id" string="Work Type"/>
                             <field name="exp_end_date" string="Expected end Date"/>
@@ -128,7 +131,7 @@
             <field name="act_window_id" ref="action_service_form"/>
         </record>        
         
-    <menuitem name="services"
+    <menuitem name="Services"
         id="menu_service"
         sequence="4"
         action="action_service_form"
