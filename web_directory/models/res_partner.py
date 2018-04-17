@@ -16,10 +16,10 @@ class PartnerWebDirectory(models.Model):
     social_youtube = fields.Char('Youtube Account')
     social_googleplus = fields.Char('Google+ Account')
 
-    categ = fields.Many2many('res.partner.category', string="Category")
+    #categ = fields.Many2many('res.partner.category', string="Category")
 
     interest_list = fields.Many2many('res.partner.interest', string="Interest List")
-    profile_visibility = fields.Selection([('public','Public'), ('members_only','Members Only'), ('not_listed','Not Listed')], default="not_listed", string="Profile Visibility", help="Public: can be viewed by anyone on the internet\nMembers Only: Can only be viewed by people who have an account\nNot Listed: Profile will only be visiable to members you have contacted")
+    profile_visibility = fields.Selection([('public','Public'), ('members_only','Members Only'), ('not_listed','Not Listed')], default="not_listed", string="Profile Visibility", help="Public: can be viewed by anyone on the internet\nMembers Only: Can only be viewed by people who have an account\nNot Listed: Profile will only be visible to members you have contacted")
     profile_text = fields.Text(string="Profile Text")
 
 class ResPartnerInterest(models.Model):

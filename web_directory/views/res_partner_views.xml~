@@ -12,7 +12,7 @@
                     <div name="personal_data">
                         <separator string="Personal Data"/>
       	                <group>
-      	                    <field name="user_id"/>
+      	                    <field name="user_id" string="User"/>
       	                </group>
                     </div>
                     <div name="company_data">
@@ -20,7 +20,7 @@
       	                <group>
       	                    <field name="pro"/>
       	                    <field name="employees"/>
-      	                    <field name="categ"/>
+      	                    <field name="category_id"/>
       	                </group>
                     </div>
                     <div name="social_media">

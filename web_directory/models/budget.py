@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
-from odoo import api, fields, models
+#from datetime import datetime
+import time
+from odoo import models, fields, api, _
 from datetime import datetime, date
 from dateutil.relativedelta import relativedelta
 from odoo.exceptions import ValidationError, UserError
@@ -49,21 +50,29 @@ class ProposalWebDirectory(models.Model):
 
     _name = "proposal"
     _description = "Budgets Proposals"
+    
 
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('proposal.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
 
     budget_id = fields.Many2one('budget', domain="[('state','=','confirmed')]", string="Budget")
+    
+#    budget_accepting_date = fields.Date(compute='_get_budget_ac_date',store=True ,string = "Budget accepting Date", readonly=True)
+    
     partner_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Partner Budgets")
     description = fields.Text(string="Description")
-    exp_start_date = fields.Date(string="Expected start date")
+    exp_start_date = fields.Date(string="Expected start date" , required=False,
+                              readonly=True,
+                              states={'draft': [('readonly', False)]})
     exp_duration = fields.Integer(string="Expected duration")
     time_type = fields.Selection([('hours', 'Hours'), ('days', 'Days'), ('months', 'Months')], 'State', default='days')
     state = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('accepted', 'Accepted'), ('rejected', 'Rejected')],
                              'State', readonly=True,
                              default=lambda *a: 'draft')
 
+    
+    
     @api.one
     def confirm_in_progress(self):
         self.state = 'confirmed'
@@ -93,18 +102,44 @@ class ProposalWebDirectory(models.Model):
     @api.one
     def confirm_to_draft(self):
         self.state = 'draft'
-        #sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss#
-    @api.onchange('exp_start_date')
-    @api.constrains('exp_start_date')
-    def exp_start_date_check(self):
-
-        if self.exp_start_date:
-            if self.exp_start_date <= datetime.now().strftime('%Y/%m/%d'):
-                raise ValidationError('Start date must be greater than current date')
-            elif self.exp_start_date <= budget_id.accepting_date:
-                raise ValidationError('The start date must be greater than the date until proposals are accepted')
- 
- 
+        
+###################################################
+#    @api.depends('budget_id')
+#    def _get_budget_ac_date(self):
+#        self.budget_accepting_date = self.budget_id.accepting_date
+#        bd_ac_date = self.env['budget'].search([('name','=',self.budget_id.name)])
+#        print '######################### onchange'
+#        print self.budget_accepting_date
+#        print bd_ac_date.accepting_date
+            
+    @api.model
+    def create(self, vals):
+    	
+        budget_accepting_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
+        budget_accepting_date =  budget_accepting_date.accepting_date
+        print '##########################,,##############'	
+        print budget_accepting_date
+        print vals.keys()
+        if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
+            raise ValidationError(_('Start date must be greater than current date'))  
+                  
+        if vals.get('exp_start_date') <= budget_accepting_date:
+            raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
+               
+        return super(ProposalWebDirectory, self).create(vals)           
+##############################
+    @api.multi
+    def write(self, vals):
+        budget_id = self.budget_id.accepting_date  	  
+    	  
+        if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
+            raise ValidationError(_('Start date must be greater than current date'))  
+                  
+        if vals.get('exp_start_date') <= budget_id:
+            raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
+               
+        return super(ProposalWebDirectory, self).write(vals) 
+            
  
 class ServiceWebDirectory(models.Model):
 
