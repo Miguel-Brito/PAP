@@ -62,7 +62,6 @@
                             <field name="exp_start_date" string="Expected start Date"/>
                             <field name="exp_duration" string="Expected duration"/>
                             <field name="time_type" string="Duration type"/>
-                            <field name="budget_accepting_date"/>
                          </group>
                     </group>
                     <notebook colspan="4">

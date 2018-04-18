@@ -57,7 +57,7 @@
                             <field name="pro_id" string="Professional"/>
                             <field name="client_id" string="Client"/>
                             <field name="proposal_id" default_focus="1" placeholder="Proposal"/>
-                            <field name="budget_id" default_focus="1" placeholder="budget"/>
+                            <field name="budget_id" default_focus="1" placeholder="Budget"/>
                         </group>
                         
                         <group>

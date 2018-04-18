@@ -21,6 +21,7 @@ class BudgetWebDirectory(models.Model):
 
     _name = "budget"
     _description = "Budgets"
+    _inherit = ['mail.thread']
     
     accepting_date = fields.Date(string="Date until proposals can be sent")
     partner_id = fields.Many2one('res.partner', string="Partner Budgets")
@@ -50,6 +51,7 @@ class ProposalWebDirectory(models.Model):
 
     _name = "proposal"
     _description = "Budgets Proposals"
+    _inherit = ['mail.thread']
     
 
     name = fields.Char(
@@ -58,7 +60,7 @@ class ProposalWebDirectory(models.Model):
 
     budget_id = fields.Many2one('budget', domain="[('state','=','confirmed')]", string="Budget")
     
-    budget_accepting_date = fields.Date(compute='_get_budget_ac_date',store=True ,string = "Budget accepting Date", readonly=True)
+#    budget_accepting_date = fields.Date(compute='_get_budget_ac_date',store=True ,string = "Budget accepting Date", readonly=True)
     
     partner_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Partner Budgets")
     description = fields.Text(string="Description")
@@ -104,27 +106,26 @@ class ProposalWebDirectory(models.Model):
         self.state = 'draft'
         
 ###################################################
-    @api.depends('budget_id')
-    def _get_budget_ac_date(self):
-        self.budget_accepting_date = self.budget_id.accepting_date
-        bd_ac_date = self.env['budget'].search([('name','=',self.budget_id.name)])
-        print '######################### onchange'
-        print self.budget_accepting_date
-        print bd_ac_date.accepting_date
+#    @api.depends('budget_id')
+#    def _get_budget_ac_date(self):
+#        self.budget_accepting_date = self.budget_id.accepting_date
+#        bd_ac_date = self.env['budget'].search([('name','=',self.budget_id.name)])
+#        print '######################### onchange'
+#        print self.budget_accepting_date
+#        print bd_ac_date.accepting_date
             
     @api.model
     def create(self, vals):
     	
-            	
-        bd_ac_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
-        
+        budget_accepting_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
+        budget_accepting_date =  budget_accepting_date.accepting_date
         print '##########################,,##############'	
-        print bd_ac_date.accepting_date
+        print budget_accepting_date
         print vals.keys()
         if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
             raise ValidationError(_('Start date must be greater than current date'))  
                   
-        if vals.get('exp_start_date') <= vals.get('budget_accepting_date'):
+        if vals.get('exp_start_date') <= budget_accepting_date:
             raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
                
         return super(ProposalWebDirectory, self).create(vals)           
@@ -146,7 +147,8 @@ class ServiceWebDirectory(models.Model):
 
     _name = "service"
     _description = "Services"
-
+    _inherit = ['mail.thread']
+    
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('service.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")

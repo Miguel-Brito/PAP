@@ -4,6 +4,7 @@
 import time
 from odoo import models, fields, api, _
 from datetime import datetime, date
+import threading
 from dateutil.relativedelta import relativedelta
 from odoo.exceptions import ValidationError, UserError
 
@@ -21,6 +22,7 @@ class BudgetWebDirectory(models.Model):
 
     _name = "budget"
     _description = "Budgets"
+    _inherit = ['mail.thread']
     
     accepting_date = fields.Date(string="Date until proposals can be sent")
     partner_id = fields.Many2one('res.partner', string="Partner Budgets")
@@ -50,6 +52,7 @@ class ProposalWebDirectory(models.Model):
 
     _name = "proposal"
     _description = "Budgets Proposals"
+    _inherit = ['mail.thread']
     
 
     name = fields.Char(
@@ -145,7 +148,8 @@ class ServiceWebDirectory(models.Model):
 
     _name = "service"
     _description = "Services"
-
+    _inherit = ['mail.thread']
+    
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('service.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
