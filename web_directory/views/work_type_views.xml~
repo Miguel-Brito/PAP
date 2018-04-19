@@ -46,7 +46,7 @@
 
                     <notebook colspan="4">
                         <page name='description_page' string="Description">
-
+                    <field name="description" placeholder="Description..."/>
                         </page>
                     </notebook>
                 </sheet>

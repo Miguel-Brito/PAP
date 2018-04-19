@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<template id="admin_page_layout">
+    <t t-call="website.layout">
+    <section class="navbar-dashboard-area">
+      <nav class="navbar navbar-default lightHeader navbar-dashboard" role="navigation">
+        <div class="container">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-dash">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-dash">
+            <ul class="nav navbar-nav mr0">
+              <li class="active">
+                <a href="dashboard.html"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a>
+              </li>
+              <li class="dropdown singleDrop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Listings <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="/admin/listings">All Listings</a></li>
+                  <li><a href="/admin/mylistings">My Listings</a></li>
+                  <li><a href="/admin/listings/add">Add Listings</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown singleDrop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> My Proposals <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="listings.html">My Proposals</a></li>
+                  <li><a href="add-listings.html">Add Proposals</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown singleDrop">
+                <a href="dashboard-reviews.html" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
+              </li>
+              <li><a href="oders.html"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> Orders</a></li>
+              <li><a href="dashboard.html#message" class="scrolling"><i class="fa fa-envelope icon-dash" aria-hidden="true"></i> Messages</a></li>
+              <li><a href="profile.html"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a></li>
+            </ul>
+            <div class="row adjustRow">
+              <div class="pull-right col-xs-12 col-sm-2">
+                <form class="navbar-form" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="q"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><i class="icon-listy icon-search-2"></i></button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>    
+    
+  <!-- Content Wrapper. Contains page content -->
+  
+      <t t-raw="0"/>  
+  
+
+  <!-- /.content-wrapper -->
+    </t>
+</template>
+
+
+<!-- DASHBOARD -->
+
+<template id="admin" name="Homepage Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'admin'"/>
+
+		<!-- Dashboard breadcrumb section -->
+		<div class="section dashboard-breadcrumb-section bg-dark">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-xs-12">
+		        <h2>Dashboard</h2>
+		        <ol class="breadcrumb">
+		          <li><a href="index.html">Home</a></li>
+		          <li class="active">Dashboard</li>
+		        </ol>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+         
+Colocar aqui conteúdo         
+         
+         
+  </t>
+</template>
+
+<!-- END DASHBOARD -->
+
+<!-- LISTINGS -->
+
+<template id="listings" name="Homepage Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'listings'"/>
+
+<!-- LISTINGS SECTION -->
+<section class="clearfix bg-dark listyPage">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="dashboardPageTitle">
+					<h2>My Listings</h2>
+				</div>
+				<div class="table-responsive"  data-pattern="priority-columns">
+					<table class="table listingsTable">
+						<thead>
+							<tr class="rowItem">
+								<th data-priority="">Listings</th>
+								<th data-priority="2">Description</th>
+								<th data-priority="3">Posted on</th>
+								<th data-priority="4">Last Edited</th>
+								<th data-priority="5">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr t-foreach="budgets" t-as="budget" class="rowItem">
+								<td>
+									<ul class="list-inline listingsInfo">
+										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
+										<li>
+											<h3 t-esc="budget.category_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
+											<h5><span class="cityName"><t t-esc="budget.city"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
+											<span class="category"><t t-esc="budget.category_id.name"/></span>
+											<p><strong>Max Price:</strong> <t t-esc="budget.max_price"/>€ </p>
+											
+											<p>Ref: <t t-esc="budget.name"/> </p>
+
+										</li>
+									</ul>
+								</td>
+								<td>
+								<p> sdgd jkwkjerh iyiweur uiyuyfwe jkuyfwuety</p>
+
+								</td>
+								<td><t t-esc="budget.create_date"/></td>
+								<td><t t-esc="budget.write_date"/></td>
+								<td>
+								<t t-set="controlo" t-value="'False'"/>
+								<t t-foreach="proposals" t-as="proposal">
+								
+								  <t t-if="proposal.budget_id.id == budget.id">
+                             <t t-set="controlo" t-value="'True'"/>
+                             
+								    <t t-if="budget.state == 'confirmed'">
+								     <span class="label label-info">Proposal Sent</span>
+								    </t>
+								
+								    <t t-elif="proposal.state == 'accepted'">
+								     <span class="label label-success">Accepted</span>
+								    </t>
+								    <t t-elif="proposal.state == 'rejected'">
+								     <span class="label label-danger">Rejected</span>
+								    </t>
+  
+								  </t>
+								  	
+								  	
+								</t>
+								<t t-if="controlo == 'False'">
+									 <t t-if="budget.state == 'done'">
+								     <span class="label label-info">Ended</span>
+								    </t>
+									 <t t-elif="budget.state == 'confirmed'">
+								     <span class="label label-info">Open</span>
+								    </t>
+								</t>
+								
+								
+								</td>
+								
+								
+								
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+				<div class="paginationCommon blogPagination text-center">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>        
+         
+         
+  </t>
+</template>
+
+</odoo>

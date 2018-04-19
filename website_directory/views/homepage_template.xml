@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+	
+		<template name="Homepage" priority="29" t-name="website.homepage">
+			<t t-call="website.layout">
+
+			<!-- BANNER SECTION -->
+			<section class="clearfix homeBanner" style="background-image: url(/website_directory/static/src/img/banner/banner1.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="banerInfo">
+								<h1>Explore. Discover. Share</h1>
+								<p>Listty helps to find out great things arround you</p>
+								<form class="form-inline" action="listing-sidebar-map-left.html" method="">
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-addon">Find</div>
+											<input type="text" class="form-control" id="findItem" placeholder="What are you looking for?"/>
+											<div class="input-group-addon addon-right"></div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<div class="input-group-addon">Near</div>
+											<input type="text" class="form-control" id="nearLocation" placeholder="Location"/>
+											<div class="input-group-addon addon-right"><i class="icon-listy icon-target" aria-hidden="true"></i></div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- INTEREST SECTION -->
+<section class="clearfix interestArea">
+	<div class="container">
+		<div class="page-header text-center">
+			<h2>What are You Interested in? <small>Explore and connect with great local businesses</small></h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-grid-full.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-tea-cup-1"></i>
+						Constructions
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-list-full.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-building"></i>
+						bla bla bla
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-grid.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-martini"></i>
+						Nightclubs
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-list-left.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-car-1"></i>
+						Auto Motive
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-grid-right.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-castle"></i>
+						Museums
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-list-right.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-television"></i>
+						Movie Theaters
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="category-grid-full.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-mall-1"></i>
+						Shopping
+					</span>
+				</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a href="all-business.html" class="interestContent">
+					<span>
+						<i class="icon-listy icon-more"></i>
+						View All
+					</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- COUNT UP SECTION -->
+<section class="clearfix countUpSection">
+	<div class="container">
+		<div class="page-header text-center">
+			<h2>Why Listy?</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-xs-12">
+				<div class="text-center countItem">
+					<div class="counter">140</div>
+					<div class="counterInfo bg-color-1">Color Variations</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="text-center countItem">
+					<div class="counter">120</div>
+					<div class="counterInfo bg-color-2">Layouts</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="text-center countItem">
+					<div class="counter">180</div>
+					<div class="counterInfo bg-color-3">Inner Pages</div>
+				</div>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<div class="text-center countItem">
+					<div class="counter">220</div>
+					<div class="counterInfo bg-color-4">Admin Pages</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="btnArea text-center">
+					<a href="#" class="btn btn-primary">Get it now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+			
+  
+			</t>
+		</template>
+			
+	</data>
+</odoo>

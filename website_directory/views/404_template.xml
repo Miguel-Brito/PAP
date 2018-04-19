@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+	
+      <template id="404_directory" name="Directory layout 404" inherit_id="website.404">
+      <xpath expr="//div[@id='wrap']" position="replace">
+
+
+
+		
+
+      </xpath>
+		</template>
+
+	</data>
+</odoo>

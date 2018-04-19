@@ -26,10 +26,12 @@ class BudgetWebDirectory(models.Model):
     
     accepting_date = fields.Date(string="Date until proposals can be sent")
     partner_id = fields.Many2one('res.partner', string="Partner Budgets")
+    user_id = fields.Many2one('res.users', 'Onsite Contact person')
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('budget.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
-    work_type = fields.Many2one('worktype', string="Budget work type")
+    work_type = fields.Many2many('worktype', string="Budget work type", domain="[('interest_category_id', '=',category_id )]")
+    category_id = fields.Many2one('res.partner.category')
     country_id = fields.Many2one('res.country', string='Country', required=True, default= 185)
     state_id = fields.Many2one('res.country.state', string="State", domain="[('country_id', '=', country_id)]")
     city = fields.Char(string="City")
@@ -64,6 +66,7 @@ class ProposalWebDirectory(models.Model):
 #    budget_accepting_date = fields.Date(compute='_get_budget_ac_date',store=True ,string = "Budget accepting Date", readonly=True)
     
     partner_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Partner Budgets")
+    user_id = fields.Many2one('res.users', 'Onsite Contact person')
     description = fields.Text(string="Description")
     exp_start_date = fields.Date(string="Expected start date" , required=False,
                               readonly=True,
@@ -120,9 +123,8 @@ class ProposalWebDirectory(models.Model):
     	
         budget_accepting_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
         budget_accepting_date =  budget_accepting_date.accepting_date
-        print '##########################,,##############'	
-        print budget_accepting_date
-        print vals.keys()
+ 
+        
         if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
             raise ValidationError(_('Start date must be greater than current date'))  
                   
@@ -133,12 +135,14 @@ class ProposalWebDirectory(models.Model):
 ##############################
     @api.multi
     def write(self, vals):
-        budget_id = self.budget_id.accepting_date  	  
-    	  
-        if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
-            raise ValidationError(_('Start date must be greater than current date'))  
+        budget_id_date = self.budget_id.accepting_date  	  
+        print '##########################,,##############'	
+        print self.exp_start_date
+        print budget_id_date
+        if self.exp_start_date <= datetime.now().strftime('%Y-%m-%d'):
+            raise ValidationError(_('Start date must be greater than current date:::::::::::'))  
                   
-        if vals.get('exp_start_date') <= budget_id:
+        if self.exp_start_date <= budget_id_date:
             raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
                
         return super(ProposalWebDirectory, self).write(vals) 
@@ -159,6 +163,7 @@ class ServiceWebDirectory(models.Model):
     budget_id = fields.Many2one('budget', string="Budgets Proposals")
     
     pro_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Professional")
+    user_id = fields.Many2one('res.users', 'Onsite Contact person')
     client_id = fields.Many2one('res.partner', string="Client")
     work_type_id = fields.Many2one('worktype', string="Service work type")
     

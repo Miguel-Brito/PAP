@@ -5,29 +5,30 @@
 ##############################################################################
 
 {
-    'name': "website_directory",
-    'summary': """
-        """,
-
+    'name':'Website Directory',
+    'category': 'Theme',
+    'website': 'https://www.communities.pt',
+    'summary': 'Website Directory',
+    'version':'1.0',
     'description': """
-        
-    """,
-
-    'author': 'Communities - Comunicações, Lda',
-    'company': 'Communities - Comunicações, Lda',
-    'website': "https://www.communities.pt/",
-    'category': 'Themes',
-    'version': '10.0.0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base','mail', 'website', 'website_portal', 'website_crm', 'mass_mailing'],
-
-    # always loaded
+    Website Directory
+==========================
+        """,
+    'author':'Communities',
     'data': [
-        
+        #'security/ir.model.access.csv',
+        'views/assets.xml',
+        'views/directory_template.xml',
+        'views/homepage_template.xml',
+        'views/contact_template.xml',
+        'views/aboutus_template.xml',
+        'views/404_template.xml',
+        'views/login_template.xml',
+        'views/admin/admin_templates.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [],
-    'images': [],
+    'depends': ['website', 'mail'],
     'installable': True,
+    'auto_install': False,
+    'application': True,
 }
+

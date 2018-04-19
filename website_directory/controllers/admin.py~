@@ -23,485 +23,87 @@ from odoo.osv.orm import browse_record
 logger = logging.getLogger(__name__)
 
 
-class NetworkAdminController(http.Controller):
+class DirectoryAdminController(http.Controller):
 
     @http.route('/admin', type='http', auth="user", website=True)
     def index(self, **kw):
         page = 'admin'
-        businesses = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
-        businesses_count = len(businesses)
-        networks = request.env['network.network'].sudo().search([('user_id','=', request.env.user.id)])
-        networks_count = len(networks)
-        devices = request.env['network.material'].sudo().search([('user_id','=', request.env.user.id)])
-        devices_count = len(devices)
-        devices_offline = 0
-        for value in devices:
-            if value.status == 'offline':
-                devices_offline = devices_offline + 1
-                
-        devices_updated = 0
-        for value in devices:
-            if value.status == 'updated':
-                devices_updated = devices_updated + 1
-                
-        devices_outdated = 0
-        for value in devices:
-            if value.status == 'outdated':
-                devices_outdated = devices_outdated + 1
-       
-       
-##### new dev    devolve users que logaram em qualquer devices  
-        contagem = []
-        visitor_7_day_count = 0
-        visitor_6_day_count = 0
-        visitor_5_day_count = 0
-        visitor_4_day_count = 0
-        visitor_3_day_count = 0
-        visitor_2_day_count = 0
-        visitor_1_day_count = 0
-        visitor_online = 0
-        visitors_by_device = []
+        
+
         
         
-        for value in devices:
+        return http.request.render('website_directory.admin')
 
-            visitors = request.env['radius.radacct'].sudo().search([('nasipaddress','=', value.ip)])
+###################################################################################### listings
 
-            visitor_device = 0
-            
-            for val in visitors:
-                contagem.append(val.username)
-                
-                if val.acctstarttime >= (datetime.datetime.now() - relativedelta(months=6)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=6)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_device = visitor_device + 1  
-                    controlo = True  
-                      
-                if val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=7)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=6)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_7_day_count = visitor_7_day_count + 1  
-                    	
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=6)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=5)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_6_day_count = visitor_6_day_count + 1
-                      
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=5)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=4)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_5_day_count = visitor_5_day_count + 1  
-
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=4)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=3)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_4_day_count = visitor_4_day_count + 1  
-
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=3)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=2)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_3_day_count = visitor_3_day_count + 1
-                    
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=2)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < (datetime.datetime.now() - relativedelta(days=1)).strftime('%Y-%m-%d 00:00:00'):
-                    visitor_2_day_count = visitor_2_day_count + 1        
-                    
-                elif val.acctstarttime >= (datetime.datetime.now() - relativedelta(days=1)).strftime('%Y-%m-%d 00:00:00') and val.acctstarttime < datetime.datetime.now().strftime('%Y-%m-%d 00:00:00'):
-                     visitor_1_day_count = visitor_1_day_count + 1
-                if not val.acctstoptime:
-                     visitor_online = visitor_online + 1	 
-                      
-            visitors_by_device.append(visitor_device) 
-                  	      	   
-        visitors_count = len(set(contagem))
-
-#####        
-#####
-        cont_users = []
-        new_users_7_month_count = 0
-        new_users_6_month_count = 0
-        new_users_5_month_count = 0
-        new_users_4_month_count = 0
-        new_users_3_month_count = 0
-        new_users_2_month_count = 0
-        new_users_1_month_count = 0
-        new_users = request.env['res.users'].sudo().search([])
-        for val in new_users:
-            cont_users.append(val.login)
-                            
-            if val.create_date >= (datetime.datetime.now() - relativedelta(months=6)).strftime('%Y-%m-01 00:00:00') and val.create_date < (datetime.datetime.now() - relativedelta(months=5)).strftime('%Y-%m-01 00:00:00'):
-                new_users_7_month_count = new_users_7_month_count + 1  
-                    	
-            elif val.create_date >= (datetime.datetime.now() - relativedelta(months=5)).strftime('%Y-%m-01 00:00:00') and val.create_date < (datetime.datetime.now() - relativedelta(months=4)).strftime('%Y-%m-01 00:00:00'):
-                new_users_6_month_count = new_users_6_month_count + 1
-                      
-            elif val.create_date >= (datetime.datetime.now() - relativedelta(months=4)).strftime('%Y-%m-01 00:00:00') and val.create_date < (datetime.datetime.now() - relativedelta(months=3)).strftime('%Y-%m-01 00:00:00'):
-                new_users_5_month_count = new_users_5_month_count + 1  
-
-            elif val.create_date >= (datetime.datetime.now() - relativedelta(months=3)).strftime('%Y-%m-01 00:00:00') and val.create_date < (datetime.datetime.now() - relativedelta(months=2)).strftime('%Y-%m-01 00:00:00'):
-                new_users_4_month_count = new_users_4_month_count + 1  
-
-            elif val.create_date >= (datetime.datetime.now() - relativedelta(months=2)).strftime('%Y-%m-01 00:00:00') and val.create_date < (datetime.datetime.now() - relativedelta(months=1)).strftime('%Y-%m-01 00:00:00'):
-                new_users_3_month_count = new_users_3_month_count + 1
-                    
-            elif val.create_date >= (datetime.datetime.now() - relativedelta(months=1)).strftime('%Y-%m-01 00:00:00') and val.create_date < datetime.datetime.now().strftime('%Y-%m-01 00:00:00'):
-                new_users_2_month_count = new_users_2_month_count + 1        
-                    
-            elif val.create_date >= datetime.datetime.now().strftime('%Y-%m-01 00:00:00'):
-                new_users_1_month_count = new_users_1_month_count + 1       
-#####
-#####
-        return http.request.render('website_liga.admin', {'businesses': businesses, 
-        'businesses_count': businesses_count, 
-        'networks': networks, 
-        'networks_count': networks_count, 
-        'devices': devices, 
-        'devices_count': devices_count, 
-        #'visitors': visitors, by miguel a 14:56
-        'visitors_count': visitors_count, 
-        'visitor_1_day_count': visitor_1_day_count, 
-        'visitor_2_day_count': visitor_2_day_count, 
-        'visitor_3_day_count': visitor_3_day_count, 
-        'visitor_4_day_count': visitor_4_day_count, 
-        'visitor_5_day_count': visitor_5_day_count, 
-        'visitor_6_day_count': visitor_6_day_count, 
-        'visitor_7_day_count': visitor_7_day_count,
-        'devices_offline': devices_offline, 
-        'devices_updated': devices_updated,
-        'devices_outdated': devices_outdated,
-        'new_users_7_month_count': new_users_7_month_count,
-        'new_users_6_month_count': new_users_6_month_count,
-        'new_users_5_month_count': new_users_5_month_count,
-        'new_users_4_month_count': new_users_4_month_count,
-        'new_users_3_month_count': new_users_3_month_count,
-        'new_users_2_month_count': new_users_2_month_count,
-        'new_users_1_month_count': new_users_1_month_count,
-        'visitor_online': visitor_online,
-        'visitors_by_device': visitors_by_device})
-
-###################################################################################### Statistics
-
-    @http.route('/admin/statistics', type='http', auth="user", website=True)
-    def statistics_account(self, **kwargs):
-    	
-        networks = request.env['network.network'].sudo().search([('user_id','=', request.env.user.id)])
-        networks_count = len(networks)
-        return http.request.render('website_liga.statistics_account', {'networks': networks, 'networks_count': networks_count} )    	
-
-###################################################################################### Map
-
-    @http.route('/admin/map', type='http', auth="user", website=True)
-    def map_account(self, **kwargs):
-    	
-        devices = request.env['network.material'].sudo().search([('status','!=', 'offline'), ('user_id','=', request.env.user.id)])
-        devices_offline = request.env['network.material'].sudo().search([('status','=', 'offline'), ('user_id','=', request.env.user.id)])
-        return http.request.render('website_liga.map_account', {'devices': devices, 'devices_offline': devices_offline} )    	
-
-###################################################################################### Networks
-
-    @http.route('/admin/networks', type='http', auth="user", website=True)
-    def networks_account(self, **kwargs):
-        networks = request.env['network.network'].sudo().search([('user_id','=', request.env.user.id)])
-        networks_count = len(networks)
-        return http.request.render('website_liga.networks_account', {'networks': networks, 'networks_count': networks_count} )
+    @http.route('/admin/listings', type='http', auth="user", website=True)
+    def listings_directory(self, **kwargs):
         
-    
-    @http.route('/admin/networks/add', type='http', auth="user", website=True)
-    def networks_account_add(self, **kwargs):
-        partners = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
-        countries = request.env['res.country'].search([])
-
-        return http.request.render('website_liga.networks_account_add', {'partners': partners, 'countries': countries} )        
+        budgets = request.env['budget'].sudo().search([])
+        proposals = request.env['proposal'].sudo().search([('user_id.id','=', request.env.user.id)])
+        print '#####################'
+        print proposals['state']
+        print budgets
         
+        print '#####################'
+    	  
+        return http.request.render('website_directory.listings', {'budgets': budgets, 'proposals': proposals} )    	
+
+###################################################################################### lista propostas
+
+    @http.route('/admin/proposals', type='http', auth="user", website=True)
+    def proposals_directory(self, **kw):
         
-    @http.route('/admin/networks/add/process', type='http', auth="user", website=True)
-    def networks_account_add_process(self, **kwargs):
-
-        values = {}
-	for field_name, field_value in kwargs.items():
-	    values[field_name] = field_value
-
-        insert_values = {'user_id': request.env.user.id, 'name': values['name']}        
+        proposals = request.env['proposal'].sudo().search([('user_id.id','=', request.env.user.id)])
         
-        if 'partner' in values: insert_values['contact_id'] = values['partner']
-        if 'network_ssid1_enabled' in values: insert_values['network_ssid1_enabled'] = values['network_ssid1_enabled']
-        if 'network_ssid1_hide' in values: insert_values['network_ssid1_hide'] = values['network_ssid1_hide']
-        if 'network_ssid1_ssid' in values: insert_values['network_ssid1_ssid'] = values['network_ssid1_ssid']
-        if 'network_ssid1_key' in values: insert_values['network_ssid1_key'] = values['network_ssid1_key']
-        if 'network_ssid1_isolate' in values: insert_values['network_ssid1_isolate'] = values['network_ssid1_isolate']
-        if 'network_ssid1_captive_portal' in values: insert_values['network_ssid1_captive_portal'] = values['network_ssid1_captive_portal']
-        if 'network_distance' in values: insert_values['network_distance'] = values['network_distance']
-        if 'network_client_channel' in values: insert_values['network_client_channel'] = values['network_client_channel']
-        if 'network_mesh_channel' in values: insert_values['network_mesh_channel'] = values['network_mesh_channel']
-        if 'network_lan_block' in values: insert_values['network_lan_block'] = values['network_lan_block']
-        if 'country' in values: insert_values['network_country'] = values['country']
+        return http.request.render('website_directory.proposals', {'proposals': proposals})
+
+###################################################################################### adiciona proposta 
+
+    @http.route('/admin/proposals/add', type='http', auth="user", website=True)
+    def proposals_directory_add(self, **kw):
         
-        new_network = request.env['network.network'].sudo().create(insert_values)
 
-        #Redirect them to thier account page
-        return werkzeug.utils.redirect("/admin/networks")        
+        return http.request.render('website_directory.proposals_add')
+        
+###################################################################################### processa nova proposta
 
+    @http.route('/admin/proposals/add/process', type='http', auth="user", website=True)
+    def proposals_directory_add_process(self, **kw):
+        
 
-    @http.route('/admin/networks/edit/<model("network.network"):network>', type='http', auth="user", website=True)
-    def networks_account_edit(self, network, **kwargs):
-        if network.user_id.id == request.env.user.id:
-            partners = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
+        return werkzeug.utils.redirect("/admin/proposals")
+        
+###################################################################################### edita uma proposta
+
+    @http.route('/admin/proposals/edit/<model("proposal"):id>', type='http', auth="user", website=True)
+    def proposals_directory_edit(self, id, **kwargs):
+        if id.user_id.id == request.env.user.id:
+            partners = request.env['res.partner'].sudo().search([('pro','=', True), ('user_id','=', request.env.user.id)])
             countries = request.env['res.country'].search([])
-            return http.request.render('website_liga.networks_account_edit', {'network': network, 'partners': partners, 'countries': countries} )
+            return http.request.render('website_directory.proposals_edit', {'id': id,'partners': partners, 'countries': countries} )
         else:
             return "ACCESS DENIED"
-
-
-    @http.route('/admin/networks/edit/process', type='http', auth="user", website=True)
-    def networks_account_edit_process(self, **kwargs):
+            
+###################################################################################### processa a alteração de uma proposta existente
+    @http.route('/admin/proposals/edit/process', type='http', auth="user", website=True)
+    def proposals_directory_edit_process(self, **kwargs):
 
         values = {}
 	for field_name, field_value in kwargs.items():
 	    values[field_name] = field_value
 
 
-        existing_record = request.env['network.network'].browse( int(values['user_id'] ) )
+        existing_record = request.env['proposal'].browse( int(values['user_id'] ) )
         
         if existing_record.user_id.id == request.env.user.id:
             updated_listing = existing_record.sudo().write({
             'name': values['name'], 
             'contact_id': values['partner'],
-            'network_ssid1_enabled': values['network_ssid1_enabled'],
-            'network_ssid1_hide': values['network_ssid1_hide'],
-            'network_ssid1_ssid': values['network_ssid1_ssid'],
-            'network_ssid1_key': values['network_ssid1_key'],
-            'network_ssid1_isolate': values['network_ssid1_isolate'],
-            'network_ssid1_captive_portal': values['network_ssid1_captive_portal'],
-            'system_ssh_password': values['system_ssh_password'],
-            'network_distance': values['network_distance'],
-            'network_client_channel': values['network_client_channel'],
-            'network_mesh_channel': values['network_mesh_channel'],
-            'network_lan_block': values['network_lan_block'],
             'network_country': values['country']
             })
 
             #Redirect them to thier account page
-            return werkzeug.utils.redirect("/admin/networks")
+            return werkzeug.utils.redirect("/admin/proposals")
         else:
-            return "Permission Denied"        
-        
-###################################################################################### Devices
-
-    @http.route('/admin/devices', type='http', auth="user", website=True)
-    def devices_account(self, **kwargs):
-        devices = request.env['network.material'].sudo().search([('user_id','=', request.env.user.id)])
-        devices_count = len(devices)
-        return http.request.render('website_liga.devices_account', {'devices': devices, 'devices_count': devices_count} )
-
-
-    @http.route('/admin/devices/add', type='http', auth="user", website=True)
-    def devices_account_add(self, **kwargs):
-    	
-        networks = request.env['network.network'].sudo().search([('user_id','=', request.env.user.id)])
-        partners = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
-
-        return http.request.render('website_liga.devices_account_add', {'networks': networks, 'partners': partners, } )        
-        
-        
-    @http.route('/admin/devices/add/process', type='http', auth="user", website=True)
-    def devices_account_add_process(self, **kwargs):
-
-        values = {}
-	for field_name, field_value in kwargs.items():
-	    values[field_name] = field_value
-
-        insert_values = {'user_id': request.env.user.id, 'name': values['name']}
-        
-        if 'mac_wan' in values: insert_values['mac_wan'] = values['mac_wan']       
-        if 'partner' in values: insert_values['contact_id'] = values['partner']
-        if 'network' in values: insert_values['network_id'] = values['network']
-        if 'network_ssid2_enabled' in values: insert_values['network_ssid2_enabled'] = values['network_ssid2_enabled']
-        if 'network_ssid2_hide' in values: insert_values['network_ssid2_hide'] = values['network_ssid2_hide']
-        if 'network_ssid2_ssid' in values: insert_values['network_ssid2_ssid'] = values['network_ssid2_ssid']
-        if 'network_ssid2_key' in values: insert_values['network_ssid2_key'] = values['network_ssid2_key']
-        if 'network_ssid2_isolate' in values: insert_values['network_ssid2_isolate'] = values['network_ssid2_isolate']
-        if 'network_ssid3_enabled' in values: insert_values['network_ssid3_enabled'] = values['network_ssid3_enabled']
-        if 'network_ssid3_hide' in values: insert_values['network_ssid3_hide'] = values['network_ssid3_hide']
-        if 'network_ssid3_ssid' in values: insert_values['network_ssid3_ssid'] = values['network_ssid3_ssid']
-        if 'network_ssid3_key' in values: insert_values['network_ssid3_key'] = values['network_ssid3_key']
-        if 'network_ssid3_isolate' in values: insert_values['network_ssid3_isolate'] = values['network_ssid3_isolate']
-        
-        if 'device_latitude' in values: insert_values['device_latitude'] = values['device_latitude']
-        if 'device_longitude' in values: insert_values['device_longitude'] = values['device_longitude']
-        
-        new_device = request.env['network.material'].sudo().create(insert_values)
-
-        #Redirect them to thier account page
-        return werkzeug.utils.redirect("/admin/devices") 
-
-
-    @http.route('/admin/devices/edit/<model("network.material"):device>', type='http', auth="user", website=True)
-    def devices_account_edit(self, device, **kwargs):
-        if device.user_id.id == request.env.user.id:
-            networks = request.env['network.network'].sudo().search([('user_id','=', request.env.user.id)])            
-            partners = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
-            return http.request.render('website_liga.devices_account_edit', {'device': device, 'partners': partners, 'networks': networks} )
-        else:
-            return "ACCESS DENIED"
-
-
-    @http.route('/admin/devices/edit/process', type='http', auth="user", website=True)
-    def devices_account_edit_process(self, **kwargs):
-
-        values = {}
-	for field_name, field_value in kwargs.items():
-	    values[field_name] = field_value
-
-
-        existing_record = request.env['network.material'].browse( int(values['user_id'] ) )
-        
-        if existing_record.user_id.id == request.env.user.id:
-            updated_listing = existing_record.sudo().write({
-            'name': values['name'], 
-            'mac_wan': values['mac_wan'], 
-            'contact_id': values['partner'], 
-            'network_id': values['network'],
-            'network_ssid2_enabled': values['network_ssid2_enabled'],
-            'network_ssid2_hide': values['network_ssid2_hide'],
-            'network_ssid2_ssid': values['network_ssid2_ssid'],
-            'network_ssid2_key': values['network_ssid2_key'],
-            'network_ssid2_isolate': values['network_ssid2_isolate'],
-            'network_ssid3_enabled': values['network_ssid3_enabled'],
-            'network_ssid3_hide': values['network_ssid3_hide'],
-            'network_ssid3_ssid': values['network_ssid3_ssid'],
-            'network_ssid3_key': values['network_ssid3_key'],
-            'network_ssid3_isolate': values['network_ssid3_isolate'],
-            'status': 'outdated'               
-            })
-
-            #Redirect them to thier account page
-            return werkzeug.utils.redirect("/admin/devices")
-        else:
-            return "Permission Denied"   
-            
-###################################################################################### Visitors
-
-    @http.route('/admin/visitors', type='http', auth="user", website=True)
-    def visitors_account(self, **kwargs):
-        devices = request.env['network.material'].sudo().search([('user_id','=', request.env.user.id)])
-        devices_count = len(devices)
-       
-##### new dev    devolve users que logaram em qualquer devices  
-        
-        
-        contagem = []
-        for value in devices:
-            visitors = request.env['radius.radacct'].sudo().search([('nasipaddress','=', value.ip), ('acctstarttime', '>', (datetime.datetime.now() - relativedelta(months=1)).strftime('%Y-%m-%d 00:00:00'))])
-            for val in visitors:
-                contagem.append(val)
-        visitors = contagem
-        visitors_count = len(contagem)
-#####   
-        
-        
-        return http.request.render('website_liga.visitors_account', {'devices': devices, 'devices_count': devices_count, 'visitors': visitors, 'visitors_count': visitors_count} )            
-            
-####################################
-    @http.route('/admin/visitors/6', type='http', auth="user", website=True)
-    def visitors_account_6(self, **kwargs):
-        devices = request.env['network.material'].sudo().search([('user_id','=', request.env.user.id)])
-        devices_count = len(devices)
-       
-##### new dev    devolve users que logaram em qualquer devices  
-        
-        
-        contagem = []
-        for value in devices:
-            visitors = request.env['radius.radacct'].sudo().search([('nasipaddress','=', value.ip), ('acctstarttime', '>', (datetime.datetime.now() - relativedelta(months=6)).strftime('%Y-%m-%d 00:00:00'))])
-            for val in visitors:
-                contagem.append(val)
-        visitors = contagem
-        visitors_count = len(contagem)
-#####   
-        
-        
-        return http.request.render('website_liga.visitors_account', {'devices': devices, 'devices_count': devices_count, 'visitors': visitors, 'visitors_count': visitors_count} )            
-            
-
-######################################################################################
-
-    @http.route('/admin/visitors/12', type='http', auth="user", website=True)
-    def visitors_account_6(self, **kwargs):
-        devices = request.env['network.material'].sudo().search([('user_id','=', request.env.user.id)])
-        devices_count = len(devices)
-       
-##### new dev    devolve users que logaram em qualquer devices  
-        
-        
-        contagem = []
-        for value in devices:
-            visitors = request.env['radius.radacct'].sudo().search([('nasipaddress','=', value.ip), ('acctstarttime', '>', (datetime.datetime.now() - relativedelta(months=12)).strftime('%Y-%m-%d 00:00:00'))])
-            for val in visitors:
-                contagem.append(val)
-        visitors = contagem
-        visitors_count = len(contagem)
-#####   
-        
-        
-        return http.request.render('website_liga.visitors_account', {'devices': devices, 'devices_count': devices_count, 'visitors': visitors, 'visitors_count': visitors_count} )            
-            
-
-######################################################################################
-
-
-
-    @http.route('/admin/account', type='http', auth="user", website=True)
-    def directory_account(self, **kwargs):
-        businesses = request.env['res.partner'].sudo().search([('in_directory','=', True), ('business_owner','=', request.env.user.id)])
-        businesses_count = len(businesses)
-        return http.request.render('website_liga.directory_account', {'businesses': businesses, 'businesses_count': businesses_count} )
-
-    @http.route('/admin/account/business/edit/<model("res.partner"):directory_company>', type='http', auth="user", website=True)
-    def directory_account_business_edit(self, directory_company, **kwargs):
-        if directory_company.in_directory and directory_company.business_owner.id == request.env.user.id:
-            countries = request.env['res.country'].search([])
-            states = request.env['res.country.state'].search([])
-            return http.request.render('website_liga.directory_account_business_edit', {'directory_company': directory_company, 'countries': countries,'states': states} )
-        else:
-            return "ACCESS DENIED"
-
-    @http.route('/admin/account/business/add', type='http', auth="user", website=True)
-    def directory_account_business_add(self, **kwargs):
-        countries = request.env['res.country'].search([])
-        states = request.env['res.country.state'].search([])
-        return http.request.render('website_liga.directory_account_business_add', {'countries': countries,'states': states} )
-
-    @http.route('/admin/account/business/edit/process', type='http', auth="user", website=True)
-    def directory_account_business_edit_process(self, **kwargs):
-
-        values = {}
-	for field_name, field_value in kwargs.items():
-	    values[field_name] = field_value
-
-        business_logo = base64.encodestring(values['logo'].read() )
-
-        existing_record = request.env['res.partner'].browse( int(values['business_id'] ) )
-        
-        if existing_record.in_directory and existing_record.business_owner.id == request.env.user.id:
-            updated_listing = existing_record.sudo().write({'name': values['name'], 'email': values['email'], 'phone': values['phone'], 'mobile': values['mobile'], 'vat': values['vat'], 'street': values['street'], 'city': values['city'], 'state_id': values['state'], 'country_id': values['country'], 'zip': values['zip'], 'directory_description': values['description'], 'image': business_logo })
-
-            #Redirect them to thier account page
-            return werkzeug.utils.redirect("/admin/account")
-        else:
-            return "Permission Denied"
-
-    @http.route('/admin/account/business/add/process', type='http', auth="user", website=True)
-    def directory_account_business_add_process(self, **kwargs):
-
-        values = {}
-	for field_name, field_value in kwargs.items():
-	    values[field_name] = field_value
-
-        business_logo = base64.encodestring(values['logo'].read() )
-                
-        insert_values = {'business_owner': request.env.user.id, 'in_directory': True, 'name': values['name']}
-
-        if 'email' in values: insert_values['email'] = values['email']
-        if 'phone' in values: insert_values['phone'] = values['phone']
-        if 'mobile' in values: insert_values['mobile'] = values['mobile']
-        if 'vat' in values: insert_values['vat'] = values['vat']
-        if 'street' in values: insert_values['street'] = values['street']
-        if 'city' in values: insert_values['city'] = values['city']
-        if 'state_id' in values: insert_values['state_id'] = values['state']
-        if 'country_id' in values: insert_values['country_id'] = values['country']
-        if 'zip' in values: insert_values['zip'] = values['zip']
-        if 'directory_description' in values: insert_values['directory_description'] = values['directory_description']
-        insert_values['image'] =  business_logo
-        
-        new_listing = request.env['res.partner'].sudo().create(insert_values)
-
-        #Redirect them to thier account page
-        return werkzeug.utils.redirect("/admin/account")
+            return "Permission Denied"     

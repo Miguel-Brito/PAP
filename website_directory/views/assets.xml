@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+
+    <template id="directory_assets_frontend" name="Website Directory Frontend Assets" inherit_id="website.assets_frontend">
+      <xpath expr="." position="inside">
+
+
+		  <!-- PLUGINS CSS STYLE -->
+		  <link href="/website_directory/static/src/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/listtyicons/style.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/datepicker/datepicker.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/selectbox/select_option1.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/isotope/isotope.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/map/css/map.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/rateyo/jquery.rateyo.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/animate/animate.css" rel="stylesheet"/>
+		
+		  <!-- GOOGLE FONT -->
+		  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet"/>
+		  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"/>
+		  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+		  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet"/>
+		
+		  <!-- CUSTOM CSS -->
+		  <link href="/website_directory/static/src/css/style.css" rel="stylesheet"/>
+		
+		  <link rel="stylesheet" href="/website_directory/static/src/css/default.css" id="option_color"/>
+		
+		  <!-- FAVICON -->
+		  <link href="/website_directory/static/src/img/favicon.png" rel="shortcut icon"/>
+
+        
+      </xpath>
+    </template>
+
+  </data>
+</odoo>

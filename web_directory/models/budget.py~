@@ -4,6 +4,7 @@
 import time
 from odoo import models, fields, api, _
 from datetime import datetime, date
+import threading
 from dateutil.relativedelta import relativedelta
 from odoo.exceptions import ValidationError, UserError
 
@@ -25,10 +26,12 @@ class BudgetWebDirectory(models.Model):
     
     accepting_date = fields.Date(string="Date until proposals can be sent")
     partner_id = fields.Many2one('res.partner', string="Partner Budgets")
+    user_id = fields.Many2one('res.users', 'Onsite Contact person')
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('budget.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
-    work_type = fields.Many2one('worktype', string="Budget work type")
+    work_type = fields.Many2many('worktype', string="Budget work type", domain="[('interest_category_id', '=',category_id )]")
+    category_id = fields.Many2one('res.partner.category')
     country_id = fields.Many2one('res.country', string='Country', required=True, default= 185)
     state_id = fields.Many2one('res.country.state', string="State", domain="[('country_id', '=', country_id)]")
     city = fields.Char(string="City")
@@ -119,9 +122,8 @@ class ProposalWebDirectory(models.Model):
     	
         budget_accepting_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
         budget_accepting_date =  budget_accepting_date.accepting_date
-        print '##########################,,##############'	
-        print budget_accepting_date
-        print vals.keys()
+ 
+        
         if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
             raise ValidationError(_('Start date must be greater than current date'))  
                   
@@ -132,12 +134,14 @@ class ProposalWebDirectory(models.Model):
 ##############################
     @api.multi
     def write(self, vals):
-        budget_id = self.budget_id.accepting_date  	  
-    	  
-        if vals.get('exp_start_date') <= datetime.now().strftime('%Y-%m-%d'):
-            raise ValidationError(_('Start date must be greater than current date'))  
+        budget_id_date = self.budget_id.accepting_date  	  
+        print '##########################,,##############'	
+        print self.exp_start_date
+        print budget_id_date
+        if self.exp_start_date <= datetime.now().strftime('%Y-%m-%d'):
+            raise ValidationError(_('Start date must be greater than current date:::::::::::'))  
                   
-        if vals.get('exp_start_date') <= budget_id:
+        if self.exp_start_date <= budget_id_date:
             raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
                
         return super(ProposalWebDirectory, self).write(vals) 

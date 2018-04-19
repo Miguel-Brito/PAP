@@ -43,6 +43,10 @@
                         </div>-->
                     </div>
 
+                    <group>
+                        <field name="interest_category_id"/>
+                    </group>
+
 
                     <notebook colspan="4">
                         <page name='description_page' string="Description">

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+	
+      <template id="aboutus_directory" name="Directory layout aboutus" inherit_id="website.aboutus">
+      <xpath expr="//div[@id='wrap']" position="replace">
+
+		
+
+
+      </xpath>
+		</template>
+
+	</data>
+</odoo>

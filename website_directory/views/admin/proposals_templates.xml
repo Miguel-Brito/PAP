@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- PROPOSALS -->
+
+<template id="proposals" name="proposals Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'proposals'"/>
+
+<!-- PROPOSALS SECTION -->
+<section class="clearfix bg-dark listyPage">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="dashboardPageTitle">
+					<h2>My Proposals</h2>
+				</div>
+				<div class="table-responsive"  data-pattern="priority-columns">
+					<table class="table listingsTable">
+						<thead>
+							<tr class="rowItem">
+								<th data-priority="">Proposals</th>
+								<th data-priority="2">Description</th>
+								<th data-priority="3">Posted on</th>
+								<th data-priority="4">Last Edited</th>
+								<th data-priority="5">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr t-foreach="proposals" t-as="proposal" class="rowItem">
+								<td>
+									<ul class="list-inline listingsInfo">
+										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
+										<li>
+											<h3 t-esc="proposal.budget_id.work_type.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
+											<h5><span class="cityName"><t t-esc="proposal.budget_id.city"/>,</span> <strong><t t-esc="proposal.budget_id.state_id.name"/></strong></h5>
+											<span class="category"><t t-esc="proposal.budget_id.category_id.name"/></span>
+											<p><strong>Max Price:</strong> <t t-esc="proposal.budget_id.max_price"/>€ </p>
+											
+											<p>Ref: <t t-esc="proposal.name"/> </p>
+
+										</li>
+									</ul>
+								</td>
+								<td>
+								<p> sdgd jkwkjerh iyiweur uiyuyfwe jkuyfwuety</p>
+
+								</td>
+								<td><t t-esc="proposal.create_date"/></td>
+								<td><t t-esc="proposal.write_date"/></td>
+								<td>
+
+								     <span class="label label-success"><t t-esc="proposal.state"/></span> 
+								
+								</td>
+
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+				<div class="paginationCommon blogPagination text-center">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>        
+         
+         
+  </t>
+</template>
+
+<!-- PROPOSALS ADD-->
+
+<template id="proposals_add" name="Proposals Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'proposals'"/>
+
+      
+         colocar aqui form add
+
+         
+         
+  </t>
+</template>
+
+<!-- PROPOSALS ADD-->
+
+<template id="proposals_edit" name="Proposals Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'proposals'"/>
+
+      
+         colocar aqui form edit --- <t t-esc="proposal.name"/>
+         
+  </t>
+</template>
+
+
+</odoo>
