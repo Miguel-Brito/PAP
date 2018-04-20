@@ -11,17 +11,17 @@ from odoo.exceptions import ValidationError, UserError
 class WorkTypeWebDirectory(models.Model):
 
     _name = "worktype"
-    _description = "Budget Work Type"
+    _description = "Budget Request Work Type"
     
     name = fields.Char(string="Name")
     interest_category_id = fields.Many2one('res.partner.category')
     description = fields.Text(string="Description")
 
 		
-class BudgetWebDirectory(models.Model):
+class BudgetRequestWebDirectory(models.Model):
 
-    _name = "budget"
-    _description = "Budgets"
+    _name = "budget_request"
+    _description = "budget requests"
     _inherit = ['mail.thread']
     
     accepting_date = fields.Date(string="Date until proposals can be sent")
@@ -30,7 +30,7 @@ class BudgetWebDirectory(models.Model):
     name = fields.Char(
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('budget.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
-    work_type = fields.Many2many('worktype', string="Budget work type", domain="[('interest_category_id', '=',category_id )]")
+    work_type = fields.Many2many('worktype', string="Budget Request work type", domain="[('interest_category_id', '=',category_id )]")
     category_id = fields.Many2one('res.partner.category')
     country_id = fields.Many2one('res.country', string='Country', required=True, default= 185)
     state_id = fields.Many2one('res.country.state', string="State", domain="[('country_id', '=', country_id)]")
@@ -50,10 +50,13 @@ class BudgetWebDirectory(models.Model):
         self.state = 'draft'        
         
 
+
+
+
 class ProposalWebDirectory(models.Model):
 
     _name = "proposal"
-    _description = "Budgets Proposals"
+    _description = "budget requests Proposals"
     _inherit = ['mail.thread']
     
 
@@ -61,11 +64,12 @@ class ProposalWebDirectory(models.Model):
         'Number', default=lambda self: self.env['ir.sequence'].next_by_code('proposal.code.serial'),
         required=True, readonly=True, help="Unique Process/Serial Number")
 
-    budget_id = fields.Many2one('budget', domain="[('state','=','confirmed')]", string="Budget")
+    budget_request_id = fields.Many2one('budget_request', domain="[('state','=','confirmed')]", string="budget_request")
     
 #    budget_accepting_date = fields.Date(compute='_get_budget_ac_date',store=True ,string = "Budget accepting Date", readonly=True)
     
     partner_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Partner Budgets")
+    client_id = fields.Many2one('res.partner', compute='_get_client_id', store=True, string="Partner Budgets")
     user_id = fields.Many2one('res.users', 'Onsite Contact person')
     description = fields.Text(string="Description")
     exp_start_date = fields.Date(string="Expected start date" , required=False,
@@ -76,7 +80,11 @@ class ProposalWebDirectory(models.Model):
     state = fields.Selection([('draft', 'Draft'), ('confirmed', 'Confirmed'), ('accepted', 'Accepted'), ('rejected', 'Rejected')],
                              'State', readonly=True,
                              default=lambda *a: 'draft')
-
+ 
+    @api.depends('budget_request_id', 'client_id')
+    def _get_client_id(self):
+        self.client_id = self.budget_request_id.partner_id
+        
     
     
     @api.one
@@ -97,10 +105,10 @@ class ProposalWebDirectory(models.Model):
         
         
         
-        record = self.env['service'].create({'proposal_id': self.id, 'client_id': self.budget_id.partner_id.id, 'pro_id': self.partner_id.id, 'work_type_id': self.budget_id.work_type.id, 'budget_id': self.budget_id.id, 'exp_end_date':exp_end_date})        
+        record = self.env['service'].create({'proposal_id': self.id, 'client_id': self.budget_request_id.partner_id.id, 'pro_id': self.partner_id.id, 'work_type_id': self.budget_request_id.work_type.id, 'budget_request_id': self.budget_request_id.id, 'exp_end_date':self.exp_end_date})        
         
         
-        for prop in self.env['proposal'].search([('budget_id','=',int(self.budget_id))]):
+        for prop in self.env['proposal'].search([('budget_request_id','=',int(self.budget_request_id))]):
             if prop.id != self.id:
             	prop.state = 'rejected'
             		
@@ -121,7 +129,7 @@ class ProposalWebDirectory(models.Model):
     @api.model
     def create(self, vals):
     	
-        budget_accepting_date = self.env['budget'].search([('id','=',vals.get('budget_id'))])
+        budget_accepting_date = self.env['budget_request'].search([('id','=',vals.get('budget_id'))])
         budget_accepting_date =  budget_accepting_date.accepting_date
  
         
@@ -135,14 +143,14 @@ class ProposalWebDirectory(models.Model):
 ##############################
     @api.multi
     def write(self, vals):
-        budget_id_date = self.budget_id.accepting_date  	  
+        budget_request_id_date = self.budget_request_id.accepting_date  	  
         print '##########################,,##############'	
         print self.exp_start_date
-        print budget_id_date
+        print budget_request_id_date
         if self.exp_start_date <= datetime.now().strftime('%Y-%m-%d'):
             raise ValidationError(_('Start date must be greater than current date:::::::::::'))  
                   
-        if self.exp_start_date <= budget_id_date:
+        if self.exp_start_date <= budget_request_id_date:
             raise ValidationError(_('The start date must be greater than the date until proposals are accepted')) 
                
         return super(ProposalWebDirectory, self).write(vals) 
@@ -160,7 +168,7 @@ class ServiceWebDirectory(models.Model):
 
     
     proposal_id = fields.Many2one('proposal',string="Proposal")
-    budget_id = fields.Many2one('budget', string="Budgets Proposals")
+    budget_request_id = fields.Many2one('budget_request', string="Budget Requests Proposals")
     
     pro_id = fields.Many2one('res.partner', domain="[('pro','=',True)]" ,string="Professional")
     user_id = fields.Many2one('res.users', 'Onsite Contact person')
@@ -177,7 +185,7 @@ class ServiceWebDirectory(models.Model):
     
     @api.onchange('proposal_id') 
     def get_client(self):
-        self.client_id = self.proposal_id.budget_id.partner_id
+        self.client_id = self.proposal_id.budget_request_id.partner_id
         
     @api.onchange('proposal_id')    
     def get_pro(self):
@@ -185,7 +193,7 @@ class ServiceWebDirectory(models.Model):
          
     @api.onchange('proposal_id')   
     def get_work_type(self):
-        self.work_type_id = self.proposal_id.budget_id.work_type.id              
+        self.work_type_id = self.proposal_id.budget_request_id.work_type.id              
     
     @api.onchange('proposal_id')     	
     def get_end_date(self):

@@ -42,7 +42,7 @@
                 <sheet>
                     <div class="oe_title">
                         <h1>
-                          <field name="name" default_focus="1" placeholder="Service Id"/>  
+                          <field name="name" default_focus="1" placeholder="Service Id"/> 
                         </h1>
                         <div class="o_row">
 
@@ -57,7 +57,7 @@
                             <field name="pro_id" string="Professional"/>
                             <field name="client_id" string="Client"/>
                             <field name="proposal_id" default_focus="1" placeholder="Proposal"/>
-                            <field name="budget_id" default_focus="1" placeholder="Budget"/>
+                            <field name="budget_request_id" default_focus="1" placeholder="budget request"/>
                         </group>
                         
                         <group>

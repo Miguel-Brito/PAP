@@ -127,6 +127,7 @@ Colocar aqui conteúdo
 								<th data-priority="3">Posted on</th>
 								<th data-priority="4">Last Edited</th>
 								<th data-priority="5">Status</th>
+								<th data-priority="5">Action</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -146,43 +147,31 @@ Colocar aqui conteúdo
 									</ul>
 								</td>
 								<td>
-								<p> sdgd jkwkjerh iyiweur uiyuyfwe jkuyfwuety</p>
+								<p> <t t-esc="budget.description"/></p>
 
 								</td>
 								<td><t t-esc="budget.create_date"/></td>
 								<td><t t-esc="budget.write_date"/></td>
 								<td>
-								<t t-set="controlo" t-value="'False'"/>
-								<t t-foreach="proposals" t-as="proposal">
-								
-								  <t t-if="proposal.budget_id.id == budget.id">
-                             <t t-set="controlo" t-value="'True'"/>
-                             
+
+
 								    <t t-if="budget.state == 'confirmed'">
-								     <span class="label label-info">Proposal Sent</span>
+								     <span class="label label-success"><t t-esc="budget.state"/></span>
 								    </t>
 								
-								    <t t-elif="proposal.state == 'accepted'">
-								     <span class="label label-success">Accepted</span>
+								    <t t-elif="budget.state == 'done'">
+								     <span class="label label-info"><t t-esc="budget.state"/></span>
 								    </t>
-								    <t t-elif="proposal.state == 'rejected'">
-								     <span class="label label-danger">Rejected</span>
-								    </t>
-  
-								  </t>
-								  	
-								  	
-								</t>
-								<t t-if="controlo == 'False'">
-									 <t t-if="budget.state == 'done'">
-								     <span class="label label-info">Ended</span>
-								    </t>
-									 <t t-elif="budget.state == 'confirmed'">
-								     <span class="label label-info">Open</span>
-								    </t>
-								</t>
+
+								</td>
 								
 								
+								<td>
+								<form method="POST" action="/admin/proposals/add" enctype="multipart/form-data">
+								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+								<input type="hidden" name="budget" t-att-value="budget.id"/>
+								<button type="submit" class="btn-submit">Submit</button>
+								</form>
 								</td>
 								
 								
@@ -218,6 +207,30 @@ Colocar aqui conteúdo
 	</div>
 </section>        
          
+         
+  </t>
+</template>
+
+<!-- My LISTINGS-->
+
+<template id="mylistings" name="Listings Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'mylistings'"/>
+
+      
+         colocar aqui form
+         
+  </t>
+</template>
+
+<!-- LISTINGS ADD-->
+
+<template id="listings_add" name="Listings Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'listings_add'"/>
+
+      
+         colocar aqui form 
          
   </t>
 </template>

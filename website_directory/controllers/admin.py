@@ -26,7 +26,7 @@ logger = logging.getLogger(__name__)
 class DirectoryAdminController(http.Controller):
 
     @http.route('/admin', type='http', auth="user", website=True)
-    def index(self, **kw):
+    def index(self, **kwargs):
         page = 'admin'
         
 
@@ -39,38 +39,74 @@ class DirectoryAdminController(http.Controller):
     @http.route('/admin/listings', type='http', auth="user", website=True)
     def listings_directory(self, **kwargs):
         
-        budgets = request.env['budget'].sudo().search([])
+        budgets = request.env['budget_request'].sudo().search([])
         proposals = request.env['proposal'].sudo().search([('user_id.id','=', request.env.user.id)])
-        print '#####################'
-        print proposals['state']
-        print budgets
-        
-        print '#####################'
-    	  
-        return http.request.render('website_directory.listings', {'budgets': budgets, 'proposals': proposals} )    	
 
+    	  
+        return http.request.render('website_directory.listings', {'budgets': budgets, 'proposals': proposals} ) 
+        
+        
+###################################################################################### MY listings
+
+    @http.route('/admin/mylistings', type='http', auth="user", website=True)
+    def mylistings_directory(self, **kwargs):
+        
+        budgets = request.env['budget_request'].sudo().search([('user_id.id','=', request.env.user.id)])
+        print request.env.user.id
+        print budgets.user_id.id
+
+    	  
+        return http.request.render('website_directory.mylistings', {'budgets': budgets} )    	
+   	
+###################################################################################### listings Add
+
+    @http.route('/admin/listings/add', type='http', auth="user", website=True)
+    def listings_directory_add(self, **kwargs):
+
+
+    	  
+        return http.request.render('website_directory.listings_add' )    	
 ###################################################################################### lista propostas
 
     @http.route('/admin/proposals', type='http', auth="user", website=True)
-    def proposals_directory(self, **kw):
+    def proposals_directory(self, **kwargs):
         
         proposals = request.env['proposal'].sudo().search([('user_id.id','=', request.env.user.id)])
-        
+        print request.env.user.id
+        for proposal in proposals:
+            print proposal.user_id
+            	
         return http.request.render('website_directory.proposals', {'proposals': proposals})
 
 ###################################################################################### adiciona proposta 
 
     @http.route('/admin/proposals/add', type='http', auth="user", website=True)
-    def proposals_directory_add(self, **kw):
-        
+    def proposals_directory_add(self, **kwargs):
+    	
+        budgets = request.env['budget_request'].sudo().search([])
 
-        return http.request.render('website_directory.proposals_add')
+        return http.request.render('website_directory.proposals_add', {'budgets': budgets})
         
 ###################################################################################### processa nova proposta
 
     @http.route('/admin/proposals/add/process', type='http', auth="user", website=True)
-    def proposals_directory_add_process(self, **kw):
+    def proposals_directory_add_process(self, **kwargs):
+
+        values = {}
+	for field_name, field_value in kwargs.items():
+	    values[field_name] = field_value
+
+        insert_values = {'user_id': request.env.user.id, 'partner_id': request.env.user.partner_id.id} 
         
+        if 'budget' in values: insert_values['budget_request_id'] = values['budget']
+        #if 'xxxx' in values: insert_values['client_id'] = values['xxxx']
+        if 'description' in values: insert_values['description'] = values['description']
+        if 'start_date' in values: insert_values['exp_start_date'] = "2018-05-31"#values['start_date']
+        if 'exp_duration' in values: insert_values['exp_duration'] = values['exp_duration']
+        if 'time_type' in values: insert_values['time_type'] = values['time_type']
+        if 'xxxx' in values: insert_values['state'] = values['xxxx']
+        
+        new_proposal = request.env['proposal'].sudo().create(insert_values)
 
         return werkzeug.utils.redirect("/admin/proposals")
         

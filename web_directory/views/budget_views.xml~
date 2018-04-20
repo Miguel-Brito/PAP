@@ -3,24 +3,27 @@
     <data>
        
 <!-- view lista -->
-        <record id="view_budget_tree" model="ir.ui.view">
-            <field name="name">budget.tree</field>
-            <field name="model">budget</field>
+        <record id="view_budget_request_tree" model="ir.ui.view">
+            <field name="name">budget_request.tree</field>
+            <field name="model">budget_request</field>
             <field eval="8" name="priority"/>
             <field name="arch" type="xml">
-                <tree string="Budgets" default_order="create_date desc">
+                <tree string="Budget requests" default_order="create_date desc">
                     <field name="name" string="Number"/>
                     <field name="partner_id" string="Partner"/>
                     <field name="work_type" string="Work Type"/>
                     <field name="accepting_date" string="Accepting Date"/>
+                    <field name="min_price" string="Minimum Price"/>
+                    <field name="max_price" string="Maximum Price"/>
+                    
                 </tree>
             </field>
         </record>
         
 <!-- view formulario -->
-        <record id="view_budget_form" model="ir.ui.view">
-            <field name="name">budget.form</field>
-            <field name="model">budget</field>
+        <record id="view_budget_request_form" model="ir.ui.view">
+            <field name="name">budget_request.form</field>
+            <field name="model">budget_request</field>
             <field name="priority" eval="1"/>
             <field name="arch" type="xml">
                 <form string="Processo">
@@ -43,6 +46,7 @@
                         <div class="o_row">
                             <field name="partner_id"
                                 placeholder="Partner"/>
+                            <field name="user_id" invisible="true" readonly="true"/>
                         </div>
                     </div>
 
@@ -56,6 +60,8 @@
                             <field name="category_id"/>
                             <field name="work_type"/>
                             <field name="accepting_date" string="Accepting Date"/>
+                            <field name="min_price" string="Minimum Price"/>
+                            <field name="max_price" string="Maximum Price"/>
                         </group>
                     </group>
 
@@ -74,9 +80,9 @@
         </record>
 
 <!-- view pesquisa -->
-       <record id="view_res_budget_filter" model="ir.ui.view">
-            <field name="name">budget.select</field>
-            <field name="model">budget</field>
+       <record id="view_res_budget_request_filter" model="ir.ui.view">
+            <field name="name">budget_request.select</field>
+            <field name="model">budget_request</field>
             <field name="arch" type="xml">
                 <search string="Procurar Processo">
                    <field name="name"
@@ -101,38 +107,38 @@
         </record>
 
 
-        <record id="action_budget_form" model="ir.actions.act_window">
-            <field name="name">Budgets</field>
+        <record id="action_budget_request_form" model="ir.actions.act_window">
+            <field name="name">budget_requests</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">budget</field>
+            <field name="res_model">budget_request</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree</field>
-            <field name="search_view_id" ref="view_res_budget_filter"/>
+            <field name="search_view_id" ref="view_res_budget_request_filter"/>
             <field name="help" type="html">
               <p class="oe_view_nocontent_create">
                 Aqui pode criar os seus ....
               </p>
             </field>
         </record>
-        <record id="action_budget_form_view2" model="ir.actions.act_window.view">
+        <record id="action_budget_request_form_view2" model="ir.actions.act_window.view">
             <field eval="2" name="sequence"/>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="view_budget_form"/>
-            <field name="act_window_id" ref="action_budget_form"/>
+            <field name="view_id" ref="view_budget_request_form"/>
+            <field name="act_window_id" ref="action_budget_request_form"/>
         </record>
-        <record id="action_budget_tree_view1" model="ir.actions.act_window.view">
+        <record id="action_budget_request_tree_view1" model="ir.actions.act_window.view">
             <field name="sequence" eval="1"/>
             <field name="view_mode">tree</field>
-            <field name="view_id" ref="view_budget_tree"/>
-            <field name="act_window_id" ref="action_budget_form"/>
+            <field name="view_id" ref="view_budget_request_tree"/>
+            <field name="act_window_id" ref="action_budget_request_form"/>
         </record>        
         
-    <menuitem name="Budgets"
-        id="menu_budget"
+    <menuitem name="budget_requests"
+        id="menu_budget_request"
         sequence="4"
-        action="action_budget_form"
+        action="action_budget_request_form"
         web_icon="web_directory,static/description/icon.png"/>
 
-        <menuitem id="menu_budget_form" name="Budgets" parent="menu_budget" action="action_budget_form" sequence="11"/>
+        <menuitem id="menu_budget_request_form" name="budget_requests" parent="menu_budget_request" action="action_budget_request_form" sequence="11"/>
     </data>
 </odoo>
