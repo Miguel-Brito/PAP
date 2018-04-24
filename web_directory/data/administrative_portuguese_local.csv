@@ -1,0 +1,4051 @@
+Id;code;name;País/Id.;state_id;county_id
+;010101;Agadão;185;248;Agueda
+;010102;Aguada de Baixo;185;248;Agueda
+;010103;Aguada de Cima;185;248;Agueda
+;010104;Águeda;185;248;Agueda
+;010105;Barrô;185;248;Agueda
+;010106;Belazaima do Chão;185;248;Agueda
+;010107;Castanheira do Vouga;185;248;Agueda
+;010108;Espinhel;185;248;Agueda
+;010109;Fermentelos;185;248;Agueda
+;010110;Lamas do Vouga;185;248;Agueda
+;010111;Macieira de Alcoba;185;248;Agueda
+;010112;Macinhata do Vouga;185;248;Agueda
+;010113;Óis da Ribeira;185;248;Agueda
+;010114;Préstimo;185;248;Agueda
+;010115;Recardães;185;248;Agueda
+;010116;Segadães;185;248;Agueda
+;010117;Travassô;185;248;Agueda
+;010118;Trofa;185;248;Agueda
+;010119;Valongo do Vouga;185;248;Agueda
+;010120;Borralha;185;248;Agueda
+;010201;Albergaria-a-Velha;185;248;Albergaria-a-Velha
+;010202;Alquerubim;185;248;Albergaria-a-Velha
+;010203;Angeja;185;248;Albergaria-a-Velha
+;010204;Branca;185;248;Albergaria-a-Velha
+;010205;Frossos;185;248;Albergaria-a-Velha
+;010206;Ribeira de Fráguas;185;248;Albergaria-a-Velha
+;010207;São João de Loure;185;248;Albergaria-a-Velha
+;010208;Valmaior;185;248;Albergaria-a-Velha
+;010301;Amoreira da Gândara;185;248;Anadia
+;010302;Ancas;185;248;Anadia
+;010303;Arcos;185;248;Anadia
+;010304;Avelãs de Caminho;185;248;Anadia
+;010305;Avelãs de Cima;185;248;Anadia
+;010306;Mogofores;185;248;Anadia
+;010307;Moita;185;248;Anadia
+;010308;Óis do Bairro;185;248;Anadia
+;010309;Sangalhos;185;248;Anadia
+;010310;São Lourenço do Bairro;185;248;Anadia
+;010311;Tamengos;185;248;Anadia
+;010312;Vila Nova de Monsarros;185;248;Anadia
+;010313;Vilarinho do Bairro;185;248;Anadia
+;010314;Paredes do Bairro;185;248;Anadia
+;010315;Aguim;185;248;Anadia
+;010401;Albergaria da Serra;185;248;Arouca
+;010402;Alvarenga;185;248;Arouca
+;010403;Arouca;185;248;Arouca
+;010404;Burgo;185;248;Arouca
+;010405;Cabreiros;185;248;Arouca
+;010406;Canelas;185;248;Arouca
+;010407;Chave;185;248;Arouca
+;010408;Covelo de Paivó;185;248;Arouca
+;010409;Escariz;185;248;Arouca
+;010410;Espiunca;185;248;Arouca
+;010411;Fermedo;185;248;Arouca
+;010412;Janarde;185;248;Arouca
+;010413;Mansores;185;248;Arouca
+;010414;Moldes;185;248;Arouca
+;010415;Rossas;185;248;Arouca
+;010416;Santa Eulália;185;248;Arouca
+;010417;São Miguel do Mato;185;248;Arouca
+;010418;Tropeço;185;248;Arouca
+;010419;Urrô;185;248;Arouca
+;010420;Várzea;185;248;Arouca
+;010501;Aradas;185;248;Aveiro
+;010502;Cacia;185;248;Aveiro
+;010503;Eirol;185;248;Aveiro
+;010504;Eixo;185;248;Aveiro
+;010505;Esgueira;185;248;Aveiro
+;010506;Glória;185;248;Aveiro
+;010507;Nariz;185;248;Aveiro
+;010508;Oliveirinha;185;248;Aveiro
+;010509;Requeixo;185;248;Aveiro
+;010510;São Bernardo;185;248;Aveiro
+;010511;São Jacinto;185;248;Aveiro
+;010512;Vera Cruz;185;248;Aveiro
+;010513;Santa Joana;185;248;Aveiro
+;010514;Nossa Senhora de Fátima;185;248;Aveiro
+;010601;Bairros;185;248;Castelo de Paiva
+;010602;Fornos;185;248;Castelo de Paiva
+;010603;Paraíso;185;248;Castelo de Paiva
+;010604;Pedorido;185;248;Castelo de Paiva
+;010605;Raiva;185;248;Castelo de Paiva
+;010606;Real;185;248;Castelo de Paiva
+;010607;Santa Maria de Sardoura;185;248;Castelo de Paiva
+;010608;São Martinho de Sardoura;185;248;Castelo de Paiva
+;010609;Sobrado;185;248;Castelo de Paiva
+;010701;Anta;185;248;Espinho
+;010702;Espinho;185;248;Espinho
+;010703;Guetim;185;248;Espinho
+;010704;Paramos;185;248;Espinho
+;010705;Silvalde;185;248;Espinho
+;010801;Avanca;185;248;Estarreja
+;010802;Beduído;185;248;Estarreja
+;010803;Canelas;185;248;Estarreja
+;010804;Fermelã;185;248;Estarreja
+;010805;Pardilhó;185;248;Estarreja
+;010806;Salreu;185;248;Estarreja
+;010807;Veiros;185;248;Estarreja
+;010901;Argoncilhe;185;248;Santa Maria da Feira
+;010902;Arrifana;185;248;Santa Maria da Feira
+;010903;Canedo;185;248;Santa Maria da Feira
+;010904;Escapães;185;248;Santa Maria da Feira
+;010905;Espargo;185;248;Santa Maria da Feira
+;010906;Feira;185;248;Santa Maria da Feira
+;010907;Fiães;185;248;Santa Maria da Feira
+;010908;Fornos;185;248;Santa Maria da Feira
+;010909;Gião;185;248;Santa Maria da Feira
+;010910;Guisande;185;248;Santa Maria da Feira
+;010911;Lobão;185;248;Santa Maria da Feira
+;010912;Louredo;185;248;Santa Maria da Feira
+;010913;Lourosa;185;248;Santa Maria da Feira
+;010914;Milheirós de Poiares;185;248;Santa Maria da Feira
+;010915;Mosteiró;185;248;Santa Maria da Feira
+;010916;Mozelos;185;248;Santa Maria da Feira
+;010917;Nogueira da Regedoura;185;248;Santa Maria da Feira
+;010918;São Paio de Oleiros;185;248;Santa Maria da Feira
+;010919;Paços de Brandão;185;248;Santa Maria da Feira
+;010920;Pigeiros;185;248;Santa Maria da Feira
+;010921;Rio Meão;185;248;Santa Maria da Feira
+;010922;Romariz;185;248;Santa Maria da Feira
+;010923;Sanfins;185;248;Santa Maria da Feira
+;010924;Sanguedo;185;248;Santa Maria da Feira
+;010925;Santa Maria de Lamas;185;248;Santa Maria da Feira
+;010926;São João de Ver;185;248;Santa Maria da Feira
+;010927;Caldas de São Jorge;185;248;Santa Maria da Feira
+;010928;Souto;185;248;Santa Maria da Feira
+;010929;Travanca;185;248;Santa Maria da Feira
+;010930;Vale;185;248;Santa Maria da Feira
+;010931;Vila Maior;185;248;Santa Maria da Feira
+;011001;Gafanha do Carmo;185;248;Ílhavo
+;011002;Gafanha da Encarnação;185;248;Ílhavo
+;011003;Gafanha da Nazaré;185;248;Ílhavo
+;011004;Ílhavo (São Salvador);185;248;Ílhavo
+;011101;Antes;185;248;Mealhada
+;011102;Barcouço;185;248;Mealhada
+;011103;Casal Comba;185;248;Mealhada
+;011104;Luso;185;248;Mealhada
+;011105;Mealhada;185;248;Mealhada
+;011106;Pampilhosa;185;248;Mealhada
+;011107;Vacariça;185;248;Mealhada
+;011108;Ventosa do Bairro;185;248;Mealhada
+;011201;Bunheiro;185;248;Murtosa
+;011202;Monte;185;248;Murtosa
+;011203;Murtosa;185;248;Murtosa
+;011204;Torreira;185;248;Murtosa
+;011301;Carregosa;185;248;Oliveira de Azeméis
+;011302;Cesar;185;248;Oliveira de Azeméis
+;011303;Fajões;185;248;Oliveira de Azeméis
+;011304;Loureiro;185;248;Oliveira de Azeméis
+;011305;Macieira de Sarnes;185;248;Oliveira de Azeméis
+;011306;Macinhata da Seixa;185;248;Oliveira de Azeméis
+;011307;Madail;185;248;Oliveira de Azeméis
+;011308;Nogueira do Cravo;185;248;Oliveira de Azeméis
+;011309;Oliveira de Azeméis;185;248;Oliveira de Azeméis
+;011310;Ossela;185;248;Oliveira de Azeméis
+;011311;Palmaz;185;248;Oliveira de Azeméis
+;011312;Pindelo;185;248;Oliveira de Azeméis
+;011313;Pinheiro da Bemposta;185;248;Oliveira de Azeméis
+;011314;Santiago de Riba-Ul;185;248;Oliveira de Azeméis
+;011315;São Martinho da Gândara;185;248;Oliveira de Azeméis
+;011316;Travanca;185;248;Oliveira de Azeméis
+;011317;Ul;185;248;Oliveira de Azeméis
+;011318;São Roque;185;248;Oliveira de Azeméis
+;011319;Vila de Cucujães;185;248;Oliveira de Azeméis
+;011401;Bustos;185;248;Oliveira do Bairro
+;011402;Mamarrosa;185;248;Oliveira do Bairro
+;011403;Oiã;185;248;Oliveira do Bairro
+;011404;Oliveira do Bairro;185;248;Oliveira do Bairro
+;011405;Palhaça;185;248;Oliveira do Bairro
+;011406;Troviscal;185;248;Oliveira do Bairro
+;011501;Arada;185;248;Ovar
+;011502;Cortegaça;185;248;Ovar
+;011503;Esmoriz;185;248;Ovar
+;011504;Maceda;185;248;Ovar
+;011505;Ovar;185;248;Ovar
+;011506;São Vicente de Pereira Jusã;185;248;Ovar
+;011507;Válega;185;248;Ovar
+;011508;São João;185;248;Ovar
+;011601;São João da Madeira;185;248;São João da Madeira
+;011701;Cedrim;185;248;Sever do Vouga
+;011702;Couto de Esteves;185;248;Sever do Vouga
+;011703;Paradela;185;248;Sever do Vouga
+;011704;Pessegueiro do Vouga;185;248;Sever do Vouga
+;011705;Rocas do Vouga;185;248;Sever do Vouga
+;011706;Sever do Vouga;185;248;Sever do Vouga
+;011707;Silva Escura;185;248;Sever do Vouga
+;011708;Talhadas;185;248;Sever do Vouga
+;011709;Dornelas;185;248;Sever do Vouga
+;011801;Calvão;185;248;Vagos
+;011802;Covão do Lobo;185;248;Vagos
+;011803;Fonte de Angeão;185;248;Vagos
+;011804;Gafanha da Boa Hora;185;248;Vagos
+;011805;Ouca;185;248;Vagos
+;011806;Ponte de Vagos;185;248;Vagos
+;011807;Sosa;185;248;Vagos
+;011808;Vagos;185;248;Vagos
+;011809;Santo António de Vagos;185;248;Vagos
+;011810;Santo André de Vagos;185;248;Vagos
+;011811;Santa Catarina;185;248;Vagos
+;011901;Arões;185;248;Vale de Cambra
+;011902;São Pedro de Castelões;185;248;Vale de Cambra
+;011903;Cepelos;185;248;Vale de Cambra
+;011904;Codal;185;248;Vale de Cambra
+;011905;Junqueira;185;248;Vale de Cambra
+;011906;Macieira de Cambra;185;248;Vale de Cambra
+;011907;Roge;185;248;Vale de Cambra
+;011908;Vila Chã;185;248;Vale de Cambra
+;011909;Vila Cova de Perrinho;185;248;Vale de Cambra
+;020101;Aljustrel;185;249;Aljustrel
+;020102;Ervidel;185;249;Aljustrel
+;020103;Messejana;185;249;Aljustrel
+;020104;São João de Negrilhos;185;249;Aljustrel
+;020105;Rio de Moinhos;185;249;Aljustrel
+;020201;Almodôvar;185;249;Almodôvar
+;020202;Gomes Aires;185;249;Almodôvar
+;020203;Rosário;185;249;Almodôvar
+;020204;Santa Clara-a-Nova;185;249;Almodôvar
+;020205;Santa Cruz;185;249;Almodôvar
+;020206;São Barnabé;185;249;Almodôvar
+;020207;Senhora da Graça de Padrões;185;249;Almodôvar
+;020208;Aldeia dos Fernandes;185;249;Almodôvar
+;020301;Alvito;185;249;Alvito
+;020302;Vila Nova da Baronia;185;249;Alvito
+;020401;Barrancos;185;249;Barrancos
+;020501;Albernoa;185;249;Beja
+;020502;Baleizão;185;249;Beja
+;020503;Beringel;185;249;Beja
+;020504;Cabeça Gorda;185;249;Beja
+;020505;Mombeja;185;249;Beja
+;020506;Nossa Senhora das Neves;185;249;Beja
+;020507;Quintos;185;249;Beja
+;020508;Salvada;185;249;Beja
+;020509;Beja (Salvador);185;249;Beja
+;020510;Santa Clara de Louredo;185;249;Beja
+;020511;Beja (Santa Maria da Feira);185;249;Beja
+;020512;Santa Vitória;185;249;Beja
+;020513;Beja (Santiago Maior);185;249;Beja
+;020514;São Brissos;185;249;Beja
+;020515;Beja (São João Baptista);185;249;Beja
+;020516;São Matias;185;249;Beja
+;020517;Trindade;185;249;Beja
+;020518;Trigaches;185;249;Beja
+;020601;Casével;185;249;Castro Verde
+;020602;Castro Verde;185;249;Castro Verde
+;020603;Entradas;185;249;Castro Verde
+;020604;Santa Bárbara de Padrões;185;249;Castro Verde
+;020605;São Marcos da Ataboeira;185;249;Castro Verde
+;020701;Cuba;185;249;Cuba
+;020702;Faro do Alentejo;185;249;Cuba
+;020703;Vila Alva;185;249;Cuba
+;020704;Vila Ruiva;185;249;Cuba
+;020801;Alfundão;185;249;Ferreira do Alentejo
+;020802;Ferreira do Alentejo;185;249;Ferreira do Alentejo
+;020803;Figueira dos Cavaleiros;185;249;Ferreira do Alentejo
+;020804;Odivelas;185;249;Ferreira do Alentejo
+;020805;Peroguarda;185;249;Ferreira do Alentejo
+;020806;Canhestros;185;249;Ferreira do Alentejo
+;020901;Alcaria Ruiva;185;249;Mértola
+;020902;Corte do Pinto;185;249;Mértola
+;020903;Espírito Santo;185;249;Mértola
+;020904;Mértola;185;249;Mértola
+;020905;Santana de Cambas;185;249;Mértola
+;020906;São João dos Caldeireiros;185;249;Mértola
+;020907;São Miguel do Pinheiro;185;249;Mértola
+;020908;São Pedro de Solis;185;249;Mértola
+;020909;São Sebastião dos Carros;185;249;Mértola
+;021001;Amareleja;185;249;Moura
+;021002;Póvoa de São Miguel;185;249;Moura
+;021003;Safara;185;249;Moura
+;021004;Moura (Santo Agostinho);185;249;Moura
+;021005;Santo Aleixo da Restauração;185;249;Moura
+;021006;Santo Amador;185;249;Moura
+;021007;Moura (São João Baptista);185;249;Moura
+;021008;Sobral da Adiça;185;249;Moura
+;021101;Colos;185;249;Odemira
+;021102;Relíquias;185;249;Odemira
+;021103;Saboia;185;249;Odemira
+;021104;Santa Clara-a-Velha;185;249;Odemira
+;021105;Odemira (Santa Maria);185;249;Odemira
+;021106;São Luís;185;249;Odemira
+;021107;São Martinho das Amoreiras;185;249;Odemira
+;021108;Odemira (São Salvador);185;249;Odemira
+;021109;São Teotónio;185;249;Odemira
+;021110;Vale de Santiago;185;249;Odemira
+;021111;Vila Nova de Milfontes;185;249;Odemira
+;021112;Pereiras-Gare;185;249;Odemira
+;021113;Bicos;185;249;Odemira
+;021114;Zambujeira do Mar;185;249;Odemira
+;021115;Luzianes-Gare;185;249;Odemira
+;021116;Boavista dos Pinheiros;185;249;Odemira
+;021117;Longueira/Almograve;185;249;Odemira
+;021201;Conceição;185;249;Ourique
+;021202;Garvão;185;249;Ourique
+;021203;Ourique;185;249;Ourique
+;021204;Panóias;185;249;Ourique
+;021205;Santa Luzia;185;249;Ourique
+;021206;Santana da Serra;185;249;Ourique
+;021301;Aldeia Nova de São Bento;185;249;Serpa
+;021302;Brinches;185;249;Serpa
+;021303;Pias;185;249;Serpa
+;021304;Serpa (Salvador);185;249;Serpa
+;021305;Serpa (Santa Maria);185;249;Serpa
+;021306;Vale de Vargo;185;249;Serpa
+;021307;Vila Verde de Ficalho;185;249;Serpa
+;021401;Pedrógão;185;249;Vidigueira
+;021402;Selmes;185;249;Vidigueira
+;021403;Vidigueira;185;249;Vidigueira
+;021404;Vila de Frades;185;249;Vidigueira
+;030101;Amares;185;250;Amares
+;030102;Barreiros;185;250;Amares
+;030103;Besteiros;185;250;Amares
+;030104;Bico;185;250;Amares
+;030105;Caires;185;250;Amares
+;030106;Caldelas;185;250;Amares
+;030107;Carrazedo;185;250;Amares
+;030108;Dornelas;185;250;Amares
+;030109;Ferreiros;185;250;Amares
+;030110;Figueiredo;185;250;Amares
+;030111;Fiscal;185;250;Amares
+;030112;Goães;185;250;Amares
+;030113;Lago;185;250;Amares
+;030114;Paranhos;185;250;Amares
+;030115;Paredes Secas;185;250;Amares
+;030116;Portela;185;250;Amares
+;030117;Prozelo;185;250;Amares
+;030118;Rendufe;185;250;Amares
+;030119;Bouro (Santa Maria);185;250;Amares
+;030120;Bouro (Santa Marta);185;250;Amares
+;030121;Sequeiros;185;250;Amares
+;030122;Seramil;185;250;Amares
+;030123;Torre;185;250;Amares
+;030124;Vilela;185;250;Amares
+;030201;Abade de Neiva;185;250;Barcelos
+;030202;Aborim;185;250;Barcelos
+;030203;Adães;185;250;Barcelos
+;030204;Aguiar;185;250;Barcelos
+;030205;Airó;185;250;Barcelos
+;030206;Aldreu;185;250;Barcelos
+;030207;Alheira;185;250;Barcelos
+;030208;Alvelos;185;250;Barcelos
+;030209;Arcozelo;185;250;Barcelos
+;030210;Areias;185;250;Barcelos
+;030211;Areias de Vilar;185;250;Barcelos
+;030212;Balugães;185;250;Barcelos
+;030213;Barcelinhos;185;250;Barcelos
+;030214;Barcelos;185;250;Barcelos
+;030215;Barqueiros;185;250;Barcelos
+;030216;Cambeses;185;250;Barcelos
+;030217;Campo;185;250;Barcelos
+;030218;Carapeços;185;250;Barcelos
+;030219;Carreira;185;250;Barcelos
+;030220;Carvalhal;185;250;Barcelos
+;030221;Carvalhos;185;250;Barcelos
+;030222;Chavão;185;250;Barcelos
+;030223;Chorente;185;250;Barcelos
+;030224;Cossourado;185;250;Barcelos
+;030225;Courel;185;250;Barcelos
+;030226;Couto;185;250;Barcelos
+;030227;Creixomil;185;250;Barcelos
+;030228;Cristelo;185;250;Barcelos
+;030229;Durrães;185;250;Barcelos
+;030230;Encourados;185;250;Barcelos
+;030231;Faria;185;250;Barcelos
+;030232;Feitos;185;250;Barcelos
+;030233;Fonte Coberta;185;250;Barcelos
+;030234;Fornelos;185;250;Barcelos
+;030235;Fragoso;185;250;Barcelos
+;030236;Gamil;185;250;Barcelos
+;030237;Gilmonde;185;250;Barcelos
+;030238;Góios;185;250;Barcelos
+;030239;Grimancelos;185;250;Barcelos
+;030240;Gueral;185;250;Barcelos
+;030241;Igreja Nova;185;250;Barcelos
+;030242;Lama;185;250;Barcelos
+;030243;Lijó;185;250;Barcelos
+;030244;Macieira de Rates;185;250;Barcelos
+;030245;Manhente;185;250;Barcelos
+;030246;Mariz;185;250;Barcelos
+;030247;Martim;185;250;Barcelos
+;030248;Midões;185;250;Barcelos
+;030249;Milhazes;185;250;Barcelos
+;030250;Minhotães;185;250;Barcelos
+;030251;Monte de Fralães;185;250;Barcelos
+;030252;Moure;185;250;Barcelos
+;030253;Negreiros;185;250;Barcelos
+;030254;Oliveira;185;250;Barcelos
+;030255;Palme;185;250;Barcelos
+;030256;Panque;185;250;Barcelos
+;030257;Paradela;185;250;Barcelos
+;030258;Pedra Furada;185;250;Barcelos
+;030259;Pereira;185;250;Barcelos
+;030260;Perelhal;185;250;Barcelos
+;030261;Pousa;185;250;Barcelos
+;030262;Quintiães;185;250;Barcelos
+;030263;Remelhe;185;250;Barcelos
+;030264;Roriz;185;250;Barcelos
+;030265;Rio Covo (Santa Eugénia);185;250;Barcelos
+;030266;Rio Covo (Santa Eulália);185;250;Barcelos
+;030267;Tamel (Santa Leocádia);185;250;Barcelos
+;030268;Galegos (Santa Maria);185;250;Barcelos
+;030269;Bastuço (Santo Estevão);185;250;Barcelos
+;030270;Bastuço (São João);185;250;Barcelos
+;030271;Alvito (São Martinho);185;250;Barcelos
+;030272;Galegos (São Martinho);185;250;Barcelos
+;030273;Vila Frescainha (São Martinho);185;250;Barcelos
+;030274;Alvito (São Pedro);185;250;Barcelos
+;030275;Vila Frescainha (São Pedro);185;250;Barcelos
+;030276;Tamel (São Pedro Fins);185;250;Barcelos
+;030277;Tamel (São Veríssimo);185;250;Barcelos
+;030278;Sequeade;185;250;Barcelos
+;030279;Silva;185;250;Barcelos
+;030280;Silveiros;185;250;Barcelos
+;030281;Tregosa;185;250;Barcelos
+;030282;Ucha;185;250;Barcelos
+;030283;Várzea;185;250;Barcelos
+;030284;Viatodos;185;250;Barcelos
+;030285;Vila Boa;185;250;Barcelos
+;030286;Vila Cova;185;250;Barcelos
+;030287;Vila Seca;185;250;Barcelos
+;030288;Vilar de Figos;185;250;Barcelos
+;030289;Vilar do Monte;185;250;Barcelos
+;030301;Adaúfe;185;250;Braga
+;030302;Arcos;185;250;Braga
+;030303;Arentim;185;250;Braga
+;030304;Aveleda;185;250;Braga
+;030305;Cabreiros;185;250;Braga
+;030306;Celeirós;185;250;Braga
+;030307;Braga (Cividade);185;250;Braga
+;030308;Crespos;185;250;Braga
+;030309;Cunha;185;250;Braga
+;030310;Dume;185;250;Braga
+;030311;Escudeiros;185;250;Braga
+;030312;Espinho;185;250;Braga
+;030313;Esporões;185;250;Braga
+;030314;Ferreiros;185;250;Braga
+;030315;Figueiredo;185;250;Braga
+;030316;Fraião;185;250;Braga
+;030317;Frossos;185;250;Braga
+;030318;Gondizalves;185;250;Braga
+;030319;Gualtar;185;250;Braga
+;030320;Guisande;185;250;Braga
+;030321;Lamaçães;185;250;Braga
+;030322;Lamas;185;250;Braga
+;030323;Lomar;185;250;Braga
+;030324;Braga (Maximinos);185;250;Braga
+;030325;Mire de Tibães;185;250;Braga
+;030326;Morreira;185;250;Braga
+;030327;Navarra;185;250;Braga
+;030328;Nogueira;185;250;Braga
+;030329;Nogueiró;185;250;Braga
+;030330;Padim da Graça;185;250;Braga
+;030331;Palmeira;185;250;Braga
+;030332;Panoias;185;250;Braga
+;030333;Parada de Tibães;185;250;Braga
+;030334;Pedralva;185;250;Braga
+;030335;Pousada;185;250;Braga
+;030336;Priscos;185;250;Braga
+;030337;Real;185;250;Braga
+;030338;Ruilhe;185;250;Braga
+;030339;Santa Lucrécia de Algeriz;185;250;Braga
+;030340;Penso (Santo Estêvão);185;250;Braga
+;030341;Braga (São João do Souto);185;250;Braga
+;030342;Braga (São José de São Lázaro);185;250;Braga
+;030343;Passos (São Julião);185;250;Braga
+;030344;Este (São Mamede);185;250;Braga
+;030345;Merelim (São Paio);185;250;Braga
+;030346;Este (São Pedro);185;250;Braga
+;030347;Merelim (São Pedro);185;250;Braga
+;030348;Oliveira (São Pedro);185;250;Braga
+;030349;Braga (São Vicente);185;250;Braga
+;030350;Penso (São Vicente);185;250;Braga
+;030351;Braga (São Vítor);185;250;Braga
+;030352;Braga (Sé);185;250;Braga
+;030353;Semelhe;185;250;Braga
+;030354;Sequeira;185;250;Braga
+;030355;Sobreposta;185;250;Braga
+;030356;Tadim;185;250;Braga
+;030357;Tebosa;185;250;Braga
+;030358;Tenões;185;250;Braga
+;030359;Trandeiras;185;250;Braga
+;030360;Vilaça;185;250;Braga
+;030361;Vimieiro;185;250;Braga
+;030362;Fradelos;185;250;Braga
+;030401;Abadim;185;250;Cabeceiras de Basto
+;030402;Alvite;185;250;Cabeceiras de Basto
+;030403;Arco de Baúlhe;185;250;Cabeceiras de Basto
+;030404;Basto;185;250;Cabeceiras de Basto
+;030405;Bucos;185;250;Cabeceiras de Basto
+;030406;Cabeceiras de Basto;185;250;Cabeceiras de Basto
+;030407;Cavez;185;250;Cabeceiras de Basto
+;030408;Faia;185;250;Cabeceiras de Basto
+;030409;Gondiães;185;250;Cabeceiras de Basto
+;030410;Outeiro;185;250;Cabeceiras de Basto
+;030411;Painzela;185;250;Cabeceiras de Basto
+;030412;Passos;185;250;Cabeceiras de Basto
+;030413;Pedraça;185;250;Cabeceiras de Basto
+;030414;Refojos de Basto;185;250;Cabeceiras de Basto
+;030415;Rio Douro;185;250;Cabeceiras de Basto
+;030416;Vila Nune;185;250;Cabeceiras de Basto
+;030417;Vilar de Cunhas;185;250;Cabeceiras de Basto
+;030501;Agilde;185;250;Celorico de Basto
+;030502;Arnóia;185;250;Celorico de Basto
+;030503;Borba de Montanha;185;250;Celorico de Basto
+;030504;Britelo;185;250;Celorico de Basto
+;030505;Caçarilhe;185;250;Celorico de Basto
+;030506;Canedo de Basto;185;250;Celorico de Basto
+;030507;Carvalho;185;250;Celorico de Basto
+;030508;Codeçoso;185;250;Celorico de Basto
+;030509;Corgo;185;250;Celorico de Basto
+;030510;Fervença;185;250;Celorico de Basto
+;030511;Gagos;185;250;Celorico de Basto
+;030512;Gémeos;185;250;Celorico de Basto
+;030513;Infesta;185;250;Celorico de Basto
+;030514;Molares;185;250;Celorico de Basto
+;030515;Moreira do Castelo;185;250;Celorico de Basto
+;030516;Ourilhe;185;250;Celorico de Basto
+;030517;Rego;185;250;Celorico de Basto
+;030518;Ribas;185;250;Celorico de Basto
+;030519;Basto (Santa Tecla);185;250;Celorico de Basto
+;030520;Basto (São Clemente);185;250;Celorico de Basto
+;030521;Vale de Bouro;185;250;Celorico de Basto
+;030522;Veade;185;250;Celorico de Basto
+;030601;Antas;185;250;Esposende
+;030602;Apúlia;185;250;Esposende
+;030603;Belinho;185;250;Esposende
+;030604;Curvos;185;250;Esposende
+;030605;Esposende;185;250;Esposende
+;030606;Fão;185;250;Esposende
+;030607;Fonte Boa;185;250;Esposende
+;030608;Forjães;185;250;Esposende
+;030609;Gandra;185;250;Esposende
+;030610;Gemeses;185;250;Esposende
+;030611;Mar;185;250;Esposende
+;030612;Marinhas;185;250;Esposende
+;030613;Palmeira de Faro;185;250;Esposende
+;030614;Rio Tinto;185;250;Esposende
+;030615;Vila Chã;185;250;Esposende
+;030701;Aboim;185;250;Fafe
+;030702;Agrela;185;250;Fafe
+;030703;Antime;185;250;Fafe
+;030704;Ardegão;185;250;Fafe
+;030705;Armil;185;250;Fafe
+;030706;Arnozela;185;250;Fafe
+;030707;Cepães;185;250;Fafe
+;030708;Estorãos;185;250;Fafe
+;030709;Fafe;185;250;Fafe
+;030710;Fareja;185;250;Fafe
+;030711;Felgueiras;185;250;Fafe
+;030712;Fornelos;185;250;Fafe
+;030713;Freitas;185;250;Fafe
+;030714;Golães;185;250;Fafe
+;030715;Gontim;185;250;Fafe
+;030716;Medelo;185;250;Fafe
+;030717;Monte;185;250;Fafe
+;030718;Moreira do Rei;185;250;Fafe
+;030719;Passos;185;250;Fafe
+;030720;Pedraído;185;250;Fafe
+;030721;Queimadela;185;250;Fafe
+;030722;Quinchães;185;250;Fafe
+;030723;Regadas;185;250;Fafe
+;030724;Revelhe;185;250;Fafe
+;030725;Ribeiros;185;250;Fafe
+;030726;Arões (Santa Cristina);185;250;Fafe
+;030727;Silvares (São Clemente);185;250;Fafe
+;030728;São Gens;185;250;Fafe
+;030729;Silvares (São Martinho);185;250;Fafe
+;030730;Arões (São Romão);185;250;Fafe
+;030731;Seidões;185;250;Fafe
+;030732;Serafão;185;250;Fafe
+;030733;Travassós;185;250;Fafe
+;030734;Várzea Cova;185;250;Fafe
+;030735;Vila Cova;185;250;Fafe
+;030736;Vinhós;185;250;Fafe
+;030801;Aldão;185;250;Guimarães
+;030802;Arosa;185;250;Guimarães
+;030803;Atães;185;250;Guimarães
+;030804;Azurém;185;250;Guimarães
+;030805;Balazar;185;250;Guimarães
+;030806;Barco;185;250;Guimarães
+;030807;Brito;185;250;Guimarães
+;030808;Caldelas;185;250;Guimarães
+;030809;Calvos;185;250;Guimarães
+;030810;Castelões;185;250;Guimarães
+;030811;Conde;185;250;Guimarães
+;030812;Costa;185;250;Guimarães
+;030813;Creixomil;185;250;Guimarães
+;030814;Donim;185;250;Guimarães
+;030815;Fermentões;185;250;Guimarães
+;030816;Figueiredo;185;250;Guimarães
+;030817;Gandarela;185;250;Guimarães
+;030818;Gémeos;185;250;Guimarães
+;030819;Gominhães;185;250;Guimarães
+;030820;Gonça;185;250;Guimarães
+;030821;Gondar;185;250;Guimarães
+;030822;Gondomar;185;250;Guimarães
+;030823;Guardizela;185;250;Guimarães
+;030824;Infantas;185;250;Guimarães
+;030826;Leitões;185;250;Guimarães
+;030827;Longos;185;250;Guimarães
+;030828;Lordelo;185;250;Guimarães
+;030829;Mascotelos;185;250;Guimarães
+;030830;Mesão Frio;185;250;Guimarães
+;030831;Moreira de Cónegos;185;250;Guimarães
+;030832;Nespereira;185;250;Guimarães
+;030833;Oleiros;185;250;Guimarães
+;030834;Guimarães (Oliveira do Castelo);185;250;Guimarães
+;030835;Pencelo;185;250;Guimarães
+;030836;Pinheiro;185;250;Guimarães
+;030837;Polvoreira;185;250;Guimarães
+;030838;Ponte;185;250;Guimarães
+;030839;Rendufe;185;250;Guimarães
+;030840;Ronfe;185;250;Guimarães
+;030841;Briteiros (Salvador);185;250;Guimarães
+;030842;Prazins (Santa Eufémia);185;250;Guimarães
+;030843;Briteiros (Santa Leocádia);185;250;Guimarães
+;030844;Airão (Santa Maria);185;250;Guimarães
+;030845;Souto (Santa Maria);185;250;Guimarães
+;030846;Candoso (Santiago);185;250;Guimarães
+;030847;Briteiros (Santo Estêvão);185;250;Guimarães
+;030848;Prazins (Santo Tirso);185;250;Guimarães
+;030849;Sande (São Clemente);185;250;Guimarães
+;030850;Selho (São Cristovão);185;250;Guimarães
+;030851;São Faustino;185;250;Guimarães
+;030853;Airão (São João Baptista);185;250;Guimarães
+;030854;Selho (São Jorge);185;250;Guimarães
+;030855;Sande (São Lourenço);185;250;Guimarães
+;030856;Selho (São Lourenço);185;250;Guimarães
+;030857;Candoso (São Martinho);185;250;Guimarães
+;030858;Sande (São Martinho);185;250;Guimarães
+;030860;Guimarães (São Paio);185;250;Guimarães
+;030862;Souto (São Salvador);185;250;Guimarães
+;030863;Guimarães (São Sebastião);185;250;Guimarães
+;030864;Abação (São Tomé);185;250;Guimarães
+;030865;São Torcato;185;250;Guimarães
+;030866;Serzedelo;185;250;Guimarães
+;030867;Serzedo;185;250;Guimarães
+;030868;Silvares;185;250;Guimarães
+;030869;Tabuadelo;185;250;Guimarães
+;030871;Urgezes;185;250;Guimarães
+;030872;Vermil;185;250;Guimarães
+;030873;Sande (Vila Nova);185;250;Guimarães
+;030874;Corvite;185;250;Guimarães
+;030901;Águas Santas;185;250;Póvoa de Lanhoso
+;030902;Ajude;185;250;Póvoa de Lanhoso
+;030903;Brunhais;185;250;Póvoa de Lanhoso
+;030904;Calvos;185;250;Póvoa de Lanhoso
+;030905;Campos;185;250;Póvoa de Lanhoso
+;030906;Covelas;185;250;Póvoa de Lanhoso
+;030907;Esperança;185;250;Póvoa de Lanhoso
+;030908;Ferreiros;185;250;Póvoa de Lanhoso
+;030909;Fonte Arcada;185;250;Póvoa de Lanhoso
+;030910;Frades;185;250;Póvoa de Lanhoso
+;030911;Friande;185;250;Póvoa de Lanhoso
+;030912;Galegos;185;250;Póvoa de Lanhoso
+;030913;Garfe;185;250;Póvoa de Lanhoso
+;030914;Geraz do Minho;185;250;Póvoa de Lanhoso
+;030915;Lanhoso;185;250;Póvoa de Lanhoso
+;030916;Louredo;185;250;Póvoa de Lanhoso
+;030917;Monsul;185;250;Póvoa de Lanhoso
+;030918;Moure;185;250;Póvoa de Lanhoso
+;030919;Póvoa de Lanhoso (Nossa Senhora do Amparo);185;250;Póvoa de Lanhoso
+;030920;Oliveira;185;250;Póvoa de Lanhoso
+;030921;Rendufinho;185;250;Póvoa de Lanhoso
+;030922;Santo Emilião;185;250;Póvoa de Lanhoso
+;030923;São João de Rei;185;250;Póvoa de Lanhoso
+;030924;Serzedelo;185;250;Póvoa de Lanhoso
+;030925;Sobradelo da Goma;185;250;Póvoa de Lanhoso
+;030926;Taíde;185;250;Póvoa de Lanhoso
+;030927;Travassos;185;250;Póvoa de Lanhoso
+;030928;Verim;185;250;Póvoa de Lanhoso
+;030929;Vilela;185;250;Póvoa de Lanhoso
+;031001;Balança;185;250;Terras de Bouro
+;031002;Brufe;185;250;Terras de Bouro
+;031003;Campo do Gerês;185;250;Terras de Bouro
+;031004;Carvalheira;185;250;Terras de Bouro
+;031005;Chamoim;185;250;Terras de Bouro
+;031006;Chorense;185;250;Terras de Bouro
+;031007;Cibões;185;250;Terras de Bouro
+;031008;Covide;185;250;Terras de Bouro
+;031009;Gondoriz;185;250;Terras de Bouro
+;031010;Moimenta;185;250;Terras de Bouro
+;031011;Monte;185;250;Terras de Bouro
+;031012;Ribeira;185;250;Terras de Bouro
+;031013;Rio Caldo;185;250;Terras de Bouro
+;031014;Souto;185;250;Terras de Bouro
+;031015;Valdosende;185;250;Terras de Bouro
+;031016;Vilar;185;250;Terras de Bouro
+;031017;Vilar da Veiga;185;250;Terras de Bouro
+;031101;Anissó;185;250;Vieira do Minho
+;031102;Anjos;185;250;Vieira do Minho
+;031103;Campos;185;250;Vieira do Minho
+;031104;Caniçada;185;250;Vieira do Minho
+;031105;Cantelães;185;250;Vieira do Minho
+;031106;Cova;185;250;Vieira do Minho
+;031107;Eira Vedra;185;250;Vieira do Minho
+;031108;Guilhofrei;185;250;Vieira do Minho
+;031109;Louredo;185;250;Vieira do Minho
+;031110;Mosteiro;185;250;Vieira do Minho
+;031111;Parada do Bouro;185;250;Vieira do Minho
+;031112;Pinheiro;185;250;Vieira do Minho
+;031113;Rossas;185;250;Vieira do Minho
+;031114;Ruivães;185;250;Vieira do Minho
+;031115;Salamonde;185;250;Vieira do Minho
+;031116;Soengas;185;250;Vieira do Minho
+;031117;Soutelo;185;250;Vieira do Minho
+;031118;Tabuaças;185;250;Vieira do Minho
+;031119;Ventosa;185;250;Vieira do Minho
+;031120;Vieira do Minho;185;250;Vieira do Minho
+;031121;Vilar do Chão;185;250;Vieira do Minho
+;031201;Abade de Vermoim;185;250;Vila Nova de Famalicão
+;031202;Antas;185;250;Vila Nova de Famalicão
+;031203;Avidos;185;250;Vila Nova de Famalicão
+;031204;Bairro;185;250;Vila Nova de Famalicão
+;031205;Bente;185;250;Vila Nova de Famalicão
+;031206;Brufe;185;250;Vila Nova de Famalicão
+;031207;Cabeçudos;185;250;Vila Nova de Famalicão
+;031208;Calendário;185;250;Vila Nova de Famalicão
+;031209;Carreira;185;250;Vila Nova de Famalicão
+;031210;Castelões;185;250;Vila Nova de Famalicão
+;031211;Cavalões;185;250;Vila Nova de Famalicão
+;031212;Cruz;185;250;Vila Nova de Famalicão
+;031213;Delães;185;250;Vila Nova de Famalicão
+;031214;Esmeriz;185;250;Vila Nova de Famalicão
+;031215;Fradelos;185;250;Vila Nova de Famalicão
+;031216;Gavião;185;250;Vila Nova de Famalicão
+;031217;Gondifelos;185;250;Vila Nova de Famalicão
+;031218;Jesufrei;185;250;Vila Nova de Famalicão
+;031219;Joane;185;250;Vila Nova de Famalicão
+;031220;Lagoa;185;250;Vila Nova de Famalicão
+;031221;Landim;185;250;Vila Nova de Famalicão
+;031222;Lemenhe;185;250;Vila Nova de Famalicão
+;031223;Louro;185;250;Vila Nova de Famalicão
+;031224;Lousado;185;250;Vila Nova de Famalicão
+;031225;Mogege;185;250;Vila Nova de Famalicão
+;031226;Mouquim;185;250;Vila Nova de Famalicão
+;031227;Nine;185;250;Vila Nova de Famalicão
+;031228;Novais;185;250;Vila Nova de Famalicão
+;031229;Outiz;185;250;Vila Nova de Famalicão
+;031230;Pedome;185;250;Vila Nova de Famalicão
+;031231;Portela;185;250;Vila Nova de Famalicão
+;031232;Pousada de Saramagos;185;250;Vila Nova de Famalicão
+;031233;Requião;185;250;Vila Nova de Famalicão
+;031234;Riba de Ave;185;250;Vila Nova de Famalicão
+;031235;Ribeirão;185;250;Vila Nova de Famalicão
+;031236;Ruivães;185;250;Vila Nova de Famalicão
+;031237;Arnoso (Santa Eulália);185;250;Vila Nova de Famalicão
+;031238;Arnoso (Santa Maria);185;250;Vila Nova de Famalicão
+;031239;Oliveira (Santa Maria);185;250;Vila Nova de Famalicão
+;031240;Vale (São Cosme);185;250;Vila Nova de Famalicão
+;031241;Vale (São Martinho);185;250;Vila Nova de Famalicão
+;031242;Oliveira (São Mateus);185;250;Vila Nova de Famalicão
+;031243;Seide (São Miguel);185;250;Vila Nova de Famalicão
+;031244;Seide (São Paio);185;250;Vila Nova de Famalicão
+;031245;Sezures;185;250;Vila Nova de Famalicão
+;031246;Telhado;185;250;Vila Nova de Famalicão
+;031247;Vermoim;185;250;Vila Nova de Famalicão
+;031248;Vila Nova de Famalicão;185;250;Vila Nova de Famalicão
+;031249;Vilarinho das Cambas;185;250;Vila Nova de Famalicão
+;031301;Aboim da Nóbrega;185;250;Vila Verde
+;031302;Arcozelo;185;250;Vila Verde
+;031303;Atães;185;250;Vila Verde
+;031304;Atiães;185;250;Vila Verde
+;031305;Azões;185;250;Vila Verde
+;031306;Barbudo;185;250;Vila Verde
+;031307;Barros;185;250;Vila Verde
+;031308;Cabanelas;185;250;Vila Verde
+;031309;Cervães;185;250;Vila Verde
+;031310;Codeceda;185;250;Vila Verde
+;031311;Coucieiro;185;250;Vila Verde
+;031312;Covas;185;250;Vila Verde
+;031313;Dossãos;185;250;Vila Verde
+;031314;Duas Igrejas;185;250;Vila Verde
+;031315;Esqueiros;185;250;Vila Verde
+;031316;Freiriz;185;250;Vila Verde
+;031317;Geme;185;250;Vila Verde
+;031318;Goães;185;250;Vila Verde
+;031319;Godinhaços;185;250;Vila Verde
+;031320;Gomide;185;250;Vila Verde
+;031321;Gondiães;185;250;Vila Verde
+;031322;Gondomar;185;250;Vila Verde
+;031323;Lage;185;250;Vila Verde
+;031324;Lanhas;185;250;Vila Verde
+;031325;Loureira;185;250;Vila Verde
+;031326;Marrancos;185;250;Vila Verde
+;031327;Mós;185;250;Vila Verde
+;031328;Moure;185;250;Vila Verde
+;031329;Nevogilde;185;250;Vila Verde
+;031330;Oleiros;185;250;Vila Verde
+;031331;Parada de Gatim;185;250;Vila Verde
+;031332;Passó;185;250;Vila Verde
+;031333;Pedregais;185;250;Vila Verde
+;031334;Penascais;185;250;Vila Verde
+;031335;Pico;185;250;Vila Verde
+;031336;Pico de Regalados;185;250;Vila Verde
+;031337;Ponte;185;250;Vila Verde
+;031338;Portela das Cabras;185;250;Vila Verde
+;031339;Rio Mau;185;250;Vila Verde
+;031340;Sabariz;185;250;Vila Verde
+;031341;Sande;185;250;Vila Verde
+;031342;Vila de Prado;185;250;Vila Verde
+;031343;Oriz (Santa Marinha);185;250;Vila Verde
+;031344;Carreiras (Santiago);185;250;Vila Verde
+;031345;Escariz (São Mamede);185;250;Vila Verde
+;031346;Escariz (São Martinho);185;250;Vila Verde
+;031347;Valbom (São Martinho);185;250;Vila Verde
+;031348;Carreiras (São Miguel);185;250;Vila Verde
+;031349;Oriz (São Miguel);185;250;Vila Verde
+;031350;Prado (São Miguel);185;250;Vila Verde
+;031351;Valbom (São Pedro);185;250;Vila Verde
+;031352;Soutelo;185;250;Vila Verde
+;031353;Travassós;185;250;Vila Verde
+;031354;Turiz;185;250;Vila Verde
+;031355;Valdreu;185;250;Vila Verde
+;031356;Valões;185;250;Vila Verde
+;031357;Vila Verde;185;250;Vila Verde
+;031358;Vilarinho;185;250;Vila Verde
+;031401;Santa Eulália;185;250;Vizela
+;031402;Caldas de Vizela (São João);185;250;Vizela
+;031403;Caldas de Vizela (São Miguel);185;250;Vizela
+;031404;Infias;185;250;Vizela
+;031405;Tagilde;185;250;Vizela
+;031406;Vizela (Santo Adrião);185;250;Vizela
+;031407;Vizela (São Paio);185;250;Vizela
+;040101;Agrobom;185;251;Alfândega da Fé
+;040102;Alfândega da Fé;185;251;Alfândega da Fé
+;040103;Cerejais;185;251;Alfândega da Fé
+;040104;Eucisia;185;251;Alfândega da Fé
+;040105;Ferradosa;185;251;Alfândega da Fé
+;040106;Gebelim;185;251;Alfândega da Fé
+;040107;Gouveia;185;251;Alfândega da Fé
+;040108;Parada;185;251;Alfândega da Fé
+;040109;Pombal;185;251;Alfândega da Fé
+;040110;Saldonha;185;251;Alfândega da Fé
+;040111;Sambade;185;251;Alfândega da Fé
+;040112;Sendim da Ribeira;185;251;Alfândega da Fé
+;040113;Sendim da Serra;185;251;Alfândega da Fé
+;040114;Soeima;185;251;Alfândega da Fé
+;040115;Vale Pereiro;185;251;Alfândega da Fé
+;040116;Vales;185;251;Alfândega da Fé
+;040117;Valverde;185;251;Alfândega da Fé
+;040118;Vilar Chão;185;251;Alfândega da Fé
+;040119;Vilarelhos;185;251;Alfândega da Fé
+;040120;Vilares de Vilariça;185;251;Alfândega da Fé
+;040201;Alfaião;185;251;Bragança
+;040202;Aveleda;185;251;Bragança
+;040203;Babe;185;251;Bragança
+;040204;Baçal;185;251;Bragança
+;040205;Calvelhe;185;251;Bragança
+;040206;Carragosa;185;251;Bragança
+;040207;Carrazedo;185;251;Bragança
+;040208;Castrelos;185;251;Bragança
+;040209;Castro de Avelãs;185;251;Bragança
+;040210;Coelhoso;185;251;Bragança
+;040211;Deilão;185;251;Bragança
+;040212;Donai;185;251;Bragança
+;040213;Espinhosela;185;251;Bragança
+;040214;Failde;185;251;Bragança
+;040215;França;185;251;Bragança
+;040216;Gimonde;185;251;Bragança
+;040217;Gondesende;185;251;Bragança
+;040218;Gostei;185;251;Bragança
+;040219;Grijó de Parada;185;251;Bragança
+;040220;Izeda;185;251;Bragança
+;040221;Macedo do Mato;185;251;Bragança
+;040222;Meixedo;185;251;Bragança
+;040223;Milhão;185;251;Bragança
+;040224;Mós;185;251;Bragança
+;040225;Nogueira;185;251;Bragança
+;040226;Outeiro;185;251;Bragança
+;040227;Parada;185;251;Bragança
+;040228;Paradinha Nova;185;251;Bragança
+;040229;Parâmio;185;251;Bragança
+;040230;Pinela;185;251;Bragança
+;040231;Pombares;185;251;Bragança
+;040232;Quintanilha;185;251;Bragança
+;040233;Quintela de Lampaças;185;251;Bragança
+;040234;Rabal;185;251;Bragança
+;040235;Rebordaínhos;185;251;Bragança
+;040236;Rebordãos;185;251;Bragança
+;040237;Rio Frio;185;251;Bragança
+;040238;Rio de Onor;185;251;Bragança
+;040239;Salsas;185;251;Bragança
+;040240;Samil;185;251;Bragança
+;040241;Santa Comba de Rossas;185;251;Bragança
+;040242;Bragança (Santa Maria);185;251;Bragança
+;040243;São Julião de Palácios;185;251;Bragança
+;040244;São Pedro de Sarracenos;185;251;Bragança
+;040245;Bragança (Sé);185;251;Bragança
+;040246;Sendas;185;251;Bragança
+;040247;Serapicos;185;251;Bragança
+;040248;Sortes;185;251;Bragança
+;040249;Zóio;185;251;Bragança
+;040301;Amedo;185;251;Carrazeda de Ansiães
+;040302;Beira Grande;185;251;Carrazeda de Ansiães
+;040303;Belver;185;251;Carrazeda de Ansiães
+;040304;Carrazeda de Ansiães;185;251;Carrazeda de Ansiães
+;040305;Castanheiro;185;251;Carrazeda de Ansiães
+;040306;Fonte Longa;185;251;Carrazeda de Ansiães
+;040307;Lavandeira;185;251;Carrazeda de Ansiães
+;040308;Linhares;185;251;Carrazeda de Ansiães
+;040309;Marzagão;185;251;Carrazeda de Ansiães
+;040310;Mogo de Malta;185;251;Carrazeda de Ansiães
+;040311;Parambos;185;251;Carrazeda de Ansiães
+;040312;Pereiros;185;251;Carrazeda de Ansiães
+;040313;Pinhal do Norte;185;251;Carrazeda de Ansiães
+;040314;Pombal;185;251;Carrazeda de Ansiães
+;040315;Ribalonga;185;251;Carrazeda de Ansiães
+;040316;Seixo de Ansiães;185;251;Carrazeda de Ansiães
+;040317;Selores;185;251;Carrazeda de Ansiães
+;040318;Vilarinho da Castanheira;185;251;Carrazeda de Ansiães
+;040319;Zedes;185;251;Carrazeda de Ansiães
+;040401;Fornos;185;251;Freixo de Espada à Cinta
+;040402;Freixo de Espada à Cinta;185;251;Freixo de Espada à Cinta
+;040403;Lagoaça;185;251;Freixo de Espada à Cinta
+;040404;Ligares;185;251;Freixo de Espada à Cinta
+;040405;Mazouco;185;251;Freixo de Espada à Cinta
+;040406;Poiares;185;251;Freixo de Espada à Cinta
+;040501;Ala;185;251;Macedo de Cavaleiros
+;040502;Amendoeira;185;251;Macedo de Cavaleiros
+;040503;Arcas;185;251;Macedo de Cavaleiros
+;040504;Bagueixe;185;251;Macedo de Cavaleiros
+;040505;Bornes;185;251;Macedo de Cavaleiros
+;040506;Burga;185;251;Macedo de Cavaleiros
+;040507;Carrapatas;185;251;Macedo de Cavaleiros
+;040508;Castelãos;185;251;Macedo de Cavaleiros
+;040509;Chacim;185;251;Macedo de Cavaleiros
+;040510;Cortiços;185;251;Macedo de Cavaleiros
+;040511;Corujas;185;251;Macedo de Cavaleiros
+;040512;Edroso;185;251;Macedo de Cavaleiros
+;040513;Espadanedo;185;251;Macedo de Cavaleiros
+;040514;Ferreira;185;251;Macedo de Cavaleiros
+;040515;Grijó;185;251;Macedo de Cavaleiros
+;040516;Lagoa;185;251;Macedo de Cavaleiros
+;040517;Lamalonga;185;251;Macedo de Cavaleiros
+;040518;Lamas;185;251;Macedo de Cavaleiros
+;040519;Lombo;185;251;Macedo de Cavaleiros
+;040520;Macedo de Cavaleiros;185;251;Macedo de Cavaleiros
+;040521;Morais;185;251;Macedo de Cavaleiros
+;040522;Murçós;185;251;Macedo de Cavaleiros
+;040523;Olmos;185;251;Macedo de Cavaleiros
+;040524;Peredo;185;251;Macedo de Cavaleiros
+;040525;Podence;185;251;Macedo de Cavaleiros
+;040526;Salselas;185;251;Macedo de Cavaleiros
+;040527;Santa Combinha;185;251;Macedo de Cavaleiros
+;040528;Sezulfe;185;251;Macedo de Cavaleiros
+;040529;Soutelo Mourisco;185;251;Macedo de Cavaleiros
+;040530;Talhas;185;251;Macedo de Cavaleiros
+;040531;Talhinhas;185;251;Macedo de Cavaleiros
+;040532;Vale Benfeito;185;251;Macedo de Cavaleiros
+;040533;Vale da Porca;185;251;Macedo de Cavaleiros
+;040534;Vale de Prados;185;251;Macedo de Cavaleiros
+;040535;Vilar do Monte;185;251;Macedo de Cavaleiros
+;040536;Vilarinho de Agrochão;185;251;Macedo de Cavaleiros
+;040537;Vilarinho do Monte;185;251;Macedo de Cavaleiros
+;040538;Vinhas;185;251;Macedo de Cavaleiros
+;040601;Atenor;185;251;Miranda do Douro
+;040602;Cicouro;185;251;Miranda do Douro
+;040603;Constantim;185;251;Miranda do Douro
+;040604;Duas Igrejas;185;251;Miranda do Douro
+;040605;Genísio;185;251;Miranda do Douro
+;040606;Ifanes;185;251;Miranda do Douro
+;040607;Malhadas;185;251;Miranda do Douro
+;040608;Miranda do Douro;185;251;Miranda do Douro
+;040609;Palaçoulo;185;251;Miranda do Douro
+;040610;Paradela;185;251;Miranda do Douro
+;040611;Picote;185;251;Miranda do Douro
+;040612;Póvoa;185;251;Miranda do Douro
+;040613;São Martinho de Angueira;185;251;Miranda do Douro
+;040614;Sendim;185;251;Miranda do Douro
+;040615;Silva;185;251;Miranda do Douro
+;040616;Vila Chã de Braciosa;185;251;Miranda do Douro
+;040617;Águas Vivas;185;251;Miranda do Douro
+;040701;Abambres;185;251;Mirandela
+;040702;Abreiro;185;251;Mirandela
+;040703;Aguieiras;185;251;Mirandela
+;040704;Alvites;185;251;Mirandela
+;040705;Avantos;185;251;Mirandela
+;040706;Avidagos;185;251;Mirandela
+;040707;Barcel;185;251;Mirandela
+;040708;Bouça;185;251;Mirandela
+;040709;Cabanelas;185;251;Mirandela
+;040710;Caravelas;185;251;Mirandela
+;040711;Carvalhais;185;251;Mirandela
+;040712;Cedães;185;251;Mirandela
+;040713;Cobro;185;251;Mirandela
+;040714;Fradizela;185;251;Mirandela
+;040715;Franco;185;251;Mirandela
+;040716;Frechas;185;251;Mirandela
+;040717;Freixeda;185;251;Mirandela
+;040718;Lamas de Orelhão;185;251;Mirandela
+;040719;Marmelos;185;251;Mirandela
+;040720;Mascarenhas;185;251;Mirandela
+;040721;Mirandela;185;251;Mirandela
+;040722;Múrias;185;251;Mirandela
+;040723;Navalho;185;251;Mirandela
+;040724;Passos;185;251;Mirandela
+;040725;Pereira;185;251;Mirandela
+;040726;Romeu;185;251;Mirandela
+;040727;São Pedro Velho;185;251;Mirandela
+;040728;São Salvador;185;251;Mirandela
+;040729;Sucçães;185;251;Mirandela
+;040730;Torre de Dona Chama;185;251;Mirandela
+;040731;Vale de Asnes;185;251;Mirandela
+;040732;Vale de Gouvinhas;185;251;Mirandela
+;040733;Vale de Salgueiro;185;251;Mirandela
+;040734;Vale de Telhas;185;251;Mirandela
+;040735;Valverde;185;251;Mirandela
+;040736;Vila Boa;185;251;Mirandela
+;040737;Vila Verde;185;251;Mirandela
+;040801;Azinhoso;185;251;Mogadouro
+;040802;Bemposta;185;251;Mogadouro
+;040803;Bruçó;185;251;Mogadouro
+;040804;Brunhoso;185;251;Mogadouro
+;040805;Brunhozinho;185;251;Mogadouro
+;040806;Castanheira;185;251;Mogadouro
+;040807;Castelo Branco;185;251;Mogadouro
+;040808;Castro Vicente;185;251;Mogadouro
+;040809;Meirinhos;185;251;Mogadouro
+;040810;Mogadouro;185;251;Mogadouro
+;040811;Paradela;185;251;Mogadouro
+;040812;Penas Roias;185;251;Mogadouro
+;040813;Peredo da Bemposta;185;251;Mogadouro
+;040814;Remondes;185;251;Mogadouro
+;040815;Saldanha;185;251;Mogadouro
+;040816;Sanhoane;185;251;Mogadouro
+;040817;São Martinho do Peso;185;251;Mogadouro
+;040818;Soutelo;185;251;Mogadouro
+;040819;Tó;185;251;Mogadouro
+;040820;Travanca;185;251;Mogadouro
+;040821;Urrós;185;251;Mogadouro
+;040822;Vale da Madre;185;251;Mogadouro
+;040823;Vale de Porco;185;251;Mogadouro
+;040824;Valverde;185;251;Mogadouro
+;040825;Ventozelo;185;251;Mogadouro
+;040826;Vila de Ala;185;251;Mogadouro
+;040827;Vilar de Rei;185;251;Mogadouro
+;040828;Vilarinho dos Galegos;185;251;Mogadouro
+;040901;Açoreira;185;251;Torre de Moncorvo
+;040902;Adeganha;185;251;Torre de Moncorvo
+;040903;Cabeça Boa;185;251;Torre de Moncorvo
+;040904;Cardanha;185;251;Torre de Moncorvo
+;040905;Carviçais;185;251;Torre de Moncorvo
+;040906;Castedo;185;251;Torre de Moncorvo
+;040907;Felgar;185;251;Torre de Moncorvo
+;040908;Felgueiras;185;251;Torre de Moncorvo
+;040909;Horta da Vilariça;185;251;Torre de Moncorvo
+;040910;Larinho;185;251;Torre de Moncorvo
+;040911;Lousa;185;251;Torre de Moncorvo
+;040912;Maçores;185;251;Torre de Moncorvo
+;040913;Mós;185;251;Torre de Moncorvo
+;040914;Peredo dos Castelhanos;185;251;Torre de Moncorvo
+;040915;Souto da Velha;185;251;Torre de Moncorvo
+;040916;Torre de Moncorvo;185;251;Torre de Moncorvo
+;040917;Urrós;185;251;Torre de Moncorvo
+;041001;Assares;185;251;Vila Flor
+;041002;Benlhevai;185;251;Vila Flor
+;041003;Candoso;185;251;Vila Flor
+;041004;Carvalho de Egas;185;251;Vila Flor
+;041005;Freixiel;185;251;Vila Flor
+;041006;Lodões;185;251;Vila Flor
+;041007;Mourão;185;251;Vila Flor
+;041008;Nabo;185;251;Vila Flor
+;041009;Roios;185;251;Vila Flor
+;041010;Samões;185;251;Vila Flor
+;041011;Sampaio;185;251;Vila Flor
+;041012;Santa Comba de Vilariça;185;251;Vila Flor
+;041013;Seixo de Manhoses;185;251;Vila Flor
+;041014;Trindade;185;251;Vila Flor
+;041015;Vale Frechoso;185;251;Vila Flor
+;041016;Valtorno;185;251;Vila Flor
+;041017;Vila Flor;185;251;Vila Flor
+;041018;Vilarinho das Azenhas;185;251;Vila Flor
+;041019;Vilas Boas;185;251;Vila Flor
+;041101;Algoso;185;251;Vimioso
+;041102;Angueira;185;251;Vimioso
+;041103;Argozelo;185;251;Vimioso
+;041104;Avelanoso;185;251;Vimioso
+;041105;Caçarelhos;185;251;Vimioso
+;041106;Campo de Víboras;185;251;Vimioso
+;041107;Carção;185;251;Vimioso
+;041108;Matela;185;251;Vimioso
+;041109;Pinelo;185;251;Vimioso
+;041110;Santulhão;185;251;Vimioso
+;041111;Uva;185;251;Vimioso
+;041112;Vale de Frades;185;251;Vimioso
+;041113;Vilar Seco;185;251;Vimioso
+;041114;Vimioso;185;251;Vimioso
+;041201;Agrochão;185;251;Vinhais
+;041202;Alvaredos;185;251;Vinhais
+;041203;Candedo;185;251;Vinhais
+;041204;Celas;185;251;Vinhais
+;041205;Curopos;185;251;Vinhais
+;041206;Edral;185;251;Vinhais
+;041207;Edrosa;185;251;Vinhais
+;041208;Ervedosa;185;251;Vinhais
+;041209;Fresulfe;185;251;Vinhais
+;041210;Mofreita;185;251;Vinhais
+;041211;Moimenta;185;251;Vinhais
+;041212;Montouto;185;251;Vinhais
+;041213;Nunes;185;251;Vinhais
+;041214;Ousilhão;185;251;Vinhais
+;041215;Paçó;185;251;Vinhais
+;041216;Penhas Juntas;185;251;Vinhais
+;041217;Pinheiro Novo;185;251;Vinhais
+;041218;Quirás;185;251;Vinhais
+;041219;Rebordelo;185;251;Vinhais
+;041220;Santa Cruz;185;251;Vinhais
+;041221;Santalha;185;251;Vinhais
+;041222;São Jomil;185;251;Vinhais
+;041223;Sobreiró de Baixo;185;251;Vinhais
+;041224;Soeira;185;251;Vinhais
+;041225;Travanca;185;251;Vinhais
+;041226;Tuizelo;185;251;Vinhais
+;041227;Vale das Fontes;185;251;Vinhais
+;041228;Vale de Janeiro;185;251;Vinhais
+;041229;Vila Boa de Ousilhão;185;251;Vinhais
+;041230;Vila Verde;185;251;Vinhais
+;041231;Vilar de Lomba;185;251;Vinhais
+;041232;Vilar de Ossos;185;251;Vinhais
+;041233;Vilar de Peregrinos;185;251;Vinhais
+;041234;Vilar Seco de Lomba;185;251;Vinhais
+;041235;Vinhais;185;251;Vinhais
+;050101;Belmonte;185;252;Belmonte
+;050102;Caria;185;252;Belmonte
+;050103;Colmeal da Torre;185;252;Belmonte
+;050104;Inguias;185;252;Belmonte
+;050105;Maçainhas;185;252;Belmonte
+;050201;Alcains;185;252;Castelo Branco
+;050202;Almaceda;185;252;Castelo Branco
+;050203;Benquerenças;185;252;Castelo Branco
+;050204;Cafede;185;252;Castelo Branco
+;050205;Castelo Branco;185;252;Castelo Branco
+;050206;Cebolais de Cima;185;252;Castelo Branco
+;050207;Escalos de Baixo;185;252;Castelo Branco
+;050208;Escalos de Cima;185;252;Castelo Branco
+;050209;Freixial do Campo;185;252;Castelo Branco
+;050210;Juncal do Campo;185;252;Castelo Branco
+;050211;Lardosa;185;252;Castelo Branco
+;050212;Louriçal do Campo;185;252;Castelo Branco
+;050213;Lousa;185;252;Castelo Branco
+;050214;Malpica do Tejo;185;252;Castelo Branco
+;050215;Mata;185;252;Castelo Branco
+;050216;Monforte da Beira;185;252;Castelo Branco
+;050217;Ninho do Açor;185;252;Castelo Branco
+;050218;Póvoa de Rio de Moinhos;185;252;Castelo Branco
+;050219;Retaxo;185;252;Castelo Branco
+;050220;Salgueiro do Campo;185;252;Castelo Branco
+;050221;Santo André das Tojeiras;185;252;Castelo Branco
+;050222;São Vicente da Beira;185;252;Castelo Branco
+;050223;Sarzedas;185;252;Castelo Branco
+;050224;Sobral do Campo;185;252;Castelo Branco
+;050225;Tinalhas;185;252;Castelo Branco
+;050301;Vila do Carvalho;185;252;Covilhã
+;050302;Aldeia de São Francisco de Assis;185;252;Covilhã
+;050303;Aldeia do Souto;185;252;Covilhã
+;050304;Barco;185;252;Covilhã
+;050305;Boidobra;185;252;Covilhã
+;050306;Casegas;185;252;Covilhã
+;050307;Covilhã (Conceição);185;252;Covilhã
+;050308;Cortes do Meio;185;252;Covilhã
+;050309;Dominguizo;185;252;Covilhã
+;050310;Erada;185;252;Covilhã
+;050311;Ferro;185;252;Covilhã
+;050312;Orjais;185;252;Covilhã
+;050313;Ourondo;185;252;Covilhã
+;050314;Paul;185;252;Covilhã
+;050315;Peraboa;185;252;Covilhã
+;050316;Peso;185;252;Covilhã
+;050317;Covilhã (Santa Maria);185;252;Covilhã
+;050318;São Jorge da Beira;185;252;Covilhã
+;050319;Covilhã (São Martinho);185;252;Covilhã
+;050320;Covilhã (São Pedro);185;252;Covilhã
+;050321;Sarzedo;185;252;Covilhã
+;050322;Sobral de São Miguel;185;252;Covilhã
+;050323;Teixoso;185;252;Covilhã
+;050324;Tortosendo;185;252;Covilhã
+;050325;Unhais da Serra;185;252;Covilhã
+;050326;Vale Formoso;185;252;Covilhã
+;050327;Verdelhos;185;252;Covilhã
+;050328;Vales do Rio;185;252;Covilhã
+;050329;Coutada;185;252;Covilhã
+;050330;Cantar-Galo;185;252;Covilhã
+;050331;Canhoso;185;252;Covilhã
+;050401;Alcaide;185;252;Fundão
+;050402;Alcaria;185;252;Fundão
+;050403;Alcongosta;185;252;Fundão
+;050404;Aldeia de Joanes;185;252;Fundão
+;050405;Aldeia Nova do Cabo;185;252;Fundão
+;050406;Alpedrinha;185;252;Fundão
+;050407;Atalaia do Campo;185;252;Fundão
+;050408;Barroca;185;252;Fundão
+;050409;Bogas de Baixo;185;252;Fundão
+;050410;Bogas de Cima;185;252;Fundão
+;050411;Capinha;185;252;Fundão
+;050412;Castelejo;185;252;Fundão
+;050413;Castelo Novo;185;252;Fundão
+;050414;Donas;185;252;Fundão
+;050415;Escarigo;185;252;Fundão
+;050416;Fatela;185;252;Fundão
+;050417;Fundão;185;252;Fundão
+;050418;Janeiro de Cima;185;252;Fundão
+;050419;Lavacolhos;185;252;Fundão
+;050420;Orca;185;252;Fundão
+;050421;Pêro Viseu;185;252;Fundão
+;050422;Póvoa de Atalaia;185;252;Fundão
+;050423;Salgueiro;185;252;Fundão
+;050424;Silvares;185;252;Fundão
+;050425;Soalheira;185;252;Fundão
+;050426;Souto da Casa;185;252;Fundão
+;050427;Telhado;185;252;Fundão
+;050428;Vale de Prazeres;185;252;Fundão
+;050429;Valverde;185;252;Fundão
+;050430;Mata da Rainha;185;252;Fundão
+;050431;Enxames;185;252;Fundão
+;050501;Alcafozes;185;252;Idanha-a-Nova
+;050502;Aldeia de Santa Margarida;185;252;Idanha-a-Nova
+;050503;Idanha-a-Nova;185;252;Idanha-a-Nova
+;050504;Idanha-a-Velha;185;252;Idanha-a-Nova
+;050505;Ladoeiro;185;252;Idanha-a-Nova
+;050506;Medelim;185;252;Idanha-a-Nova
+;050507;Monfortinho;185;252;Idanha-a-Nova
+;050508;Monsanto;185;252;Idanha-a-Nova
+;050509;Oledo;185;252;Idanha-a-Nova
+;050510;Penha Garcia;185;252;Idanha-a-Nova
+;050511;Proença-a-Velha;185;252;Idanha-a-Nova
+;050512;Rosmaninhal;185;252;Idanha-a-Nova
+;050513;Salvaterra do Extremo;185;252;Idanha-a-Nova
+;050514;São Miguel de Acha;185;252;Idanha-a-Nova
+;050515;Segura;185;252;Idanha-a-Nova
+;050516;Toulões;185;252;Idanha-a-Nova
+;050517;Zebreira;185;252;Idanha-a-Nova
+;050601;Álvaro;185;252;Oleiros
+;050602;Amieira;185;252;Oleiros
+;050603;Cambas;185;252;Oleiros
+;050604;Estreito;185;252;Oleiros
+;050605;Isna;185;252;Oleiros
+;050606;Madeirã;185;252;Oleiros
+;050607;Mosteiro;185;252;Oleiros
+;050608;Oleiros;185;252;Oleiros
+;050609;Orvalho;185;252;Oleiros
+;050610;Sarnadas de São Simão;185;252;Oleiros
+;050611;Sobral;185;252;Oleiros
+;050612;Vilar Barroco;185;252;Oleiros
+;050701;Águas;185;252;Penamacor
+;050702;Aldeia do Bispo;185;252;Penamacor
+;050703;Aldeia de João Pires;185;252;Penamacor
+;050704;Aranhas;185;252;Penamacor
+;050705;Bemposta;185;252;Penamacor
+;050706;Benquerença;185;252;Penamacor
+;050707;Meimão;185;252;Penamacor
+;050708;Meimoa;185;252;Penamacor
+;050709;Pedrógão de São Pedro;185;252;Penamacor
+;050710;Penamacor;185;252;Penamacor
+;050711;Salvador;185;252;Penamacor
+;050712;Vale da Senhora da Póvoa;185;252;Penamacor
+;050801;Alvito da Beira;185;252;Proença-a-Nova
+;050802;Montes da Senhora;185;252;Proença-a-Nova
+;050803;Peral;185;252;Proença-a-Nova
+;050804;Proença-a-Nova;185;252;Proença-a-Nova
+;050805;São Pedro do Esteval;185;252;Proença-a-Nova
+;050806;Sobreira Formosa;185;252;Proença-a-Nova
+;050901;Cabeçudo;185;252;Sertã
+;050902;Carvalhal;185;252;Sertã
+;050903;Castelo;185;252;Sertã
+;050904;Cernache do Bonjardim;185;252;Sertã
+;050905;Cumeada;185;252;Sertã
+;050906;Ermida;185;252;Sertã
+;050907;Figueiredo;185;252;Sertã
+;050908;Marmeleiro;185;252;Sertã
+;050909;Nesperal;185;252;Sertã
+;050910;Palhais;185;252;Sertã
+;050911;Pedrógão Pequeno;185;252;Sertã
+;050912;Sertã;185;252;Sertã
+;050913;Troviscal;185;252;Sertã
+;050914;Várzea dos Cavaleiros;185;252;Sertã
+;051001;Fundada;185;252;Vila de Rei
+;051002;São João do Peso;185;252;Vila de Rei
+;051003;Vila de Rei;185;252;Vila de Rei
+;051101;Fratel;185;252;Vila Velha de Ródão
+;051102;Perais;185;252;Vila Velha de Ródão
+;051103;Sarnadas de Ródão;185;252;Vila Velha de Ródão
+;051104;Vila Velha de Ródão;185;252;Vila Velha de Ródão
+;060101;Anceriz;185;253;Arganil
+;060102;Arganil;185;253;Arganil
+;060103;Barril de Alva;185;253;Arganil
+;060104;Benfeita;185;253;Arganil
+;060105;Celavisa;185;253;Arganil
+;060106;Cepos;185;253;Arganil
+;060107;Cerdeira;185;253;Arganil
+;060108;Coja;185;253;Arganil
+;060109;Folques;185;253;Arganil
+;060110;Moura da Serra;185;253;Arganil
+;060111;Piódão;185;253;Arganil
+;060112;Pomares;185;253;Arganil
+;060113;Pombeiro da Beira;185;253;Arganil
+;060114;São Martinho da Cortiça;185;253;Arganil
+;060115;Sarzedo;185;253;Arganil
+;060116;Secarias;185;253;Arganil
+;060117;Teixeira;185;253;Arganil
+;060118;Vila Cova de Alva;185;253;Arganil
+;060201;Ançã;185;253;Cantanhede
+;060202;Bolho;185;253;Cantanhede
+;060203;Cadima;185;253;Cantanhede
+;060204;Cantanhede;185;253;Cantanhede
+;060205;Cordinhã;185;253;Cantanhede
+;060206;Covões;185;253;Cantanhede
+;060207;Febres;185;253;Cantanhede
+;060208;Murtede;185;253;Cantanhede
+;060209;Ourentã;185;253;Cantanhede
+;060210;Outil;185;253;Cantanhede
+;060211;Pocariça;185;253;Cantanhede
+;060212;Portunhos;185;253;Cantanhede
+;060213;Sepins;185;253;Cantanhede
+;060214;Tocha;185;253;Cantanhede
+;060215;São Caetano;185;253;Cantanhede
+;060216;Corticeiro de Cima;185;253;Cantanhede
+;060217;Vilamar;185;253;Cantanhede
+;060218;Sanguinheira;185;253;Cantanhede
+;060219;Camarneira;185;253;Cantanhede
+;060301;Almalaguês;185;253;Coimbra
+;060302;Coimbra (ALMEDINA);185;253;Coimbra
+;060303;Ameal;185;253;Coimbra
+;060304;Antanhol;185;253;Coimbra
+;060305;Antuzede;185;253;Coimbra
+;060306;Arzila;185;253;Coimbra
+;060307;Assafarge;185;253;Coimbra
+;060308;Botão;185;253;Coimbra
+;060309;Brasfemes;185;253;Coimbra
+;060310;Castelo Viegas;185;253;Coimbra
+;060311;Ceira;185;253;Coimbra
+;060312;Cernache;185;253;Coimbra
+;060313;Eiras;185;253;Coimbra
+;060314;Lamarosa;185;253;Coimbra
+;060315;Ribeira de Frades;185;253;Coimbra
+;060316;Santa Clara;185;253;Coimbra
+;060317;Coimbra (Santa Cruz);185;253;Coimbra
+;060318;Santo António dos Olivais;185;253;Coimbra
+;060319;Coimbra (São Bartolomeu);185;253;Coimbra
+;060320;São João do Campo;185;253;Coimbra
+;060321;São Martinho de Árvore;185;253;Coimbra
+;060322;São Martinho do Bispo;185;253;Coimbra
+;060323;São Paulo de Frades;185;253;Coimbra
+;060324;São Silvestre;185;253;Coimbra
+;060325;Coimbra (Sé Nova);185;253;Coimbra
+;060326;Souselas;185;253;Coimbra
+;060327;Taveiro;185;253;Coimbra
+;060328;Torre de Vilela;185;253;Coimbra
+;060329;Torres do Mondego;185;253;Coimbra
+;060330;Trouxemil;185;253;Coimbra
+;060331;Vil de Matos;185;253;Coimbra
+;060401;Anobra;185;253;Condeixa-a-Nova
+;060402;Belide;185;253;Condeixa-a-Nova
+;060403;Bem da Fé;185;253;Condeixa-a-Nova
+;060404;Condeixa-a-Nova;185;253;Condeixa-a-Nova
+;060405;Condeixa-a-Velha;185;253;Condeixa-a-Nova
+;060406;Ega;185;253;Condeixa-a-Nova
+;060407;Furadouro;185;253;Condeixa-a-Nova
+;060408;Sebal;185;253;Condeixa-a-Nova
+;060409;Vila Seca;185;253;Condeixa-a-Nova
+;060410;Zambujal;185;253;Condeixa-a-Nova
+;060501;Alhadas;185;253;Figueira da Foz
+;060502;Alqueidão;185;253;Figueira da Foz
+;060503;Brenha;185;253;Figueira da Foz
+;060504;Buarcos;185;253;Figueira da Foz
+;060505;Ferreira-a-Nova;185;253;Figueira da Foz
+;060506;Lavos;185;253;Figueira da Foz
+;060507;Maiorca;185;253;Figueira da Foz
+;060508;Marinha das Ondas;185;253;Figueira da Foz
+;060509;Paião;185;253;Figueira da Foz
+;060510;Quiaios;185;253;Figueira da Foz
+;060511;São Julião da Figueira da Foz;185;253;Figueira da Foz
+;060512;Tavarede;185;253;Figueira da Foz
+;060513;Vila Verde;185;253;Figueira da Foz
+;060514;São Pedro;185;253;Figueira da Foz
+;060515;Bom Sucesso;185;253;Figueira da Foz
+;060516;Santana;185;253;Figueira da Foz
+;060517;Borda do Campo;185;253;Figueira da Foz
+;060518;Moinhos da Gândara;185;253;Figueira da Foz
+;060601;Alvares;185;253;Góis
+;060602;Cadafaz;185;253;Góis
+;060603;Colmeal;185;253;Góis
+;060604;Góis;185;253;Góis
+;060605;Vila Nova do Ceira;185;253;Góis
+;060701;Casal de Ermio;185;253;Lousã
+;060702;Foz de Arouce;185;253;Lousã
+;060703;Lousã;185;253;Lousã
+;060704;Serpins;185;253;Lousã
+;060705;Vilarinho;185;253;Lousã
+;060706;Gândaras;185;253;Lousã
+;060801;Mira;185;253;Mira
+;060802;Seixo;185;253;Mira
+;060803;Carapelhos;185;253;Mira
+;060804;Praia de Mira;185;253;Mira
+;060901;Lamas;185;253;Miranda do Corvo
+;060902;Miranda do Corvo;185;253;Miranda do Corvo
+;060903;Rio Vide;185;253;Miranda do Corvo
+;060904;Semide;185;253;Miranda do Corvo
+;060905;Vila Nova;185;253;Miranda do Corvo
+;061001;Abrunheira;185;253;Montemor-o-Velho
+;061002;Arazede;185;253;Montemor-o-Velho
+;061003;Carapinheira;185;253;Montemor-o-Velho
+;061004;Gatões;185;253;Montemor-o-Velho
+;061005;Liceia;185;253;Montemor-o-Velho
+;061006;Meãs do Campo;185;253;Montemor-o-Velho
+;061007;Montemor-o-Velho;185;253;Montemor-o-Velho
+;061008;Pereira;185;253;Montemor-o-Velho
+;061009;Santo Varão;185;253;Montemor-o-Velho
+;061010;Seixo de Gatões;185;253;Montemor-o-Velho
+;061011;Tentúgal;185;253;Montemor-o-Velho
+;061012;Verride;185;253;Montemor-o-Velho
+;061013;Vila Nova da Barca;185;253;Montemor-o-Velho
+;061014;Ereira;185;253;Montemor-o-Velho
+;061101;Aldeia das Dez;185;253;Oliveira do Hospital
+;061102;Alvoco das Várzeas;185;253;Oliveira do Hospital
+;061103;Avô;185;253;Oliveira do Hospital
+;061104;Bobadela;185;253;Oliveira do Hospital
+;061105;Ervedal;185;253;Oliveira do Hospital
+;061106;Lagares;185;253;Oliveira do Hospital
+;061107;Lagos da Beira;185;253;Oliveira do Hospital
+;061108;Lajeosa;185;253;Oliveira do Hospital
+;061109;Lourosa;185;253;Oliveira do Hospital
+;061110;Meruge;185;253;Oliveira do Hospital
+;061111;Nogueira do Cravo;185;253;Oliveira do Hospital
+;061112;Oliveira do Hospital;185;253;Oliveira do Hospital
+;061113;Penalva de Alva;185;253;Oliveira do Hospital
+;061114;Santa Ovaia;185;253;Oliveira do Hospital
+;061115;São Gião;185;253;Oliveira do Hospital
+;061116;São Paio de Gramaços;185;253;Oliveira do Hospital
+;061117;São Sebastião da Feira;185;253;Oliveira do Hospital
+;061118;Seixo da Beira;185;253;Oliveira do Hospital
+;061119;Travanca de Lagos;185;253;Oliveira do Hospital
+;061120;Vila Pouca da Beira;185;253;Oliveira do Hospital
+;061121;Vila Franca da Beira;185;253;Oliveira do Hospital
+;061201;Cabril;185;253;Pampilhosa da Serra
+;061202;Dornelas do Zêzere;185;253;Pampilhosa da Serra
+;061203;Fajão;185;253;Pampilhosa da Serra
+;061204;Janeiro de Baixo;185;253;Pampilhosa da Serra
+;061205;Machio;185;253;Pampilhosa da Serra
+;061206;Pampilhosa da Serra;185;253;Pampilhosa da Serra
+;061207;Pessegueiro;185;253;Pampilhosa da Serra
+;061208;Portela do Fojo;185;253;Pampilhosa da Serra
+;061209;Unhais-o-Velho;185;253;Pampilhosa da Serra
+;061210;Vidual;185;253;Pampilhosa da Serra
+;061301;Carvalho;185;253;Penacova
+;061302;Figueira de Lorvão;185;253;Penacova
+;061303;Friúmes;185;253;Penacova
+;061304;Lorvão;185;253;Penacova
+;061305;Oliveira do Mondego;185;253;Penacova
+;061306;Paradela;185;253;Penacova
+;061307;Penacova;185;253;Penacova
+;061308;São Paio de Mondego;185;253;Penacova
+;061309;São Pedro de Alva;185;253;Penacova
+;061310;Sazes do Lorvão;185;253;Penacova
+;061311;Travanca do Mondego;185;253;Penacova
+;061401;Cumeeira;185;253;Penela
+;061402;Espinhal;185;253;Penela
+;061403;Podentes;185;253;Penela
+;061404;Rabaçal;185;253;Penela
+;061405;Penela (Santa Eufémia);185;253;Penela
+;061406;Penela (São Miguel);185;253;Penela
+;061501;Alfarelos;185;253;Soure
+;061502;Brunhós;185;253;Soure
+;061503;Degracias;185;253;Soure
+;061504;Figueiró do Campo;185;253;Soure
+;061505;Gesteira;185;253;Soure
+;061506;Granja do Ulmeiro;185;253;Soure
+;061507;Pombalinho;185;253;Soure
+;061508;Samuel;185;253;Soure
+;061509;Soure;185;253;Soure
+;061510;Tapéus;185;253;Soure
+;061511;Vila Nova de Anços;185;253;Soure
+;061512;Vinha da Rainha;185;253;Soure
+;061601;Ázere;185;253;Tábua
+;061602;Candosa;185;253;Tábua
+;061603;Carapinha;185;253;Tábua
+;061604;Covas;185;253;Tábua
+;061605;Covelo;185;253;Tábua
+;061606;Espariz;185;253;Tábua
+;061607;Meda de Mouros;185;253;Tábua
+;061608;Midões;185;253;Tábua
+;061609;Mouronho;185;253;Tábua
+;061610;Pinheiro de Coja;185;253;Tábua
+;061611;Póvoa de Midões;185;253;Tábua
+;061612;São João da Boa Vista;185;253;Tábua
+;061613;Sinde;185;253;Tábua
+;061614;Tábua;185;253;Tábua
+;061615;Vila Nova de Oliveirinha;185;253;Tábua
+;061701;Arrifana;185;253;Vila Nova de Poiares
+;061702;Lavegadas;185;253;Vila Nova de Poiares
+;061703;Poiares (Santo André);185;253;Vila Nova de Poiares
+;061704;São Miguel de Poiares;185;253;Vila Nova de Poiares
+;070101;Alandroal (Nossa Senhora da Conceição);185;254;Alandroal
+;070102;Juromenha (Nossa Senhora do Loreto);185;254;Alandroal
+;070103;Santiago Maior;185;254;Alandroal
+;070104;Capelins (Santo António);185;254;Alandroal
+;070105;Terena (São Pedro);185;254;Alandroal
+;070106;São Brás dos Matos (Mina do Bugalho);185;254;Alandroal
+;070201;Arraiolos;185;254;Arraiolos
+;070202;Igrejinha;185;254;Arraiolos
+;070203;Santa Justa;185;254;Arraiolos
+;070204;São Gregório;185;254;Arraiolos
+;070205;Gafanhoeira (São Pedro);185;254;Arraiolos
+;070206;Vimieiro;185;254;Arraiolos
+;070207;Sabugueiro;185;254;Arraiolos
+;070301;Borba (Matriz);185;254;Borba
+;070302;Orada;185;254;Borba
+;070303;Rio de Moinhos;185;254;Borba
+;070304;Borba (São Bartolomeu);185;254;Borba
+;070401;Arcos;185;254;Estremoz
+;070402;Glória;185;254;Estremoz
+;070403;Estremoz (Santa Maria);185;254;Estremoz
+;070404;Évora Monte (Santa Maria);185;254;Estremoz
+;070405;Santa Vitória do Ameixial;185;254;Estremoz
+;070406;Estremoz (Santo André);185;254;Estremoz
+;070407;Santo Estêvão;185;254;Estremoz
+;070408;São Bento do Ameixial;185;254;Estremoz
+;070409;São Bento de Ana Loura;185;254;Estremoz
+;070410;São Bento do Cortiço;185;254;Estremoz
+;070411;São Domingos de Ana Loura;185;254;Estremoz
+;070412;São Lourenço de Mamporcão;185;254;Estremoz
+;070413;Veiros;185;254;Estremoz
+;070501;Nossa Senhora da Boa Fé;185;254;Évora
+;070502;Nossa Senhora da Graça do Divor;185;254;Évora
+;070503;Nossa Senhora de Machede;185;254;Évora
+;070504;Nossa Senhora da Tourega;185;254;Évora
+;070505;Évora (Santo Antão);185;254;Évora
+;070506;São Bento do Mato;185;254;Évora
+;070507;Évora (São Mamede);185;254;Évora
+;070508;São Manços;185;254;Évora
+;070509;São Miguel de Machede;185;254;Évora
+;070511;São Vicente do Pigeiro;185;254;Évora
+;070513;Torre de Coelheiros;185;254;Évora
+;070514;São Sebastião da Giesteira;185;254;Évora
+;070515;Canaviais;185;254;Évora
+;070516;Nossa Senhora de Guadalupe;185;254;Évora
+;070517;Bacelo;185;254;Évora
+;070518;Horta das Figueiras;185;254;Évora
+;070519;Malagueira;185;254;Évora
+;070520;Sé e São Pedro;185;254;Évora
+;070521;Senhora da Saúde;185;254;Évora
+;070601;Cabrela;185;254;Montemor-o-Novo
+;070602;Lavre;185;254;Montemor-o-Novo
+;070603;Nossa Senhora do Bispo;185;254;Montemor-o-Novo
+;070604;Nossa Senhora da Vila;185;254;Montemor-o-Novo
+;070605;Santiago do Escoural;185;254;Montemor-o-Novo
+;070606;São Cristóvão;185;254;Montemor-o-Novo
+;070607;Ciborro;185;254;Montemor-o-Novo
+;070608;Cortiçadas de Lavre;185;254;Montemor-o-Novo
+;070609;Silveiras;185;254;Montemor-o-Novo
+;070610;Foros de Vale de Figueira;185;254;Montemor-o-Novo
+;070701;Brotas;185;254;Mora
+;070702;Cabeção;185;254;Mora
+;070703;Mora;185;254;Mora
+;070704;Pavia;185;254;Mora
+;070801;Granja;185;254;Mourão
+;070802;Luz;185;254;Mourão
+;070803;Mourão;185;254;Mourão
+;070901;Alqueva;185;254;Portel
+;070902;Amieira;185;254;Portel
+;070903;Monte do Trigo;185;254;Portel
+;070904;Oriola;185;254;Portel
+;070905;Portel;185;254;Portel
+;070906;Santana;185;254;Portel
+;070907;São Bartolomeu do Outeiro;185;254;Portel
+;070908;Vera Cruz;185;254;Portel
+;071001;Montoito;185;254;Redondo
+;071002;Redondo;185;254;Redondo
+;071101;Campo;185;254;Reguengos de Monsaraz
+;071102;Corval;185;254;Reguengos de Monsaraz
+;071103;Monsaraz;185;254;Reguengos de Monsaraz
+;071104;Reguengos de Monsaraz;185;254;Reguengos de Monsaraz
+;071105;Campinho;185;254;Reguengos de Monsaraz
+;071201;Vendas Novas;185;254;Vendas Novas
+;071202;Landeira;185;254;Vendas Novas
+;071301;Alcáçovas;185;254;Viana do Alentejo
+;071302;Viana do Alentejo;185;254;Viana do Alentejo
+;071303;Aguiar;185;254;Viana do Alentejo
+;071401;Bencatel;185;254;Vila Viçosa
+;071402;Ciladas;185;254;Vila Viçosa
+;071403;Vila Viçosa (Conceição);185;254;Vila Viçosa
+;071404;Pardais;185;254;Vila Viçosa
+;071405;Vila Viçosa (São Bartolomeu);185;254;Vila Viçosa
+;080101;Albufeira;185;255;Albufeira
+;080102;Guia;185;255;Albufeira
+;080103;Paderne;185;255;Albufeira
+;080104;Ferreiras;185;255;Albufeira
+;080105;Olhos de Água;185;255;Albufeira
+;080201;Alcoutim;185;255;Alcoutim
+;080202;Giões;185;255;Alcoutim
+;080203;Martim Longo;185;255;Alcoutim
+;080204;Pereiro;185;255;Alcoutim
+;080205;Vaqueiros;185;255;Alcoutim
+;080301;Aljezur;185;255;Aljezur
+;080302;Bordeira;185;255;Aljezur
+;080303;Odeceixe;185;255;Aljezur
+;080304;Rogil;185;255;Aljezur
+;080401;Azinhal;185;255;Castro Marim
+;080402;Castro Marim;185;255;Castro Marim
+;080403;Odeleite;185;255;Castro Marim
+;080404;Altura;185;255;Castro Marim
+;080501;Conceição;185;255;Faro
+;080502;Estoi;185;255;Faro
+;080503;Santa Bárbara de Nexe;185;255;Faro
+;080504;Faro (São Pedro);185;255;Faro
+;080505;Faro (Sé);185;255;Faro
+;080506;Montenegro;185;255;Faro
+;080601;Estômbar;185;255;Lagoa
+;080602;Ferragudo;185;255;Lagoa
+;080603;Lagoa;185;255;Lagoa
+;080604;Porches;185;255;Lagoa
+;080605;Carvoeiro;185;255;Lagoa
+;080606;Parchal;185;255;Lagoa
+;080701;Barão de São João;185;255;Lagos
+;080702;Bensafrim;185;255;Lagos
+;080703;Luz;185;255;Lagos
+;080704;Odiáxere;185;255;Lagos
+;080705;Lagos (Santa Maria);185;255;Lagos
+;080706;Lagos (São Sebastião);185;255;Lagos
+;080801;Almansil;185;255;Loulé
+;080802;Alte;185;255;Loulé
+;080803;Ameixial;185;255;Loulé
+;080804;Boliqueime;185;255;Loulé
+;080805;Quarteira;185;255;Loulé
+;080806;Querença;185;255;Loulé
+;080807;Salir;185;255;Loulé
+;080808;Loulé (São Clemente);185;255;Loulé
+;080809;Loulé (São Sebastião);185;255;Loulé
+;080810;Benafim;185;255;Loulé
+;080811;Tôr;185;255;Loulé
+;080901;Alferce;185;255;Monchique
+;080902;Marmelete;185;255;Monchique
+;080903;Monchique;185;255;Monchique
+;081001;Fuseta;185;255;Olhão
+;081002;Moncarapacho;185;255;Olhão
+;081003;Olhão;185;255;Olhão
+;081004;Pechão;185;255;Olhão
+;081005;Quelfes;185;255;Olhão
+;081101;Alvor;185;255;Portimão
+;081102;Mexilhoeira Grande;185;255;Portimão
+;081103;Portimão;185;255;Portimão
+;081201;São Brás de Alportel;185;255;São Brás de Alportel
+;081301;Alcantarilha;185;255;Silves
+;081302;Algoz;185;255;Silves
+;081303;Armação de Pêra;185;255;Silves
+;081304;Pêra;185;255;Silves
+;081305;São Bartolomeu de Messines;185;255;Silves
+;081306;São Marcos da Serra;185;255;Silves
+;081307;Silves;185;255;Silves
+;081308;Tunes;185;255;Silves
+;081401;Cachopo;185;255;Tavira
+;081402;Conceição;185;255;Tavira
+;081403;Luz;185;255;Tavira
+;081404;Santa Catarina da Fonte do Bispo;185;255;Tavira
+;081405;Tavira (Santa Maria);185;255;Tavira
+;081406;Tavira (Santiago);185;255;Tavira
+;081407;Santo Estêvão;185;255;Tavira
+;081408;Santa Luzia;185;255;Tavira
+;081409;Cabanas de Tavira;185;255;Tavira
+;081501;Barão de São Miguel;185;255;Vila do Bispo
+;081502;Budens;185;255;Vila do Bispo
+;081503;Raposeira;185;255;Vila do Bispo
+;081504;Sagres;185;255;Vila do Bispo
+;081505;Vila do Bispo;185;255;Vila do Bispo
+;081601;Vila Nova de Cacela;185;255;Vila Real de Santo António
+;081602;Vila Real de Santo António;185;255;Vila Real de Santo António
+;081603;Monte Gordo;185;255;Vila Real de Santo António
+;090101;Aguiar da Beira;185;256;Aguiar da Beira
+;090102;Carapito;185;256;Aguiar da Beira
+;090103;Cortiçada;185;256;Aguiar da Beira
+;090104;Coruche;185;256;Aguiar da Beira
+;090105;Dornelas;185;256;Aguiar da Beira
+;090106;Eirado;185;256;Aguiar da Beira
+;090107;Forninhos;185;256;Aguiar da Beira
+;090108;Gradiz;185;256;Aguiar da Beira
+;090109;Pena Verde;185;256;Aguiar da Beira
+;090110;Pinheiro;185;256;Aguiar da Beira
+;090111;Sequeiros;185;256;Aguiar da Beira
+;090112;Souto de Aguiar da Beira;185;256;Aguiar da Beira
+;090113;Valverde;185;256;Aguiar da Beira
+;090201;Ade;185;256;Almeida
+;090202;Aldeia Nova;185;256;Almeida
+;090203;Almeida;185;256;Almeida
+;090204;Amoreira;185;256;Almeida
+;090205;Azinhal;185;256;Almeida
+;090206;Cabreira;185;256;Almeida
+;090207;Castelo Bom;185;256;Almeida
+;090208;Castelo Mendo;185;256;Almeida
+;090209;Freineda;185;256;Almeida
+;090210;Freixo;185;256;Almeida
+;090211;Junça;185;256;Almeida
+;090212;Leomil;185;256;Almeida
+;090213;Malhada Sorda;185;256;Almeida
+;090214;Malpartida;185;256;Almeida
+;090215;Mesquitela;185;256;Almeida
+;090216;Mido;185;256;Almeida
+;090217;Miuzela;185;256;Almeida
+;090218;Monte Perobolço;185;256;Almeida
+;090219;Nave de Haver;185;256;Almeida
+;090220;Naves;185;256;Almeida
+;090221;Parada;185;256;Almeida
+;090222;Peva;185;256;Almeida
+;090223;Porto de Ovelha;185;256;Almeida
+;090224;São Pedro de Rio Seco;185;256;Almeida
+;090225;Senouras;185;256;Almeida
+;090226;Vale de Coelha;185;256;Almeida
+;090227;Vale da Mula;185;256;Almeida
+;090228;Vale Verde;185;256;Almeida
+;090229;Vilar Formoso;185;256;Almeida
+;090301;Açores;185;256;Celorico da Beira
+;090302;Baraçal;185;256;Celorico da Beira
+;090303;Cadafaz;185;256;Celorico da Beira
+;090304;Carrapichana;185;256;Celorico da Beira
+;090305;Cortiçô da Serra;185;256;Celorico da Beira
+;090306;Forno Telheiro;185;256;Celorico da Beira
+;090307;Lajeosa do Mondego;185;256;Celorico da Beira
+;090308;Linhares;185;256;Celorico da Beira
+;090309;Maçal do Chão;185;256;Celorico da Beira
+;090310;Mesquitela;185;256;Celorico da Beira
+;090311;Minhocal;185;256;Celorico da Beira
+;090312;Prados;185;256;Celorico da Beira
+;090313;Rapa;185;256;Celorico da Beira
+;090314;Ratoeira;185;256;Celorico da Beira
+;090315;Salgueirais;185;256;Celorico da Beira
+;090316;Celorico (Santa Maria);185;256;Celorico da Beira
+;090317;Celorico (São Pedro);185;256;Celorico da Beira
+;090318;Vale de Azares;185;256;Celorico da Beira
+;090319;Velosa;185;256;Celorico da Beira
+;090320;Vide Entre Vinhas;185;256;Celorico da Beira
+;090321;Vila Boa do Mondego;185;256;Celorico da Beira
+;090322;Casas do Soeiro;185;256;Celorico da Beira
+;090401;Algodres;185;256;Figueira de Castelo Rodrigo
+;090402;Almofala;185;256;Figueira de Castelo Rodrigo
+;090403;Castelo Rodrigo;185;256;Figueira de Castelo Rodrigo
+;090404;Cinco Vilas;185;256;Figueira de Castelo Rodrigo
+;090405;Colmeal;185;256;Figueira de Castelo Rodrigo
+;090406;Escalhão;185;256;Figueira de Castelo Rodrigo
+;090407;Escarigo;185;256;Figueira de Castelo Rodrigo
+;090408;Figueira de Castelo Rodrigo;185;256;Figueira de Castelo Rodrigo
+;090409;Freixeda do Torrão;185;256;Figueira de Castelo Rodrigo
+;090410;Mata de Lobos;185;256;Figueira de Castelo Rodrigo
+;090411;Penha de Águia;185;256;Figueira de Castelo Rodrigo
+;090412;Quintã de Pêro Martins;185;256;Figueira de Castelo Rodrigo
+;090413;Reigada;185;256;Figueira de Castelo Rodrigo
+;090414;Vale de Afonsinho;185;256;Figueira de Castelo Rodrigo
+;090415;Vermiosa;185;256;Figueira de Castelo Rodrigo
+;090416;Vilar de Amargo;185;256;Figueira de Castelo Rodrigo
+;090417;Vilar Torpim;185;256;Figueira de Castelo Rodrigo
+;090501;Algodres;185;256;Fornos de Algodres
+;090502;Casal Vasco;185;256;Fornos de Algodres
+;090503;Cortiçô;185;256;Fornos de Algodres
+;090504;Figueiró da Granja;185;256;Fornos de Algodres
+;090505;Fornos de Algodres;185;256;Fornos de Algodres
+;090506;Fuinhas;185;256;Fornos de Algodres
+;090507;Infias;185;256;Fornos de Algodres
+;090508;Juncais;185;256;Fornos de Algodres
+;090509;Maceira;185;256;Fornos de Algodres
+;090510;Matança;185;256;Fornos de Algodres
+;090511;Muxagata;185;256;Fornos de Algodres
+;090512;Queiriz;185;256;Fornos de Algodres
+;090513;Sobral Pichorro;185;256;Fornos de Algodres
+;090514;Vila Chã;185;256;Fornos de Algodres
+;090515;Vila Ruiva;185;256;Fornos de Algodres
+;090516;Vila Soeiro do Chão;185;256;Fornos de Algodres
+;090601;Aldeias;185;256;Gouveia
+;090602;Arcozelo;185;256;Gouveia
+;090603;Cativelos;185;256;Gouveia
+;090604;Figueiró da Serra;185;256;Gouveia
+;090605;Folgosinho;185;256;Gouveia
+;090606;Freixo da Serra;185;256;Gouveia
+;090607;Lagarinhos;185;256;Gouveia
+;090608;Mangualde da Serra;185;256;Gouveia
+;090609;Melo;185;256;Gouveia
+;090610;Moimenta da Serra;185;256;Gouveia
+;090611;Nabais;185;256;Gouveia
+;090612;Nespereira;185;256;Gouveia
+;090613;Paços da Serra;185;256;Gouveia
+;090614;Ribamondego;185;256;Gouveia
+;090615;Rio Torto;185;256;Gouveia
+;090616;Gouveia (São Julião);185;256;Gouveia
+;090617;São Paio;185;256;Gouveia
+;090618;Gouveia (São Pedro);185;256;Gouveia
+;090619;Vila Cortês da Serra;185;256;Gouveia
+;090620;Vila Franca da Serra;185;256;Gouveia
+;090621;Vila Nova de Tazem;185;256;Gouveia
+;090622;Vinhó;185;256;Gouveia
+;090701;Adão;185;256;Guarda
+;090702;Albardo;185;256;Guarda
+;090703;Aldeia do Bispo;185;256;Guarda
+;090704;Aldeia Viçosa;185;256;Guarda
+;090705;Alvendre;185;256;Guarda
+;090706;Arrifana;185;256;Guarda
+;090707;Avelãs de Ambom;185;256;Guarda
+;090708;Avelãs da Ribeira;185;256;Guarda
+;090709;Benespera;185;256;Guarda
+;090710;Carvalhal Meão;185;256;Guarda
+;090711;Casal de Cinza;185;256;Guarda
+;090712;Castanheira;185;256;Guarda
+;090713;Cavadoude;185;256;Guarda
+;090714;Codesseiro;185;256;Guarda
+;090715;Corujeira;185;256;Guarda
+;090716;Faia;185;256;Guarda
+;090717;Famalicão;185;256;Guarda
+;090718;Fernão Joanes;185;256;Guarda
+;090719;Gagos;185;256;Guarda
+;090720;Gonçalo;185;256;Guarda
+;090721;Gonçalo Bocas;185;256;Guarda
+;090722;João Antão;185;256;Guarda
+;090723;Maçainhas;185;256;Guarda
+;090724;Marmeleiro;185;256;Guarda
+;090725;Meios;185;256;Guarda
+;090726;Mizarela;185;256;Guarda
+;090727;Monte Margarida;185;256;Guarda
+;090728;Panoias de Cima;185;256;Guarda
+;090729;Pega;185;256;Guarda
+;090730;Pêra do Moço;185;256;Guarda
+;090731;Pêro Soares;185;256;Guarda
+;090732;Porto da Carne;185;256;Guarda
+;090733;Pousade;185;256;Guarda
+;090734;Ramela;185;256;Guarda
+;090735;Ribeira dos Carinhos;185;256;Guarda
+;090736;Rocamondo;185;256;Guarda
+;090737;Rochoso;185;256;Guarda
+;090738;Santana da Azinha;185;256;Guarda
+;090739;Jarmelo (São Miguel);185;256;Guarda
+;090740;Jarmelo (São Pedro);185;256;Guarda
+;090741;Guarda (São Vicente);185;256;Guarda
+;090742;Guarda (Sé);185;256;Guarda
+;090743;Seixo Amarelo;185;256;Guarda
+;090744;Sobral da Serra;185;256;Guarda
+;090745;Trinta;185;256;Guarda
+;090746;Vale de Estrela;185;256;Guarda
+;090747;Valhelhas;185;256;Guarda
+;090748;Vela;185;256;Guarda
+;090749;Videmonte;185;256;Guarda
+;090750;Vila Cortês do Mondego;185;256;Guarda
+;090751;Vila Fernando;185;256;Guarda
+;090752;Vila Franca do Deão;185;256;Guarda
+;090753;Vila Garcia;185;256;Guarda
+;090754;Vila Soeiro;185;256;Guarda
+;090755;São Miguel da Guarda;185;256;Guarda
+;090801;Sameiro;185;256;Manteigas
+;090802;Manteigas (Santa Maria);185;256;Manteigas
+;090803;Manteigas (São Pedro);185;256;Manteigas
+;090804;Vale de Amoreira;185;256;Manteigas
+;090901;Aveloso;185;256;Mêda
+;090902;Barreira;185;256;Mêda
+;090903;Carvalhal;185;256;Mêda
+;090904;Casteição;185;256;Mêda
+;090905;Coriscada;185;256;Mêda
+;090906;Fonte Longa;185;256;Mêda
+;090907;Longroiva;185;256;Mêda
+;090908;Marialva;185;256;Mêda
+;090909;Mêda;185;256;Mêda
+;090910;Outeiro de Gatos;185;256;Mêda
+;090911;Pai Penela;185;256;Mêda
+;090912;Poço do Canto;185;256;Mêda
+;090913;Prova;185;256;Mêda
+;090914;Rabaçal;185;256;Mêda
+;090915;Ranhados;185;256;Mêda
+;090916;Vale Flor;185;256;Mêda
+;091001;Alverca da Beira;185;256;Pinhel
+;091002;Atalaia;185;256;Pinhel
+;091003;Azevo;185;256;Pinhel
+;091004;Bogalhal;185;256;Pinhel
+;091005;Bouça Cova;185;256;Pinhel
+;091006;Cerejo;185;256;Pinhel
+;091007;Cidadelhe;185;256;Pinhel
+;091008;Ervas Tenras;185;256;Pinhel
+;091009;Ervedosa;185;256;Pinhel
+;091010;Freixedas;185;256;Pinhel
+;091011;Gouveias;185;256;Pinhel
+;091012;Lamegal;185;256;Pinhel
+;091013;Lameiras;185;256;Pinhel
+;091014;Manigoto;185;256;Pinhel
+;091015;Pala;185;256;Pinhel
+;091016;Pereiro;185;256;Pinhel
+;091017;Pinhel;185;256;Pinhel
+;091018;Pínzio;185;256;Pinhel
+;091019;Pomares;185;256;Pinhel
+;091020;Póvoa D' El-Rei;185;256;Pinhel
+;091021;Safurdão;185;256;Pinhel
+;091022;Santa Eufémia;185;256;Pinhel
+;091023;Sorval;185;256;Pinhel
+;091024;Souro Pires;185;256;Pinhel
+;091025;Valbom;185;256;Pinhel
+;091026;Vale de Madeira;185;256;Pinhel
+;091027;Vascoveiro;185;256;Pinhel
+;091101;Águas Belas;185;256;Sabugal
+;091102;Aldeia do Bispo;185;256;Sabugal
+;091103;Aldeia da Ponte;185;256;Sabugal
+;091104;Aldeia da Ribeira;185;256;Sabugal
+;091105;Aldeia de Santo António;185;256;Sabugal
+;091106;Aldeia Velha;185;256;Sabugal
+;091107;Alfaiates;185;256;Sabugal
+;091108;Badamalos;185;256;Sabugal
+;091109;Baraçal;185;256;Sabugal
+;091110;Bendada;185;256;Sabugal
+;091111;Bismula;185;256;Sabugal
+;091112;Casteleiro;185;256;Sabugal
+;091113;Cerdeira;185;256;Sabugal
+;091114;Fóios;185;256;Sabugal
+;091115;Forcalhos;185;256;Sabugal
+;091116;Lajeosa;185;256;Sabugal
+;091117;Lomba;185;256;Sabugal
+;091118;Malcata;185;256;Sabugal
+;091119;Moita;185;256;Sabugal
+;091120;Nave;185;256;Sabugal
+;091121;Pena Lobo;185;256;Sabugal
+;091122;Pousafoles do Bispo;185;256;Sabugal
+;091123;Quadrazais;185;256;Sabugal
+;091124;Quintas de São Bartolomeu;185;256;Sabugal
+;091125;Rapoula do Côa;185;256;Sabugal
+;091126;Rebolosa;185;256;Sabugal
+;091127;Rendo;185;256;Sabugal
+;091128;Ruivós;185;256;Sabugal
+;091129;Ruvina;185;256;Sabugal
+;091130;Sabugal;185;256;Sabugal
+;091131;Santo Estêvão;185;256;Sabugal
+;091132;Seixo do Côa;185;256;Sabugal
+;091133;Sortelha;185;256;Sabugal
+;091134;Souto;185;256;Sabugal
+;091135;Vale das Éguas;185;256;Sabugal
+;091136;Vale de Espinho;185;256;Sabugal
+;091137;Vale Longo;185;256;Sabugal
+;091138;Vila Boa;185;256;Sabugal
+;091139;Vila do Touro;185;256;Sabugal
+;091140;Vilar Maior;185;256;Sabugal
+;091201;Alvoco da Serra;185;256;Seia
+;091202;Cabeça;185;256;Seia
+;091203;Carragozela;185;256;Seia
+;091204;Folhadosa;185;256;Seia
+;091205;Girabolhos;185;256;Seia
+;091206;Lajes;185;256;Seia
+;091207;Loriga;185;256;Seia
+;091208;Paranhos;185;256;Seia
+;091209;Pinhanços;185;256;Seia
+;091210;Sabugueiro;185;256;Seia
+;091211;Sameice;185;256;Seia
+;091212;Sandomil;185;256;Seia
+;091213;Santa Comba;185;256;Seia
+;091214;Santa Eulália;185;256;Seia
+;091215;Santa Marinha;185;256;Seia
+;091216;Santiago;185;256;Seia
+;091217;São Martinho;185;256;Seia
+;091218;São Romão;185;256;Seia
+;091219;Sazes da Beira;185;256;Seia
+;091220;Seia;185;256;Seia
+;091221;Teixeira;185;256;Seia
+;091222;Torrozelo;185;256;Seia
+;091223;Tourais;185;256;Seia
+;091224;Travancinha;185;256;Seia
+;091225;Valezim;185;256;Seia
+;091226;Várzea de Meruge;185;256;Seia
+;091227;Vide;185;256;Seia
+;091228;Vila Cova à Coelheira;185;256;Seia
+;091229;Lapa dos Dinheiros;185;256;Seia
+;091301;Aldeia Nova;185;256;Trancoso
+;091302;Carnicães;185;256;Trancoso
+;091303;Castanheira;185;256;Trancoso
+;091304;Cogula;185;256;Trancoso
+;091305;Cótimos;185;256;Trancoso
+;091306;Feital;185;256;Trancoso
+;091307;Fiães;185;256;Trancoso
+;091308;Freches;185;256;Trancoso
+;091309;Granja;185;256;Trancoso
+;091310;Guilheiro;185;256;Trancoso
+;091311;Moimentinha;185;256;Trancoso
+;091312;Moreira de Rei;185;256;Trancoso
+;091313;Palhais;185;256;Trancoso
+;091314;Póvoa do Concelho;185;256;Trancoso
+;091315;Reboleiro;185;256;Trancoso
+;091316;Rio de Mel;185;256;Trancoso
+;091317;Trancoso (Santa Maria);185;256;Trancoso
+;091318;Trancoso (São Pedro);185;256;Trancoso
+;091319;Sebadelhe da Serra;185;256;Trancoso
+;091320;Souto Maior;185;256;Trancoso
+;091321;Tamanhos;185;256;Trancoso
+;091322;Terrenho;185;256;Trancoso
+;091323;Torre do Terrenho;185;256;Trancoso
+;091324;Torres;185;256;Trancoso
+;091325;Valdujo;185;256;Trancoso
+;091326;Vale do Seixo;185;256;Trancoso
+;091327;Vila Franca das Naves;185;256;Trancoso
+;091328;Vila Garcia;185;256;Trancoso
+;091329;Vilares;185;256;Trancoso
+;091401;Almendra;185;256;Vila Nova de Foz Côa
+;091402;Castelo Melhor;185;256;Vila Nova de Foz Côa
+;091403;Cedovim;185;256;Vila Nova de Foz Côa
+;091404;Chãs;185;256;Vila Nova de Foz Côa
+;091405;Custóias;185;256;Vila Nova de Foz Côa
+;091406;Freixo de Numão;185;256;Vila Nova de Foz Côa
+;091407;Horta;185;256;Vila Nova de Foz Côa
+;091408;Mós;185;256;Vila Nova de Foz Côa
+;091409;Murça;185;256;Vila Nova de Foz Côa
+;091410;Muxagata;185;256;Vila Nova de Foz Côa
+;091411;Numão;185;256;Vila Nova de Foz Côa
+;091412;Santa Comba;185;256;Vila Nova de Foz Côa
+;091413;Santo Amaro;185;256;Vila Nova de Foz Côa
+;091414;Sebadelhe;185;256;Vila Nova de Foz Côa
+;091415;Seixas;185;256;Vila Nova de Foz Côa
+;091416;Touça;185;256;Vila Nova de Foz Côa
+;091417;Vila Nova de Foz Côa;185;256;Vila Nova de Foz Côa
+;100101;Alcobaça;185;257;Alcobaça
+;100102;Alfeizerão;185;257;Alcobaça
+;100103;Alpedriz;185;257;Alcobaça
+;100104;Bárrio;185;257;Alcobaça
+;100105;Benedita;185;257;Alcobaça
+;100106;Cela;185;257;Alcobaça
+;100107;Coz;185;257;Alcobaça
+;100108;Évora de Alcobaça;185;257;Alcobaça
+;100109;Maiorga;185;257;Alcobaça
+;100110;Pataias;185;257;Alcobaça
+;100111;Aljubarrota (PRAZERES);185;257;Alcobaça
+;100112;São Martinho do Porto;185;257;Alcobaça
+;100113;Aljubarrota (São Vicente);185;257;Alcobaça
+;100114;Turquel;185;257;Alcobaça
+;100115;Vestiaria;185;257;Alcobaça
+;100116;Vimeiro;185;257;Alcobaça
+;100118;Martingança;185;257;Alcobaça
+;100119;Montes;185;257;Alcobaça
+;100201;Almoster;185;257;Alvaiázere
+;100202;Alvaiázere;185;257;Alvaiázere
+;100203;Maçãs de Caminho;185;257;Alvaiázere
+;100204;Maçãs de Dona Maria;185;257;Alvaiázere
+;100205;Pelmá;185;257;Alvaiázere
+;100206;Pussos;185;257;Alvaiázere
+;100207;Rego da Murta;185;257;Alvaiázere
+;100301;Alvorge;185;257;Ansião
+;100302;Ansião;185;257;Ansião
+;100303;Avelar;185;257;Ansião
+;100304;Chão de Couce;185;257;Ansião
+;100305;Lagarteira;185;257;Ansião
+;100306;Pousaflores;185;257;Ansião
+;100307;Santiago da Guarda;185;257;Ansião
+;100308;Torre de Vale de Todos;185;257;Ansião
+;100401;Batalha;185;257;Batalha
+;100402;Reguengo do Fetal;185;257;Batalha
+;100403;São Mamede;185;257;Batalha
+;100404;Golpilheira;185;257;Batalha
+;100501;Bombarral;185;257;Bombarral
+;100502;Carvalhal;185;257;Bombarral
+;100503;Roliça;185;257;Bombarral
+;100504;Vale Covo;185;257;Bombarral
+;100505;Pó;185;257;Bombarral
+;100601;A dos Francos;185;257;Caldas da Rainha
+;100602;Alvorninha;185;257;Caldas da Rainha
+;100603;Caldas da Rainha (Nossa Senhora do Pópulo);185;257;Caldas da Rainha
+;100604;Carvalhal Benfeito;185;257;Caldas da Rainha
+;100605;Coto;185;257;Caldas da Rainha
+;100606;Foz do Arelho;185;257;Caldas da Rainha
+;100607;Landal;185;257;Caldas da Rainha
+;100608;Nadadouro;185;257;Caldas da Rainha
+;100609;Salir de Matos;185;257;Caldas da Rainha
+;100610;Salir do Porto;185;257;Caldas da Rainha
+;100611;Santa Catarina;185;257;Caldas da Rainha
+;100612;São Gregório;185;257;Caldas da Rainha
+;100613;Serra do Bouro;185;257;Caldas da Rainha
+;100614;Tornada;185;257;Caldas da Rainha
+;100615;Vidais;185;257;Caldas da Rainha
+;100616;Caldas da Rainha (Santo Onofre);185;257;Caldas da Rainha
+;100701;Castanheira de Pêra;185;257;Castanheira de Pêra
+;100702;Coentral;185;257;Castanheira de Pêra
+;100801;Aguda;185;257;Figueiró dos Vinhos
+;100802;Arega;185;257;Figueiró dos Vinhos
+;100803;Campelo;185;257;Figueiró dos Vinhos
+;100804;Figueiró dos Vinhos;185;257;Figueiró dos Vinhos
+;100805;Bairradas;185;257;Figueiró dos Vinhos
+;100901;Amor;185;257;Leiria
+;100902;Arrabal;185;257;Leiria
+;100903;Azoia;185;257;Leiria
+;100904;Barosa;185;257;Leiria
+;100905;Barreira;185;257;Leiria
+;100906;Boa Vista;185;257;Leiria
+;100907;Caranguejeira;185;257;Leiria
+;100908;Carvide;185;257;Leiria
+;100909;Coimbrão;185;257;Leiria
+;100910;Colmeias;185;257;Leiria
+;100911;Cortes;185;257;Leiria
+;100912;Leiria;185;257;Leiria
+;100913;Maceira;185;257;Leiria
+;100914;Marrazes;185;257;Leiria
+;100915;Milagres;185;257;Leiria
+;100916;Monte Real;185;257;Leiria
+;100917;Monte Redondo;185;257;Leiria
+;100918;Ortigosa;185;257;Leiria
+;100919;Parceiros;185;257;Leiria
+;100920;Pousos;185;257;Leiria
+;100921;Regueira de Pontes;185;257;Leiria
+;100922;Santa Catarina da Serra;185;257;Leiria
+;100923;Santa Eufémia;185;257;Leiria
+;100924;Souto de Carpalhosa;185;257;Leiria
+;100925;Bajouca;185;257;Leiria
+;100926;Bidoeira de Cima;185;257;Leiria
+;100927;Memória;185;257;Leiria
+;100930;Carreira;185;257;Leiria
+;100931;Chainça;185;257;Leiria
+;101001;Marinha Grande;185;257;Marinha Grande
+;101002;Vieira de Leiria;185;257;Marinha Grande
+;101003;Moita;185;257;Marinha Grande
+;101101;Famalicão;185;257;Nazaré
+;101102;Nazaré;185;257;Nazaré
+;101103;Valado dos Frades;185;257;Nazaré
+;101201;A dos Negros;185;257;Óbidos
+;101202;Amoreira;185;257;Óbidos
+;101203;Olho Marinho;185;257;Óbidos
+;101204;Óbidos (Santa Maria);185;257;Óbidos
+;101205;Óbidos (São Pedro);185;257;Óbidos
+;101206;Sobral da Lagoa;185;257;Óbidos
+;101207;Vau;185;257;Óbidos
+;101208;Gaeiras;185;257;Óbidos
+;101209;Usseira;185;257;Óbidos
+;101301;Graça;185;257;Pedrógão Grande
+;101302;Pedrógão Grande;185;257;Pedrógão Grande
+;101303;Vila Facaia;185;257;Pedrógão Grande
+;101401;Peniche (AJUDA);185;257;Peniche
+;101402;Atouguia da Baleia;185;257;Peniche
+;101403;Peniche (CONCEIÇÃO);185;257;Peniche
+;101404;Peniche (São Pedro);185;257;Peniche
+;101405;Serra D' El-Rei;185;257;Peniche
+;101406;Ferrel;185;257;Peniche
+;101501;Abiul;185;257;Pombal
+;101502;Albergaria dos Doze;185;257;Pombal
+;101503;Almagreira;185;257;Pombal
+;101504;Carnide;185;257;Pombal
+;101505;Carriço;185;257;Pombal
+;101506;Louriçal;185;257;Pombal
+;101507;Mata Mourisca;185;257;Pombal
+;101508;Pelariga;185;257;Pombal
+;101509;Pombal;185;257;Pombal
+;101510;Redinha;185;257;Pombal
+;101511;Santiago de Litém;185;257;Pombal
+;101512;São Simão de Litém;185;257;Pombal
+;101513;Vermoil;185;257;Pombal
+;101514;Vila Cã;185;257;Pombal
+;101515;Meirinhas;185;257;Pombal
+;101516;Guia;185;257;Pombal
+;101517;Ilha;185;257;Pombal
+;101601;Alcaria;185;257;Porto de Mós
+;101602;Alqueidão da Serra;185;257;Porto de Mós
+;101603;Alvados;185;257;Porto de Mós
+;101604;Arrimal;185;257;Porto de Mós
+;101605;Calvaria de Cima;185;257;Porto de Mós
+;101606;Juncal;185;257;Porto de Mós
+;101607;Mendiga;185;257;Porto de Mós
+;101608;Mira de Aire;185;257;Porto de Mós
+;101609;Pedreiras;185;257;Porto de Mós
+;101610;São Bento;185;257;Porto de Mós
+;101611;Porto de Mós (São João Baptista);185;257;Porto de Mós
+;101612;Porto de Mós (São Pedro);185;257;Porto de Mós
+;101613;Serro Ventoso;185;257;Porto de Mós
+;110101;Abrigada;185;258;Alenquer
+;110102;Aldeia Galega da Merceana;185;258;Alenquer
+;110103;Aldeia Gavinha;185;258;Alenquer
+;110104;Cabanas de Torres;185;258;Alenquer
+;110105;Cadafais;185;258;Alenquer
+;110106;Carnota;185;258;Alenquer
+;110107;Meca;185;258;Alenquer
+;110108;Olhalvo;185;258;Alenquer
+;110109;Ota;185;258;Alenquer
+;110110;Pereiro de Palhacana;185;258;Alenquer
+;110111;Alenquer (Santo Estêvão);185;258;Alenquer
+;110112;Alenquer (TRIANA);185;258;Alenquer
+;110113;Ventosa;185;258;Alenquer
+;110114;Vila Verde dos Francos;185;258;Alenquer
+;110115;Carregado;185;258;Alenquer
+;110116;Ribafria;185;258;Alenquer
+;110201;Arranhó;185;258;Arruda dos Vinhos
+;110202;Arruda dos Vinhos;185;258;Arruda dos Vinhos
+;110203;Cardosas;185;258;Arruda dos Vinhos
+;110204;Santiago dos Velhos;185;258;Arruda dos Vinhos
+;110301;Alcoentre;185;258;Azambuja
+;110302;Aveiras de Baixo;185;258;Azambuja
+;110303;Aveiras de Cima;185;258;Azambuja
+;110304;Azambuja;185;258;Azambuja
+;110305;Manique do Intendente;185;258;Azambuja
+;110306;Vale do Paraíso;185;258;Azambuja
+;110307;Vila Nova da Rainha;185;258;Azambuja
+;110308;Vila Nova de São Pedro;185;258;Azambuja
+;110309;Maçussa;185;258;Azambuja
+;110401;Alguber;185;258;Cadaval
+;110402;Cadaval;185;258;Cadaval
+;110403;Cercal;185;258;Cadaval
+;110404;Figueiros;185;258;Cadaval
+;110405;Lamas;185;258;Cadaval
+;110406;Painho;185;258;Cadaval
+;110407;Peral;185;258;Cadaval
+;110408;Pêro Moniz;185;258;Cadaval
+;110409;Vermelha;185;258;Cadaval
+;110410;Vilar;185;258;Cadaval
+;110501;Alcabideche;185;258;Cascais
+;110502;Carcavelos;185;258;Cascais
+;110503;Cascais;185;258;Cascais
+;110504;Estoril;185;258;Cascais
+;110505;Parede;185;258;Cascais
+;110506;São Domingos de Rana;185;258;Cascais
+;110601;Ajuda;185;258;Lisboa
+;110602;Alcântara;185;258;Lisboa
+;110603;Alto do Pina;185;258;Lisboa
+;110604;Alvalade;185;258;Lisboa
+;110605;Ameixoeira;185;258;Lisboa
+;110606;Anjos;185;258;Lisboa
+;110607;Beato;185;258;Lisboa
+;110608;Benfica;185;258;Lisboa
+;110609;Campo Grande;185;258;Lisboa
+;110610;Campolide;185;258;Lisboa
+;110611;Carnide;185;258;Lisboa
+;110612;Castelo;185;258;Lisboa
+;110613;Charneca;185;258;Lisboa
+;110614;Coração de Jesus;185;258;Lisboa
+;110615;Encarnação;185;258;Lisboa
+;110616;Graça;185;258;Lisboa
+;110617;Lapa;185;258;Lisboa
+;110618;Lumiar;185;258;Lisboa
+;110619;Madalena;185;258;Lisboa
+;110620;Mártires;185;258;Lisboa
+;110621;Marvila;185;258;Lisboa
+;110622;Mercês;185;258;Lisboa
+;110623;Nossa Senhora de Fátima;185;258;Lisboa
+;110624;Pena;185;258;Lisboa
+;110625;Penha de França;185;258;Lisboa
+;110626;Prazeres;185;258;Lisboa
+;110627;Sacramento;185;258;Lisboa
+;110628;Santa Catarina;185;258;Lisboa
+;110629;Santa Engrácia;185;258;Lisboa
+;110630;Santa Isabel;185;258;Lisboa
+;110631;Santa Justa;185;258;Lisboa
+;110632;Santa Maria de Belém;185;258;Lisboa
+;110633;Santa Maria dos Olivais;185;258;Lisboa
+;110634;Santiago;185;258;Lisboa
+;110635;Santo Condestável;185;258;Lisboa
+;110636;Santo Estêvão;185;258;Lisboa
+;110637;Santos-o-Velho;185;258;Lisboa
+;110638;São Cristóvão e São Lourenço;185;258;Lisboa
+;110639;São Domingos de Benfica;185;258;Lisboa
+;110640;São Francisco Xavier;185;258;Lisboa
+;110641;São João;185;258;Lisboa
+;110642;São João de Brito;185;258;Lisboa
+;110643;São João de Deus;185;258;Lisboa
+;110644;São Jorge de Arroios;185;258;Lisboa
+;110645;São José;185;258;Lisboa
+;110646;São Mamede;185;258;Lisboa
+;110647;São Miguel;185;258;Lisboa
+;110648;São Nicolau;185;258;Lisboa
+;110649;São Paulo;185;258;Lisboa
+;110650;São Sebastião da Pedreira;185;258;Lisboa
+;110651;São Vicente de Fora;185;258;Lisboa
+;110652;Sé;185;258;Lisboa
+;110653;Socorro;185;258;Lisboa
+;110701;Apelação;185;258;Loures
+;110702;Bucelas;185;258;Loures
+;110703;Camarate;185;258;Loures
+;110705;Fanhões;185;258;Loures
+;110706;Frielas;185;258;Loures
+;110707;Loures;185;258;Loures
+;110708;Lousa;185;258;Loures
+;110709;Moscavide;185;258;Loures
+;110712;Sacavém;185;258;Loures
+;110713;Santa Iria de Azoia;185;258;Loures
+;110714;Santo Antão do Tojal;185;258;Loures
+;110715;São João da Talha;185;258;Loures
+;110716;São Julião do Tojal;185;258;Loures
+;110717;Unhos;185;258;Loures
+;110719;Portela;185;258;Loures
+;110722;Bobadela;185;258;Loures
+;110723;Prior Velho;185;258;Loures
+;110724;Santo António dos Cavaleiros;185;258;Loures
+;110801;Lourinhã;185;258;Lourinhã
+;110802;Miragaia;185;258;Lourinhã
+;110803;Moita dos Ferreiros;185;258;Lourinhã
+;110804;Moledo;185;258;Lourinhã
+;110805;Reguengo Grande;185;258;Lourinhã
+;110806;Santa Bárbara;185;258;Lourinhã
+;110807;São Bartolomeu dos Galegos;185;258;Lourinhã
+;110808;Vimeiro;185;258;Lourinhã
+;110809;Marteleira;185;258;Lourinhã
+;110810;Ribamar;185;258;Lourinhã
+;110811;Atalaia;185;258;Lourinhã
+;110901;Azueira;185;258;Mafra
+;110902;Carvoeira;185;258;Mafra
+;110903;Cheleiros;185;258;Mafra
+;110904;Encarnação;185;258;Mafra
+;110905;Enxara do Bispo;185;258;Mafra
+;110906;Ericeira;185;258;Mafra
+;110907;Gradil;185;258;Mafra
+;110908;Igreja Nova;185;258;Mafra
+;110909;Mafra;185;258;Mafra
+;110910;Malveira;185;258;Mafra
+;110911;Milharado;185;258;Mafra
+;110912;Santo Estêvão das Galés;185;258;Mafra
+;110913;Santo Isidoro;185;258;Mafra
+;110914;Sobral da Abelheira;185;258;Mafra
+;110915;Vila Franca do Rosário;185;258;Mafra
+;110916;Venda do Pinheiro;185;258;Mafra
+;110917;São Miguel de Alcainça;185;258;Mafra
+;111002;Barcarena;185;258;Oeiras
+;111003;Carnaxide;185;258;Oeiras
+;111004;Oeiras e São Julião da Barra;185;258;Oeiras
+;111005;Paço de Arcos;185;258;Oeiras
+;111006;Algés;185;258;Oeiras
+;111007;Cruz Quebrada-Dafundo;185;258;Oeiras
+;111008;Linda-a-Velha;185;258;Oeiras
+;111009;Porto Salvo;185;258;Oeiras
+;111010;Queijas;185;258;Oeiras
+;111011;Caxias;185;258;Oeiras
+;111102;Algueirão-Mem Martins;185;258;Sintra
+;111103;Almargem do Bispo;185;258;Sintra
+;111104;Belas;185;258;Sintra
+;111105;Colares;185;258;Sintra
+;111106;Montelavar;185;258;Sintra
+;111107;Queluz;185;258;Sintra
+;111108;Rio de Mouro;185;258;Sintra
+;111109;Sintra (Santa Maria e São Miguel);185;258;Sintra
+;111110;São João das Lampas;185;258;Sintra
+;111111;Sintra (São Martinho);185;258;Sintra
+;111112;Sintra (São Pedro de Penaferrim);185;258;Sintra
+;111113;Terrugem;185;258;Sintra
+;111114;Pêro Pinheiro;185;258;Sintra
+;111115;Casal de Cambra;185;258;Sintra
+;111116;Massamá;185;258;Sintra
+;111117;Monte Abraão;185;258;Sintra
+;111118;Agualva;185;258;Sintra
+;111119;Cacém;185;258;Sintra
+;111120;Mira-Sintra;185;258;Sintra
+;111121;São Marcos;185;258;Sintra
+;111201;Santo Quintino;185;258;Sobral de Monte Agraço
+;111202;Sapataria;185;258;Sobral de Monte Agraço
+;111203;Sobral de Monte Agraço;185;258;Sobral de Monte Agraço
+;111301;A dos Cunhados;185;258;Torres Vedras
+;111302;Campelos;185;258;Torres Vedras
+;111303;Carmões;185;258;Torres Vedras
+;111304;Carvoeira;185;258;Torres Vedras
+;111305;Dois Portos;185;258;Torres Vedras
+;111306;Freiria;185;258;Torres Vedras
+;111307;Matacães;185;258;Torres Vedras
+;111308;Maxial;185;258;Torres Vedras
+;111309;Monte Redondo;185;258;Torres Vedras
+;111310;Ponte do Rol;185;258;Torres Vedras
+;111311;Ramalhal;185;258;Torres Vedras
+;111312;Runa;185;258;Torres Vedras
+;111313;Torres Vedras (Santa Maria do Castelo e São Miguel);185;258;Torres Vedras
+;111314;São Pedro da Cadeira;185;258;Torres Vedras
+;111315;Torres Vedras (São Pedro e Santiago);185;258;Torres Vedras
+;111316;Silveira;185;258;Torres Vedras
+;111317;Turcifal;185;258;Torres Vedras
+;111318;Ventosa;185;258;Torres Vedras
+;111319;Outeiro da Cabeça;185;258;Torres Vedras
+;111320;Maceira;185;258;Torres Vedras
+;111401;Alhandra;185;258;Vila Franca de Xira
+;111402;Alverca do Ribatejo;185;258;Vila Franca de Xira
+;111403;Cachoeiras;185;258;Vila Franca de Xira
+;111404;Calhandriz;185;258;Vila Franca de Xira
+;111405;Castanheira do Ribatejo;185;258;Vila Franca de Xira
+;111406;Póvoa de Santa Iria;185;258;Vila Franca de Xira
+;111407;São João dos Montes;185;258;Vila Franca de Xira
+;111408;Vialonga;185;258;Vila Franca de Xira
+;111409;Vila Franca de Xira;185;258;Vila Franca de Xira
+;111410;Sobralinho;185;258;Vila Franca de Xira
+;111411;Forte da Casa;185;258;Vila Franca de Xira
+;111501;Alfragide;185;258;Amadora
+;111502;Brandoa;185;258;Amadora
+;111503;Buraca;185;258;Amadora
+;111504;Damaia;185;258;Amadora
+;111505;Falagueira;185;258;Amadora
+;111506;Mina;185;258;Amadora
+;111507;Reboleira;185;258;Amadora
+;111508;Venteira;185;258;Amadora
+;111509;Alfornelos;185;258;Amadora
+;111510;São Brás;185;258;Amadora
+;111511;Venda Nova;185;258;Amadora
+;111601;Caneças;185;258;Odivelas
+;111602;Famões;185;258;Odivelas
+;111603;Odivelas;185;258;Odivelas
+;111604;Olival de Basto;185;258;Odivelas
+;111605;Pontinha;185;258;Odivelas
+;111606;Póvoa de Santo Adrião;185;258;Odivelas
+;111607;Ramada;185;258;Odivelas
+;120101;Alter do Chão;185;259;Alter do Chão
+;120102;Chancelaria;185;259;Alter do Chão
+;120103;Seda;185;259;Alter do Chão
+;120104;Cunheira;185;259;Alter do Chão
+;120201;Assunção;185;259;Arronches
+;120202;Esperança;185;259;Arronches
+;120203;Mosteiros;185;259;Arronches
+;120301;Alcôrrego;185;259;Avis
+;120302;Aldeia Velha;185;259;Avis
+;120303;Avis;185;259;Avis
+;120304;Benavila;185;259;Avis
+;120305;Ervedal;185;259;Avis
+;120306;Figueira e Barros;185;259;Avis
+;120307;Maranhão;185;259;Avis
+;120308;Valongo;185;259;Avis
+;120401;Nossa Senhora da Expectação;185;259;Campo Maior
+;120402;Nossa Senhora da Graça dos Degolados;185;259;Campo Maior
+;120403;São João Baptista;185;259;Campo Maior
+;120501;Nossa Senhora da Graça de Póvoa e Meadas;185;259;Castelo de Vide
+;120502;Santa Maria da Devesa;185;259;Castelo de Vide
+;120503;Santiago Maior;185;259;Castelo de Vide
+;120504;São João Baptista;185;259;Castelo de Vide
+;120601;Aldeia da Mata;185;259;Crato
+;120602;Crato e Mártires;185;259;Crato
+;120603;Flor da Rosa;185;259;Crato
+;120604;Gáfete;185;259;Crato
+;120605;Monte da Pedra;185;259;Crato
+;120606;Vale do Peso;185;259;Crato
+;120701;Ajuda, Salvador e Santo Ildefonso;185;259;Elvas
+;120702;Alcáçova;185;259;Elvas
+;120703;Assunção;185;259;Elvas
+;120704;Barbacena;185;259;Elvas
+;120705;Caia e São Pedro;185;259;Elvas
+;120706;Santa Eulália;185;259;Elvas
+;120707;São Brás e São Lourenço;185;259;Elvas
+;120708;São Vicente e Ventosa;185;259;Elvas
+;120709;Terrugem;185;259;Elvas
+;120710;Vila Boim;185;259;Elvas
+;120711;Vila Fernando;185;259;Elvas
+;120801;Cabeço de Vide;185;259;Fronteira
+;120802;Fronteira;185;259;Fronteira
+;120803;São Saturnino;185;259;Fronteira
+;120901;Atalaia;185;259;Gavião
+;120902;Belver;185;259;Gavião
+;120903;Comenda;185;259;Gavião
+;120904;Gavião;185;259;Gavião
+;120905;Margem;185;259;Gavião
+;121001;Beirã;185;259;Marvão
+;121002;Santa Maria de Marvão;185;259;Marvão
+;121003;Santo António das Areias;185;259;Marvão
+;121004;São Salvador da Aramenha;185;259;Marvão
+;121101;Assumar;185;259;Monforte
+;121102;Monforte;185;259;Monforte
+;121103;Santo Aleixo;185;259;Monforte
+;121104;Vaiamonte;185;259;Monforte
+;121201;Alpalhão;185;259;Nisa
+;121202;Amieira do Tejo;185;259;Nisa
+;121203;Arez;185;259;Nisa
+;121204;Espírito Santo;185;259;Nisa
+;121205;Montalvão;185;259;Nisa
+;121206;Nossa Senhora da Graça;185;259;Nisa
+;121207;Santana;185;259;Nisa
+;121208;São Matias;185;259;Nisa
+;121209;São Simão;185;259;Nisa
+;121210;Tolosa;185;259;Nisa
+;121301;Galveias;185;259;Ponte de Sor
+;121302;Montargil;185;259;Ponte de Sor
+;121303;Ponte de Sor;185;259;Ponte de Sor
+;121304;Foros de Arrão;185;259;Ponte de Sor
+;121305;Longomel;185;259;Ponte de Sor
+;121306;Vale de Açor;185;259;Ponte de Sor
+;121307;Tramaga;185;259;Ponte de Sor
+;121401;Alagoa;185;259;Portalegre
+;121402;Alegrete;185;259;Portalegre
+;121403;Carreiras;185;259;Portalegre
+;121404;Fortios;185;259;Portalegre
+;121405;Reguengo;185;259;Portalegre
+;121406;Ribeira de Nisa;185;259;Portalegre
+;121407;São Julião;185;259;Portalegre
+;121408;São Lourenço;185;259;Portalegre
+;121409;Sé;185;259;Portalegre
+;121410;Urra;185;259;Portalegre
+;121501;Cano;185;259;Sousel
+;121502;Casa Branca;185;259;Sousel
+;121503;Santo Amaro;185;259;Sousel
+;121504;Sousel;185;259;Sousel
+;130101;Aboadela;185;260;Amarante
+;130102;Aboim;185;260;Amarante
+;130103;Ansiães;185;260;Amarante
+;130104;Ataíde;185;260;Amarante
+;130105;Bustelo;185;260;Amarante
+;130106;Canadelo;185;260;Amarante
+;130107;Candemil;185;260;Amarante
+;130108;Carneiro;185;260;Amarante
+;130109;Carvalho de Rei;185;260;Amarante
+;130110;Cepelos;185;260;Amarante
+;130111;Chapa;185;260;Amarante
+;130112;Fregim;185;260;Amarante
+;130113;Freixo de Baixo;185;260;Amarante
+;130114;Freixo de Cima;185;260;Amarante
+;130115;Fridão;185;260;Amarante
+;130116;Gatão;185;260;Amarante
+;130117;Gondar;185;260;Amarante
+;130118;Jazente;185;260;Amarante
+;130119;Lomba;185;260;Amarante
+;130120;Louredo;185;260;Amarante
+;130121;Lufrei;185;260;Amarante
+;130122;Madalena;185;260;Amarante
+;130123;Mancelos;185;260;Amarante
+;130124;Oliveira;185;260;Amarante
+;130125;Olo;185;260;Amarante
+;130126;Padronelo;185;260;Amarante
+;130127;Real;185;260;Amarante
+;130128;Rebordelo;185;260;Amarante
+;130129;Salvador do Monte;185;260;Amarante
+;130130;Sanche;185;260;Amarante
+;130131;Figueiró (Santa Cristina);185;260;Amarante
+;130132;Figueiró (Santiago);185;260;Amarante
+;130133;Amarante (São Gonçalo);185;260;Amarante
+;130134;Gouveia (São Simão);185;260;Amarante
+;130135;Telões;185;260;Amarante
+;130136;Travanca;185;260;Amarante
+;130137;Várzea;185;260;Amarante
+;130138;Vila Caiz;185;260;Amarante
+;130139;Vila Chã do Marão;185;260;Amarante
+;130140;Vila Garcia;185;260;Amarante
+;130201;Ancede;185;260;Baião
+;130202;Campelo;185;260;Baião
+;130203;São Tomé de Covelas;185;260;Baião
+;130204;Frende;185;260;Baião
+;130205;Gestaçô;185;260;Baião
+;130206;Gove;185;260;Baião
+;130207;Grilo;185;260;Baião
+;130208;Loivos do Monte;185;260;Baião
+;130209;Loivos da Ribeira;185;260;Baião
+;130210;Mesquinhata;185;260;Baião
+;130211;Ovil;185;260;Baião
+;130212;Ribadouro;185;260;Baião
+;130213;Santa Cruz do Douro;185;260;Baião
+;130214;Baião (Santa Leocádia);185;260;Baião
+;130215;Santa Marinha do Zêzere;185;260;Baião
+;130216;Teixeira;185;260;Baião
+;130217;Teixeiró;185;260;Baião
+;130218;Tresouras;185;260;Baião
+;130219;Valadares;185;260;Baião
+;130220;Viariz;185;260;Baião
+;130301;Aião;185;260;Felgueiras
+;130302;Airães;185;260;Felgueiras
+;130303;Borba de Godim;185;260;Felgueiras
+;130304;Caramos;185;260;Felgueiras
+;130305;Friande;185;260;Felgueiras
+;130306;Idães;185;260;Felgueiras
+;130307;Jugueiros;185;260;Felgueiras
+;130308;Lagares;185;260;Felgueiras
+;130309;Lordelo;185;260;Felgueiras
+;130310;Macieira da Lixa;185;260;Felgueiras
+;130311;Moure;185;260;Felgueiras
+;130312;Pedreira;185;260;Felgueiras
+;130313;Penacova;185;260;Felgueiras
+;130314;Pinheiro;185;260;Felgueiras
+;130315;Pombeiro de Ribavizela;185;260;Felgueiras
+;130316;Rande;185;260;Felgueiras
+;130317;Refontoura;185;260;Felgueiras
+;130318;Regilde;185;260;Felgueiras
+;130319;Revinhade;185;260;Felgueiras
+;130320;Margaride (Santa Eulália);185;260;Felgueiras
+;130321;Santão;185;260;Felgueiras
+;130323;Vizela (São Jorge);185;260;Felgueiras
+;130324;Sendim;185;260;Felgueiras
+;130325;Sernande;185;260;Felgueiras
+;130326;Sousa;185;260;Felgueiras
+;130327;Torrados;185;260;Felgueiras
+;130328;Unhão;185;260;Felgueiras
+;130329;Várzea;185;260;Felgueiras
+;130330;Varziela;185;260;Felgueiras
+;130331;Vila Cova da Lixa;185;260;Felgueiras
+;130332;Vila Fria;185;260;Felgueiras
+;130333;Vila Verde;185;260;Felgueiras
+;130401;Covelo;185;260;Gondomar
+;130402;Fânzeres;185;260;Gondomar
+;130403;Foz do Sousa;185;260;Gondomar
+;130404;Jovim;185;260;Gondomar
+;130405;Lomba;185;260;Gondomar
+;130406;Medas;185;260;Gondomar
+;130407;Melres;185;260;Gondomar
+;130408;Rio Tinto;185;260;Gondomar
+;130409;Gondomar (São Cosme);185;260;Gondomar
+;130410;São Pedro da Cova;185;260;Gondomar
+;130411;Valbom;185;260;Gondomar
+;130412;Baguim do Monte (RIO Tinto);185;260;Gondomar
+;130501;Alvarenga;185;260;Lousada
+;130502;Aveleda;185;260;Lousada
+;130503;Boim;185;260;Lousada
+;130504;Caíde de Rei;185;260;Lousada
+;130505;Casais;185;260;Lousada
+;130506;Cernadelo;185;260;Lousada
+;130507;Covas;185;260;Lousada
+;130508;Cristelos;185;260;Lousada
+;130509;Figueiras;185;260;Lousada
+;130510;Lodares;185;260;Lousada
+;130511;Lustosa;185;260;Lousada
+;130512;Macieira;185;260;Lousada
+;130513;Meinedo;185;260;Lousada
+;130514;Nespereira;185;260;Lousada
+;130515;Nevogilde;185;260;Lousada
+;130516;Nogueira;185;260;Lousada
+;130517;Ordem;185;260;Lousada
+;130518;Pias;185;260;Lousada
+;130520;Lousada (Santa Margarida);185;260;Lousada
+;130521;Barrosas (Santo Estêvão);185;260;Lousada
+;130522;Lousada (São Miguel);185;260;Lousada
+;130523;Silvares;185;260;Lousada
+;130524;Sousela;185;260;Lousada
+;130525;Torno;185;260;Lousada
+;130526;Vilar do Torno e Alentém;185;260;Lousada
+;130601;Águas Santas;185;260;Maia
+;130602;Barca;185;260;Maia
+;130603;Folgosa;185;260;Maia
+;130604;Gemunde;185;260;Maia
+;130605;Gondim;185;260;Maia
+;130606;Gueifães;185;260;Maia
+;130607;Maia;185;260;Maia
+;130608;Milheirós;185;260;Maia
+;130609;Moreira;185;260;Maia
+;130610;Nogueira;185;260;Maia
+;130611;Avioso (Santa Maria);185;260;Maia
+;130612;Avioso (São Pedro);185;260;Maia
+;130613;São Pedro Fins;185;260;Maia
+;130614;Silva Escura;185;260;Maia
+;130615;Vermoim;185;260;Maia
+;130616;Vila Nova da Telha;185;260;Maia
+;130617;Pedrouços;185;260;Maia
+;130701;Alpendurada e Matos;185;260;Marco de Canaveses
+;130702;Ariz;185;260;Marco de Canaveses
+;130703;Avessadas;185;260;Marco de Canaveses
+;130704;Banho e Carvalhosa;185;260;Marco de Canaveses
+;130705;Constance;185;260;Marco de Canaveses
+;130706;Favões;185;260;Marco de Canaveses
+;130707;Folhada;185;260;Marco de Canaveses
+;130708;Fornos;185;260;Marco de Canaveses
+;130709;Freixo;185;260;Marco de Canaveses
+;130710;Magrelos;185;260;Marco de Canaveses
+;130711;Manhuncelos;185;260;Marco de Canaveses
+;130712;Maureles;185;260;Marco de Canaveses
+;130713;Paços de Gaiolo;185;260;Marco de Canaveses
+;130714;Paredes de Viadores;185;260;Marco de Canaveses
+;130715;Penha Longa;185;260;Marco de Canaveses
+;130716;Rio de Galinhas;185;260;Marco de Canaveses
+;130717;Rosem;185;260;Marco de Canaveses
+;130718;Sande;185;260;Marco de Canaveses
+;130719;Santo Isidoro;185;260;Marco de Canaveses
+;130720;São Lourenço do Douro;185;260;Marco de Canaveses
+;130721;São Nicolau;185;260;Marco de Canaveses
+;130722;Soalhães;185;260;Marco de Canaveses
+;130723;Sobretâmega;185;260;Marco de Canaveses
+;130724;Tabuado;185;260;Marco de Canaveses
+;130725;Torrão;185;260;Marco de Canaveses
+;130726;Toutosa;185;260;Marco de Canaveses
+;130727;Tuias;185;260;Marco de Canaveses
+;130728;Várzea do Douro;185;260;Marco de Canaveses
+;130729;Várzea da Ovelha e Aliviada;185;260;Marco de Canaveses
+;130730;Vila Boa do Bispo;185;260;Marco de Canaveses
+;130731;Vila Boa de Quires;185;260;Marco de Canaveses
+;130801;Custóias;185;260;Matosinhos
+;130802;Guifões;185;260;Matosinhos
+;130803;Lavra;185;260;Matosinhos
+;130804;Leça do Balio;185;260;Matosinhos
+;130805;Leça da Palmeira;185;260;Matosinhos
+;130806;Matosinhos;185;260;Matosinhos
+;130807;Perafita;185;260;Matosinhos
+;130808;Santa Cruz do Bispo;185;260;Matosinhos
+;130809;São Mamede de Infesta;185;260;Matosinhos
+;130810;Senhora da Hora;185;260;Matosinhos
+;130901;Arreigada;185;260;Paços de Ferreira
+;130902;Carvalhosa;185;260;Paços de Ferreira
+;130903;Codessos;185;260;Paços de Ferreira
+;130904;Eiriz;185;260;Paços de Ferreira
+;130905;Ferreira;185;260;Paços de Ferreira
+;130906;Figueiró;185;260;Paços de Ferreira
+;130907;Frazão;185;260;Paços de Ferreira
+;130908;Freamunde;185;260;Paços de Ferreira
+;130909;Lamoso;185;260;Paços de Ferreira
+;130910;Meixomil;185;260;Paços de Ferreira
+;130911;Modelos;185;260;Paços de Ferreira
+;130912;Paços de Ferreira;185;260;Paços de Ferreira
+;130913;Penamaior;185;260;Paços de Ferreira
+;130914;Raimonda;185;260;Paços de Ferreira
+;130915;Sanfins de Ferreira;185;260;Paços de Ferreira
+;130916;Seroa;185;260;Paços de Ferreira
+;131001;Aguiar de Sousa;185;260;Paredes
+;131002;Astromil;185;260;Paredes
+;131003;Baltar;185;260;Paredes
+;131004;Beire;185;260;Paredes
+;131005;Besteiros;185;260;Paredes
+;131006;Bitarães;185;260;Paredes
+;131007;Castelões de Cepeda;185;260;Paredes
+;131008;Cete;185;260;Paredes
+;131009;Cristelo;185;260;Paredes
+;131010;Duas Igrejas;185;260;Paredes
+;131011;Gandra;185;260;Paredes
+;131012;Gondalães;185;260;Paredes
+;131013;Lordelo;185;260;Paredes
+;131014;Louredo;185;260;Paredes
+;131015;Madalena;185;260;Paredes
+;131016;Mouriz;185;260;Paredes
+;131017;Parada de Todeia;185;260;Paredes
+;131018;Rebordosa;185;260;Paredes
+;131019;Recarei;185;260;Paredes
+;131020;Sobreira;185;260;Paredes
+;131021;Sobrosa;185;260;Paredes
+;131022;Vandoma;185;260;Paredes
+;131023;Vila Cova de Carros;185;260;Paredes
+;131024;Vilela;185;260;Paredes
+;131101;Abragão;185;260;Penafiel
+;131102;Boelhe;185;260;Penafiel
+;131103;Bustelo;185;260;Penafiel
+;131104;Cabeça Santa;185;260;Penafiel
+;131105;Canelas;185;260;Penafiel
+;131106;Capela;185;260;Penafiel
+;131107;Castelões;185;260;Penafiel
+;131108;Croca;185;260;Penafiel
+;131109;Duas Igrejas;185;260;Penafiel
+;131110;Eja;185;260;Penafiel
+;131111;Figueira;185;260;Penafiel
+;131112;Fonte Arcada;185;260;Penafiel
+;131113;Galegos;185;260;Penafiel
+;131114;Guilhufe;185;260;Penafiel
+;131115;Irivo;185;260;Penafiel
+;131116;Lagares;185;260;Penafiel
+;131117;Luzim;185;260;Penafiel
+;131118;Marecos;185;260;Penafiel
+;131119;Milhundos;185;260;Penafiel
+;131120;Novelas;185;260;Penafiel
+;131121;Oldrões;185;260;Penafiel
+;131122;Paço de Sousa;185;260;Penafiel
+;131123;Paredes;185;260;Penafiel
+;131124;Penafiel;185;260;Penafiel
+;131125;Perozelo;185;260;Penafiel
+;131126;Pinheiro;185;260;Penafiel
+;131127;Portela;185;260;Penafiel
+;131128;Rans;185;260;Penafiel
+;131129;Rio de Moinhos;185;260;Penafiel
+;131130;Santa Marta;185;260;Penafiel
+;131131;Santiago de Subarrifana;185;260;Penafiel
+;131132;Recezinhos (São Mamede);185;260;Penafiel
+;131133;Recezinhos (São Martinho);185;260;Penafiel
+;131134;Sebolido;185;260;Penafiel
+;131135;Urrô;185;260;Penafiel
+;131136;Valpedre;185;260;Penafiel
+;131137;Vila Cova;185;260;Penafiel
+;131138;Rio Mau;185;260;Penafiel
+;131201;Aldoar;185;260;Porto
+;131202;Bonfim;185;260;Porto
+;131203;Campanhã;185;260;Porto
+;131204;Cedofeita;185;260;Porto
+;131205;Foz do Douro;185;260;Porto
+;131206;Lordelo do Ouro;185;260;Porto
+;131207;Massarelos;185;260;Porto
+;131208;Miragaia;185;260;Porto
+;131209;Nevogilde;185;260;Porto
+;131210;Paranhos;185;260;Porto
+;131211;Ramalde;185;260;Porto
+;131212;Santo Ildefonso;185;260;Porto
+;131213;São Nicolau;185;260;Porto
+;131214;Sé;185;260;Porto
+;131215;Vitória;185;260;Porto
+;131301;A Ver-o-Mar;185;260;Póvoa de Varzim
+;131302;Aguçadoura;185;260;Póvoa de Varzim
+;131303;Amorim;185;260;Póvoa de Varzim
+;131304;Argivai;185;260;Póvoa de Varzim
+;131305;Balazar;185;260;Póvoa de Varzim
+;131306;Beiriz;185;260;Póvoa de Varzim
+;131307;Estela;185;260;Póvoa de Varzim
+;131308;Laundos;185;260;Póvoa de Varzim
+;131309;Navais;185;260;Póvoa de Varzim
+;131310;Póvoa de Varzim;185;260;Póvoa de Varzim
+;131311;Rates;185;260;Póvoa de Varzim
+;131312;Terroso;185;260;Póvoa de Varzim
+;131401;Agrela;185;260;Santo Tirso
+;131402;Água Longa;185;260;Santo Tirso
+;131404;Areias;185;260;Santo Tirso
+;131405;Aves;185;260;Santo Tirso
+;131406;Burgães;185;260;Santo Tirso
+;131407;Carreira;185;260;Santo Tirso
+;131410;Guimarei;185;260;Santo Tirso
+;131411;Lama;185;260;Santo Tirso
+;131412;Lamelas;185;260;Santo Tirso
+;131413;Monte Córdova;185;260;Santo Tirso
+;131415;Palmeira;185;260;Santo Tirso
+;131416;Rebordões;185;260;Santo Tirso
+;131417;Refojos de Riba de Ave;185;260;Santo Tirso
+;131418;Reguenga;185;260;Santo Tirso
+;131419;Roriz;185;260;Santo Tirso
+;131420;Couto (Santa Cristina);185;260;Santo Tirso
+;131422;Santo Tirso;185;260;Santo Tirso
+;131424;Negrelos (São Mamede);185;260;Santo Tirso
+;131426;Campo (São Martinho);185;260;Santo Tirso
+;131427;Couto (São Miguel);185;260;Santo Tirso
+;131429;São Salvador do Campo;185;260;Santo Tirso
+;131430;Negrelos (São Tomé);185;260;Santo Tirso
+;131431;Sequeiró;185;260;Santo Tirso
+;131432;Vilarinho;185;260;Santo Tirso
+;131501;Alfena;185;260;Valongo
+;131502;Campo;185;260;Valongo
+;131503;Ermesinde;185;260;Valongo
+;131504;Sobrado;185;260;Valongo
+;131505;Valongo;185;260;Valongo
+;131601;Arcos;185;260;Vila do Conde
+;131602;Árvore;185;260;Vila do Conde
+;131603;Aveleda;185;260;Vila do Conde
+;131604;Azurara;185;260;Vila do Conde
+;131605;Bagunte;185;260;Vila do Conde
+;131606;Canidelo;185;260;Vila do Conde
+;131607;Fajozes;185;260;Vila do Conde
+;131608;Ferreiró;185;260;Vila do Conde
+;131609;Fornelo;185;260;Vila do Conde
+;131610;Gião;185;260;Vila do Conde
+;131611;Guilhabreu;185;260;Vila do Conde
+;131612;Junqueira;185;260;Vila do Conde
+;131613;Labruge;185;260;Vila do Conde
+;131614;Macieira da Maia;185;260;Vila do Conde
+;131615;Malta;185;260;Vila do Conde
+;131616;Mindelo;185;260;Vila do Conde
+;131617;Modivas;185;260;Vila do Conde
+;131618;Mosteiró;185;260;Vila do Conde
+;131619;Outeiro Maior;185;260;Vila do Conde
+;131620;Parada;185;260;Vila do Conde
+;131621;Retorta;185;260;Vila do Conde
+;131622;Rio Mau;185;260;Vila do Conde
+;131623;Tougues;185;260;Vila do Conde
+;131624;Touguinha;185;260;Vila do Conde
+;131625;Touguinhó;185;260;Vila do Conde
+;131626;Vairão;185;260;Vila do Conde
+;131627;Vila Chã;185;260;Vila do Conde
+;131628;Vila do Conde;185;260;Vila do Conde
+;131629;Vilar;185;260;Vila do Conde
+;131630;Vilar de Pinheiro;185;260;Vila do Conde
+;131701;Arcozelo;185;260;Vila Nova de Gaia
+;131702;Avintes;185;260;Vila Nova de Gaia
+;131703;Canelas;185;260;Vila Nova de Gaia
+;131704;Canidelo;185;260;Vila Nova de Gaia
+;131705;Crestuma;185;260;Vila Nova de Gaia
+;131706;Grijó;185;260;Vila Nova de Gaia
+;131707;Gulpilhares;185;260;Vila Nova de Gaia
+;131708;Lever;185;260;Vila Nova de Gaia
+;131709;Madalena;185;260;Vila Nova de Gaia
+;131710;Mafamude;185;260;Vila Nova de Gaia
+;131711;Olival;185;260;Vila Nova de Gaia
+;131712;Oliveira do Douro;185;260;Vila Nova de Gaia
+;131713;Pedroso;185;260;Vila Nova de Gaia
+;131714;Perosinho;185;260;Vila Nova de Gaia
+;131715;Sandim;185;260;Vila Nova de Gaia
+;131716;Vila Nova de Gaia (Santa Marinha);185;260;Vila Nova de Gaia
+;131717;São Félix da Marinha;185;260;Vila Nova de Gaia
+;131718;São Pedro da Afurada;185;260;Vila Nova de Gaia
+;131719;Seixezelo;185;260;Vila Nova de Gaia
+;131720;Sermonde;185;260;Vila Nova de Gaia
+;131721;Serzedo;185;260;Vila Nova de Gaia
+;131722;Valadares;185;260;Vila Nova de Gaia
+;131723;Vilar de Andorinho;185;260;Vila Nova de Gaia
+;131724;Vilar do Paraíso;185;260;Vila Nova de Gaia
+;131801;Alvarelhos;185;260;Trofa
+;131802;Bougado (Santiago);185;260;Trofa
+;131803;Bougado (São Martinho);185;260;Trofa
+;131804;Coronado (São Mamede);185;260;Trofa
+;131805;Coronado (São Romão);185;260;Trofa
+;131806;Covelas;185;260;Trofa
+;131807;Guidões;185;260;Trofa
+;131808;Muro;185;260;Trofa
+;140101;Aldeia do Mato;185;261;Abrantes
+;140102;Alferrarede;185;261;Abrantes
+;140103;Alvega;185;261;Abrantes
+;140104;Bemposta;185;261;Abrantes
+;140105;Martinchel;185;261;Abrantes
+;140106;Mouriscas;185;261;Abrantes
+;140107;Pego;185;261;Abrantes
+;140108;Rio de Moinhos;185;261;Abrantes
+;140109;Rossio Ao Sul do Tejo;185;261;Abrantes
+;140110;São Facundo;185;261;Abrantes
+;140111;Abrantes (São João);185;261;Abrantes
+;140112;São Miguel do Rio Torto;185;261;Abrantes
+;140113;Abrantes (São Vicente);185;261;Abrantes
+;140114;Souto;185;261;Abrantes
+;140115;Tramagal;185;261;Abrantes
+;140116;Vale de Mós;185;261;Abrantes
+;140117;Concavada;185;261;Abrantes
+;140118;Fontes;185;261;Abrantes
+;140119;Carvalhal;185;261;Abrantes
+;140201;Alcanena;185;261;Alcanena
+;140202;Bugalhos;185;261;Alcanena
+;140203;Espinheiro;185;261;Alcanena
+;140204;Louriceira;185;261;Alcanena
+;140205;Malhou;185;261;Alcanena
+;140206;Minde;185;261;Alcanena
+;140207;Moitas Venda;185;261;Alcanena
+;140208;Monsanto;185;261;Alcanena
+;140209;Serra de Santo António;185;261;Alcanena
+;140210;Vila Moreira;185;261;Alcanena
+;140301;Almeirim;185;261;Almeirim
+;140302;Benfica do Ribatejo;185;261;Almeirim
+;140303;Fazendas de Almeirim;185;261;Almeirim
+;140304;Raposa;185;261;Almeirim
+;140401;Alpiarça;185;261;Alpiarça
+;140501;Benavente;185;261;Benavente
+;140502;Samora Correia;185;261;Benavente
+;140503;Santo Estêvão;185;261;Benavente
+;140504;Barrosa;185;261;Benavente
+;140601;Cartaxo;185;261;Cartaxo
+;140602;Ereira;185;261;Cartaxo
+;140603;Lapa;185;261;Cartaxo
+;140604;Pontével;185;261;Cartaxo
+;140605;Valada;185;261;Cartaxo
+;140606;Vale da Pinta;185;261;Cartaxo
+;140607;Vila Chã de Ourique;185;261;Cartaxo
+;140608;Vale da Pedra;185;261;Cartaxo
+;140701;Chamusca;185;261;Chamusca
+;140702;Chouto;185;261;Chamusca
+;140703;Pinheiro Grande;185;261;Chamusca
+;140704;Ulme;185;261;Chamusca
+;140705;Vale de Cavalos;185;261;Chamusca
+;140706;Parreira;185;261;Chamusca
+;140707;Carregueira;185;261;Chamusca
+;140801;Constância;185;261;Constância
+;140802;Montalvo;185;261;Constância
+;140803;Santa Margarida da Coutada;185;261;Constância
+;140901;Coruche;185;261;Coruche
+;140902;Couço;185;261;Coruche
+;140903;São José da Lamarosa;185;261;Coruche
+;140904;Fajarda;185;261;Coruche
+;140905;Branca;185;261;Coruche
+;140906;Erra;185;261;Coruche
+;140907;Biscainho;185;261;Coruche
+;140908;Santana do Mato;185;261;Coruche
+;141001;São João Baptista;185;261;Entroncamento
+;141002;Nossa Senhora de Fátima;185;261;Entroncamento
+;141101;Águas Belas;185;261;Ferreira do Zêzere
+;141102;Areias;185;261;Ferreira do Zêzere
+;141103;Beco;185;261;Ferreira do Zêzere
+;141104;Chãos;185;261;Ferreira do Zêzere
+;141105;Dornes;185;261;Ferreira do Zêzere
+;141106;Ferreira do Zêzere;185;261;Ferreira do Zêzere
+;141107;Igreja Nova do Sobral;185;261;Ferreira do Zêzere
+;141108;Paio Mendes;185;261;Ferreira do Zêzere
+;141109;Pias;185;261;Ferreira do Zêzere
+;141201;Azinhaga;185;261;Golegã
+;141202;Golegã;185;261;Golegã
+;141301;Aboboreira;185;261;Mação
+;141302;Amêndoa;185;261;Mação
+;141303;Cardigos;185;261;Mação
+;141304;Carvoeiro;185;261;Mação
+;141305;Envendos;185;261;Mação
+;141306;Mação;185;261;Mação
+;141307;Ortiga;185;261;Mação
+;141308;Penhascoso;185;261;Mação
+;141401;Alcobertas;185;261;Rio Maior
+;141402;Arrouquelas;185;261;Rio Maior
+;141403;Arruda dos Pisões;185;261;Rio Maior
+;141404;Azambujeira;185;261;Rio Maior
+;141405;Fráguas;185;261;Rio Maior
+;141406;Marmeleira;185;261;Rio Maior
+;141407;Outeiro da Cortiçada;185;261;Rio Maior
+;141408;Rio Maior;185;261;Rio Maior
+;141409;São João da Ribeira;185;261;Rio Maior
+;141410;Asseiceira;185;261;Rio Maior
+;141411;São Sebastião;185;261;Rio Maior
+;141412;Ribeira de São João;185;261;Rio Maior
+;141413;Malaqueijo;185;261;Rio Maior
+;141414;Assentiz;185;261;Rio Maior
+;141501;Glória do Ribatejo;185;261;Salvaterra de Magos
+;141502;Marinhais;185;261;Salvaterra de Magos
+;141503;Muge;185;261;Salvaterra de Magos
+;141504;Salvaterra de Magos;185;261;Salvaterra de Magos
+;141505;Foros de Salvaterra;185;261;Salvaterra de Magos
+;141506;Granho;185;261;Salvaterra de Magos
+;141601;Abitureiras;185;261;Santarém
+;141602;Abrã;185;261;Santarém
+;141603;Achete;185;261;Santarém
+;141604;Alcanede;185;261;Santarém
+;141605;Alcanhões;185;261;Santarém
+;141606;Almoster;185;261;Santarém
+;141607;Amiais de Baixo;185;261;Santarém
+;141608;Arneiro das Milhariças;185;261;Santarém
+;141609;Azoia de Baixo;185;261;Santarém
+;141610;Azoia de Cima;185;261;Santarém
+;141611;Casével;185;261;Santarém
+;141612;Santarém (Marvila);185;261;Santarém
+;141613;Moçarria;185;261;Santarém
+;141614;Pernes;185;261;Santarém
+;141615;Pombalinho;185;261;Santarém
+;141616;Póvoa da Isenta;185;261;Santarém
+;141617;Póvoa de Santarém;185;261;Santarém
+;141618;Romeira;185;261;Santarém
+;141619;Santa Iria da Ribeira de Santarém;185;261;Santarém
+;141620;Santarém (São Nicolau);185;261;Santarém
+;141621;Santarém (São Salvador);185;261;Santarém
+;141622;São Vicente do Paul;185;261;Santarém
+;141623;Tremês;185;261;Santarém
+;141624;Vale de Figueira;185;261;Santarém
+;141625;Vale de Santarém;185;261;Santarém
+;141626;Vaqueiros;185;261;Santarém
+;141627;Várzea;185;261;Santarém
+;141628;Gançaria;185;261;Santarém
+;141701;Alcaravela;185;261;Sardoal
+;141702;Santiago de Montalegre;185;261;Sardoal
+;141703;Sardoal;185;261;Sardoal
+;141704;Valhascos;185;261;Sardoal
+;141801;Alviobeira;185;261;Tomar
+;141802;Asseiceira;185;261;Tomar
+;141803;Beselga;185;261;Tomar
+;141804;Carregueiros;185;261;Tomar
+;141805;Casais;185;261;Tomar
+;141806;Junceira;185;261;Tomar
+;141807;Madalena;185;261;Tomar
+;141808;Olalhas;185;261;Tomar
+;141809;Paialvo;185;261;Tomar
+;141810;Pedreira;185;261;Tomar
+;141811;Santa Maria dos Olivais;185;261;Tomar
+;141812;Tomar (São João Baptista);185;261;Tomar
+;141813;São Pedro de Tomar;185;261;Tomar
+;141814;Sabacheira;185;261;Tomar
+;141815;Serra;185;261;Tomar
+;141816;Além da Ribeira;185;261;Tomar
+;141901;Alcorochel;185;261;Torres Novas
+;141902;Assentiz;185;261;Torres Novas
+;141903;Brogueira;185;261;Torres Novas
+;141904;Chancelaria;185;261;Torres Novas
+;141905;Lapas;185;261;Torres Novas
+;141906;Olaia;185;261;Torres Novas
+;141907;Paço;185;261;Torres Novas
+;141908;Parceiros de Igreja;185;261;Torres Novas
+;141909;Pedrógão;185;261;Torres Novas
+;141910;Riachos;185;261;Torres Novas
+;141911;Ribeira Branca;185;261;Torres Novas
+;141912;Torres Novas (Salvador);185;261;Torres Novas
+;141913;Torres Novas (Santa Maria);185;261;Torres Novas
+;141914;Torres Novas (Santiago);185;261;Torres Novas
+;141915;Torres Novas (São Pedro);185;261;Torres Novas
+;141916;Zibreira;185;261;Torres Novas
+;141917;Meia Via;185;261;Torres Novas
+;142001;Atalaia;185;261;Vila Nova da Barquinha
+;142002;Praia do Ribatejo;185;261;Vila Nova da Barquinha
+;142003;Tancos;185;261;Vila Nova da Barquinha
+;142004;Vila Nova da Barquinha;185;261;Vila Nova da Barquinha
+;142005;Moita do Norte;185;261;Vila Nova da Barquinha
+;142101;Alburitel;185;261;Ourém
+;142102;Atouguia;185;261;Ourém
+;142103;Casal dos Bernardos;185;261;Ourém
+;142104;Caxarias;185;261;Ourém
+;142105;Espite;185;261;Ourém
+;142106;Fátima;185;261;Ourém
+;142107;Formigais;185;261;Ourém
+;142108;Freixianda;185;261;Ourém
+;142109;Gondemaria;185;261;Ourém
+;142110;Olival;185;261;Ourém
+;142111;Nossa Senhora das Misericórdias;185;261;Ourém
+;142112;Rio de Couros;185;261;Ourém
+;142113;Seiça;185;261;Ourém
+;142114;Urqueira;185;261;Ourém
+;142115;Nossa Senhora da Piedade;185;261;Ourém
+;142116;Matas;185;261;Ourém
+;142117;Cercal;185;261;Ourém
+;142118;Ribeira do Farrio;185;261;Ourém
+;150101;Alcácer do Sal (Santa Maria do Castelo);185;262;Alcácer do Sal
+;150102;Santa Susana;185;262;Alcácer do Sal
+;150103;Alcácer do Sal (Santiago);185;262;Alcácer do Sal
+;150104;Torrão;185;262;Alcácer do Sal
+;150105;São Martinho;185;262;Alcácer do Sal
+;150106;Comporta;185;262;Alcácer do Sal
+;150201;Alcochete;185;262;Alcochete
+;150202;Samouco;185;262;Alcochete
+;150203;São Francisco;185;262;Alcochete
+;150301;Almada;185;262;Almada
+;150302;Caparica;185;262;Almada
+;150303;Costa da Caparica;185;262;Almada
+;150304;Cova da Piedade;185;262;Almada
+;150305;Trafaria;185;262;Almada
+;150306;Cacilhas;185;262;Almada
+;150307;Pragal;185;262;Almada
+;150308;Sobreda;185;262;Almada
+;150309;Charneca de Caparica;185;262;Almada
+;150310;Laranjeiro;185;262;Almada
+;150311;Feijó;185;262;Almada
+;150401;Barreiro;185;262;Barreiro
+;150402;Lavradio;185;262;Barreiro
+;150403;Palhais;185;262;Barreiro
+;150404;Santo André;185;262;Barreiro
+;150405;Verderena;185;262;Barreiro
+;150406;Alto do Seixalinho;185;262;Barreiro
+;150407;Santo António da Charneca;185;262;Barreiro
+;150408;Coina;185;262;Barreiro
+;150501;Azinheira dos Barros e São Mamede do Sádão;185;262;Grândola
+;150502;Grândola;185;262;Grândola
+;150503;Melides;185;262;Grândola
+;150504;Santa Margarida da Serra;185;262;Grândola
+;150505;Carvalhal;185;262;Grândola
+;150601;Alhos Vedros;185;262;Moita
+;150602;Baixa da Banheira;185;262;Moita
+;150603;Moita;185;262;Moita
+;150604;Gaio-Rosário;185;262;Moita
+;150605;Sarilhos Pequenos;185;262;Moita
+;150606;Vale da Amoreira;185;262;Moita
+;150701;Canha;185;262;Montijo
+;150702;Montijo;185;262;Montijo
+;150703;Santo Isidro de Pegões;185;262;Montijo
+;150704;Sarilhos Grandes;185;262;Montijo
+;150705;Alto-Estanqueiro-Jardia;185;262;Montijo
+;150706;Pegões;185;262;Montijo
+;150707;Atalaia;185;262;Montijo
+;150708;Afonsoeiro;185;262;Montijo
+;150801;Marateca;185;262;Palmela
+;150802;Palmela;185;262;Palmela
+;150803;Pinhal Novo;185;262;Palmela
+;150804;Quinta do Anjo;185;262;Palmela
+;150805;Poceirão;185;262;Palmela
+;150901;Abela;185;262;Santiago do Cacém
+;150902;Alvalade;185;262;Santiago do Cacém
+;150903;Cercal;185;262;Santiago do Cacém
+;150904;Ermidas-Sado;185;262;Santiago do Cacém
+;150905;Santa Cruz;185;262;Santiago do Cacém
+;150906;Santiago do Cacém;185;262;Santiago do Cacém
+;150907;Santo André;185;262;Santiago do Cacém
+;150908;São Bartolomeu da Serra;185;262;Santiago do Cacém
+;150909;São Domingos;185;262;Santiago do Cacém
+;150910;São Francisco da Serra;185;262;Santiago do Cacém
+;150911;Vale de Água;185;262;Santiago do Cacém
+;151001;Aldeia de Paio Pires;185;262;Seixal
+;151002;Amora;185;262;Seixal
+;151003;Arrentela;185;262;Seixal
+;151004;Seixal;185;262;Seixal
+;151005;Corroios;185;262;Seixal
+;151006;Fernão Ferro;185;262;Seixal
+;151101;Sesimbra (Castelo);185;262;Sesimbra
+;151102;Sesimbra (Santiago);185;262;Sesimbra
+;151103;Quinta do Conde;185;262;Sesimbra
+;151201;Setúbal (Nossa Senhora da Anunciada);185;262;Setúbal
+;151202;Setúbal (Santa Maria da Graça);185;262;Setúbal
+;151203;Setúbal (São Julião);185;262;Setúbal
+;151204;São Lourenço;185;262;Setúbal
+;151205;Setúbal (São Sebastião);185;262;Setúbal
+;151206;São Simão;185;262;Setúbal
+;151207;Gâmbia-Pontes-Alto da Guerra;185;262;Setúbal
+;151208;Sado;185;262;Setúbal
+;151301;Sines;185;262;Sines
+;151302;Porto Covo;185;262;Sines
+;160101;Aboim das Choças;185;263;Arcos de Valdevez
+;160102;Aguiã;185;263;Arcos de Valdevez
+;160103;Alvora;185;263;Arcos de Valdevez
+;160104;Ázere;185;263;Arcos de Valdevez
+;160105;Cabana Maior;185;263;Arcos de Valdevez
+;160106;Cabreiro;185;263;Arcos de Valdevez
+;160107;Carralcova;185;263;Arcos de Valdevez
+;160108;Cendufe;185;263;Arcos de Valdevez
+;160109;Couto;185;263;Arcos de Valdevez
+;160110;Eiras;185;263;Arcos de Valdevez
+;160111;Ermelo;185;263;Arcos de Valdevez
+;160112;Extremo;185;263;Arcos de Valdevez
+;160113;Gavieira;185;263;Arcos de Valdevez
+;160114;Giela;185;263;Arcos de Valdevez
+;160115;Gondoriz;185;263;Arcos de Valdevez
+;160116;Grade;185;263;Arcos de Valdevez
+;160117;Guilhadeses;185;263;Arcos de Valdevez
+;160118;Loureda;185;263;Arcos de Valdevez
+;160119;Jolda (MADALENA);185;263;Arcos de Valdevez
+;160120;Mei;185;263;Arcos de Valdevez
+;160121;Miranda;185;263;Arcos de Valdevez
+;160122;Monte Redondo;185;263;Arcos de Valdevez
+;160123;Oliveira;185;263;Arcos de Valdevez
+;160124;Paçô;185;263;Arcos de Valdevez
+;160125;Padroso;185;263;Arcos de Valdevez
+;160126;Parada;185;263;Arcos de Valdevez
+;160127;Portela;185;263;Arcos de Valdevez
+;160128;Prozelo;185;263;Arcos de Valdevez
+;160129;Rio Cabrão;185;263;Arcos de Valdevez
+;160130;Rio Frio;185;263;Arcos de Valdevez
+;160131;Rio de Moinhos;185;263;Arcos de Valdevez
+;160132;Sá;185;263;Arcos de Valdevez
+;160133;Sabadim;185;263;Arcos de Valdevez
+;160134;Arcos de Valdevez (São Salvador);185;263;Arcos de Valdevez
+;160135;Padreiro (Salvador);185;263;Arcos de Valdevez
+;160136;Padreiro (Santa Cristina);185;263;Arcos de Valdevez
+;160137;Távora (Santa Maria);185;263;Arcos de Valdevez
+;160138;Santar;185;263;Arcos de Valdevez
+;160139;São Cosme e São Damião;185;263;Arcos de Valdevez
+;160140;São Jorge;185;263;Arcos de Valdevez
+;160141;Arcos de Valdevez (São Paio);185;263;Arcos de Valdevez
+;160142;Jolda (São Paio);185;263;Arcos de Valdevez
+;160143;Távora (São Vicente);185;263;Arcos de Valdevez
+;160144;Senharei;185;263;Arcos de Valdevez
+;160145;Sistelo;185;263;Arcos de Valdevez
+;160146;Soajo;185;263;Arcos de Valdevez
+;160147;Souto;185;263;Arcos de Valdevez
+;160148;Tabaçô;185;263;Arcos de Valdevez
+;160149;Vale;185;263;Arcos de Valdevez
+;160150;Vila Fonche;185;263;Arcos de Valdevez
+;160151;Vilela;185;263;Arcos de Valdevez
+;160201;Âncora;185;263;Caminha
+;160202;Arga de Baixo;185;263;Caminha
+;160203;Arga de Cima;185;263;Caminha
+;160204;Arga de São João;185;263;Caminha
+;160205;Argela;185;263;Caminha
+;160206;Azevedo;185;263;Caminha
+;160207;Caminha (MATRIZ);185;263;Caminha
+;160208;Cristelo;185;263;Caminha
+;160209;Dem;185;263;Caminha
+;160210;Gondar;185;263;Caminha
+;160211;Lanhelas;185;263;Caminha
+;160212;Moledo;185;263;Caminha
+;160213;Orbacém;185;263;Caminha
+;160214;Riba de Âncora;185;263;Caminha
+;160215;Seixas;185;263;Caminha
+;160216;Venade;185;263;Caminha
+;160217;Vila Praia de Âncora;185;263;Caminha
+;160218;Vilar de Mouros;185;263;Caminha
+;160219;Vilarelho;185;263;Caminha
+;160220;Vile;185;263;Caminha
+;160301;Alvaredo;185;263;Melgaço
+;160302;Castro Laboreiro;185;263;Melgaço
+;160303;Chaviães;185;263;Melgaço
+;160304;Cousso;185;263;Melgaço
+;160305;Cristoval;185;263;Melgaço
+;160306;Cubalhão;185;263;Melgaço
+;160307;Fiães;185;263;Melgaço
+;160308;Gave;185;263;Melgaço
+;160309;Lamas de Mouro;185;263;Melgaço
+;160310;Paços;185;263;Melgaço
+;160311;Paderne;185;263;Melgaço
+;160312;Parada do Monte;185;263;Melgaço
+;160313;Penso;185;263;Melgaço
+;160314;Prado;185;263;Melgaço
+;160315;Remoães;185;263;Melgaço
+;160316;Roussas;185;263;Melgaço
+;160317;São Paio;185;263;Melgaço
+;160318;Vila;185;263;Melgaço
+;160401;Abedim;185;263;Monção
+;160402;Anhões;185;263;Monção
+;160403;Badim;185;263;Monção
+;160404;Barbeita;185;263;Monção
+;160405;Barroças e Taias;185;263;Monção
+;160406;Bela;185;263;Monção
+;160407;Cambeses;185;263;Monção
+;160408;Ceivães;185;263;Monção
+;160409;Lapela;185;263;Monção
+;160410;Lara;185;263;Monção
+;160411;Longos Vales;185;263;Monção
+;160412;Lordelo;185;263;Monção
+;160413;Luzio;185;263;Monção
+;160414;Mazedo;185;263;Monção
+;160415;Merufe;185;263;Monção
+;160416;Messegães;185;263;Monção
+;160417;Monção;185;263;Monção
+;160418;Moreira;185;263;Monção
+;160419;Parada;185;263;Monção
+;160420;Pias;185;263;Monção
+;160421;Pinheiros;185;263;Monção
+;160422;Podame;185;263;Monção
+;160423;Portela;185;263;Monção
+;160424;Riba de Mouro;185;263;Monção
+;160425;Sá;185;263;Monção
+;160426;Sago;185;263;Monção
+;160427;Segude;185;263;Monção
+;160428;Tangil;185;263;Monção
+;160429;Troporiz;185;263;Monção
+;160430;Troviscoso;185;263;Monção
+;160431;Trute;185;263;Monção
+;160432;Valadares;185;263;Monção
+;160433;Cortes;185;263;Monção
+;160501;Agualonga;185;263;Paredes de Coura
+;160502;Bico;185;263;Paredes de Coura
+;160503;Castanheira;185;263;Paredes de Coura
+;160504;Cossourado;185;263;Paredes de Coura
+;160505;Coura;185;263;Paredes de Coura
+;160506;Cristelo;185;263;Paredes de Coura
+;160507;Cunha;185;263;Paredes de Coura
+;160508;Ferreira;185;263;Paredes de Coura
+;160509;Formariz;185;263;Paredes de Coura
+;160510;Infesta;185;263;Paredes de Coura
+;160511;Insalde;185;263;Paredes de Coura
+;160512;Linhares;185;263;Paredes de Coura
+;160513;Mozelos;185;263;Paredes de Coura
+;160514;Padornelo;185;263;Paredes de Coura
+;160515;Parada;185;263;Paredes de Coura
+;160516;Paredes de Coura;185;263;Paredes de Coura
+;160517;Porreiras;185;263;Paredes de Coura
+;160518;Resende;185;263;Paredes de Coura
+;160519;Romarigães;185;263;Paredes de Coura
+;160520;Rubiães;185;263;Paredes de Coura
+;160521;Vascões;185;263;Paredes de Coura
+;160601;Azias;185;263;Ponte da Barca
+;160602;Boivães;185;263;Ponte da Barca
+;160603;Bravães;185;263;Ponte da Barca
+;160604;Britelo;185;263;Ponte da Barca
+;160605;Crasto;185;263;Ponte da Barca
+;160606;Cuide de Vila Verde;185;263;Ponte da Barca
+;160607;Entre Ambos-Os-Rios;185;263;Ponte da Barca
+;160608;Ermida;185;263;Ponte da Barca
+;160609;Germil;185;263;Ponte da Barca
+;160610;Grovelas;185;263;Ponte da Barca
+;160611;Lavradas;185;263;Ponte da Barca
+;160612;Lindoso;185;263;Ponte da Barca
+;160613;Nogueira;185;263;Ponte da Barca
+;160614;Oleiros;185;263;Ponte da Barca
+;160615;Paço Vedro de Magalhães;185;263;Ponte da Barca
+;160616;Ponte da Barca;185;263;Ponte da Barca
+;160617;Ruivos;185;263;Ponte da Barca
+;160618;Touvedo (Salvador);185;263;Ponte da Barca
+;160619;Sampriz;185;263;Ponte da Barca
+;160620;Vila Chã (Santiago);185;263;Ponte da Barca
+;160621;Vila Chã (São João Baptista);185;263;Ponte da Barca
+;160622;Touvedo (São Lourenço);185;263;Ponte da Barca
+;160623;Vade (São Pedro);185;263;Ponte da Barca
+;160624;Vade (São Tomé);185;263;Ponte da Barca
+;160625;Vila Nova de Muía;185;263;Ponte da Barca
+;160701;Anais;185;263;Ponte de Lima
+;160702;Arca;185;263;Ponte de Lima
+;160703;São Pedro D'arcos;185;263;Ponte de Lima
+;160704;Arcozelo;185;263;Ponte de Lima
+;160705;Ardegão;185;263;Ponte de Lima
+;160706;Bárrio;185;263;Ponte de Lima
+;160707;Beiral do Lima;185;263;Ponte de Lima
+;160708;Bertiandos;185;263;Ponte de Lima
+;160709;Boalhosa;185;263;Ponte de Lima
+;160710;Brandara;185;263;Ponte de Lima
+;160711;Cabaços;185;263;Ponte de Lima
+;160712;Cabração;185;263;Ponte de Lima
+;160713;Calheiros;185;263;Ponte de Lima
+;160714;Calvelo;185;263;Ponte de Lima
+;160715;Cepões;185;263;Ponte de Lima
+;160716;Correlhã;185;263;Ponte de Lima
+;160717;Estorãos;185;263;Ponte de Lima
+;160718;Facha;185;263;Ponte de Lima
+;160719;Feitosa;185;263;Ponte de Lima
+;160720;Fojo Lobal;185;263;Ponte de Lima
+;160721;Fontão;185;263;Ponte de Lima
+;160722;Fornelos;185;263;Ponte de Lima
+;160723;Freixo;185;263;Ponte de Lima
+;160724;Friastelas;185;263;Ponte de Lima
+;160725;Gaifar;185;263;Ponte de Lima
+;160726;Gandra;185;263;Ponte de Lima
+;160727;Gemieira;185;263;Ponte de Lima
+;160728;Gondufe;185;263;Ponte de Lima
+;160729;Labruja;185;263;Ponte de Lima
+;160730;Labrujó;185;263;Ponte de Lima
+;160731;Mato;185;263;Ponte de Lima
+;160732;Moreira do Lima;185;263;Ponte de Lima
+;160733;Navió;185;263;Ponte de Lima
+;160734;Poiares;185;263;Ponte de Lima
+;160735;Ponte de Lima;185;263;Ponte de Lima
+;160736;Queijada;185;263;Ponte de Lima
+;160737;Refóios do Lima;185;263;Ponte de Lima
+;160738;Rendufe;185;263;Ponte de Lima
+;160739;Ribeira;185;263;Ponte de Lima
+;160740;Sá;185;263;Ponte de Lima
+;160741;Sandiães;185;263;Ponte de Lima
+;160742;Santa Comba;185;263;Ponte de Lima
+;160743;Santa Cruz do Lima;185;263;Ponte de Lima
+;160744;Rebordões (Santa Maria);185;263;Ponte de Lima
+;160745;Seara;185;263;Ponte de Lima
+;160746;Serdedelo;185;263;Ponte de Lima
+;160747;Rebordões (SOUTO);185;263;Ponte de Lima
+;160748;Vilar das Almas;185;263;Ponte de Lima
+;160749;Vilar do Monte;185;263;Ponte de Lima
+;160750;Vitorino das Donas;185;263;Ponte de Lima
+;160751;Vitorino dos Piães;185;263;Ponte de Lima
+;160801;Arão;185;263;Valença
+;160802;Boivão;185;263;Valença
+;160803;Cerdal;185;263;Valença
+;160804;Cristelo Covo;185;263;Valença
+;160805;Fontoura;185;263;Valença
+;160806;Friestas;185;263;Valença
+;160807;Gandra;185;263;Valença
+;160808;Ganfei;185;263;Valença
+;160809;Gondomil;185;263;Valença
+;160810;Sanfins;185;263;Valença
+;160811;São Julião;185;263;Valença
+;160812;São Pedro da Torre;185;263;Valença
+;160813;Silva;185;263;Valença
+;160814;Taião;185;263;Valença
+;160815;Valença;185;263;Valença
+;160816;Verdoejo;185;263;Valença
+;160901;Afife;185;263;Viana do Castelo
+;160902;Alvarães;185;263;Viana do Castelo
+;160903;Amonde;185;263;Viana do Castelo
+;160904;Anha;185;263;Viana do Castelo
+;160905;Areosa;185;263;Viana do Castelo
+;160906;Barroselas;185;263;Viana do Castelo
+;160907;Cardielos;185;263;Viana do Castelo
+;160908;Carreço;185;263;Viana do Castelo
+;160909;Carvoeiro;185;263;Viana do Castelo
+;160910;Castelo do Neiva;185;263;Viana do Castelo
+;160911;Darque;185;263;Viana do Castelo
+;160912;Deão;185;263;Viana do Castelo
+;160913;Deocriste;185;263;Viana do Castelo
+;160914;Freixieiro de Soutelo;185;263;Viana do Castelo
+;160915;Lanheses;185;263;Viana do Castelo
+;160916;Mazarefes;185;263;Viana do Castelo
+;160917;Meadela;185;263;Viana do Castelo
+;160918;Meixedo;185;263;Viana do Castelo
+;160919;Viana do Castelo (Monserrate);185;263;Viana do Castelo
+;160920;Montaria;185;263;Viana do Castelo
+;160921;Moreira de Geraz do Lima;185;263;Viana do Castelo
+;160922;Mujães;185;263;Viana do Castelo
+;160923;São Romão de Neiva;185;263;Viana do Castelo
+;160924;Nogueira;185;263;Viana do Castelo
+;160925;Outeiro;185;263;Viana do Castelo
+;160926;Perre;185;263;Viana do Castelo
+;160927;Portela Susã;185;263;Viana do Castelo
+;160928;Santa Marta de Portuzelo;185;263;Viana do Castelo
+;160929;Geraz do Lima (Santa Leocádia);185;263;Viana do Castelo
+;160930;Geraz do Lima (Santa Maria);185;263;Viana do Castelo
+;160931;Viana do Castelo (Santa Maria Maior);185;263;Viana do Castelo
+;160932;Serreleis;185;263;Viana do Castelo
+;160933;Subportela;185;263;Viana do Castelo
+;160934;Torre;185;263;Viana do Castelo
+;160935;Vila Franca;185;263;Viana do Castelo
+;160936;Vila Fria;185;263;Viana do Castelo
+;160937;Vila Mou;185;263;Viana do Castelo
+;160938;Vila de Punhe;185;263;Viana do Castelo
+;160939;Vilar de Murteda;185;263;Viana do Castelo
+;160940;Chafé;185;263;Viana do Castelo
+;161001;Campos;185;263;Vila Nova de Cerveira
+;161002;Candemil;185;263;Vila Nova de Cerveira
+;161003;Cornes;185;263;Vila Nova de Cerveira
+;161004;Covas;185;263;Vila Nova de Cerveira
+;161005;Gondar;185;263;Vila Nova de Cerveira
+;161006;Gondarém;185;263;Vila Nova de Cerveira
+;161007;Loivo;185;263;Vila Nova de Cerveira
+;161008;Lovelhe;185;263;Vila Nova de Cerveira
+;161009;Mentrestido;185;263;Vila Nova de Cerveira
+;161010;Nogueira;185;263;Vila Nova de Cerveira
+;161011;Reboreda;185;263;Vila Nova de Cerveira
+;161012;Sapardos;185;263;Vila Nova de Cerveira
+;161013;Sopo;185;263;Vila Nova de Cerveira
+;161014;Vila Meã;185;263;Vila Nova de Cerveira
+;161015;Vila Nova de Cerveira;185;263;Vila Nova de Cerveira
+;170101;Alijó;185;264;Alijó
+;170102;Amieiro;185;264;Alijó
+;170103;Carlão;185;264;Alijó
+;170104;Casal de Loivos;185;264;Alijó
+;170105;Castedo;185;264;Alijó
+;170106;Cotas;185;264;Alijó
+;170107;Favaios;185;264;Alijó
+;170108;Pegarinhos;185;264;Alijó
+;170109;Pinhão;185;264;Alijó
+;170110;Pópulo;185;264;Alijó
+;170111;Ribalonga;185;264;Alijó
+;170112;Sanfins do Douro;185;264;Alijó
+;170113;Santa Eugénia;185;264;Alijó
+;170114;São Mamede de Ribatua;185;264;Alijó
+;170115;Vale de Mendiz;185;264;Alijó
+;170116;Vila Chã;185;264;Alijó
+;170117;Vila Verde;185;264;Alijó
+;170118;Vilar de Maçada;185;264;Alijó
+;170119;Vilarinho de Cotas;185;264;Alijó
+;170201;Alturas do Barroso;185;264;Boticas
+;170202;Ardãos;185;264;Boticas
+;170203;Beça;185;264;Boticas
+;170204;Bobadela;185;264;Boticas
+;170205;Boticas;185;264;Boticas
+;170206;Cerdedo;185;264;Boticas
+;170207;Codessoso;185;264;Boticas
+;170208;Covas do Barroso;185;264;Boticas
+;170209;Curros;185;264;Boticas
+;170210;Dornelas;185;264;Boticas
+;170211;Fiães do Tâmega;185;264;Boticas
+;170212;Granja;185;264;Boticas
+;170213;Pinho;185;264;Boticas
+;170214;São Salvador de Viveiro;185;264;Boticas
+;170215;Sapiãos;185;264;Boticas
+;170216;Vilar;185;264;Boticas
+;170301;Águas Frias;185;264;Chaves
+;170302;Anelhe;185;264;Chaves
+;170303;Arcossó;185;264;Chaves
+;170304;Bobadela;185;264;Chaves
+;170305;Bustelo;185;264;Chaves
+;170306;Calvão;185;264;Chaves
+;170307;Cela;185;264;Chaves
+;170309;Cimo de Vila da Castanheira;185;264;Chaves
+;170310;Curalha;185;264;Chaves
+;170311;Eiras;185;264;Chaves
+;170312;Ervededo;185;264;Chaves
+;170313;Faiões;185;264;Chaves
+;170314;Lama de Arcos;185;264;Chaves
+;170315;Loivos;185;264;Chaves
+;170316;Mairos;185;264;Chaves
+;170317;Moreiras;185;264;Chaves
+;170318;Nogueira da Montanha;185;264;Chaves
+;170319;Oucidres;185;264;Chaves
+;170320;Oura;185;264;Chaves
+;170321;Outeiro Seco;185;264;Chaves
+;170322;Paradela;185;264;Chaves
+;170323;Póvoa de Agrações;185;264;Chaves
+;170324;Redondelo;185;264;Chaves
+;170325;Roriz;185;264;Chaves
+;170326;Samaiões;185;264;Chaves
+;170327;Sanfins;185;264;Chaves
+;170328;Sanjurge;185;264;Chaves
+;170329;Santa Leocádia;185;264;Chaves
+;170330;Santo António de Monforte;185;264;Chaves
+;170331;Santo Estêvão;185;264;Chaves
+;170332;São Julião de Montenegro;185;264;Chaves
+;170333;São Pedro de Agostém;185;264;Chaves
+;170334;São Vicente;185;264;Chaves
+;170335;Seara Velha;185;264;Chaves
+;170336;Selhariz;185;264;Chaves
+;170337;Soutelinho da Raia;185;264;Chaves
+;170338;Soutelo;185;264;Chaves
+;170339;Travancas;185;264;Chaves
+;170340;Tronco;185;264;Chaves
+;170341;Vale de Anta;185;264;Chaves
+;170342;Vidago;185;264;Chaves
+;170343;Vila Verde da Raia;185;264;Chaves
+;170344;Vilar de Nantes;185;264;Chaves
+;170345;Vilarelho da Raia;185;264;Chaves
+;170346;Vilarinho das Paranheiras;185;264;Chaves
+;170347;Vilas Boas;185;264;Chaves
+;170348;Vilela Seca;185;264;Chaves
+;170349;Vilela do Tâmega;185;264;Chaves
+;170350;Santa Maria Maior;185;264;Chaves
+;170351;Madalena;185;264;Chaves
+;170352;Santa Cruz/Trindade;185;264;Chaves
+;170401;Barqueiros;185;264;Mesão Frio
+;170402;Cidadelhe;185;264;Mesão Frio
+;170403;Oliveira;185;264;Mesão Frio
+;170404;Mesão Frio (Santa Cristina);185;264;Mesão Frio
+;170405;Mesão Frio (São Nicolau);185;264;Mesão Frio
+;170406;Vila Jusã;185;264;Mesão Frio
+;170407;Vila Marim;185;264;Mesão Frio
+;170501;Atei;185;264;Mondim de Basto
+;170502;Bilhó;185;264;Mondim de Basto
+;170503;Campanhó;185;264;Mondim de Basto
+;170504;Ermelo;185;264;Mondim de Basto
+;170505;Mondim de Basto;185;264;Mondim de Basto
+;170506;Paradança;185;264;Mondim de Basto
+;170507;Pardelhas;185;264;Mondim de Basto
+;170508;Vilar de Ferreiros;185;264;Mondim de Basto
+;170601;Cabril;185;264;Montalegre
+;170602;Cambeses do Rio;185;264;Montalegre
+;170603;Cervos;185;264;Montalegre
+;170604;Chã;185;264;Montalegre
+;170605;Contim;185;264;Montalegre
+;170606;Covelães;185;264;Montalegre
+;170607;Covelo do Gerês;185;264;Montalegre
+;170608;Donões;185;264;Montalegre
+;170609;Ferral;185;264;Montalegre
+;170610;Fervidelas;185;264;Montalegre
+;170611;Fiães do Rio;185;264;Montalegre
+;170612;Gralhas;185;264;Montalegre
+;170613;Meixedo;185;264;Montalegre
+;170614;Meixide;185;264;Montalegre
+;170615;Montalegre;185;264;Montalegre
+;170616;Morgade;185;264;Montalegre
+;170617;Mourilhe;185;264;Montalegre
+;170618;Negrões;185;264;Montalegre
+;170619;Outeiro;185;264;Montalegre
+;170620;Padornelos;185;264;Montalegre
+;170621;Padroso;185;264;Montalegre
+;170622;Paradela;185;264;Montalegre
+;170623;Pitões das Junias;185;264;Montalegre
+;170624;Pondras;185;264;Montalegre
+;170625;Reigoso;185;264;Montalegre
+;170626;Salto;185;264;Montalegre
+;170627;Santo André;185;264;Montalegre
+;170628;Vilar de Perdizes (São Miguel);185;264;Montalegre
+;170629;Sarraquinhos;185;264;Montalegre
+;170630;Sezelhe;185;264;Montalegre
+;170631;Solveira;185;264;Montalegre
+;170632;Tourém;185;264;Montalegre
+;170633;Venda Nova;185;264;Montalegre
+;170634;Viade de Baixo;185;264;Montalegre
+;170635;Vila da Ponte;185;264;Montalegre
+;170701;Candedo;185;264;Murça
+;170702;Carva;185;264;Murça
+;170703;Fiolhoso;185;264;Murça
+;170704;Jou;185;264;Murça
+;170705;Murça;185;264;Murça
+;170706;Noura;185;264;Murça
+;170707;Palheiros;185;264;Murça
+;170708;Valongo de Milhais;185;264;Murça
+;170709;Vilares;185;264;Murça
+;170801;Covelinhas;185;264;Peso da Régua
+;170802;Fontelas;185;264;Peso da Régua
+;170803;Galafura;185;264;Peso da Régua
+;170804;Godim;185;264;Peso da Régua
+;170805;Loureiro;185;264;Peso da Régua
+;170806;Moura Morta;185;264;Peso da Régua
+;170807;Peso da Régua;185;264;Peso da Régua
+;170808;Poiares;185;264;Peso da Régua
+;170809;Sedielos;185;264;Peso da Régua
+;170810;Vilarinho dos Freires;185;264;Peso da Régua
+;170811;Vinhós;185;264;Peso da Régua
+;170812;Canelas;185;264;Peso da Régua
+;170901;Alvadia;185;264;Ribeira de Pena
+;170902;Canedo;185;264;Ribeira de Pena
+;170903;Cerva;185;264;Ribeira de Pena
+;170904;Limões;185;264;Ribeira de Pena
+;170905;Ribeira de Pena (Salvador);185;264;Ribeira de Pena
+;170906;Santa Marinha;185;264;Ribeira de Pena
+;170907;Santo Aleixo de Além-Tâmega;185;264;Ribeira de Pena
+;171001;Celeirós;185;264;Sabrosa
+;171002;Covas do Douro;185;264;Sabrosa
+;171003;Gouvães do Douro;185;264;Sabrosa
+;171004;Gouvinhas;185;264;Sabrosa
+;171005;Parada de Pinhão;185;264;Sabrosa
+;171006;Paradela de Guiães;185;264;Sabrosa
+;171007;Paços;185;264;Sabrosa
+;171008;Provesende;185;264;Sabrosa
+;171009;Sabrosa;185;264;Sabrosa
+;171010;São Cristovão do Douro;185;264;Sabrosa
+;171011;São Lourenço de Ribapinhão;185;264;Sabrosa
+;171012;São Martinho de Antas;185;264;Sabrosa
+;171013;Souto Maior;185;264;Sabrosa
+;171014;Torre do Pinhão;185;264;Sabrosa
+;171015;Vilarinho de São Romão;185;264;Sabrosa
+;171101;Alvações do Corgo;185;264;Santa Marta de Penaguião
+;171102;Cumieira;185;264;Santa Marta de Penaguião
+;171103;Fontes;185;264;Santa Marta de Penaguião
+;171104;Fornelos;185;264;Santa Marta de Penaguião
+;171105;Louredo;185;264;Santa Marta de Penaguião
+;171106;Medrões;185;264;Santa Marta de Penaguião
+;171107;Sanhoane;185;264;Santa Marta de Penaguião
+;171108;Lobrigos (São João Baptista);185;264;Santa Marta de Penaguião
+;171109;Lobrigos (São Miguel);185;264;Santa Marta de Penaguião
+;171110;Sever;185;264;Santa Marta de Penaguião
+;171201;Água Revés e Crasto;185;264;Valpaços
+;171202;Alvarelhos;185;264;Valpaços
+;171203;Algeriz;185;264;Valpaços
+;171204;Barreiros;185;264;Valpaços
+;171205;Bouçoães;185;264;Valpaços
+;171206;Canaveses;185;264;Valpaços
+;171207;Carrazedo de Montenegro;185;264;Valpaços
+;171208;Curros;185;264;Valpaços
+;171209;Ervões;185;264;Valpaços
+;171210;Fiães;185;264;Valpaços
+;171211;Fornos do Pinhal;185;264;Valpaços
+;171212;Friões;185;264;Valpaços
+;171213;Lebução;185;264;Valpaços
+;171214;Nozelos;185;264;Valpaços
+;171215;Padrela e Tazem;185;264;Valpaços
+;171216;Possacos;185;264;Valpaços
+;171217;Rio Torto;185;264;Valpaços
+;171218;Sanfins;185;264;Valpaços
+;171219;Santa Maria de Emeres;185;264;Valpaços
+;171220;Santa Valha;185;264;Valpaços
+;171221;Santiago da Ribeira de Alhariz;185;264;Valpaços
+;171222;São João da Corveira;185;264;Valpaços
+;171223;São Pedro de Veiga de Lila;185;264;Valpaços
+;171224;Serapicos;185;264;Valpaços
+;171225;Sonim;185;264;Valpaços
+;171226;Tinhela;185;264;Valpaços
+;171227;Vales;185;264;Valpaços
+;171228;Valpaços;185;264;Valpaços
+;171229;Vassal;185;264;Valpaços
+;171230;Veiga de Lila;185;264;Valpaços
+;171231;Vilarandelo;185;264;Valpaços
+;171301;Afonsim;185;264;Vila Pouca de Aguiar
+;171302;Alfarela de Jales;185;264;Vila Pouca de Aguiar
+;171303;Bornes de Aguiar;185;264;Vila Pouca de Aguiar
+;171304;Bragado;185;264;Vila Pouca de Aguiar
+;171305;Capeludos;185;264;Vila Pouca de Aguiar
+;171306;Gouvães da Serra;185;264;Vila Pouca de Aguiar
+;171307;Parada de Monteiros;185;264;Vila Pouca de Aguiar
+;171308;Pensalvos;185;264;Vila Pouca de Aguiar
+;171309;Santa Marta da Montanha;185;264;Vila Pouca de Aguiar
+;171310;Soutelo de Aguiar;185;264;Vila Pouca de Aguiar
+;171311;Telões;185;264;Vila Pouca de Aguiar
+;171312;Tresminas;185;264;Vila Pouca de Aguiar
+;171313;Valoura;185;264;Vila Pouca de Aguiar
+;171314;Vila Pouca de Aguiar;185;264;Vila Pouca de Aguiar
+;171315;Vreia de Bornes;185;264;Vila Pouca de Aguiar
+;171316;Vreia de Jales;185;264;Vila Pouca de Aguiar
+;171317;Sabroso de Aguiar;185;264;Vila Pouca de Aguiar
+;171318;Lixa do Alvão;185;264;Vila Pouca de Aguiar
+;171401;Abaças;185;264;Vila Real
+;171402;Adoufe;185;264;Vila Real
+;171403;Andrães;185;264;Vila Real
+;171404;Arroios;185;264;Vila Real
+;171405;Borbela;185;264;Vila Real
+;171406;Campeã;185;264;Vila Real
+;171407;Constantim;185;264;Vila Real
+;171408;Ermida;185;264;Vila Real
+;171409;Folhadela;185;264;Vila Real
+;171410;Guiães;185;264;Vila Real
+;171411;Justes;185;264;Vila Real
+;171412;Lamares;185;264;Vila Real
+;171413;Lamas de Olo;185;264;Vila Real
+;171414;Lordelo;185;264;Vila Real
+;171415;Mateus;185;264;Vila Real
+;171416;Mondrões;185;264;Vila Real
+;171417;Mouçós;185;264;Vila Real
+;171418;Nogueira;185;264;Vila Real
+;171419;Vila Real (Nossa Senhora da Conceição);185;264;Vila Real
+;171420;Parada de Cunhos;185;264;Vila Real
+;171421;Pena;185;264;Vila Real
+;171422;Quintã;185;264;Vila Real
+;171423;Vila Real (São Dinis);185;264;Vila Real
+;171424;Vila Real (São Pedro);185;264;Vila Real
+;171425;São Tomé do Castelo;185;264;Vila Real
+;171426;Torgueda;185;264;Vila Real
+;171427;Vale de Nogueiras;185;264;Vila Real
+;171428;Vila Cova;185;264;Vila Real
+;171429;Vila Marim;185;264;Vila Real
+;171430;Vilarinho de Samardã;185;264;Vila Real
+;180101;Aldeias;185;265;Armamar
+;180102;Aricera;185;265;Armamar
+;180103;Armamar;185;265;Armamar
+;180104;Cimbres;185;265;Armamar
+;180105;Coura;185;265;Armamar
+;180106;Folgosa;185;265;Armamar
+;180107;Fontelo;185;265;Armamar
+;180108;Goujoim;185;265;Armamar
+;180109;Queimada;185;265;Armamar
+;180110;Queimadela;185;265;Armamar
+;180111;Santa Cruz;185;265;Armamar
+;180112;Santiago;185;265;Armamar
+;180113;Santo Adrião;185;265;Armamar
+;180114;São Cosmado;185;265;Armamar
+;180115;São Martinho das Chãs;185;265;Armamar
+;180116;São Romão;185;265;Armamar
+;180117;Tões;185;265;Armamar
+;180118;Vacalar;185;265;Armamar
+;180119;Vila Seca;185;265;Armamar
+;180201;Beijós;185;265;Carregal do Sal
+;180202;Cabanas de Viriato;185;265;Carregal do Sal
+;180203;Currelos;185;265;Carregal do Sal
+;180204;Oliveira do Conde;185;265;Carregal do Sal
+;180205;Papízios;185;265;Carregal do Sal
+;180206;Parada;185;265;Carregal do Sal
+;180207;Sobral de Papízios;185;265;Carregal do Sal
+;180301;Almofala;185;265;Castro Daire
+;180302;Alva;185;265;Castro Daire
+;180303;Cabril;185;265;Castro Daire
+;180304;Castro Daire;185;265;Castro Daire
+;180305;Cujó;185;265;Castro Daire
+;180306;Ermida;185;265;Castro Daire
+;180307;Ester;185;265;Castro Daire
+;180308;Gafanhão;185;265;Castro Daire
+;180309;Gosende;185;265;Castro Daire
+;180310;Mamouros;185;265;Castro Daire
+;180311;Mezio;185;265;Castro Daire
+;180312;Mões;185;265;Castro Daire
+;180313;Moledo;185;265;Castro Daire
+;180314;Monteiras;185;265;Castro Daire
+;180315;Moura Morta;185;265;Castro Daire
+;180316;Parada de Ester;185;265;Castro Daire
+;180317;Pepim;185;265;Castro Daire
+;180318;Picão;185;265;Castro Daire
+;180319;Pinheiro;185;265;Castro Daire
+;180320;Reriz;185;265;Castro Daire
+;180321;Ribolhos;185;265;Castro Daire
+;180322;São Joaninho;185;265;Castro Daire
+;180401;Alhões;185;265;Cinfães
+;180402;Bustelo;185;265;Cinfães
+;180403;Cinfães;185;265;Cinfães
+;180404;Espadanedo;185;265;Cinfães
+;180405;Ferreiros de Tendais;185;265;Cinfães
+;180406;Fornelos;185;265;Cinfães
+;180407;Gralheira;185;265;Cinfães
+;180408;Moimenta;185;265;Cinfães
+;180409;Nespereira;185;265;Cinfães
+;180410;Oliveira do Douro;185;265;Cinfães
+;180411;Ramires;185;265;Cinfães
+;180412;Santiago de Piães;185;265;Cinfães
+;180413;São Cristovão de Nogueira;185;265;Cinfães
+;180414;Souselo;185;265;Cinfães
+;180415;Tarouquela;185;265;Cinfães
+;180416;Tendais;185;265;Cinfães
+;180417;Travanca;185;265;Cinfães
+;180501;Lamego (Almacave);185;265;Lamego
+;180502;Avões;185;265;Lamego
+;180503;Bigorne;185;265;Lamego
+;180504;Britiande;185;265;Lamego
+;180505;Cambres;185;265;Lamego
+;180506;Cepões;185;265;Lamego
+;180507;Ferreirim;185;265;Lamego
+;180508;Ferreiros de Avões;185;265;Lamego
+;180509;Figueira;185;265;Lamego
+;180510;Lalim;185;265;Lamego
+;180511;Lazarim;185;265;Lamego
+;180512;Magueija;185;265;Lamego
+;180513;Meijinhos;185;265;Lamego
+;180514;Melcões;185;265;Lamego
+;180515;Parada do Bispo;185;265;Lamego
+;180516;Penajóia;185;265;Lamego
+;180517;Penude;185;265;Lamego
+;180518;Pretarouca;185;265;Lamego
+;180519;Samodães;185;265;Lamego
+;180520;Sande;185;265;Lamego
+;180521;Lamego (Sé);185;265;Lamego
+;180522;Valdigem;185;265;Lamego
+;180523;Várzea de Abrunhais;185;265;Lamego
+;180524;Vila Nova de Souto D' El-Rei;185;265;Lamego
+;180601;Abrunhosa-a-Velha;185;265;Mangualde
+;180602;Alcafache;185;265;Mangualde
+;180603;Chãs de Tavares;185;265;Mangualde
+;180604;Cunha Alta;185;265;Mangualde
+;180605;Cunha Baixa;185;265;Mangualde
+;180606;Espinho;185;265;Mangualde
+;180607;Fornos de Maceira Dão;185;265;Mangualde
+;180608;Freixiosa;185;265;Mangualde
+;180609;Lobelhe do Mato;185;265;Mangualde
+;180610;Mangualde;185;265;Mangualde
+;180611;Mesquitela;185;265;Mangualde
+;180612;Moimenta de Maceira Dão;185;265;Mangualde
+;180613;Póvoa de Cervães;185;265;Mangualde
+;180614;Quintela de Azurara;185;265;Mangualde
+;180615;Santiago de Cassurrães;185;265;Mangualde
+;180616;São João da Fresta;185;265;Mangualde
+;180617;Travanca de Tavares;185;265;Mangualde
+;180618;Várzea de Tavares;185;265;Mangualde
+;180701;Aldeia de Nacomba;185;265;Moimenta da Beira
+;180702;Alvite;185;265;Moimenta da Beira
+;180703;Arcozelos;185;265;Moimenta da Beira
+;180704;Ariz;185;265;Moimenta da Beira
+;180705;Baldos;185;265;Moimenta da Beira
+;180706;Cabaços;185;265;Moimenta da Beira
+;180707;Caria;185;265;Moimenta da Beira
+;180708;Castelo;185;265;Moimenta da Beira
+;180709;Leomil;185;265;Moimenta da Beira
+;180710;Moimenta da Beira;185;265;Moimenta da Beira
+;180711;Nagosa;185;265;Moimenta da Beira
+;180712;Paradinha;185;265;Moimenta da Beira
+;180713;Passó;185;265;Moimenta da Beira
+;180714;Pêra Velha;185;265;Moimenta da Beira
+;180715;Peva;185;265;Moimenta da Beira
+;180716;Rua;185;265;Moimenta da Beira
+;180717;Sarzedo;185;265;Moimenta da Beira
+;180718;Segões;185;265;Moimenta da Beira
+;180719;Sever;185;265;Moimenta da Beira
+;180720;Vilar;185;265;Moimenta da Beira
+;180801;Almaça;185;265;Mortágua
+;180802;Cercosa;185;265;Mortágua
+;180803;Cortegaça;185;265;Mortágua
+;180804;Espinho;185;265;Mortágua
+;180805;Marmeleira;185;265;Mortágua
+;180806;Mortágua;185;265;Mortágua
+;180807;Pala;185;265;Mortágua
+;180808;Sobral;185;265;Mortágua
+;180809;Trezói;185;265;Mortágua
+;180810;Vale de Remígio;185;265;Mortágua
+;180901;Canas de Senhorim;185;265;Nelas
+;180902;Carvalhal Redondo;185;265;Nelas
+;180903;Nelas;185;265;Nelas
+;180904;Santar;185;265;Nelas
+;180905;Senhorim;185;265;Nelas
+;180906;Vilar Seco;185;265;Nelas
+;180907;Aguieira;185;265;Nelas
+;180908;Lapa do Lobo;185;265;Nelas
+;180909;Moreira;185;265;Nelas
+;181001;Arca;185;265;Oliveira de Frades
+;181002;Arcozelo das Maias;185;265;Oliveira de Frades
+;181003;Destriz;185;265;Oliveira de Frades
+;181004;Oliveira de Frades;185;265;Oliveira de Frades
+;181005;Pinheiro;185;265;Oliveira de Frades
+;181006;Reigoso;185;265;Oliveira de Frades
+;181007;Ribeiradio;185;265;Oliveira de Frades
+;181008;São João da Serra;185;265;Oliveira de Frades
+;181009;São Vicente de Lafões;185;265;Oliveira de Frades
+;181010;Sejães;185;265;Oliveira de Frades
+;181011;Souto de Lafões;185;265;Oliveira de Frades
+;181012;Varzielas;185;265;Oliveira de Frades
+;181101;Antas;185;265;Penalva do Castelo
+;181102;Castelo de Penalva;185;265;Penalva do Castelo
+;181103;Esmolfe;185;265;Penalva do Castelo
+;181104;Germil;185;265;Penalva do Castelo
+;181105;Ínsua;185;265;Penalva do Castelo
+;181106;Lusinde;185;265;Penalva do Castelo
+;181107;Mareco;185;265;Penalva do Castelo
+;181108;Matela;185;265;Penalva do Castelo
+;181109;Pindo;185;265;Penalva do Castelo
+;181110;Real;185;265;Penalva do Castelo
+;181111;Sezures;185;265;Penalva do Castelo
+;181112;Trancozelos;185;265;Penalva do Castelo
+;181113;Vila Cova do Covelo;185;265;Penalva do Castelo
+;181201;Antas;185;265;Penedono
+;181202;Beselga;185;265;Penedono
+;181203;Castainço;185;265;Penedono
+;181204;Granja;185;265;Penedono
+;181205;Ourozinho;185;265;Penedono
+;181206;Penedono;185;265;Penedono
+;181207;Penela da Beira;185;265;Penedono
+;181208;Póvoa de Penela;185;265;Penedono
+;181209;Souto;185;265;Penedono
+;181301;Anreade;185;265;Resende
+;181302;Barrô;185;265;Resende
+;181303;Cárquere;185;265;Resende
+;181304;Feirão;185;265;Resende
+;181305;Felgueiras;185;265;Resende
+;181306;Freigil;185;265;Resende
+;181307;Miomães;185;265;Resende
+;181308;Ovadas;185;265;Resende
+;181309;Panchorra;185;265;Resende
+;181310;Paus;185;265;Resende
+;181311;Resende;185;265;Resende
+;181312;São Cipriano;185;265;Resende
+;181313;São João de Fontoura;185;265;Resende
+;181314;São Martinho de Mouros;185;265;Resende
+;181315;São Romão de Aregos;185;265;Resende
+;181401;Couto do Mosteiro;185;265;Santa Comba Dão
+;181402;Ovoa;185;265;Santa Comba Dão
+;181403;Pinheiro de Ázere;185;265;Santa Comba Dão
+;181404;Santa Comba Dão;185;265;Santa Comba Dão
+;181405;São Joaninho;185;265;Santa Comba Dão
+;181406;São João de Areias;185;265;Santa Comba Dão
+;181407;Treixedo;185;265;Santa Comba Dão
+;181408;Vimieiro;185;265;Santa Comba Dão
+;181409;Nagozela;185;265;Santa Comba Dão
+;181501;Castanheiro do Sul;185;265;São João da Pesqueira
+;181502;Ervedosa do Douro;185;265;São João da Pesqueira
+;181503;Espinhosa;185;265;São João da Pesqueira
+;181504;Nagozelo do Douro;185;265;São João da Pesqueira
+;181505;Paredes da Beira;185;265;São João da Pesqueira
+;181506;Pereiros;185;265;São João da Pesqueira
+;181507;Riodades;185;265;São João da Pesqueira
+;181508;São João da Pesqueira;185;265;São João da Pesqueira
+;181509;Soutelo do Douro;185;265;São João da Pesqueira
+;181510;Trevões;185;265;São João da Pesqueira
+;181511;Vale de Figueira;185;265;São João da Pesqueira
+;181512;Valongo dos Azeites;185;265;São João da Pesqueira
+;181513;Várzea de Trevões;185;265;São João da Pesqueira
+;181514;Vilarouco;185;265;São João da Pesqueira
+;181601;Baiões;185;265;São Pedro do Sul
+;181602;Bordonhos;185;265;São Pedro do Sul
+;181603;Candal;185;265;São Pedro do Sul
+;181604;Carvalhais;185;265;São Pedro do Sul
+;181605;Covas do Rio;185;265;São Pedro do Sul
+;181606;Figueiredo de Alva;185;265;São Pedro do Sul
+;181607;Manhouce;185;265;São Pedro do Sul
+;181608;Pindelo dos Milagres;185;265;São Pedro do Sul
+;181609;Pinho;185;265;São Pedro do Sul
+;181610;Santa Cruz da Trapa;185;265;São Pedro do Sul
+;181611;São Cristovão de Lafões;185;265;São Pedro do Sul
+;181612;São Félix;185;265;São Pedro do Sul
+;181613;São Martinho das Moitas;185;265;São Pedro do Sul
+;181614;São Pedro do Sul;185;265;São Pedro do Sul
+;181615;Serrazes;185;265;São Pedro do Sul
+;181616;Sul;185;265;São Pedro do Sul
+;181617;Valadares;185;265;São Pedro do Sul
+;181618;Várzea;185;265;São Pedro do Sul
+;181619;Vila Maior;185;265;São Pedro do Sul
+;181701;Águas Boas;185;265;Sátão
+;181702;Avelal;185;265;Sátão
+;181703;Decermilo;185;265;Sátão
+;181704;Ferreira de Aves;185;265;Sátão
+;181705;Forles;185;265;Sátão
+;181706;Mioma;185;265;Sátão
+;181707;Rio de Moinhos;185;265;Sátão
+;181708;Romãs;185;265;Sátão
+;181709;São Miguel de Vila Boa;185;265;Sátão
+;181710;Sátão;185;265;Sátão
+;181711;Silvã de Cima;185;265;Sátão
+;181712;Vila Longa;185;265;Sátão
+;181801;Arnas;185;265;Sernancelhe
+;181802;Carregal;185;265;Sernancelhe
+;181803;Chosendo;185;265;Sernancelhe
+;181804;Cunha;185;265;Sernancelhe
+;181805;Escurquela;185;265;Sernancelhe
+;181806;Faia;185;265;Sernancelhe
+;181807;Ferreirim;185;265;Sernancelhe
+;181808;Fonte Arcada;185;265;Sernancelhe
+;181809;Freixinho;185;265;Sernancelhe
+;181810;Granjal;185;265;Sernancelhe
+;181811;Lamosa;185;265;Sernancelhe
+;181812;Macieira;185;265;Sernancelhe
+;181813;Penso;185;265;Sernancelhe
+;181814;Quintela;185;265;Sernancelhe
+;181815;Sarzeda;185;265;Sernancelhe
+;181816;Sernancelhe;185;265;Sernancelhe
+;181817;Vila da Ponte;185;265;Sernancelhe
+;181901;Adorigo;185;265;Tabuaço
+;181902;Arcos;185;265;Tabuaço
+;181903;Barcos;185;265;Tabuaço
+;181904;Chavães;185;265;Tabuaço
+;181905;Desejosa;185;265;Tabuaço
+;181906;Granja do Tedo;185;265;Tabuaço
+;181907;Granjinha;185;265;Tabuaço
+;181908;Longa;185;265;Tabuaço
+;181909;Paradela;185;265;Tabuaço
+;181910;Pereiro;185;265;Tabuaço
+;181911;Pinheiros;185;265;Tabuaço
+;181912;Santa Leocádia;185;265;Tabuaço
+;181913;Sendim;185;265;Tabuaço
+;181914;Tabuaço;185;265;Tabuaço
+;181915;Távora;185;265;Tabuaço
+;181916;Vale de Figueira;185;265;Tabuaço
+;181917;Valença do Douro;185;265;Tabuaço
+;182001;Dálvares;185;265;Tarouca
+;182002;Gouviães;185;265;Tarouca
+;182003;Granja Nova;185;265;Tarouca
+;182004;Mondim da Beira;185;265;Tarouca
+;182005;Salzedas;185;265;Tarouca
+;182006;São João de Tarouca;185;265;Tarouca
+;182007;Tarouca;185;265;Tarouca
+;182008;Ucanha;185;265;Tarouca
+;182009;Várzea da Serra;185;265;Tarouca
+;182010;Vila Chã da Beira;185;265;Tarouca
+;182101;Barreiro de Besteiros;185;265;Tondela
+;182102;Campo de Besteiros;185;265;Tondela
+;182103;Canas de Santa Maria;185;265;Tondela
+;182104;Caparrosa;185;265;Tondela
+;182105;Castelões;185;265;Tondela
+;182106;Dardavaz;185;265;Tondela
+;182107;Ferreirós do Dão;185;265;Tondela
+;182108;Guardão;185;265;Tondela
+;182109;Lajeosa do Dão;185;265;Tondela
+;182110;Lobão da Beira;185;265;Tondela
+;182111;Molelos;185;265;Tondela
+;182112;Mosteirinho;185;265;Tondela
+;182113;Mosteiro de Fráguas;185;265;Tondela
+;182114;Mouraz;185;265;Tondela
+;182115;Nandufe;185;265;Tondela
+;182116;Parada de Gonta;185;265;Tondela
+;182117;Sabugosa;185;265;Tondela
+;182118;Santiago de Besteiros;185;265;Tondela
+;182119;São João do Monte;185;265;Tondela
+;182120;São Miguel do Outeiro;185;265;Tondela
+;182121;Silvares;185;265;Tondela
+;182122;Tonda;185;265;Tondela
+;182123;Tondela;185;265;Tondela
+;182124;Vila Nova da Rainha;185;265;Tondela
+;182125;Vilar de Besteiros;185;265;Tondela
+;182126;Tourigo;185;265;Tondela
+;182201;Alhais;185;265;Vila Nova de Paiva
+;182202;Fráguas;185;265;Vila Nova de Paiva
+;182203;Pendilhe;185;265;Vila Nova de Paiva
+;182204;Queiriga;185;265;Vila Nova de Paiva
+;182205;Touro;185;265;Vila Nova de Paiva
+;182206;Vila Cova à Coelheira;185;265;Vila Nova de Paiva
+;182207;Vila Nova de Paiva;185;265;Vila Nova de Paiva
+;182301;Abraveses;185;265;Viseu
+;182302;Barreiros;185;265;Viseu
+;182303;Boa Aldeia;185;265;Viseu
+;182304;Bodiosa;185;265;Viseu
+;182305;Calde;185;265;Viseu
+;182306;Campo;185;265;Viseu
+;182307;Cavernães;185;265;Viseu
+;182308;Cepões;185;265;Viseu
+;182309;Viseu (Coração de Jesus);185;265;Viseu
+;182310;Cota;185;265;Viseu
+;182311;Couto de Baixo;185;265;Viseu
+;182312;Couto de Cima;185;265;Viseu
+;182313;Fail;185;265;Viseu
+;182314;Farminhão;185;265;Viseu
+;182315;Fragosela;185;265;Viseu
+;182316;Lordosa;185;265;Viseu
+;182317;Silgueiros;185;265;Viseu
+;182318;Mundão;185;265;Viseu
+;182319;Orgens;185;265;Viseu
+;182320;Povolide;185;265;Viseu
+;182321;Ranhados;185;265;Viseu
+;182322;Ribafeita;185;265;Viseu
+;182323;Rio de Loba;185;265;Viseu
+;182324;Viseu (Santa Maria de Viseu);185;265;Viseu
+;182325;Santos Evos;185;265;Viseu
+;182326;São Cipriano;185;265;Viseu
+;182327;São João de Lourosa;185;265;Viseu
+;182328;Viseu (São José);185;265;Viseu
+;182329;São Pedro de France;185;265;Viseu
+;182330;São Salvador;185;265;Viseu
+;182331;Torredeita;185;265;Viseu
+;182332;Vil de Souto;185;265;Viseu
+;182333;Vila Chã de Sá;185;265;Viseu
+;182334;Repeses;185;265;Viseu
+;182401;Alcofra;185;265;Vouzela
+;182402;Cambra;185;265;Vouzela
+;182403;Campia;185;265;Vouzela
+;182404;Carvalhal de Vermilhas;185;265;Vouzela
+;182405;Fataunços;185;265;Vouzela
+;182406;Figueiredo das Donas;185;265;Vouzela
+;182407;Fornelo do Monte;185;265;Vouzela
+;182408;Paços de Vilharigues;185;265;Vouzela
+;182409;Queirã;185;265;Vouzela
+;182410;São Miguel do Mato;185;265;Vouzela
+;182411;Ventosa;185;265;Vouzela
+;182412;Vouzela;185;265;Vouzela

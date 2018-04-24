@@ -46,7 +46,6 @@
                         <div class="o_row">
                             <field name="partner_id"
                                 placeholder="Partner"/>
-                            <field name="user_id" invisible="true" readonly="true"/>
                         </div>
                     </div>
 
@@ -133,12 +132,12 @@
             <field name="act_window_id" ref="action_budget_request_form"/>
         </record>        
         
-    <menuitem name="budget_requests"
+    <menuitem name="Budget Requests"
         id="menu_budget_request"
         sequence="4"
         action="action_budget_request_form"
         web_icon="web_directory,static/description/icon.png"/>
 
-        <menuitem id="menu_budget_request_form" name="budget_requests" parent="menu_budget_request" action="action_budget_request_form" sequence="11"/>
+        <menuitem id="menu_budget_request_form" name="Budget Requests" parent="menu_budget_request" action="action_budget_request_form" sequence="11"/>
     </data>
 </odoo>

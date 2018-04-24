@@ -11,7 +11,7 @@
 		  <link href="/website_directory/static/src/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
 		  <link href="/website_directory/static/src/plugins/listtyicons/style.css" rel="stylesheet"/>
 		  <link href="/website_directory/static/src/plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet"/>
-		  <link href="/website_directory/static/src/plugins/datepicker/datepicker.min.css" rel="stylesheet"/>
+		  <link href="/website_directory/static/src/plugins/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet"/>
 		  <link href="/website_directory/static/src/plugins/selectbox/select_option1.css" rel="stylesheet"/>
 		  <link href="/website_directory/static/src/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet"/>
 		  <link href="/website_directory/static/src/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>

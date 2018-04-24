@@ -2,4 +2,5 @@
 
 import res_partner
 import budget
+import res_administrative
 

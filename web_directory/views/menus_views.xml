@@ -11,6 +11,11 @@
         <menuitem id="res_partner_interest_parent_menu" name="Interests" parent="res_directory_parent_menu" sequence="10"/>
         <menuitem id="res_partner_interest_menu" name="Interests" parent="res_partner_interest_parent_menu" action="res_partner_interest_action" sequence="10"/>
         <menuitem id="res_partner_interest_category_menu" name="Categories" parent="res_partner_interest_parent_menu" action="res_partner_interest_category_action" sequence="10"/>
+
+        <menuitem id="menu_administrative_conf" name="Administrative" parent="res_directory_parent_menu" sequence="12"/>
+        <menuitem id="menu_conf_state" name="Distritos" parent="menu_administrative_conf" action="base.action_country_state" sequence="1"/>
+        <menuitem id="menu_conf_county" name="Municípios" parent="menu_administrative_conf" action="web_directory.action_conf_county" sequence="2"/>
+        <menuitem id="menu_conf_local" name="Freguesias e Locais" parent="menu_administrative_conf" action="web_directory.action_conf_local" sequence="3"/>
         
 
 

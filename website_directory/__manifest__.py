@@ -16,7 +16,6 @@
         """,
     'author':'Communities',
     'data': [
-        #'security/ir.model.access.csv',
         'views/assets.xml',
         'views/directory_template.xml',
         'views/homepage_template.xml',

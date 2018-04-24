@@ -116,7 +116,7 @@ Colocar aqui conteúdo
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="dashboardPageTitle">
-					<h2>My Listings</h2>
+					<h2>Listings</h2>
 				</div>
 				<div class="table-responsive"  data-pattern="priority-columns">
 					<table class="table listingsTable">
@@ -134,11 +134,11 @@ Colocar aqui conteúdo
 							<tr t-foreach="budgets" t-as="budget" class="rowItem">
 								<td>
 									<ul class="list-inline listingsInfo">
-										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
+										<!--<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>-->
 										<li>
 											<h3 t-esc="budget.category_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
-											<h5><span class="cityName"><t t-esc="budget.city"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
-											<span class="category"><t t-esc="budget.category_id.name"/></span>
+											<h5><span class="cityName"><t t-esc="budget.city.name"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
+											<span class="category"><t t-esc="budget.work_type.name"/></span>
 											<p><strong>Max Price:</strong> <t t-esc="budget.max_price"/>€ </p>
 											
 											<p>Ref: <t t-esc="budget.name"/> </p>
@@ -154,7 +154,6 @@ Colocar aqui conteúdo
 								<td><t t-esc="budget.write_date"/></td>
 								<td>
 
-
 								    <t t-if="budget.state == 'confirmed'">
 								     <span class="label label-success"><t t-esc="budget.state"/></span>
 								    </t>
@@ -165,16 +164,20 @@ Colocar aqui conteúdo
 
 								</td>
 								
-								
 								<td>
-								<form method="POST" action="/admin/proposals/add" enctype="multipart/form-data">
-								<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-								<input type="hidden" name="budget" t-att-value="budget.id"/>
-								<button type="submit" class="btn-submit">Submit</button>
-								</form>
+								<t t-if="budget.partner_id == user.partner_id">
+								<a class="label label-info" t-attf-href="/admin/listings/edit/#{ slug(budget) }">Edit</a>
+								</t>
+                        <t t-else="">
+                        <form action="/admin/proposals/add" method="get">
+  								<input type="hidden" name="budget_request_id" t-att-value="budget.id" />
+  								<input type="hidden" name="budget_request_name" t-att-value="budget.name" />
+                          <input type="submit" value="Send data" class="label label-info" t-attf-href="/admin/proposals/add"></input>
+									</form>
+
+                        </t>								
+								
 								</td>
-								
-								
 								
 							</tr>
 						
@@ -217,8 +220,99 @@ Colocar aqui conteúdo
   <t t-call="website_directory.admin_page_layout">
     <t t-set="pageName" t-value="'mylistings'"/>
 
-      
-         colocar aqui form
+     
+     <section class="clearfix bg-dark listyPage">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="dashboardPageTitle">
+					<h2>My Listings</h2>
+				</div>
+				<div class="table-responsive"  data-pattern="priority-columns">
+					<table class="table listingsTable">
+						<thead>
+							<tr class="rowItem">
+								<th data-priority="">Listings</th>
+								<th data-priority="2">Description</th>
+								<th data-priority="3">Posted on</th>
+								<th data-priority="4">Last Edited</th>
+								<th data-priority="5">Status</th>
+								<th data-priority="5">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr t-foreach="budgets" t-as="budget" class="rowItem">
+								<td>
+									<ul class="list-inline listingsInfo">
+										<!--<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>-->
+										<li>
+											<h3 t-esc="budget.category_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
+											<h5><span class="cityName"><t t-esc="budget.city.name"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
+											<span class="category"><t t-esc="budget.work_type.name"/></span>
+											<p><strong>Max Price:</strong> <t t-esc="budget.max_price"/>€ </p>
+											
+											<p>Ref: <t t-esc="budget.name"/> </p>
+
+										</li>
+									</ul>
+								</td>
+								<td>
+								<p> <t t-esc="budget.description"/></p>
+
+								</td>
+								<td><t t-esc="budget.create_date"/></td>
+								<td><t t-esc="budget.write_date"/></td>
+								<td>
+
+
+								    <t t-if="budget.state == 'confirmed'">
+								     <span class="label label-success"><t t-esc="budget.state"/></span>
+								    </t>
+								
+								    <t t-elif="budget.state == 'done'">
+								     <span class="label label-info"><t t-esc="budget.state"/></span>
+								    </t>
+
+								</td>
+								
+								<td><a class="label label-info" t-attf-href="/admin/listings/edit/#{ slug(budget) }">Edit</a></td>
+								
+								
+								
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+				<div t-if="pager" class="o_portal_pager text-center">
+              <t t-call="website.pager"/>
+            </div>
+				<!--<div class="paginationCommon blogPagination text-center">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</section>  
+         
          
   </t>
 </template>
@@ -227,10 +321,308 @@ Colocar aqui conteúdo
 
 <template id="listings_add" name="Listings Admin" page="True" priority="29">
   <t t-call="website_directory.admin_page_layout">
-    <t t-set="pageName" t-value="'listings_add'"/>
+    <t t-set="pageName" t-value="'listingsadd'"/>
 
       
-         colocar aqui form 
+<div class="section dashboard-breadcrumb-section bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Submit Proposal</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="active">Submit Proposal</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<section class="clearfix bg-dark listingSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="listing__form" method="POST" action="/admin/listings/add/process" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>About</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+								<label for="listingCategory">Work Category</label>
+									<div class="contactSelect">
+										<select name="category_id" id="guiest_id91" class="select-drop" required="True">
+					                  <option value="">Category**</option>
+					                  <t t-foreach="categs" t-as="categ">
+					                      <option t-attf-value="#{categ.id}"><t t-esc="categ.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="listingTitle">Work Subcategory</label>
+									<div class="contactSelect">
+										<select name="work_type" id="guiest_id9" class="select-drop" required="True">
+					                  <option value="">Work Subcategory</option>
+					                  <t t-foreach="work_types" t-as="work_type">
+					                      
+					                      <option t-attf-value="#{work_type.id}"><t t-esc="work_type.name"/></option>
+					                  
+					                  </t>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group col-sm-4 col-xs-12">
+										<label for="accepting_date">Date until Proposals can be sent</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" name="accepting_date" class="form-control" placeholder="dd-mm-yyyy"/>
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-group col-sm-2 col-xs-12">
+									<label for="listingCategory">Max Price</label>
+									<input type="number" min="1" name="max_price"  class="form-control" placeholder="Max Price €"/>
+								</div>
+
+
+								<div class="form-group col-sm-4 col-xs-12">
+								<label for="listingCategory">State</label>
+									<div class="contactSelect">
+										<select name="state_id" id="guiest_id94" class="select-drop" required="True">
+					                  <option value="">State</option>
+					                  <t t-foreach="states" t-as="state">
+					                      <option t-attf-value="#{state.id}"><t t-esc="state.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>								
+								
+								
+								<div class="form-group col-sm-4 col-xs-12">
+								<label for="listingCategory">Counties</label>
+									<div class="contactSelect">
+										<select name="county_id" id="guiest_id92" class="select-drop" required="True">
+					                  <option value="">Counties</option>
+					                  <t t-foreach="counties" t-as="county">
+					                      <option t-attf-value="#{county.id}"><t t-esc="county.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="listingTitle">Locals</label>
+									<div class="contactSelect">
+										<select name="city" id="guiest_id93" class="select-drop" required="False">
+					                  <option value="">City</option>
+					                  <t t-foreach="county_locals" t-as="local">
+					                      <option t-attf-value="#{local.id}"><t t-esc="local.name"/></option>
+					                  </t>
+										</select>
+									</div>
+								</div>
+
+
+
+
+								<div class="form-group col-xs-12">
+									<label for="discribeTheListing">Discribe the work that you need</label>
+									<textarea name="description" class="form-control" rows="3" placeholder="Discribe the work that you need"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Gallery</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<div class="imageUploader text-center">
+										<div class="file-upload">
+											<div class="upload-area">
+												<input type="file" name="img[]" class="file"/>
+												<button class="browse" type="button">Click or Drag images here</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-footer text-center">
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+  </t>
+</template>
+
+<!-- LISTINGS edit-->
+
+<template id="listings_edit" name="Listings Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'listingsedit'"/>
+    
+
+      
+<div class="section dashboard-breadcrumb-section bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Submit Proposal</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="active">Submit Proposal</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<section class="clearfix bg-dark listingSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="listing__form" method="POST" action="/admin/listings/edit/process" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>About</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+								<label for="listingCategory">Work Category</label>
+									<div class="contactSelect">
+										<select name="category_id" id="guiest_id91" class="select-drop" required="True">
+					                  <option value="">Category**</option>
+					                  <t t-foreach="categs" t-as="categ">
+					                      <option t-attf-value="#{categ.id}" t-att-selected="listing.category_id.id == categ.id"><t t-esc="categ.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="listingTitle">Work Subcategory</label>
+									<div class="contactSelect">
+										<select name="work_type" id="guiest_id9" class="select-drop" required="True">
+					                  <option value="">Work Subcategory</option>
+					                  <t t-foreach="work_types" t-as="work_type">
+					                      
+					                      <option t-attf-value="#{work_type.id}" t-att-selected="listing.work_type.id == work_type.id"><t t-esc="work_type.name"/></option>
+					                  
+					                  </t>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group col-sm-4 col-xs-12">
+										<label for="accepting_date">Date until Proposals can be sent</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" name="accepting_date" data-date-format="dd-mm-yyyy" class="form-control date" placeholder="dd-mm-yyyy" t-att-value="listing.accepting_date"/>
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								
+								<div class="form-group col-sm-2 col-xs-12">
+									<label for="listingCategory">Max Price</label>
+									<input type="number" min="1" name="max_price"  class="form-control" placeholder="Max Price € " t-att-value="listing.max_price"/>
+								</div>
+
+
+								<div class="form-group col-sm-4 col-xs-12">
+								<label for="listingCategory">State</label>
+									<div class="contactSelect">
+										<select name="state_id" id="guiest_id94" class="select-drop" required="True">
+					                  <option value="">State</option>
+					                  <t t-foreach="states" t-as="state">
+					                      <option t-attf-value="#{state.id}" t-att-selected="listing.state_id.id == state.id"><t t-esc="state.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>								
+								
+								
+								<div class="form-group col-sm-4 col-xs-12">
+								<label for="listingCategory">Counties</label>
+									<div class="contactSelect">
+										<select name="county_id" id="guiest_id92" class="select-drop" required="True">
+					                  <option value="">Counties</option>
+					                  <t t-foreach="counties" t-as="county">
+					                      <option t-attf-value="#{county.id}" t-att-selected="listing.county_id.id == county.id"><t t-esc="county.name"/></option>
+					                  </t>
+										</select>
+									</div>	
+								</div>
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="listingTitle">Locals</label>
+									<div class="contactSelect">
+										<select name="city" id="guiest_id93" class="select-drop" required="False">
+					                  <option value="">City</option>
+					                  <t t-foreach="county_locals" t-as="local">
+					                      <option t-attf-value="#{local.id}" t-att-selected="listing.city.id == local.id"><t t-esc="local.name"/></option>
+					                  </t>
+										</select>
+									</div>
+								</div>
+
+								<div class="form-group col-xs-12">
+									<label for="discribeTheListing">Discribe the work that you need</label>
+									<textarea name="description" class="form-control" rows="3" placeholder="Discribe the work that you need"><t t-esc="listing.description"/></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>Gallery</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<div class="imageUploader text-center">
+										<div class="file-upload">
+											<div class="upload-area">
+												<input type="file" name="img[]" class="file"/>
+												<button class="browse" type="button">Click or Drag images here</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="form-footer text-center">
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
          
   </t>
 </template>

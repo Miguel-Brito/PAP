@@ -34,7 +34,7 @@
 										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
 										<li>
 											<h3 t-esc="proposal.budget_request_id.work_type.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
-											<h5><span class="cityName"><t t-esc="proposal.budget_request_id.city"/>,</span> <strong><t t-esc="proposal.budget_request_id.state_id.name"/></strong></h5>
+											<h5><span class="cityName"><t t-esc="proposal.budget_request_id.city.name"/>,</span> <strong><t t-esc="proposal.budget_request_id.state_id.name"/></strong></h5>
 											<span class="category"><t t-esc="proposal.budget_request_id.category_id.name"/></span>
 											<p><strong>Max Price:</strong> <t t-esc="proposal.budget_request_id.max_price"/>€ </p>
 											
@@ -103,7 +103,7 @@
 
 <template id="proposals_add" name="Proposals Admin" page="True" priority="29">
   <t t-call="website_directory.admin_page_layout">
-    <t t-set="pageName" t-value="'proposals'"/>
+    <t t-set="pageName" t-value="'proposalsadd'"/>
 <div class="section dashboard-breadcrumb-section bg-dark">
   <div class="container">
     <div class="row">
@@ -133,13 +133,16 @@
 							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
 							<div class="row">
 								<div class="form-group col-sm-6 col-xs-12">
+
+                        
+
+
 								<label for="listingCategory">Budget Request</label>
 									<div class="contactSelect">
 										<select name="budget" id="guiest_id9" class="select-drop" required="True">
-					                  <option value="">Select</option>
-					                  <t t-foreach="budgets" t-as="budget">
-					                      <option t-attf-value="#{budget.id}"><t t-esc="budget.name"/></option>
-					                  </t>
+
+					                      <option t-attf-value="#{budget_request_id}"><t t-esc="budget_request_name"/></option>
+					                  
 										</select>
 									</div>	
 								</div>
@@ -147,7 +150,7 @@
 									<label for="dateModified">Date Modified</label>
 									<div class="dateSelect">
 										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-											<input type="text" name="start_date" data-date-format="dd/mm/yyyy" class="form-control date" placeholder="mm/dd/yyyy"/>
+											<input type="text" name="start_date" data-date-format="dd-mm-yyyy" class="form-control date" placeholder="dd-mm-yyyy"/>
 											<div class="input-group-addon">
 												<i class="icon-listy icon-calendar"></i>
 											</div>
@@ -193,10 +196,7 @@
 									</div>
 								</div>
 
-								<div class="form-group col-xs-12">
-									<label for="videoUrl">Video URL</label>
-									<input type="text" class="form-control" id="videoUrl" placeholder="http://"/>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -219,7 +219,7 @@
 
 <template id="proposals_edit" name="Proposals Admin" page="True" priority="29">
   <t t-call="website_directory.admin_page_layout">
-    <t t-set="pageName" t-value="'proposals'"/>
+    <t t-set="pageName" t-value="'proposalsedit'"/>
 
       
          colocar aqui form edit --- <t t-esc="proposal.name"/>

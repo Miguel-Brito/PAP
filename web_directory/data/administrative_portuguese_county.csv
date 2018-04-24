@@ -1,0 +1,309 @@
+Id,country_id,code,state_id,name
+1,Portugal,0101,Aveiro,Agueda
+2,Portugal,0102,Aveiro,Albergaria-a-Velha
+3,Portugal,0103,Aveiro,Anadia
+4,Portugal,0104,Aveiro,Arouca
+5,Portugal,0105,Aveiro,Aveiro
+6,Portugal,0106,Aveiro,Castelo de Paiva
+7,Portugal,0107,Aveiro,Espinho
+8,Portugal,0108,Aveiro,Estarreja
+9,Portugal,0109,Aveiro,Santa Maria da Feira
+10,Portugal,0110,Aveiro,Ilhavo
+11,Portugal,0111,Aveiro,Mealhada
+12,Portugal,0112,Aveiro,Murtosa
+13,Portugal,0113,Aveiro,Oliveira de Azemeis
+14,Portugal,0114,Aveiro,Oliveira do Bairro
+15,Portugal,0115,Aveiro,Ovar
+16,Portugal,0116,Aveiro,São João da Madeira
+17,Portugal,0117,Aveiro,Sever do Vouga
+18,Portugal,0118,Aveiro,Vagos
+19,Portugal,0119,Aveiro,Vale de Cambra
+20,Portugal,0201,Beja,Aljustrel
+21,Portugal,0202,Beja,Almodôvar
+22,Portugal,0203,Beja,Alvito
+23,Portugal,0204,Beja,Barrancos
+24,Portugal,0205,Beja,Beja
+25,Portugal,0206,Beja,Castro Verde
+26,Portugal,0207,Beja,Cuba
+27,Portugal,0208,Beja,Ferreira do Alentejo
+28,Portugal,0209,Beja,Mértola
+29,Portugal,0210,Beja,Moura
+30,Portugal,0211,Beja,Odemira
+31,Portugal,0212,Beja,Ourique
+32,Portugal,0213,Beja,Serpa
+33,Portugal,0214,Beja,Vidigueira
+34,Portugal,0301,Braga,Amares
+35,Portugal,0302,Braga,Barcelos
+36,Portugal,0303,Braga,Braga
+37,Portugal,0304,Braga,Cabeceiras de Basto
+38,Portugal,0305,Braga,Celorico de Basto
+39,Portugal,0306,Braga,Esposende
+40,Portugal,0307,Braga,Fafe
+41,Portugal,0308,Braga,Guimarães
+42,Portugal,0309,Braga,Póvoa de Lanhoso
+43,Portugal,0310,Braga,Terras de Bouro
+44,Portugal,0311,Braga,Vieira do Minho
+45,Portugal,0312,Braga,Vila Nova Famalicão
+46,Portugal,0313,Braga,Vila Verde
+47,Portugal,0314,Braga,Vizela
+48,Portugal,0401,Bragança,Alfândega da Fé
+49,Portugal,0402,Bragança,Bragança
+50,Portugal,0403,Bragança,Carrezeda de Anciães
+51,Portugal,0404,Bragança,Freixo Esp. à Cinta
+52,Portugal,0405,Bragança,Macedo de Cavaleiros
+53,Portugal,0406,Bragança,Miranda do Douro
+54,Portugal,0407,Bragança,Mirandela
+55,Portugal,0408,Bragança,Mogadouro
+56,Portugal,0409,Bragança,Torre de Moncorvo
+57,Portugal,0410,Bragança,Vila Flor
+58,Portugal,0411,Bragança,Vimioso
+59,Portugal,0412,Bragança,Vinhais
+60,Portugal,0501,Castelo Branco,Belmonte
+61,Portugal,0502,Castelo Branco,Castelo Branco
+62,Portugal,0503,Castelo Branco,Covilhã
+63,Portugal,0504,Castelo Branco,Fundão
+64,Portugal,0505,Castelo Branco,Idanha-a-Nova
+65,Portugal,0506,Castelo Branco,Oleiros
+66,Portugal,0507,Castelo Branco,Penamacor
+67,Portugal,0508,Castelo Branco,Proença-a-Nova
+68,Portugal,0509,Castelo Branco,Sertã
+69,Portugal,0510,Castelo Branco,Vila de Rei
+70,Portugal,0511,Castelo Branco,Vila Velha de Ródão
+71,Portugal,0601,Coimbra,Arganil
+72,Portugal,0602,Coimbra,Cantanhede
+73,Portugal,0603,Coimbra,Coimbra
+74,Portugal,0604,Coimbra,Condeixa-a-Nova
+75,Portugal,0605,Coimbra,Fiqgueira da Foz
+76,Portugal,0606,Coimbra,Góis
+77,Portugal,0607,Coimbra,Lousã
+78,Portugal,0608,Coimbra,Mira
+79,Portugal,0609,Coimbra,Miranda do Corvo
+80,Portugal,0610,Coimbra,Montemor-o-Velho
+81,Portugal,0611,Coimbra,Oliveira do Hospital
+82,Portugal,0612,Coimbra,Pampilhosa da Serra
+83,Portugal,0613,Coimbra,Penacova
+84,Portugal,0614,Coimbra,Penela
+85,Portugal,0615,Coimbra,Soure
+86,Portugal,0616,Coimbra,Tábua
+87,Portugal,0617,Coimbra,Vila Nova de Poiares
+88,Portugal,0701,Évora,Alandroal
+89,Portugal,0702,Évora,Arraiolos
+90,Portugal,0703,Évora,Borba
+91,Portugal,0704,Évora,Estremoz
+92,Portugal,0705,Évora,Évora
+93,Portugal,0706,Évora,Montemor-o-Novo
+94,Portugal,0707,Évora,Mora
+95,Portugal,0708,Évora,Mourão
+96,Portugal,0709,Évora,Portel
+97,Portugal,0710,Évora,Redondo
+98,Portugal,0711,Évora,Reguengos Monsaraz
+99,Portugal,0712,Évora,Vendas Novas
+100,Portugal,0713,Évora,Viana do Alentejo
+101,Portugal,0714,Évora,Vila Viçosa
+102,Portugal,0801,Faro,Albufeira
+103,Portugal,0802,Faro,Alcoutim
+104,Portugal,0803,Faro,Aljezur
+105,Portugal,0804,Faro,Castro Marim
+106,Portugal,0805,Faro,Faro
+107,Portugal,0806,Faro,Lagoa
+108,Portugal,0807,Faro,Lagos
+109,Portugal,0808,Faro,Loulé
+110,Portugal,0809,Faro,Monchique
+111,Portugal,0810,Faro,Olhão
+112,Portugal,0811,Faro,Portimão
+113,Portugal,0812,Faro,São Brás de Alportel
+114,Portugal,0813,Faro,Silves
+115,Portugal,0814,Faro,Tavira
+116,Portugal,0815,Faro,Vila do Bispo
+117,Portugal,0816,Faro,Vila RealS. António
+118,Portugal,0901,Guarda,Aguiar da Beira
+119,Portugal,0902,Guarda,Almeida
+120,Portugal,0903,Guarda,Celorico da Beira
+121,Portugal,0904,Guarda,Fig. Castelo Rodrigo
+122,Portugal,0905,Guarda,Fornos de Algodres
+123,Portugal,0906,Guarda,Gouveia
+124,Portugal,0907,Guarda,Guarda
+125,Portugal,0908,Guarda,Manteigas
+126,Portugal,0909,Guarda,Meda
+127,Portugal,0910,Guarda,Pinhel
+128,Portugal,0911,Guarda,Sabugal
+129,Portugal,0912,Guarda,Seia
+130,Portugal,0913,Guarda,Trancoso
+131,Portugal,0914,Guarda,V. Nova de Foz Côa
+132,Portugal,1001,Leiria,Alcobaça
+133,Portugal,1002,Leiria,Alvaiázere
+134,Portugal,1003,Leiria,Ansião
+135,Portugal,1004,Leiria,Batalha
+136,Portugal,1005,Leiria,Bombarral
+137,Portugal,1006,Leiria,Caldas da Rainha
+138,Portugal,1007,Leiria,Castanheira de Pêra
+139,Portugal,1008,Leiria,Figueiró dos Vinhos
+140,Portugal,1009,Leiria,Leiria
+141,Portugal,1010,Leiria,Marinha Grande
+142,Portugal,1011,Leiria,Nazaré
+143,Portugal,1012,Leiria,Óbidos
+144,Portugal,1013,Leiria,Pedrógão Grande
+145,Portugal,1014,Leiria,Peniche
+146,Portugal,1015,Leiria,Pombal
+147,Portugal,1016,Leiria,Portode Mós
+148,Portugal,1101,Lisboa,Alenquer
+149,Portugal,1102,Lisboa,Arruda dos Vinhos
+150,Portugal,1103,Lisboa,Azambuja
+151,Portugal,1104,Lisboa,Cadaval
+152,Portugal,1105,Lisboa,Cascais
+153,Portugal,1106,Lisboa,Lisboa
+154,Portugal,1107,Lisboa,Loures
+155,Portugal,1108,Lisboa,Lourinhã
+156,Portugal,1109,Lisboa,Mafra
+157,Portugal,1110,Lisboa,Oeiras
+158,Portugal,1111,Lisboa,Sintra
+159,Portugal,1112,Lisboa,Sobral Monte Agraço
+160,Portugal,1113,Lisboa,Torres Vedras
+161,Portugal,1114,Lisboa,Vila Franca de Xira
+162,Portugal,1115,Lisboa,Amadora
+163,Portugal,1116,Lisboa,Odivelas
+164,Portugal,1201,Portalegre,Alter do Chão
+165,Portugal,1202,Portalegre,Arronches
+166,Portugal,1203,Portalegre,Avis
+167,Portugal,1204,Portalegre,Campo Maior
+168,Portugal,1205,Portalegre,Castelo de Vide
+169,Portugal,1206,Portalegre,Crato
+170,Portugal,1207,Portalegre,Elvas
+171,Portugal,1208,Portalegre,Fronteira
+172,Portugal,1209,Portalegre,Gavião
+173,Portugal,1210,Portalegre,Marvão
+174,Portugal,1211,Portalegre,Monforte
+175,Portugal,1212,Portalegre,Nisa
+176,Portugal,1213,Portalegre,Ponte de Sor
+177,Portugal,1214,Portalegre,Portalegre
+178,Portugal,1215,Portalegre,Sousel
+179,Portugal,1301,Porto,Amarante
+180,Portugal,1302,Porto,Baião
+181,Portugal,1303,Porto,Felgueiras
+182,Portugal,1304,Porto,Gondomar
+183,Portugal,1305,Porto,Lousada
+184,Portugal,1306,Porto,Maia
+185,Portugal,1307,Porto,Marco de Canaveses
+186,Portugal,1308,Porto,Matosinhos
+187,Portugal,1309,Porto,Paços de Ferreira
+188,Portugal,1310,Porto,Paredes
+189,Portugal,1311,Porto,Penafiel
+190,Portugal,1312,Porto,Porto
+191,Portugal,1313,Porto,Póvoa de Varzim
+192,Portugal,1314,Porto,Santo Tirso
+193,Portugal,1315,Porto,Valongo
+194,Portugal,1316,Porto,Vila do Conde
+195,Portugal,1317,Porto,Vila Nova de Gaia
+196,Portugal,1318,Porto,Trofa
+197,Portugal,1401,Santarém,Abrantes
+198,Portugal,1402,Santarém,Alcanena
+199,Portugal,1403,Santarém,Almeirim
+200,Portugal,1404,Santarém,Alpiarça
+201,Portugal,1405,Santarém,Benavente
+202,Portugal,1406,Santarém,Cartaxo
+203,Portugal,1407,Santarém,Chamusca
+204,Portugal,1408,Santarém,Constância
+205,Portugal,1409,Santarém,Coruche
+206,Portugal,1410,Santarém,Entroncamento
+207,Portugal,1411,Santarém,Ferreira do Zêzere
+208,Portugal,1412,Santarém,Golegã
+209,Portugal,1413,Santarém,Mação
+210,Portugal,1414,Santarém,Rio Maior
+211,Portugal,1415,Santarém,Salvaterra de Magos
+212,Portugal,1416,Santarém,Santarém
+213,Portugal,1417,Santarém,Sardoal
+214,Portugal,1418,Santarém,Tomar
+215,Portugal,1419,Santarém,Torres Novas
+216,Portugal,1420,Santarém,Vila Nova Barquinha
+217,Portugal,1421,Santarém,Ourém
+218,Portugal,1501,Setúbal,Alcácer do Sal
+219,Portugal,1502,Setúbal,Alcochete
+220,Portugal,1503,Setúbal,Almada
+221,Portugal,1504,Setúbal,Barreiro
+222,Portugal,1505,Setúbal,Grândola
+223,Portugal,1506,Setúbal,Moita
+224,Portugal,1507,Setúbal,Montijo
+225,Portugal,1508,Setúbal,Palmela
+226,Portugal,1509,Setúbal,Santiago do Cacém
+227,Portugal,1510,Setúbal,Seixal
+228,Portugal,1511,Setúbal,Sesimbra
+229,Portugal,1512,Setúbal,Setúbal
+230,Portugal,1513,Setúbal,Sines
+231,Portugal,1601,Viana do Castelo,Arcos de Valdevez
+232,Portugal,1602,Viana do Castelo,Caminha
+233,Portugal,1603,Viana do Castelo,Melgaço
+234,Portugal,1604,Viana do Castelo,Monção
+235,Portugal,1605,Viana do Castelo,Paredes de Coura
+236,Portugal,1606,Viana do Castelo,Ponte da Barca
+237,Portugal,1607,Viana do Castelo,Ponte de Lima
+238,Portugal,1608,Viana do Castelo,Valença
+239,Portugal,1609,Viana do Castelo,Viana do Castelo
+240,Portugal,1610,Viana do Castelo,Vila Nova Cerveira
+241,Portugal,1701,Vila Real,Alijó
+242,Portugal,1702,Vila Real,Boticas
+243,Portugal,1703,Vila Real,Chaves
+244,Portugal,1704,Vila Real,Mesão Frio
+245,Portugal,1705,Vila Real,Mondim de Basto
+246,Portugal,1706,Vila Real,Montalegre
+247,Portugal,1707,Vila Real,Murça
+248,Portugal,1708,Vila Real,Peso da Régua
+249,Portugal,1709,Vila Real,Ribeira de Pena
+250,Portugal,1710,Vila Real,Sabrosa
+251,Portugal,1711,Vila Real,Sta Marta Penaguião
+252,Portugal,1712,Vila Real,Valpaços
+253,Portugal,1713,Vila Real,Vila Pouca de Aguiar
+254,Portugal,1714,Vila Real,Vila Real
+255,Portugal,1801,Viseu,Armamar
+256,Portugal,1802,Viseu,Carregal do Sal
+257,Portugal,1803,Viseu,Castro Daire
+258,Portugal,1804,Viseu,Cinfães
+259,Portugal,1805,Viseu,Lamego
+260,Portugal,1806,Viseu,Mangualde
+261,Portugal,1807,Viseu,Moimenta da Beira
+262,Portugal,1808,Viseu,Mortágua
+263,Portugal,1809,Viseu,Nelas
+264,Portugal,1810,Viseu,Oliveira de Frades
+265,Portugal,1811,Viseu,Penalva do Castelo
+266,Portugal,1812,Viseu,Penedono
+267,Portugal,1813,Viseu,Resende
+268,Portugal,1814,Viseu,Santa Comba Dão
+269,Portugal,1815,Viseu,São João Pesqueira
+270,Portugal,1816,Viseu,São Pedro do Sul
+271,Portugal,1817,Viseu,Sátão
+272,Portugal,1818,Viseu,Sernancelhe
+273,Portugal,1819,Viseu,Tabuaço
+274,Portugal,1820,Viseu,Tarouca
+275,Portugal,1821,Viseu,Tondela
+276,Portugal,1822,Viseu,Vila Nova de Paiva
+277,Portugal,1823,Viseu,Viseu
+278,Portugal,1824,Viseu,Vouzela
+279,Portugal,3101,Ilha da Madeira,Calheta
+280,Portugal,3102,Ilha da Madeira,Câmara de Lobos
+281,Portugal,3103,Ilha da Madeira,Funchal
+282,Portugal,3104,Ilha da Madeira,Machico
+283,Portugal,3105,Ilha da Madeira,Ponta do Sol
+284,Portugal,3106,Ilha da Madeira,PortoMoniz
+285,Portugal,3107,Ilha da Madeira,Ribeira Brava
+286,Portugal,3108,Ilha da Madeira,Santa Cruz
+287,Portugal,3109,Ilha da Madeira,Santana
+288,Portugal,3110,Ilha da Madeira,São Vicente
+289,Portugal,3201,Ilha de Porto Santo,PortoSanto
+290,Portugal,4101,Ilha de Santa Maria,Vila do Porto
+291,Portugal,4201,Ilha de São Miguel,Lagoa 
+292,Portugal,4202,Ilha de São Miguel,Nordeste
+293,Portugal,4203,Ilha de São Miguel,Ponta Delgada
+294,Portugal,4204,Ilha de São Miguel,Povoacão
+295,Portugal,4205,Ilha de São Miguel,Ribeira Grande
+296,Portugal,4206,Ilha de São Miguel,Vila Franca do Campo
+297,Portugal,4301,Ilha Terceira,Angra do Heroísmo
+298,Portugal,4302,Ilha Terceira,Vila Praia Vitória
+299,Portugal,4401,Ilha da Graciosa,Sta Cruz da Graciosa
+300,Portugal,4501,Ilha de São Jorge,Calheta 
+301,Portugal,4502,Ilha de São Jorge,Velas
+302,Portugal,4601,Ilha do Pico,Lajes do Pico
+303,Portugal,4602,Ilha do Pico,Madalena
+304,Portugal,4603,Ilha do Pico,São Roque do Pico
+305,Portugal,4701,Ilha do Faial,Horta
+306,Portugal,4801,Ilha das Flores,Lajes das Flores
+307,Portugal,4802,Ilha das Flores,Sta Cruz das Flores
+308,Portugal,4901,Ilha do Corvo,Corvo

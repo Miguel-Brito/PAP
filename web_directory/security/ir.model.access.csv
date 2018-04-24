@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_service,access_service,model_service,,1,1,1,0
+access_proposal,access_proposal,model_proposal,,1,1,1,0
+access_worktype,access_worktype,model_worktype,,1,0,0,0
+access_res_partner_interest,access_res_partner_interest,model_res_partner_interest,,1,0,0,0
+access_res_partner_interest_category,access_res_partner_interest_category,model_res_partner_interest_category,,1,0,0,0
+access_budget_request,access_budget_request,model_budget_request,,1,1,1,0
+access_res_county,access_res_county,model_res_county,,1,0,0,0
+access_res_county_local,access_res_county_local,model_res_county_local,,1,0,0,0
