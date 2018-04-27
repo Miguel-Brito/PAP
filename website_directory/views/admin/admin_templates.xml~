@@ -42,9 +42,16 @@
               </li>
               
               <li class="dropdown singleDrop">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> My Services <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu dropdown-menu-left">
+                  <li><a href="/admin/services">My Services</a></li>
+                  <li><a href="/admin/services/add">Add Services</a></li>
+                </ul>
+              </li>
+              
+              <li class="dropdown singleDrop">
                 <a href="dashboard-reviews.html" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
               </li>
-              <li><a href="oders.html"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> Orders</a></li>
               <li><a href="dashboard.html#message" class="scrolling"><i class="fa fa-envelope icon-dash" aria-hidden="true"></i> Messages</a></li>
               <li><a href="profile.html"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a></li>
             </ul>
@@ -134,7 +141,7 @@ Colocar aqui conteúdo
 							<tr t-foreach="budgets" t-as="budget" class="rowItem">
 								<td>
 									<ul class="list-inline listingsInfo">
-										<!--<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>-->
+										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
 										<li>
 											<h3 t-esc="budget.category_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
 											<h5><span class="cityName"><t t-esc="budget.city.name"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
@@ -170,9 +177,14 @@ Colocar aqui conteúdo
 								</t>
                         <t t-else="">
                         <form action="/admin/proposals/add" method="get">
-  								<input type="hidden" name="budget_request" t-att-value="budget" />
-  								
-                          <input type="submit" value="Send data" class="label label-info" t-attf-href="/admin/proposals/add"></input>
+  								  <input type="hidden" name="budget_request_id" t-att-value="budget.id" />
+  								   <input type="hidden" name="budget_request_name" t-att-value="budget.name" />
+                          <!--<input type="submit" value="Send data" class="label label-info"></input>-->
+                          
+					<div >
+						<button type="submit" class="btn-submit">Send data</button>
+					</div>            
+                          
 									</form>
 
                         </t>								
@@ -234,9 +246,9 @@ Colocar aqui conteúdo
 							<tr class="rowItem">
 								<th data-priority="">Listings</th>
 								<th data-priority="2">Description</th>
-								<th data-priority="3">Posted on</th>
-								<th data-priority="4">Last Edited</th>
-								<th data-priority="5">Status</th>
+								<th data-priority="3">Last Edited</th>
+								<th data-priority="4">Status</th>
+								<th data-priority="5">Proposals</th>
 								<th data-priority="5">Action</th>
 							</tr>
 						</thead>
@@ -244,7 +256,7 @@ Colocar aqui conteúdo
 							<tr t-foreach="budgets" t-as="budget" class="rowItem">
 								<td>
 									<ul class="list-inline listingsInfo">
-										<!--<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>-->
+										<li><a href="#"><img src="img/dashboard/listing.jpg" alt="Image Listings"/></a></li>
 										<li>
 											<h3 t-esc="budget.category_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
 											<h5><span class="cityName"><t t-esc="budget.city.name"/>,</span> <strong><t t-esc="budget.state_id.name"/></strong></h5>
@@ -260,7 +272,6 @@ Colocar aqui conteúdo
 								<p> <t t-esc="budget.description"/></p>
 
 								</td>
-								<td><t t-esc="budget.create_date"/></td>
 								<td><t t-esc="budget.write_date"/></td>
 								<td>
 
@@ -275,7 +286,18 @@ Colocar aqui conteúdo
 
 								</td>
 								
-								<td><a class="label label-info" t-attf-href="/admin/listings/edit/#{ slug(budget) }">Edit</a></td>
+								
+								<td>
+								<t t-set="number_prop" t-value="0"/>
+								<t t-foreach="proposals" t-as="prop">
+								<t t-if="prop.budget_request_id.id == budget.id">
+								<t t-set="number_prop" t-value="number_prop + 1"/>
+								</t>
+								</t>
+								<t t-esc="number_prop"/>
+								</td>
+								
+						     <td><a class="label label-info" t-attf-href="/admin/listings/edit/#{ slug(budget) }">Edit</a></td>
 								
 								
 								
@@ -332,7 +354,7 @@ Colocar aqui conteúdo
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
-          <li class="active">Submit Proposal</li>
+          <li class="active">Request Budgets</li>
         </ol>
       </div>
     </div>
@@ -502,7 +524,8 @@ Colocar aqui conteúdo
 			<div class="col-xs-12">
 				<form class="listing__form" method="POST" action="/admin/listings/edit/process" enctype="multipart/form-data">
                 <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-
+                <input type="hidden" name="budget_name" t-att-value="listing.name"/>
+                <input type="hidden" name="budget_state" t-att-value="listing.state"/>
 					<div class="dashboardBoxBg mb30">
 						<div class="profileIntro paraMargin">
 							<h3>About</h3>

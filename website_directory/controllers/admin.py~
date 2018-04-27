@@ -35,6 +35,26 @@ class DirectoryAdminController(http.Controller):
         
         return http.request.render('website_directory.admin')
 
+#####################################################################################
+
+    @http.route('/admin/account', type='http', auth="user", website=True)
+    def account_user(self, **kwargs):
+        page = 'account'
+        
+
+        return http.request.render('website_directory.account_user')  
+
+#####################################################################################
+
+    @http.route('/admin/account/edit', type='http', auth="user", website=True)
+    def account_user_edit(self, **kwargs):
+        page = 'account'
+        
+
+        return http.request.render('website_directory.account_user_edit')        
+              
+        
+
 ###################################################################################### listings
 
     @http.route('/admin/listings', type='http', auth="user", website=True)
@@ -52,10 +72,14 @@ class DirectoryAdminController(http.Controller):
     @http.route('/admin/mylistings', type='http', auth="user", website=True)
     def mylistings_directory(self, **kwargs):
         
-        budgets = request.env['budget_request'].sudo().search([('user_id.id','=', request.env.user.id)])
         
+        
+        budgets = request.env['budget_request'].sudo().search([('user_id.id','=', request.env.user.id)])
+        proposals = request.env['proposal'].sudo().search([('client_id.id','=', request.env.user.partner_id.id)])
+        print budgets
+        print proposals
 
-        return http.request.render('website_directory.mylistings', {'budgets': budgets} )    	
+        return http.request.render('website_directory.mylistings', {'budgets': budgets, 'proposals': proposals} )    	
    	
 ###################################################################################### listings Add
 
@@ -127,6 +151,13 @@ class DirectoryAdminController(http.Controller):
             states = request.env['res.country.state'].sudo().search([])
             
             
+
+            user_id = listing.user_id
+            state = listing.state
+            
+            
+            
+            
             print categs
             print listing
 
@@ -142,9 +173,11 @@ class DirectoryAdminController(http.Controller):
 	for field_name, field_value in kwargs.items():
 	    values[field_name] = field_value
 
-
-        existing_record = request.env['budget_request'].browse( int(values['user_id'] ) )
+        print values.keys()
         
+        existing_record = request.env['budget_request'].search([('name','=', values['budget_name'])])
+        
+
         if existing_record.user_id.id == request.env.user.id:
             updated_listing = existing_record.sudo().write({
             'accepting_date': values['accepting_date'], 
@@ -155,7 +188,8 @@ class DirectoryAdminController(http.Controller):
             'city': values['city'],
             'state_id': values['state_id'],
             'description': values['description'],
-            'state': values['state']
+            'state': values['budget_state']
+            
             })
 
             #Redirect them to thier account page
@@ -188,6 +222,7 @@ class DirectoryAdminController(http.Controller):
          	
 ###################################################################################### lista propostas
 
+        
     @http.route('/admin/proposals', type='http', auth="user", website=True)
     def proposals_directory(self, **kwargs):
         
@@ -202,19 +237,24 @@ class DirectoryAdminController(http.Controller):
         print 'dasdasdasdasdasdasdasdasdasd'
         url = urlparse.urlparse(http.request.httprequest.full_path)
         query = dict(urlparse.parse_qs(url.query))
-        budget_request_id = query['budget_request_id'][0]
-        budget_request_name = query['budget_request_name'][0]
- 
+        if query:
+            budget_request_id = query['budget_request_id'][0]
+            budget_request_name = query['budget_request_name'][0]
+            return http.request.render('website_directory.proposals_add', {'budget_request_id' : budget_request_id, 'budget_request_name' : budget_request_name})
         
         
+        else:
+            budgets = request.env['budget_request'].sudo().search([('user_id','!=', request.env.user.id)])
+            return http.request.render('website_directory.proposals_add', {'budgets' : budgets})
         
-        #print self.request.get('budget_request_name')
         
-        
-        
-        budgets = request.env['budget_request'].sudo().search([])
 
-        return http.request.render('website_directory.proposals_add', {'budgets': budgets, 'budget_request_id' : budget_request_id, 'budget_request_name' : budget_request_name})
+
+
+        
+        
+
+
         
 ###################################################################################### processa nova proposta
 
@@ -235,13 +275,15 @@ class DirectoryAdminController(http.Controller):
         if 'time_type' in values: insert_values['time_type'] = values['time_type']
         if 'xxxx' in values: insert_values['state'] = values['xxxx']
         
-        if values['time_type'] == 'hours':
-            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(hours=self.exp_duration)
-        elif values['time_type'] == 'days':
-            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(days=self.exp_duration)   
-        elif values['time_type'] == 'months':
-            exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(months=self.exp_duration)
-        insert_values['exp_end_date'] = exp_end_date
+        #Fix exp_start_date than uncoment 
+        
+        #if values['time_type'] == 'hours':
+        #    exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(hours=self.exp_duration)
+        #elif values['time_type'] == 'days':
+        #    exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(days=self.exp_duration)   
+        #elif values['time_type'] == 'months':
+        #    exp_end_date = fields.Datetime.from_string(self.exp_start_date) +  relativedelta(months=self.exp_duration)
+        #insert_values['exp_end_date'] = exp_end_date
         
         
         new_proposal = request.env['proposal'].sudo().create(insert_values)
@@ -253,9 +295,14 @@ class DirectoryAdminController(http.Controller):
     @http.route('/admin/proposals/edit/<model("proposal"):proposal>', type='http', auth="user", website=True)
     def proposals_directory_edit(self, proposal, **kwargs):
         if proposal.user_id.id == request.env.user.id:
-            partners = request.env['res.partner'].sudo().search([('pro','=', True), ('user_id','=', request.env.user.id)])
-            countries = request.env['res.country'].search([])
-            return http.request.render('website_directory.proposals_edit', {'proposal': proposal, 'partners': partners, 'countries': countries} )
+        	
+            #partners = request.env['res.partner'].sudo().search([('pro','=', True), ('user_id','=', request.env.user.id)])
+
+            work_types = request.env['worktype'].sudo().search([])
+
+            budgets = request.env['budget_request'].sudo().search([])
+            
+            return http.request.render('website_directory.proposals_edit', {'proposal': proposal, 'work_types': work_types, 'budgets' : budgets})
         else:
             return "ACCESS DENIED"
             
@@ -268,7 +315,7 @@ class DirectoryAdminController(http.Controller):
 	    values[field_name] = field_value
 
 
-        existing_record = request.env['proposal'].browse( int(values['user_id'] ) )
+        existing_record = request.env['proposal'].browse( int(values['user_id.id'] ) )
         
         if existing_record.user_id.id == request.env.user.id:
             updated_listing = existing_record.sudo().write({
@@ -281,3 +328,142 @@ class DirectoryAdminController(http.Controller):
             return werkzeug.utils.redirect("/admin/proposals")
         else:
             return "Permission Denied"     
+            
+       
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+            
+#################            
+#            
+#     Editar a partir daqui       
+#
+#
+###################################################################################### lista propostas
+
+        
+    @http.route('/admin/services', type='http', auth="user", website=True)
+    def services_directory(self, **kwargs):
+        
+        services = request.env['service'].sudo().search([('user_id.id','=', request.env.user.id)])
+            	
+        return http.request.render('website_directory.services', {'services': services})
+
+###################################################################################### adiciona proposta 
+
+    @http.route('/admin/services/add', type='http', auth="user", website=True)
+    def services_directory_add(self, **kwargs):
+    	   
+        proposals = request.env['proposal'].sudo().search([])
+        budget_requests = request.env['budget_request'].sudo().search([])# ('state','!=', 'draft')
+        work_types = request.env['worktype'].sudo().search([])
+        clients = request.env['res.partner'].sudo().search([('pro','=', False)])
+        pros = request.env['res.partner'].sudo().search([('pro','=', True)])
+        
+        return http.request.render('website_directory.services_add', {'work_types': work_types, 'proposals': proposals, 'budget_requests': budget_requests, 'clients': clients, 'pros': pros })
+
+
+        
+        
+###################################################################################### processa nova proposta
+
+    @http.route('/admin/services/add/process', type='http', auth="user", website=True)
+    def services_directory_add_process(self, **kwargs):
+
+        values = {}
+	for field_name, field_value in kwargs.items():
+	    values[field_name] = field_value
+
+        insert_values = {'user_id': request.env.user.id} 
+
+        if 'proposal_id' in values: insert_values['proposal_id'] = values['proposal_id']
+        if 'budget_request_id' in values: insert_values['budget_request_id'] = values['budget_request_id']
+        if 'pro_id' in values: insert_values['pro_id'] = values['pro_id']
+        if 'client_id' in values: insert_values['client_id'] = values['client_id']
+        if 'work_type_id' in values: insert_values['work_type_id'] = values['work_type_id']
+        if 'price' in values: insert_values['price'] = values['price']
+        if 'exp_end_date' in values: insert_values['exp_end_date'] = '2018-09-12' #values['budget'] 
+        if 'description' in values: insert_values['description'] = values['description']
+        
+        new_service = request.env['service'].sudo().create(insert_values)
+
+        return werkzeug.utils.redirect("/admin/services")
+        
+###################################################################################### edita uma proposta
+
+    @http.route('/admin/services/edit/<model("service"):service>', type='http', auth="user", website=True)
+    def services_directory_edit(self, service, **kwargs):
+        if service.user_id.id == request.env.user.id:
+
+
+
+        	
+            work_types = request.env['worktype'].sudo().search([])
+            proposals = request.env['proposal'].sudo().search([])
+            budget_requests = request.env['budget_request'].sudo().search([])# ('state','!=', 'draft')
+            clients = request.env['res.partner'].sudo().search([('pro','=', False)])
+            pros = request.env['res.partner'].sudo().search([('pro','=', True)])
+
+
+            return http.request.render('website_directory.services_edit', {'service': service, 'work_types': work_types, 'proposals': proposals, 'budget_requests': budget_requests, 'clients': clients, 'pros' : pros} )
+        else:
+            return "ACCESS DENIED"
+
+
+            
+###################################################################################### processa a alteração de uma proposta existente
+    @http.route('/admin/services/edit/process', type='http', auth="user", website=True)
+    def services_directory_edit_process(self, **kwargs):
+
+        values = {}
+	for field_name, field_value in kwargs.items():
+	    values[field_name] = field_value
+        #quando form de ediçao estiver este browse nao pode ser assim usar name em vez de user id
+
+        existing_record = request.env['service'].browse( int(values['user_id.id'] ) )
+        
+        if existing_record.user_id.id == request.env.user.id:
+            updated_listing = existing_record.sudo().write({
+            'name': values['name'], 
+            'contact_id': values['partner'],
+            'network_country': values['country']
+            })
+
+            #Redirect them to thier account page
+            return werkzeug.utils.redirect("/admin/services")
+        else:
+            return "Permission Denied" 

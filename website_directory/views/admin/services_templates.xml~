@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- SERVICES -->
+
+<template id="services" name="Services Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'services'"/>
+
+<!-- SERVICES SECTION -->
+<section class="clearfix bg-dark listyPage">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="dashboardPageTitle">
+					<h2>My Services</h2>
+				</div>
+				<div class="table-responsive"  data-pattern="priority-columns">
+					<table class="table listingsTable">
+						<thead>
+							<tr class="rowItem">
+								<th data-priority="">Services</th>
+								<th data-priority="">Client</th>
+								<th data-priority="2">Description</th>
+								<th data-priority="3">Expected End Date</th>
+								<th data-priority="4">Last Edited</th>
+								<th data-priority="5">Status</th>
+								<th data-priority="6">Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr t-foreach="services" t-as="service" class="rowItem">
+								<td>
+									<ul class="list-inline listingsInfo">
+
+										<li>
+											<h3 t-esc="service.work_type_id.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
+											<h5><span class="cityName"><t t-esc="service.budget_request_id.city.name"/>,</span> <strong><t t-esc="service.budget_request_id.state_id.name"/></strong></h5>
+											<span class="category"><t t-esc="service.budget_request_id.category_id.name"/></span>
+											<p><strong>Price :</strong> <t t-esc="service.price"/>€ </p>
+											
+											<p>Ref: <t t-esc="service.name"/></p>
+                                 
+										</li>
+									</ul>
+								</td>
+								
+								<td>
+								<p><t t-esc="service.client_id.name"/></p>
+								</td>
+								
+								<td>
+								<p><t t-esc="service.description"/></p>
+								
+
+								</td>
+							
+								
+								<td><t t-esc="service.exp_end_date"/></td>
+								<td><t t-esc="service.write_date"/></td>
+								<td>
+                             <t t-if="service.state == 'done'">
+								     <span class="label label-success"><t t-esc="service.state"/></span> 
+								     </t>
+                             <t t-if="service.state == 'in_execution'">
+								     <span class="label label-danger"><t t-esc="service.state"/></span> 
+								     </t>
+                             <t t-if="service.state == 'scheduled'">
+								     <span class="label label-primary"><t t-esc="service.state"/></span> 
+								     </t>
+								     
+								</td>
+
+								<td>
+								<a class="label label-info" t-attf-href="/admin/services/edit/#{ slug(service) }">Edit</a>
+								</td>
+
+
+							</tr>
+						
+						</tbody>
+					</table>
+				</div>
+				<div class="paginationCommon blogPagination text-center">
+					<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+								</a>
+							</li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>              
+         
+         
+  </t>
+</template>
+
+<!-- SERVICES ADD-->
+
+<template id="services_add" name="Services Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'servicesadd'"/>
+<div class="section dashboard-breadcrumb-section bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Submit Service</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="active">Submit Service</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+      
+<!-- DASHBOARD ORDERS SECTION -->
+<section class="clearfix bg-dark listingSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="listing__form" method="POST" action="/admin/services/add/process" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>About</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+								
+									<label for="dateModified">Proposal</label>
+									<div class="contactSelect">
+										<select name="proposal_id" id="guiest_id91" class="select-drop" required="True">
+                           <t t-if="proposal_name">
+					                      <option t-attf-value="#{proposal_id}"><t t-esc="proposal_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="proposals" t-as="proposal">
+					                      <option t-attf-value="#{proposal.id}"><t t-esc="proposal.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+									</div>
+								</div>
+								
+								<div class="form-group col-sm-6 col-xs-12">
+                       <label for="listingCategory">Budget Request</label>
+								
+								
+									<div class="contactSelect">
+										<select name="budget_request_id" id="guiest_id9" class="select-drop" required="True">
+                           <t t-if="budget_request_name">
+					                      <option t-attf-value="#{budget_request_id}"><t t-esc="budget_request_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="budget_requests" t-as="budget">
+					                      <option t-attf-value="#{budget.id}"><t t-esc="budget.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+									</div>	
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingTitle">Professional</label>
+									<div class="contactSelect">
+										<select name="pro_id" id="guiest_id92" class="select-drop" required="True">
+                           <t t-if="pro_name">
+					                      <option t-attf-value="#{pro_id}"><t t-esc="pro_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="pros" t-as="pro">
+					                      <option t-attf-value="#{pro.id}"><t t-esc="pro.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingTitle">Client</label>
+									<div class="contactSelect">
+										<select name="client_id" id="guiest_id9" class="select-drop" required="True">
+                           <t t-if="client_name">
+					                      <option t-attf-value="#{client_id}"><t t-esc="client_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="clients" t-as="client">
+					                      <option t-attf-value="#{client.id}"><t t-esc="client.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+
+
+								<div class="form-group col-sm-4 col-xs-12">
+									<label for="listingTitle">Work Type</label>
+									<div class="contactSelect">
+										<select name="work_type_id" id="guiest_id912" class="select-drop" required="True">
+                           <t t-if="work_type_name">
+					                      <option t-attf-value="#{work_type_id}"><t t-esc="work_type_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="work_types" t-as="work_type">
+					                      <option t-attf-value="#{work_type.id}"><t t-esc="work_type.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+								
+								<div class="form-group col-sm-4 col-xs-12">
+									<label for="listingCategory">Price</label>
+									<input type="number" min="1" name="price"  class="form-control" placeholder="Price €"/>
+								</div>
+								
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="dateModified">End Date</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" name="exp_end_date" data-date-format="dd-mm-yyyy" class="form-control date" placeholder="dd-mm-yyyy"/>
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form-group col-xs-12">
+									<label for="discribeTheListing">Discribe the Service</label>
+									<textarea name="description" class="form-control" rows="3" placeholder="Discribe the Service"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="form-footer text-center">
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+         
+         
+  </t>
+</template>
+
+<!-- SERVICES EDIT-->
+
+<template id="services_edit" name="Services Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'servicesedit'"/>
+<div class="section dashboard-breadcrumb-section bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Submit Service</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="active">Submit Service</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="clearfix bg-dark listingSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<form class="listing__form" method="POST" action="/admin/services/add/process" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                
+					<div class="dashboardBoxBg mb30">
+						<div class="profileIntro paraMargin">
+							<h3>About</h3>
+							<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+								
+									<label for="dateModified">Proposal</label>
+									<div class="contactSelect">
+										<select name="proposal" id="guiest_id91" class="select-drop" required="True">
+
+
+					                      <option t-attf-value="#{service.id}"><t t-esc="service.name"/></option>
+
+     
+										</select>
+									</div>
+								</div>
+								
+								<div class="form-group col-sm-6 col-xs-12">
+                       <label for="listingCategory">Budget Request</label>
+								
+								
+									<div class="contactSelect">
+										<select name="budget" id="guiest_id9" class="select-drop" required="True">
+                           <t t-if="budget_request_name">
+					                      <option t-attf-value="#{budget_request_id}"><t t-esc="budget_request_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="budget_requests" t-as="budget">
+					                      <option t-attf-value="#{budget.id}"><t t-esc="budget.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+									</div>	
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingTitle">Professional</label>
+									<div class="contactSelect">
+										<select name="pro" id="guiest_id92" class="select-drop" required="True">
+                           <t t-if="pro_name">
+					                      <option t-attf-value="#{pro_id}"><t t-esc="pro_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="pros" t-as="pro">
+					                      <option t-attf-value="#{pro.id}"><t t-esc="pro.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="listingTitle">Client</label>
+									<div class="contactSelect">
+										<select name="client" id="guiest_id9" class="select-drop" required="True">
+                           <t t-if="client_name">
+					                      <option t-attf-value="#{client_id}"><t t-esc="client_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="clients" t-as="client">
+					                      <option t-attf-value="#{client.id}"><t t-esc="client.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+
+
+								<div class="form-group col-sm-4 col-xs-12">
+									<label for="listingTitle">Work Type</label>
+									<div class="contactSelect">
+										<select name="work_type" id="guiest_id912" class="select-drop" required="True">
+                           <t t-if="work_type_name">
+					                      <option t-attf-value="#{work_type_id}"><t t-esc="work_type_name"/></option>
+					            </t>
+					            <t t-else="">
+					            <t t-foreach="work_types" t-as="work_type">
+					                      <option t-attf-value="#{work_type.id}"><t t-esc="work_type.name"/></option>
+					            </t>
+					            </t>      
+										</select>
+								</div>
+								</div>
+								
+								<div class="form-group col-sm-4 col-xs-12">
+									<label for="listingCategory">Price</label>
+									<input type="number" min="1" name="price"  class="form-control" placeholder="Price €" t-att-value="service.price"/>
+								</div>
+								
+								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+									<label for="dateModified">End Date</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" name="end_date" data-date-format="dd-mm-yyyy" class="form-control date" placeholder="dd-mm-yyyy" t-att-value="service.accepting_date"/>
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="form-group col-xs-12">
+									<label for="discribeTheListing">Discribe the Service</label>
+									<textarea name="description" class="form-control" rows="3" placeholder="Discribe the Service"><t t-esc="service.description"/></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="form-footer text-center">
+						<button type="submit" class="btn-submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>      
+
+         
+  </t>
+</template>
+
+
+</odoo>
