@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+<!-- account -->
+
+<template id="account" name="Account Admin" page="True" priority="29">
+  <t t-call="website_directory.admin_page_layout">
+    <t t-set="pageName" t-value="'account'"/>
+
+
+<section class="clearfix bg-dark profileSection">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-sm-5 col-xs-12">
+				<div class="dashboardBoxBg mb30">
+					<div class="profileImage">
+						<img src="img/dashboard/recent-user-5.jpg" alt="Image User" class="img-circle"/>
+						<div class="file-upload profileImageUpload">
+							<div class="upload-area">
+								<input type="file" name="img[]" class="file"/>
+								<button class="browse" type="button">Upload a Picture <i class="icon-listy icon-upload"></i></button>
+							</div>
+						</div>
+					</div>
+					<div class="profileUserInfo bt profileName">
+						<p>Your Current Plan</p>
+						<h2>Platinum Package</h2>
+						<h5>Next Payment: <span>15/01/2017</span></h5>
+						<a href="#" class="btn btn-primary">Change</a>
+					</div>
+				</div>
+			</div>
+
+			
+			
+			<div class="col-md-8 col-sm-7 col-xs-12">
+				<form>
+					<div class="dashboardBoxBg">
+						<div class="profileIntro">
+							<h2>Your Profile</h2>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form Ipsum available.</p>
+						</div>
+					</div>
+					<div class="dashboardBoxBg mt30">
+						<div class="profileIntro">
+							<h3>About You</h3>
+					<div class="btn-area mt30">
+						<button class="btn btn-primary" type="button" onclick="function()">Edit</button>
+					</div>
+							<div class="row">
+							
+							
+							
+								<div class="form-group col-sm-12 col-xs-12">
+									<label for="firstNameProfile">Name</label>
+									<input type="text" class="form-control" id="firstNameProfile" t-att-value="partner.name" />
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="emailProfile">Email</label>
+									<input type="text" class="form-control" id="emailProfile" t-att-value="partner.email" />
+								</div>
+								
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="phoneProfile">Phone</label>
+									<input type="text" class="form-control" id="phoneProfile1" t-att-value="partner.phone" />
+								</div>
+								
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="phoneProfile">Mobile Phone</label>
+									<input type="text" class="form-control" id="phoneProfile2" t-att-value="partner.mobile" />
+								</div>
+				
+								<!--<div class="form-group col-sm-6 col-xs-12">
+									<label for="phoneProfile">city</label>
+									<input type="text" class="form-control" id="phoneProfile2" t-att-value="partner.mobile" />
+								</div>-->		
+									
+
+			
+								<div class="form-group col-xs-12">
+									<label for="aboutYou">About You</label>
+									<textarea class="form-control" rows="5" id="aboutYou" ><t t-esc="partner.profile_text" /></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+
+
+				
+					
+					<div class="dashboardBoxBg mt30">
+                  <div class="row">
+							<h3>Adress</h3>
+							<div class="row">
+								
+								<div class="form-group col-sm-6 col-xs-12">
+								<label for="listingCategory">Country</label>
+									<div class="contactSelect">
+										<select name="state_id" id="guiest_id91" class="select-drop" required="True">
+					                  <option value="#{partner.country_id}"><t t-esc="partner.country_id.name"/></option>
+					                  <t t-foreach="countries" t-as="country">
+					                  <t t-if="country.id != partner.country_id.id">
+					                      <option t-attf-value="#{country.id}"><t t-esc="country.name"/></option>
+					                     </t> 
+					                  </t>
+										</select>
+									</div>	
+								</div>
+								</div>
+								
+								<div class="form-group col-sm-6 col-xs-12">
+     								<label for="listingCategory">State</label>
+									<div class="contactSelect">
+										<select name="state_id" id="guiest_id91" class="select-drop" required="True">
+					                  <option value="#{partner.state_id}"><t t-esc="partner.state_id.name"/></option>
+					                  <t t-foreach="states" t-as="state">
+					                  <t t-if="state.id != partner.state_id.id">
+					                      <option t-attf-value="#{state.id}"><t t-esc="state.name"/></option>
+					                     </t> 
+					                  </t>
+										</select>
+									</div>	
+								</div>
+
+								
+							<div class="form-group col-sm-6 col-xs-12">
+                          	<label for="city">City</label>
+									<input type="text" class="form-control" id="city" t-att-value="partner.city"/>
+							</div>
+							
+							<div class="form-group col-sm-6 col-xs-12">
+                           
+                           <label for="street">Street</label>
+									<input type="street" class="form-control" id="street" t-att-value="partner.street"/>
+                           
+							 </div>
+							 
+							 <div class="form-group col-sm-6 col-xs-12">
+                          	<label for="zip">ZIP</label>
+									<input type="text" class="form-control" id="zip" t-att-value="partner.zip"/>
+                                         
+							 </div>
+                       </div>
+		
+					</div>
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="dashboardBoxBg mt30">
+						<div class="profileIntro">
+							<h3>Social Network</h3>
+							<div class="row">
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="linkedInUrl">Linked in URL</label>
+									<input type="text" class="form-control" id="linkedInUrl" t-att-value="partner.social_linkedin" />
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="facebookUrl">Facebook URL</label>
+									<input type="text" class="form-control" id="facebookUrl" t-att-value="partner.social_facebook" />
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="twitterUrl">Twitter URL</label>
+									<input type="text" class="form-control" id="twitterUrl" t-att-value="partner.social_twitter" />
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="youTubeUrl">You Tube URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_youtube" />
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="githubUrl">Git Hub URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_github" />
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="googlePlusUrl">Google Plus URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_googleplus"/>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="website">Your website</label>
+									<input type="text" class="form-control" id="website" t-att-value="partner.website"/>
+								</div>
+								
+								
+							</div>
+						</div>
+					</div>
+					
+               <div class="dashboardBoxBg mt30">
+						<div class="profileIntro">
+							<h3>Pro Section</h3><!-- set pros -->
+							<div class="row">
+							<div class="contactSelect">
+										<select name="pro" id="guiest_id91" class="select-drop" required="True">
+					                    
+					                  <t t-if="partner.pro == false">
+					                  <option t-attf-value="False">Cliente</option>
+					                  <option t-attf-value="True">Profissional</option>
+					                  </t>
+					                  <t t-else="">
+					                      <option t-attf-value="True">Profissional</option>
+					                      <option t-attf-value="False">Cliente</option>
+					                  </t>      
+										</select>
+										</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="facebookUrl">Facebook URL</label>
+									<input type="text" class="form-control" id="facebookUrl" t-att-value="partner.social_facebook"/>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="twitterUrl">Twitter URL</label>
+									<input type="text" class="form-control" id="twitterUrl" t-att-value="partner.social_twitter"/>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="youTubeUrl">You Tube URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_youtube"/>
+								</div>
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="githubUrl">Git Hub URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_github"/>
+								</div>
+
+								<div class="form-group col-sm-6 col-xs-12">
+									<label for="googlePlusUrl">Google Plus URL</label>
+									<input type="text" class="form-control" id="youTubeUrl" t-att-value="partner.social_googleplus"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+				<!--	<div class="btn-area mt30">
+						<button class="btn btn-primary" type="button">Save Change</button>
+					</div>
+					<div class="dashboardBoxBg mt30">
+						<div class="profileIntro">
+							<h3>Update password</h3>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<label for="currentPassword">Current Password</label>
+									<input type="password" class="form-control" id="currentPassword" placeholder="********"/>
+								</div>
+								<div class="form-group col-xs-12">
+									<label for="newPassword">New Password</label>
+									<input type="password" class="form-control" id="newPassword" placeholder="New Password"/>
+								</div>
+								<div class="form-group col-xs-12">
+									<label for="confirmPassword">Confirm Password</label>
+									<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password"/>
+								</div>
+								<div class="form-group col-xs-12">
+									<button class="btn btn-primary" type="button">Change Password</button>
+								</div>
+							</div>
+						</div>
+					</div>-->
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+</t>
+</template>
+
+
+
+
+</odoo>

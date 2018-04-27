@@ -53,7 +53,7 @@
                 <a href="dashboard-reviews.html" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Reviews</a>
               </li>
               <li><a href="dashboard.html#message" class="scrolling"><i class="fa fa-envelope icon-dash" aria-hidden="true"></i> Messages</a></li>
-              <li><a href="profile.html"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a></li>
+              <li><a href="/admin/account"><i class="fa fa-user icon-dash" aria-hidden="true"></i> Personal Details</a></li>
             </ul>
             <div class="row adjustRow">
               <div class="pull-right col-xs-12 col-sm-2">
@@ -350,7 +350,7 @@ Colocar aqui conteúdo
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <h2>Submit Proposal</h2>
+        <h2>Request Budgets</h2>
         <ol class="breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li><a href="dashboard.html">Dashboard</a></li>
@@ -384,7 +384,7 @@ Colocar aqui conteúdo
 										</select>
 									</div>	
 								</div>
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+								<div class="form-group col-sm-6 col-xs-12">
 									<label for="listingTitle">Work Subcategory</label>
 									<div class="contactSelect">
 										<select name="work_type" id="guiest_id9" class="select-drop" required="True">
@@ -398,26 +398,7 @@ Colocar aqui conteúdo
 									</div>
 								</div>
 
-								<div class="form-group col-sm-4 col-xs-12">
-										<label for="accepting_date">Date until Proposals can be sent</label>
-									<div class="dateSelect">
-										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-											<input type="text" name="accepting_date" class="form-control" placeholder="dd-mm-yyyy"/>
-											<div class="input-group-addon">
-												<i class="icon-listy icon-calendar"></i>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-								<div class="form-group col-sm-2 col-xs-12">
-									<label for="listingCategory">Max Price</label>
-									<input type="number" min="1" name="max_price"  class="form-control" placeholder="Max Price €"/>
-								</div>
-
-
-								<div class="form-group col-sm-4 col-xs-12">
+                       <div class="form-group col-sm-4 col-xs-12">
 								<label for="listingCategory">State</label>
 									<div class="contactSelect">
 										<select name="state_id" id="guiest_id94" class="select-drop" required="True">
@@ -441,7 +422,7 @@ Colocar aqui conteúdo
 										</select>
 									</div>	
 								</div>
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
+								<div class="form-group col-sm-4 col-xs-12">
 									<label for="listingTitle">Locals</label>
 									<div class="contactSelect">
 										<select name="city" id="guiest_id93" class="select-drop" required="False">
@@ -451,7 +432,32 @@ Colocar aqui conteúdo
 					                  </t>
 										</select>
 									</div>
+								</div>								
+								
+								
+								
+								
+
+								<div class="form-group col-sm-4 col-xs-12">
+										<label for="accepting_date">Date until Proposals can be sent</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" name="accepting_date" class="form-control" placeholder="dd-mm-yyyy"/>
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
+
 								</div>
+
+								<div class="form-group col-sm-2 col-xs-12">
+									<label for="listingCategory">Max Price</label>
+									<input type="number" min="1" name="max_price"  class="form-control" placeholder="Max Price €"/>
+								</div>
+
+
+								
 
 
 

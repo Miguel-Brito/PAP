@@ -40,9 +40,13 @@ class DirectoryAdminController(http.Controller):
     @http.route('/admin/account', type='http', auth="user", website=True)
     def account_user(self, **kwargs):
         page = 'account'
+        partner = request.env.user.partner_id
+        countries = request.env['res.country'].search([])
+        states = request.env['res.country.state'].search([])
+        	
         
-
-        return http.request.render('website_directory.account_user')  
+        
+        return http.request.render('website_directory.account', {'partner' : partner, 'countries' : countries, 'states' : states})  
 
 #####################################################################################
 
@@ -53,7 +57,47 @@ class DirectoryAdminController(http.Controller):
 
         return http.request.render('website_directory.account_user_edit')        
               
+########################################### acabar #########################################
         
+    @http.route('/admin/account/process', type='http', auth="user", website=True)
+    def account_directory_process(self, **kwargs):
+
+        values = {}
+	for field_name, field_value in kwargs.items():
+	    values[field_name] = field_value
+
+        
+        
+        existing_record = request.env['res.partner'].search([('user_id','=', request.env.user.id)])
+        
+
+        if existing_record.user_id.id == request.env.user.id:
+            updated_listing = existing_record.sudo().write({
+            'name': values['name'], 
+            'email': values['email'],
+            'category_id': values['category_id'],
+            'max_price': values['max_price'],
+            'county_id': values['county_id'],
+            'city': values['city'],
+            'state_id': values['state_id'],
+            'description': values['description'],
+            'state': values['budget_state']
+            
+            })
+
+            #Redirect them to thier account page
+            return werkzeug.utils.redirect("/admin/account")
+        else:
+            return "Permission Denied"     
+
+
+
+        return werkzeug.utils.redirect("/admin/mylistings")
+
+
+
+
+
 
 ###################################################################################### listings
 

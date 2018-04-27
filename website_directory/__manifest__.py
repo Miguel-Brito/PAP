@@ -26,6 +26,7 @@
         'views/admin/admin_templates.xml',
         'views/admin/proposals_templates.xml',
         'views/admin/services_templates.xml',
+        'views/admin/account_templates.xml',
     ],
     'depends': ['website', 'mail'],
     'installable': True,
