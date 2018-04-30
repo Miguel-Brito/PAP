@@ -9,7 +9,7 @@
 
 
         <menuitem id="res_partner_interest_parent_menu" name="Interests" parent="res_directory_parent_menu" sequence="10"/>
-        <menuitem id="res_partner_interest_menu" name="Interests" parent="res_partner_interest_parent_menu" action="res_partner_interest_action" sequence="5"/>
+        <menuitem id="res_partner_interest_menu" name="Interests" parent="res_partner_interest_parent_menu" action="res_partner_interest_action" sequence="10"/>
         <menuitem id="res_partner_interest_category_menu" name="Categories" parent="res_partner_interest_parent_menu" action="res_partner_interest_category_action" sequence="10"/>
 
         <menuitem id="menu_administrative_conf" name="Administrative" parent="res_directory_parent_menu" sequence="12"/>
