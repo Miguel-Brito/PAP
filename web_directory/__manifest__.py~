@@ -27,15 +27,15 @@
         'data/res.groups.csv',
         'security/ir.model.access.csv',
         'views/res_partner_views.xml',
-        'views/administrative_views.xml'
+        'views/administrative_views.xml',
+        'views/menus_views.xml',
         'views/res_partner_interest_category_views.xml',
         'views/res_partner_interest_views.xml',
         'views/budget_views.xml',
         'views/sequence_data.xml',
         'views/work_type_views.xml',
         'views/proposal_views.xml',
-        'views/service_views.xml',
-        'views/menus_views.xml'
+        'views/service_views.xml'
 
     ],
     # only loaded in demonstration mode
