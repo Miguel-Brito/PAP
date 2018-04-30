@@ -27,7 +27,7 @@
         'data/res.groups.csv',
         'security/ir.model.access.csv',
         'views/res_partner_views.xml',
-        'views/administrative_views.xml'
+        'views/administrative_views.xml',
         'views/res_partner_interest_category_views.xml',
         'views/res_partner_interest_views.xml',
         'views/budget_views.xml',

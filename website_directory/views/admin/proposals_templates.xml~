@@ -37,10 +37,10 @@
 											<h3 t-esc="proposal.budget_request_id.work_type.name"> <!--<i class="fa fa-check-circle" aria-hidden="true"></i>--></h3>
 											<h5><span class="cityName"><t t-esc="proposal.budget_request_id.city.name"/>,</span> <strong><t t-esc="proposal.budget_request_id.state_id.name"/></strong></h5>
 											<span class="category"><t t-esc="proposal.budget_request_id.category_id.name"/></span>
-											<p><strong>Max Price:</strong> <t t-esc="proposal.budget_request_id.max_price"/>€ </p>
+											<p><strong>Price:</strong> <t t-esc="proposal.price"/>€ </p>
 											
-											<p>Ref: <t t-esc="proposal.name"/> <t t-esc="proposal.client_id.name"/></p>
-
+											<p>Ref: <t t-esc="proposal.name"/> </p>
+                                 <p> <t t-esc="proposal.client_id.name"/> </p>
 										</li>
 									</ul>
 								</td>

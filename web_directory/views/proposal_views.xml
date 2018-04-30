@@ -138,7 +138,7 @@
         sequence="4"
         action="action_proposal_form"
         web_icon="web_directory,static/description/icon.png"/>
-
+        
         <menuitem id="menu_proposal_form" name="Proposals" parent="menu_proposal" action="action_proposal_form" sequence="11"/>
     </data>
 </odoo>
